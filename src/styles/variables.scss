@@ -1,0 +1,18 @@
+:root {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --primary-color: #44adc1;
+  // HEADER
+  --header-menu-bg: #ffffff4d;
+  --hover-gradient: linear-gradient(
+    90deg,
+    rgba(28, 149, 181, 1) 0%,
+    rgba(43, 183, 186, 1) 100%
+  );
+  --common-gradient-color: linear-gradient(
+    90deg,
+    rgba(28, 149, 181, 1) 0%,
+    rgba(36, 167, 184, 1) 53%,
+    rgba(43, 183, 186, 1) 100%
+  );
+}
