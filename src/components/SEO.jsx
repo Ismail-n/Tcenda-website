@@ -1,12 +1,14 @@
 import Head from "next/head";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const SEO = ({ title = "", description = "", keywords = "" }) => {
+  const { t } = useTranslation();
   return (
     <Head>
-      <title>{title} | TOD</title>
-      <meta name="description" content={description || ""} />
-      <meta name="keywords" content={keywords || ""} />
+      <title>{t(title)} | TOD</title>
+      <meta name="description" content={t(description) || ""} />
+      <meta name="keywords" content={t(keywords) || ""} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
   );

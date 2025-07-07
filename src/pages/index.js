@@ -9,7 +9,6 @@ import OurProjects from "@/components/home/OurProjects";
 import OurServices from "@/components/home/OurServices";
 import TopSection from "@/components/home/TopSection";
 import SEO from "@/components/SEO";
-import { useTranslation } from "react-i18next";
 
 export default function Home() {
   return (

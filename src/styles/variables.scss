@@ -1,6 +1,7 @@
 :root {
   --bg-color: #000000;
   --text-color: #ffffff;
+  --black-color: #000000;
   --primary-color: #44adc1;
   // HEADER
   --header-menu-bg: #ffffff4d;
@@ -15,4 +16,5 @@
     rgba(36, 167, 184, 1) 53%,
     rgba(43, 183, 186, 1) 100%
   );
+  --common-border-color:#ffffff4d
 }
