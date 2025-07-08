@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const TopSection = () => {
   const { t } = useTranslation();
+
   return (
     <section className="top_section">
       <Container>

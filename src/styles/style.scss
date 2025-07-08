@@ -750,18 +750,24 @@ footer {
     }
   }
   .services_tab {
-    background-color: var(--black-color);
-    border: 20px;
+    margin-top: 120px;
+    background-color: #1B1B1B;
+    border-radius: 20px;
     padding: 10px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     button {
       border: unset;
-      background-color: var(--black-color);
+      background-color: transparent;
       color: var(--text-color);
       font-size: 18px;
       line-height: normal;
       max-width: 162px;
+      &.active {
+        color: var(--primary-color);
+      }
     }
   }
 }
