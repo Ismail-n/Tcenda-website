@@ -1,16 +1,19 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const TopSection = () => {
   const { t } = useTranslation();
+  const router = useRouter();
 
   const scrollToContact = () => {
-    const el = document.getElementById("contact");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    router.push("/contact-us");
+    // const el = document.getElementById("contact");
+    // if (el) el.scrollIntoView({ behavior: "smooth" });
   };
-  
+
   return (
     <section className="top_section">
       <Container>

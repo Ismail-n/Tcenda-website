@@ -1,12 +1,15 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const ConsultOurExperts = () => {
   const { t } = useTranslation();
+  const router = useRouter();
+
   return (
     <section className="common_section consult_our_experts">
       <Container>
@@ -26,7 +29,11 @@ const ConsultOurExperts = () => {
                 <span className="px-2">{t("Right here in Saudi Arabia.")}</span>
               </h3>
               <Link href="#">
-                <button type="button" className="service_btn">
+                <button
+                  type="button"
+                  className="service_btn"
+                  onClick={() => router.push("/contact-us")}
+                >
                   {t("Consult Our Experts")} <ArrowRight />
                 </button>
               </Link>
