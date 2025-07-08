@@ -36,8 +36,9 @@ const portfolios = [
     title: "Ashjar Friends App",
     description:
       "Enjoy Seamless Loyalty Rewards, Personalized Offers, and Instant Access to Ashjar Perks. Your Cafe Experience, Elevated Right in Your Pocket.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "https://apps.apple.com/gb/app/ashjar-friends/id6670760287",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.ashjarcafe.sa",
     caseStudyLink: "#",
     imageDetails: {
       image: "ashjarFriends",
@@ -56,8 +57,9 @@ const portfolios = [
     title: "Ashjar Space",
     description:
       "Discover and Book Premium Spaces Across Saudi Arabia with Ease and Flexibility. Plan Gatherings, Events, or Work Sessions — All in One App.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "https://apps.apple.com/sa/app/ashjar-space/id6476087387",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.ashjarbooking&hl=en",
     caseStudyLink: "#",
     imageDetails: {
       image: "ashjarSpace",
@@ -94,8 +96,9 @@ const portfolios = [
     title: "Send",
     description:
       "A Premium Fashion Marketplace That Connects You to Top Retailers in the Kingdom. From Discovery to Delivery, All in One Intuitive App.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "https://apps.apple.com/gb/app/ashjar/id6474177129?uo=2",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.ashjar.sa",
     caseStudyLink: "#",
     imageDetails: {
       image: "send",
