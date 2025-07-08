@@ -8,11 +8,11 @@ const TopSection = () => {
   return (
     <section className="top_section">
       <Container>
-        <div className="top_row">
-          <h1 className="top_section_title text-center">
+        <div className="top_row text-center">
+          <h1 className="top_section_title">
             {t("We Don't Just Build Tech We Build Possibility")}
           </h1>
-          <p className="top_section_sub_title text-center">
+          <p className="top_section_sub_title">
             {t(
               "At TOD, we turn bold ideas into smart digital solutions. We build technology that unlocks real business potential."
             )}

@@ -1,3 +1,4 @@
+import PortfoliosSection from "@/components/portfolio/PortfoliosSection";
 import TopSection from "@/components/portfolio/TopSection";
 import SEO from "@/components/SEO";
 import React from "react";
@@ -11,6 +12,7 @@ const Portfolio = () => {
       />
       <main className="portfolio">
         <TopSection />
+        <PortfoliosSection />
       </main>
     </>
   );

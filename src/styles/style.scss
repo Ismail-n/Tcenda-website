@@ -625,5 +625,81 @@ footer {
 
 // PORTFOLIO
 .portfolio {
-  
+  .top_section {
+    position: relative;
+    margin: 60px 0;
+    min-height: 307px;
+    .top_section_sub_title {
+      max-width: 761px;
+      display: block;
+      margin: auto;
+    }
+    .top_bg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 287px;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .portfolio_inner_section {
+    margin-top: 89px;
+    .portfolio_inner {
+      min-height: 600px;
+      padding: 62px 62px 30px 70px;
+      border-radius: 30px;
+      display: flex;
+      gap: 56px;
+      margin-top: 60px;
+      .left {
+        max-width: 418px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .content {
+          margin-top: 18px;
+          h3 {
+            font-size: 48px;
+            margin-top: 30px;
+            line-height: 100%;
+            color: var(--black-color);
+          }
+          p {
+            margin-top: 15px;
+            font-size: 16px;
+            color: var(--black-color);
+            line-height: 26px;
+          }
+          .store_btns {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+          }
+        }
+        .case_study_btn {
+          border: 1px solid var(--black-color);
+          border-radius: 100px;
+          min-height: 48px;
+          width: 206px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: var(--black-color);
+          font-size: 18px;
+          line-height: 20px;
+          gap: 9px;
+        }
+      }
+      .right {
+        display: block;
+        margin: auto;
+        .preview_img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
 }
