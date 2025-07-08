@@ -625,5 +625,212 @@ footer {
 
 // PORTFOLIO
 .portfolio {
-  
+}
+
+// CONTACT US
+.contact_us {
+  margin-top: 50px;
+  .top_section {
+    min-height: 100px;
+    position: relative;
+    margin: 60px 0;
+    .top_section_title {
+      max-width: 802px;
+      display: block;
+      margin: auto;
+    }
+    .top_bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 287px;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .inner_desc {
+    margin-top: 5px;
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      // font-weight: 500;
+      margin-top: 25px;
+      &:last-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .our_values {
+    .inner_section {
+      border: 1px solid var(--common-border-color);
+      border-radius: 20px;
+      background: #1e1e1e;
+      padding: 0px;
+      z-index: +1;
+      & > h2 {
+        font-size: 36px;
+        line-height: 100%;
+        font-weight: 700;
+      }
+      & > h3 {
+        font-size: 20px;
+        line-height: 100%;
+        margin-top: 14px;
+      }
+
+      .left_content {
+        width: 45%;
+        height: 100%;
+        float: left;
+        background-color: var(--primary-color);
+        border-radius: 20px;
+
+        background-image: url("/images/contactUs/contact_bg.webp");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        min-height: 400px;
+      }
+
+      .contact_form_section {
+        width: 55%;
+        height: fit-content;
+        float: right;
+        margin-bottom: 40px;
+
+        .contact_form {
+          width: 100%;
+          padding: 40px 40px;
+          color: var(--text-color);
+
+          label{
+            margin-bottom: 10px;
+          }
+          .mb-25{
+            margin-bottom: 25px;
+          }
+          .mb-25-gap-15{
+             margin-bottom: 25px;
+             gap: 15px;
+             display: flex;
+          }
+          .flex-1{
+            flex: 1;
+          }
+          .flex-gap-10{
+            display: flex;
+            gap: 10px;
+          }
+          .mw-80{
+            max-width: 80px;
+          }
+          .input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            color: var(--text-color);
+            font-size: 14px;
+            border: 1px solid #d9d9d91a;
+            background: #2e2e2e;
+            &::placeholder {
+              color: var(--text-color);
+            }
+          }
+
+          .textarea {
+            width: 100%;
+            padding: 12px;
+            height: 100px;
+            border-radius: 8px;
+            background: #2e2e2e;
+            color: var(--text-color);
+            resize: none;
+            border: none;
+            &::placeholder {
+              color: var(--text-color);
+            }
+          }
+
+          .submit-btn {
+            background-color: #00c4cc;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            float: right;
+          }
+
+          .submit-btn:hover {
+            background-color: #00b1b8;
+          }
+
+          .error {
+            color: #ff6b6b;
+            font-size: 12px;
+            margin-top: 4px;
+          }
+        }
+      }
+
+      .contact_info_section {
+        position: relative;
+        color: white;
+        padding: 60px 20px 150px;
+        overflow: hidden;
+      }
+
+      .info_wrapper {
+        max-width: 600px;
+      }
+
+      .headline {
+        font-size: 48px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        max-width: 397px;
+      }
+
+      .highlight {
+        font-weight: bold;
+        display: inline-block;
+      }
+
+      h5 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      .icon_text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+
+      .icon_text svg {
+        margin-top: 5px;
+      }
+
+      .icon_text p {
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      .bottom_bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        pointer-events: none;
+        z-index: 0;
+      }
+    }
+  }
 }
