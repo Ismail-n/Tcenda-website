@@ -22,7 +22,9 @@ const ContactFormSection = () => {
     name: Yup.string().required("Required"),
     // company: Yup.string().required("Required"),
     email: Yup.string().email("Invalid email").required("Required"),
-    mobile: Yup.string().required("Required"),
+    mobile: Yup.string()
+      .required("Required")
+      .matches(/^[0-9]+$/, "Only numbers are allowed"),
     // reference: Yup.string().required("Required"),
     message: Yup.string().required("Required"),
   });
