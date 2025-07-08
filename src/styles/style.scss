@@ -16,7 +16,7 @@ header {
       a {
         color: var(--text-color);
         font-size: 20px;
-        line-height: 20px;
+        line-height: normal;
         padding: 13px 24px;
         font-weight: 700;
         border-radius: 100px;
@@ -89,7 +89,7 @@ footer {
     }
     .conversion_inner {
       margin-top: 71px;
-      margin-left: 50px;
+      margin-inline-start: 20px;
       h2 {
         font-size: 18px;
         // font-weight: 300;
@@ -156,8 +156,9 @@ footer {
   .top_row {
     margin-top: 106px;
     max-width: 940px;
+    margin-inline-start: 40px;
     .main_btn {
-      margin-top: 12px;
+      margin-top: 30px;
     }
   }
   .top_bg {
@@ -441,7 +442,8 @@ footer {
 .about_us {
   margin-top: 50px;
   .top_section {
-    min-height: 307px;
+    // min-height: 307px;
+    min-height: 207px;
     position: relative;
     margin: 60px 0;
     .top_section_title {
@@ -451,13 +453,17 @@ footer {
     }
     .top_bg {
       position: absolute;
-      bottom: 0;
+      // bottom: 0;
+      top: 0;
       left: 0;
       height: 287px;
       img {
         height: 100%;
       }
     }
+  }
+  .about_us_section {
+    padding-top: 50px;
   }
   .inner_desc {
     margin-top: 5px;
@@ -649,7 +655,7 @@ footer {
     }
   }
   .portfolio_inner_section {
-    margin-top: 89px;
+    margin-top: 50px;
     .portfolio_inner {
       min-height: 600px;
       padding: 62px 62px 30px 70px;
@@ -709,6 +715,53 @@ footer {
           margin-top: 110px;
         }
       }
+    }
+  }
+}
+
+// OUR SERVICES
+.our_services {
+  margin-top: 50px;
+  .top_section {
+    // min-height: 307px;
+    min-height: 207px;
+    position: relative;
+    margin: 60px 0;
+    .top_section_title {
+      max-width: 846px;
+      display: block;
+      margin: auto;
+    }
+    .top_section_sub_title {
+      max-width: 771px;
+      display: block;
+      margin: auto;
+      margin-top: 15px;
+    }
+    .top_bg {
+      position: absolute;
+      // bottom: 0;
+      top: 0;
+      left: 0;
+      height: 287px;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .services_tab {
+    background-color: var(--black-color);
+    border: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    button {
+      border: unset;
+      background-color: var(--black-color);
+      color: var(--text-color);
+      font-size: 18px;
+      line-height: normal;
+      max-width: 162px;
     }
   }
 }

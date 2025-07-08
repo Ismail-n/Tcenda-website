@@ -23,7 +23,7 @@ const TopSection = () => {
           <Image
             src={"/images/aboutUs/topBg.webp"}
             width={1920}
-            height={421}
+            height={247}
             alt="Background of Saudi digital success"
             priority
           />
