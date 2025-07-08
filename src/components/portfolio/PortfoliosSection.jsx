@@ -16,9 +16,11 @@ const portfolios = [
     title: "Half Million",
     description:
       "Experience the Richness of Artisan Coffee — Anytime, Anywhere. Your Favorite Brews, Delivered Fresh from the Café to Your Pocket.",
-    appStoreLink: "#",
-    playStoreLink: "#",
-    caseStudyLink: "#",
+    appStoreLink:
+      "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.halfmillion.android&hl=en_IN",
+    caseStudyLink: "",
     imageDetails: {
       image: "halfMillion",
       imageWidth: 412,
@@ -197,7 +199,8 @@ const portfolios = [
     title: "Service Now",
     description:
       "Designed to Optimize Field Operations with Real-Time Tracking and Task Management. Empowering Service Teams Across the Kingdom.",
-    appStoreLink: "#",
+    appStoreLink:
+      "https://apps.apple.com/in/app/service-hub-customer/id6461084774",
     playStoreLink: "#",
     caseStudyLink: "#",
     imageDetails: {
@@ -210,7 +213,7 @@ const portfolios = [
   {
     id: "health-care",
     logoDetails: {
-      logo: "healthCareLogo",
+      logo: "",
       logoWidth: 80,
       logoHeight: 80,
     },
@@ -259,14 +262,16 @@ const PortfoliosSection = () => {
             >
               <div className="left">
                 <div className="content">
-                  <Image
-                    src={`/images/portfolio/${logoDetails.logo}.svg`}
-                    alt={`${title} Logo`}
-                    className="logo_img"
-                    width={logoDetails.logoWidth}
-                    height={logoDetails.logoHeight}
-                    priority={index === 0}
-                  />
+                  {logoDetails.logo && (
+                    <Image
+                      src={`/images/portfolio/${logoDetails.logo}.svg`}
+                      alt={`${title} Logo`}
+                      className="logo_img"
+                      width={logoDetails.logoWidth}
+                      height={logoDetails.logoHeight}
+                      priority={index === 0}
+                    />
+                  )}
                   <h3>{t(title)}</h3>
                   <p>{t(description)}</p>
                   <div className="store_btns">

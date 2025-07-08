@@ -89,6 +89,7 @@ footer {
     }
     .conversion_inner {
       margin-top: 71px;
+      margin-left: 50px;
       h2 {
         font-size: 18px;
         // font-weight: 300;
@@ -303,22 +304,7 @@ footer {
       }
     }
   }
-  .industries_row {
-    margin-top: 5px;
-    .single_industry {
-      border: 1px solid #b3b4bd40;
-      border-radius: 20px;
-      padding: 25px;
-      margin-top: 25px;
-      text-align: center;
-      h3 {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 100%;
-        margin-top: 10px;
-      }
-    }
-  }
+
   .blogs {
     .blog_card_inner {
       margin-top: 40px;
@@ -388,7 +374,7 @@ footer {
   .clients_logos {
     margin-top: 40px;
     display: flex;
-    gap: 25px;
+    gap: 20px;
     flex-wrap: wrap;
     img {
       object-fit: contain;
@@ -430,6 +416,23 @@ footer {
       img {
         max-height: auto;
       }
+    }
+  }
+}
+
+.industries_row {
+  margin-top: 5px;
+  .single_industry {
+    border: 1px solid #b3b4bd40;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 25px;
+    text-align: center;
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 100%;
+      margin-top: 10px;
     }
   }
 }
@@ -628,7 +631,7 @@ footer {
   .top_section {
     position: relative;
     margin: 60px 0;
-    min-height: 307px;
+    min-height: 247px;
     .top_section_sub_title {
       max-width: 761px;
       display: block;
@@ -638,9 +641,10 @@ footer {
       position: absolute;
       bottom: 0;
       left: 0;
-      height: 287px;
+      height: 247px;
       img {
         height: 100%;
+        // object-fit: contain;
       }
     }
   }
@@ -698,6 +702,11 @@ footer {
         margin: auto;
         .preview_img {
           object-fit: contain;
+        }
+      }
+      &#health-care {
+        .left .content h3 {
+          margin-top: 110px;
         }
       }
     }
