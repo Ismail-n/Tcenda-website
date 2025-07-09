@@ -465,7 +465,7 @@ const servicesData = [
       "With us, build, modify, and scale Odoo apps to match your evolving goals.",
     categories: [
       {
-        icon: "odoo/implementation",
+        icon: "odoo/odooImplementation",
         title: "Odoo Implementation",
         subtitle:
           "From planning to deployment, we implement Odoo to streamline operations and boost efficiency.",

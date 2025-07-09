@@ -21,6 +21,8 @@ header {
         font-weight: 700;
         border-radius: 100px;
         transition: background 0.3s ease;
+        display: inline-block;
+        vertical-align: middle;
         &.active {
           background: var(--hover-gradient);
         }
