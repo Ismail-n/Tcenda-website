@@ -748,10 +748,41 @@ footer {
         height: 100%;
       }
     }
+    &#mobile-app {
+      .top_section_title {
+        max-width: 953px;
+      }
+      .top_section_sub_title {
+        max-width: 510px;
+      }
+    }
+    &#cloud-services {
+      .top_section_title {
+        max-width: 950px;
+      }
+    }
+    &#ai-ml {
+      .top_section_sub_title {
+        max-width: 790px;
+      }
+    }
+    &#data-analytics {
+      .top_section_sub_title {
+        max-width: 860px;
+      }
+    }
+    &#odoo {
+      .top_section_title {
+        max-width: 1029px;
+      }
+      .top_section_sub_title {
+        max-width: 778px;
+      }
+    }
   }
   .services_tab {
     margin-top: 120px;
-    background-color: #1B1B1B;
+    background-color: #1b1b1b;
     border-radius: 20px;
     padding: 10px;
     height: 90px;
@@ -765,8 +796,35 @@ footer {
       font-size: 18px;
       line-height: normal;
       max-width: 162px;
+      padding: 0 20px;
       &.active {
         color: var(--primary-color);
+      }
+    }
+  }
+  .overview_section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 54px;
+    .img_section {
+      img {
+        object-fit: contain;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      h2 {
+        font-size: 30px;
+        line-height: 100%;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 25px;
       }
     }
   }
