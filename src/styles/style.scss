@@ -806,7 +806,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 0 54px;
+    padding: 0 42px;
     .img_section {
       img {
         object-fit: contain;
@@ -825,6 +825,22 @@ footer {
         font-size: 16px;
         line-height: 20px;
         margin-top: 25px;
+      }
+      ul {
+        list-style: disc;
+        padding-inline-start: 15px;
+        li {
+          line-height: normal;
+        }
+      }
+    }
+  }
+  #full-stack_service {
+    .overview_section {
+      .content {
+        h2 {
+          max-width: 418px;
+        }
       }
     }
   }

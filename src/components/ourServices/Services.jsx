@@ -29,7 +29,7 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
   };
 
   return (
-    <section className={`services_section`}>
+    <section className={`services_section`} id={`${selectedService?.id}_service`}>
       <Container>
         <div className="services_tab">
           {servicesTabs?.map(({ id, text }) => (
@@ -60,6 +60,13 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
               {overview?.paragraphs?.map((para) => (
                 <p key={para}>{t(para)}</p>
               ))}
+              {overview?.isShowUlList && (
+                <ul>
+                  {overview?.ulList?.map((list) => (
+                    <li key={list}>{list}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         )}

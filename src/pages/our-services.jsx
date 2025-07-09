@@ -21,7 +21,7 @@ const servicesData = [
       image: "mobileAppOverviewBg",
       heading: "Mobile Apps to have Real Impact in the Kingdom",
       paragraphs: [
-        "Unleash the power of custom-built mobile solutions made for Saudi businesses. At TOD, we specialize in delivering secure, scalable mobile apps that reflect local user behavior, support Arabic UI, and comply with KSA’s digital and data privacy standards.",
+        "Unleash the power of custom-built mobile solutions made for Saudi businesses. At TOD, we specialize in delivering secure, scalable mobile apps that reflect local user behavior, support Arabic UI, and comply with KSA's digital and data privacy standards.",
         "From digital banking to food delivery, government portals to ecommerce platforms — we develop mobile apps that are more than functional — they are strategic assets in your digital transformation journey.",
       ],
     },
@@ -36,7 +36,13 @@ const servicesData = [
     description: "",
     categories: [],
     techStack: [],
-    overview: {},
+    overview: {
+      image: "fullStackOverview",
+      heading: "Mobile Solutions that Deliver — With Us",
+      paragraphs: [
+        "Unlock the power of mobile with expertly crafted, high-performance applications tailored to your business needs. At TOD, we specialize in designing and developing custom mobile apps that are intuitive, scalable, and built to deliver real results.Whether you're launching a new product, streamlining internal operations, or enhancing customer engagement, our mobile solutions are designed to meet your goals. We work across iOS and Android platforms, using the latest technologies and frameworks to ensure speed, stability, and stunning UI/UX. From strategy and prototyping to development and deployment — we guide you at every step. With TOD, your mobile app isn't just a tool, it's a growth engine.",
+      ],
+    },
   },
   {
     id: "cloud-services",
@@ -48,7 +54,13 @@ const servicesData = [
     description: "",
     categories: [],
     techStack: [],
-    overview: {},
+    overview: {
+      image: "cloudServiceOverview",
+      heading: "Mobile-First Cloud Solutions for the Saudi Market",
+      paragraphs: [
+        "Our mobile solutions are designed to support digital-native users and enterprise workflows across sectors like finance, logistics, and retail. With full Arabic UI support, offline functionality, and data protection by default — your app becomes a strategic business tool.",
+      ],
+    },
   },
   {
     id: "ai-ml",
@@ -60,7 +72,13 @@ const servicesData = [
     description: "",
     categories: [],
     techStack: [],
-    overview: {},
+    overview: {
+      image: "aimlOverview",
+      heading: "Mobile AI for designed specially for Saudi Consumers",
+      paragraphs: [
+        "AI isn't limited to dashboards. We embed it into mobile apps for finance, eCommerce, and logistics across Saudi Arabia — delivering intelligent, real-time decisioning and on-device ML that scales with your business needs.",
+      ],
+    },
   },
   {
     id: "data-analytics",
@@ -72,7 +90,21 @@ const servicesData = [
     description: "",
     categories: [],
     techStack: [],
-    overview: {},
+    overview: {
+      image: "dataAnalyticsOverview",
+      heading: "Why Data Analytics Matters in Saudi Arabia?",
+      paragraphs: [
+        "In a data-rich economy like the Kingdom, successful businesses don't just collect data — they know how to use it.",
+        "Our solutions are designed for Saudi enterprises, enabling:",
+      ],
+      isShowUlList: true,
+      ulList: [
+        "Real-time performance monitoring",
+        "Customer behavior insights across Arabic & English platforms",
+        "Strategic dashboards for executives",
+        "Regulatory reporting tailored to Saudi compliance standards",
+      ],
+    },
   },
   {
     id: "ui-ux",
@@ -84,7 +116,13 @@ const servicesData = [
     description: "",
     categories: [],
     techStack: [],
-    overview: {},
+    overview: {
+      image: "uiuxOverview",
+      heading: "Design an Experience That Speaks to local Users",
+      paragraphs: [
+        "Your digital product isn't global unless it's locally relevant. Let us help you build it right.",
+      ],
+    },
   },
   {
     id: "odoo",
@@ -96,7 +134,15 @@ const servicesData = [
     description: "",
     categories: [],
     techStack: [],
-    overview: {},
+    overview: {
+      image: "odooOverview",
+      heading: "Odoo Solutions That Empower",
+      paragraphs: [
+        "Unlock the full potential of your business operations with expertly tailored Odoo solutions. At TOD, we specialize in implementing and customizing Odoo ERP systems designed to match the unique needs of Saudi businesses",
+        "Whether you're streamlining accounting, optimizing inventory, managing sales, or integrating HR and payroll — our Odoo services are built for speed, flexibility, and compliance with local regulations. We work across industries, supporting Arabic language, RTL layouts, and integrations with Saudi payment gateways and logistics providers",
+        "From discovery and customization to deployment and ongoing support — we guide you at every step. With TOD, your ERP system isn't just software — it's a foundation for sustainable growth in the Kingdom.",
+      ],
+    },
   },
 ];
 
