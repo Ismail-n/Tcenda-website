@@ -1,9 +1,11 @@
+import { useRouter } from "next/router";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const InnovationSection = () => {
   const { t } = useTranslation();
+  const router = useRouter()
   return (
     <section className="innovation_section common_section">
       <Container>
@@ -20,7 +22,7 @@ const InnovationSection = () => {
                 "We design advanced digital solutions tailored to Saudi businesses — simplifying operations, enhancing performance, and supporting Vision 2030 goals."
               )}
             </h3>
-            <button>{t("Read More >>")}</button>
+            <button type="button" onClick={()=>router.push('/about-us')}>{t("Read More >>")}</button>
           </Col>
         </Row>
       </Container>

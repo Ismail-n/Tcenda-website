@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { Container, Modal } from "react-bootstrap";
 import Image from "next/image";
@@ -28,6 +28,20 @@ const Header = () => {
   const handleMenuClick = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  // Stop Scrolling when modal is opened
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <header>

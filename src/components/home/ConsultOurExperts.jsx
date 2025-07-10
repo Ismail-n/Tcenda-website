@@ -44,6 +44,14 @@ const ConsultOurExperts = () => {
                 width={584}
                 height={325}
                 alt={t("Consult with our experts illustration")}
+                className="d-none d-lg-block"
+              />
+              <Image
+                src="/images/home/mobileContactOurExportVector.webp"
+                width={323}
+                height={270}
+                alt={t("Consult with our experts illustration")}
+                className="d-lg-none"
               />
             </div>
           </div>

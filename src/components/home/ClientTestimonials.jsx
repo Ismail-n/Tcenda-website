@@ -49,6 +49,14 @@ const ClientTestimonials = () => {
       perView: 1.5,
       spacing: 30,
     },
+    breakpoints: {
+      "(max-width: 575px)": {
+        slides: {
+          perView: 1.14,
+          spacing: 30,
+        },
+      },
+    },
   });
 
   return (

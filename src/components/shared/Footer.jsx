@@ -24,7 +24,7 @@ const Footer = () => {
     <footer>
       <Container>
         <Row>
-          <Col lg={4}>
+          {/* <Col lg={4}>
             <div className="left_content">
               <div className="logo">
                 <Link href="/">
@@ -58,92 +58,110 @@ const Footer = () => {
                 )}
               </h2>
             </div>
-          </Col>
-          <Col lg={8}>
+          </Col> */}
+          <Col lg={12}>
             <div className="right_content">
-              <div className="inner_section">
-                <div className="single_item service_item">
-                  <h2>{t("Services")}</h2>
-                  <ul>
-                    {footerServices?.map(({ name, href, hash }, index) => (
-                      <li key={index}>
-                        <Link href={`${href}${hash}`}>{t(name)}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="w-100">
-                <div className="top_link">
-                  <div className="single_item">
-                    <h2>{t("Company")}</h2>
-                    <ul>
-                      {footerCompany?.map(({ name, href }, index) => (
-                        <li key={index}>
-                          <Link href={href}>{t(name)}</Link>
-                        </li>
-                      ))}
-                    </ul>
+              <Row>
+                <Col lg={6}>
+                  <div className="inner_section">
+                    <div className="single_item service_item">
+                      <h2>{t("Services")}</h2>
+                      <ul>
+                        {footerServices?.map(({ name, href, hash }, index) => (
+                          <li key={index}>
+                            <Link href={`${href}${hash}`}>{t(name)}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                  <div className="single_item">
-                    <h2>{t("Quick Links")}</h2>
-                    <ul>
-                      {footerQuickLinks?.map(({ name, href }, index) => (
-                        <li key={index}>
-                          <Link href={href}>{t(name)}</Link>
-                        </li>
-                      ))}
-                    </ul>
+                </Col>
+
+                <Col lg={6}>
+                  <div className="top_link">
+                    <div className="single_item company_links">
+                      <h2>{t("Company")}</h2>
+                      <ul>
+                        {footerCompany?.map(({ name, href }, index) => (
+                          <li key={index}>
+                            <Link href={href}>{t(name)}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="single_item quick_links">
+                      <h2>{t("Quick Links")}</h2>
+                      <ul>
+                        {footerQuickLinks?.map(({ name, href }, index) => (
+                          <li key={index}>
+                            <Link href={href}>{t(name)}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div className="conversion_inner">
-                  <h2>{t("Start a Conversation with Us")}</h2>
-                  <div className="get_in_touch_input">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder={t("Email Address")}
-                    />
-                    <button type="button" onClick={handleGetInTouchClick}>
-                      {t("Get in Touch")}
-                    </button>
+                  <div className="conversion_inner">
+                    <h2>{t("Start a Conversation with Us")}</h2>
+                    <div className="get_in_touch_input">
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder={t("Email Address")}
+                      />
+                      <button type="button" onClick={handleGetInTouchClick}>
+                        {t("Get in Touch")}
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </Col>
+              </Row>
             </div>
           </Col>
           <Col lg={12}>
             <div className="g_between connect_on_div common_border">
               <div className="connect_on_inner">
-                <h2>{t("Connect On -")}</h2>
+                <div className="logo">
+                  <Link href="/">
+                    <Image
+                      src="/images/icons/logo.svg"
+                      width={126}
+                      height={24}
+                      alt="logo"
+                      priority
+                    />
+                  </Link>
+                </div>
                 <div className="social_links">
-                  <Link
-                    href="https://linkedin.com"
-                    aria-label="LinkedIn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src="/images/icons/linkedIn.svg"
-                      width={36}
-                      height={36}
-                      alt="LinkedIn"
-                    />
-                  </Link>
-                  <Link
-                    href="https://facebook.com"
-                    aria-label="Facebook"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src="/images/icons/facebook.svg"
-                      width={36}
-                      height={36}
-                      alt="facebook"
-                    />
-                  </Link>
+                  <h2>{t("Follow Us")}</h2>
+                  <div className="icons">
+                    <Link
+                      href="https://linkedin.com"
+                      aria-label="LinkedIn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src="/images/icons/linkedIn.svg"
+                        width={36}
+                        height={36}
+                        alt="LinkedIn"
+                      />
+                    </Link>
+                    <Link
+                      href="https://facebook.com"
+                      aria-label="Facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src="/images/icons/facebook.svg"
+                        width={36}
+                        height={36}
+                        alt="facebook"
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
               <Image
@@ -151,6 +169,7 @@ const Footer = () => {
                 width={100}
                 height={67}
                 alt="vision"
+                className="vision_img"
               />
             </div>
           </Col>

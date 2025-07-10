@@ -137,8 +137,8 @@ const servicesData = [
         { icon: "fullStack/laravel", title: "Laravel" },
         { icon: "fullStack/php", title: "PHP" },
         { icon: "fullStack/python", title: "Python" },
-        { icon: "fullStack/mongoDb", title: "MongoDB" },
-        { icon: "fullStack/wordpress", title: "WordPress" },
+        { icon: "fullStack/mongoDB", title: "MongoDB" },
+        { icon: "fullStack/wordPress", title: "WordPress" },
       ],
     },
     overview: {

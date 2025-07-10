@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 import { industries } from "@/data/homeData";
+import { useKeenSlider } from "keen-slider/react";
 
 const Industries = () => {
   const { t } = useTranslation();
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const [sliderRef, instanceRef] = useKeenSlider({
+    slides: {
+      perView: 1.1,
+      spacing: 16,
+    },
+    loop: false,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+  });
 
   return (
     <section className="industries common_section">
@@ -21,11 +34,42 @@ const Industries = () => {
             )}
           </p>
         </div>
-        <Row className="industries_row">
+        {/* Desktop Grid View */}
+        <Row className="industries_row d-none d-md-flex">
           {industries.map((item) => (
             <IndustryCard item={item} key={item.title} />
           ))}
         </Row>
+
+        {/* Mobile Slider View */}
+        <div className="d-block d-md-none industries_row">
+          <div ref={sliderRef} className="keen-slider">
+            {industries.map((item) => (
+              <div className="keen-slider__slide" key={item.title}>
+                <div className="single_industry">
+                  <Image
+                    src={`/images/icons/industries/${item.icon}.svg`}
+                    width={64}
+                    height={64}
+                    alt={t(item.title)}
+                  />
+                  <h3>{t(item.title)}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Dots */}
+          <div className="common_dots">
+            {industries.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => instanceRef.current?.moveToIdx(idx)}
+                className={`dot ${currentSlide === idx ? "active" : ""}`}
+              />
+            ))}
+          </div>
+        </div>
       </Container>
     </section>
   );

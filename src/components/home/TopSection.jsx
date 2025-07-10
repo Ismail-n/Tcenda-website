@@ -44,6 +44,15 @@ const TopSection = () => {
           height={421}
           alt="bg image"
           priority
+          className="d-none d-lg-block"
+        />
+        <Image
+          src={"/images/home/mobileTopBg.webp"}
+          width={393}
+          height={332}
+          alt="bg image"
+          className="d-lg-none"
+          priority
         />
       </div>
     </section>

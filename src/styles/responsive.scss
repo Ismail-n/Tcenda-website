@@ -3,7 +3,53 @@
 .modal-backdrop.show {
   opacity: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 575px) {
+  // GLOBAL/COMMON START
+  .container {
+    max-width: 345px;
+  }
+
+  .top_section_title {
+    max-width: 100%;
+    font-size: 36px;
+    line-height: 100%;
+  }
+  .main_btn {
+    padding: 9px 31px;
+    font-size: 18px;
+  }
+
+  .common_section {
+    margin: 40px 0;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+  .sub_title_2_div {
+    margin-top: 20px;
+    .sub_title_2 {
+      line-height: 20px;
+    }
+  }
+  .sub_title {
+    margin-top: 15px;
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .service_btn {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 18px;
+    svg {
+      width: 20px;
+    }
+  }
+
+  // GLOBAL/COMMON END
+
+  // HEADER START
   .mobile_menu_modal {
     min-height: 100vh;
     .modal_header {
@@ -12,6 +58,7 @@
       justify-content: space-between;
       .close_icon {
         margin-inline-end: 10px;
+        cursor: pointer;
       }
     }
     .modal-content {
@@ -48,7 +95,9 @@
         width: 125px;
         height: 46px;
         border-color: var(--text-color);
+        margin-top: 15px;
       }
     }
   }
+  // HEADER END
 }
