@@ -1,5 +1,6 @@
 import { servicesTabs } from "@/data/servicesData";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React, { useEffect, useState, useTransition } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
@@ -10,24 +11,43 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
     servicesData?.[0]?.id
   );
 
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath.includes("#")) {
+      const id = router.asPath.split("#")[1]; // e.g., "full-stack"
+      handleTabChange(id);
+
+      // Optional scroll (in case it's not already scrolled by hash)
+      const el = document.getElementById(id);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    }
+  }, []);
+
   const { overview, categories, techStack } = selectedService || {};
 
   const handleTabChange = (id) => {
     setActiveServiceTab(id);
+
     const newService =
       servicesData?.find((service) => service?.id === id) || {};
     setSelectedService(newService);
-  };
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [selectedService]);
+    // ✅ Update URL hash without reloading the page
+    // router.replace(`#${id}`, undefined, { shallow: true });
+  };
+  
+
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }, [selectedService]);
 
   return (
-    <section
-      className={`services_section`}
-      id={`${selectedService?.id}_service`}
-    >
+    <section className={`services_section`} id={`${selectedService?.id}`}>
       <Container>
         <div className="services_tab">
           {servicesTabs?.map(({ id, text }) => (

@@ -1,33 +1,13 @@
+import {
+  footerCompany,
+  footerQuickLinks,
+  footerServices,
+} from "@/data/commonData";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-
-const services = [
-  { name: "Mobile App Development", href: "#" },
-  { name: "Full Stack Development", href: "#" },
-  { name: "AI/ML", href: "#" },
-  { name: "Cloud & DevOps", href: "#" },
-  { name: "ERP Solutions", href: "#" },
-  { name: "Odoo Customization", href: "#" },
-  { name: "UI/UX Design", href: "#" },
-  { name: "Cybersecurity", href: "#" },
-];
-
-const company = [
-  { name: "About Us", href: "#" },
-  { name: "Portfolio", href: "#" },
-  { name: "Services", href: "#" },
-  { name: "Resources", href: "#" },
-];
-
-const quickLinks = [
-  { name: "Career", href: "#" },
-  { name: "Contact Us", href: "#" },
-  { name: "Become a Partner", href: "#" },
-  { name: "Blogs", href: "#" },
-];
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -85,9 +65,9 @@ const Footer = () => {
                 <div className="single_item service_item">
                   <h2>{t("Services")}</h2>
                   <ul>
-                    {services?.map(({ name, href }, index) => (
+                    {footerServices?.map(({ name, href, hash }, index) => (
                       <li key={index}>
-                        <Link href={href}>{t(name)}</Link>
+                        <Link href={`${href}${hash}`}>{t(name)}</Link>
                       </li>
                     ))}
                   </ul>
@@ -98,7 +78,7 @@ const Footer = () => {
                   <div className="single_item">
                     <h2>{t("Company")}</h2>
                     <ul>
-                      {company?.map(({ name, href }, index) => (
+                      {footerCompany?.map(({ name, href }, index) => (
                         <li key={index}>
                           <Link href={href}>{t(name)}</Link>
                         </li>
@@ -108,7 +88,7 @@ const Footer = () => {
                   <div className="single_item">
                     <h2>{t("Quick Links")}</h2>
                     <ul>
-                      {quickLinks?.map(({ name, href }, index) => (
+                      {footerQuickLinks?.map(({ name, href }, index) => (
                         <li key={index}>
                           <Link href={href}>{t(name)}</Link>
                         </li>
