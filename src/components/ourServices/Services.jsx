@@ -1,17 +1,8 @@
+import { servicesTabs } from "@/data/servicesData";
 import Image from "next/image";
-import React, { useState, useTransition } from "react";
+import React, { useEffect, useState, useTransition } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-
-const servicesTabs = [
-  { id: "mobile-app", text: "Mobile App Development" },
-  { id: "full-stack", text: "Full-Stack Development" },
-  { id: "cloud-services", text: "Cloud Services" },
-  { id: "ai-ml", text: "AI/ML" },
-  { id: "data-analytics", text: "Data Analytics" },
-  { id: "ui-ux", text: "UI/UX Design & Prototyping" },
-  { id: "odoo", text: "Odoo Development & Customisation" },
-];
 
 const Services = ({ selectedService, servicesData, setSelectedService }) => {
   const { t } = useTranslation();
@@ -28,6 +19,10 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
     setSelectedService(newService);
   };
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [selectedService]);
+
   return (
     <section
       className={`services_section`}
@@ -41,6 +36,7 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
               key={id}
               className={`${id === activeServiceTab ? "active" : ""}`}
               onClick={() => handleTabChange(id)}
+              aria-label={`${t("Switch to")} ${t(text)} ${t("services")}`}
             >
               {t(text)}
             </button>
@@ -100,7 +96,7 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
               {overview?.isShowUlList && (
                 <ul>
                   {overview?.ulList?.map((list) => (
-                    <li key={list}>{list}</li>
+                    <li key={list}>{t(list)}</li>
                   ))}
                 </ul>
               )}
@@ -115,7 +111,7 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
 export default Services;
 
 const ServiceTechCard = ({ item }) => {
-  const { icon, title, subtitle } = item || {};
+  const { icon, title, subtitle, titleMaxWidth } = item || {};
   const { t } = useTranslation();
   return (
     <Col lg={4}>
@@ -126,7 +122,9 @@ const ServiceTechCard = ({ item }) => {
           height={48}
           alt={title}
         />
-        <h2>{t(title)}</h2>
+        <h2 style={{ maxWidth: titleMaxWidth ? titleMaxWidth : "auto" }}>
+          {t(title)}
+        </h2>
         <p>{t(subtitle)}</p>
       </div>
     </Col>

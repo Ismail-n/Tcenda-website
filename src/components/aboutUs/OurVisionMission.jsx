@@ -1,24 +1,8 @@
+import { ourVisionMission } from "@/data/aboutUsData";
 import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-
-const ourVisionMission = [
-  {
-    id: 1,
-    title: "Our Vision",
-    description:
-      "To be a leading force in digital transformation, helping businesses thrive through smart, secure, and scalable technology.",
-    className: "left",
-  },
-  {
-    id: 2,
-    title: "Our Mission",
-    description:
-      "To empower organizations with innovative IT solutions that solve real-world problems, enhance performance, and drive long-term growth.",
-    className: "right",
-  },
-];
 
 const OurVisionMission = () => {
   const { t } = useTranslation();

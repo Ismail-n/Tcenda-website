@@ -4,15 +4,7 @@ import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-
-const industries = [
-  { icon: "foodBeverage", title: "Food & Beverage" },
-  { icon: "eCommerce", title: "eCommerce & Retail" },
-  { icon: "transportation", title: "Transportation" },
-  { icon: "realEstate", title: "Real Estate" },
-  { icon: "government", title: "Government" },
-  { icon: "healthCare", title: "Healthcare" },
-];
+import { industries } from "@/data/homeData";
 
 const Industries = () => {
   const { t } = useTranslation();

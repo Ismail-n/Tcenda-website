@@ -6,33 +6,7 @@ import SubTitle from "../common/SubTitle";
 import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-
-const testimonials = [
-  {
-    image: "client1",
-    name: "Ayaan Malik",
-    role: "CTO, NexaCorp",
-    message: `Partnering with TOD was one of the best decisions we've made for our digital growth. From the initial consultation to final deployment, their team demonstrated a deep understanding of our business goals and translated them into a powerful, user-friendly solution. The communication throughout the project was clear, timely, and transparent. They took the time to understand our customers, suggested innovative features, and delivered on every promise—on time and within budget. Today, our platform runs more smoothly, our users are more engaged, and our internal team is more efficient. TOD didn't just build us a solution—they helped us build a better business.`,
-  },
-  {
-    image: "client2",
-    name: "John Deo",
-    role: "CTO, NexaCorp",
-    message: `Partnering with TOD was one of the best decisions we've made for our digital growth. From the initial consultation to final deployment, their team demonstrated a deep understanding of our business goals and translated them into a powerful, user-friendly solution. The communication throughout the project was clear, timely, and transparent. They took the time to understand our customers, suggested innovative features, and delivered on every promise—on time and within budget. Today, our platform runs more smoothly, our users are more engaged, and our internal team is more efficient. TOD didn't just build us a solution—they helped us build a better business.`,
-  },
-  {
-    image: "client2",
-    name: "John Deo",
-    role: "CTO, NexaCorp",
-    message: `Partnering with TOD was one of the best decisions we've made for our digital growth. From the initial consultation to final deployment, their team demonstrated a deep understanding of our business goals and translated them into a powerful, user-friendly solution. The communication throughout the project was clear, timely, and transparent. They took the time to understand our customers, suggested innovative features, and delivered on every promise—on time and within budget. Today, our platform runs more smoothly, our users are more engaged, and our internal team is more efficient. TOD didn't just build us a solution—they helped us build a better business.`,
-  },
-  {
-    image: "client2",
-    name: "John Deo",
-    role: "CTO, NexaCorp",
-    message: `Partnering with TOD was one of the best decisions we've made for our digital growth. From the initial consultation to final deployment, their team demonstrated a deep understanding of our business goals and translated them into a powerful, user-friendly solution. The communication throughout the project was clear, timely, and transparent. They took the time to understand our customers, suggested innovative features, and delivered on every promise—on time and within budget. Today, our platform runs more smoothly, our users are more engaged, and our internal team is more efficient. TOD didn't just build us a solution—they helped us build a better business.`,
-  },
-];
+import { testimonials } from "@/data/homeData";
 
 const ClientTestimonials = () => {
   const {

@@ -6,54 +6,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-
-const services = [
-  {
-    icon: "mobileApp",
-    title: "Mobile App Development",
-    description:
-      "We transform your ideas into sleek, high-performance mobile apps built for scale. Whether iOS or Android, our solutions are tailored to deliver seamless user experiences and drive business results.",
-  },
-  {
-    icon: "web",
-    title: "Full Stack Development",
-    description:
-      "From complex enterprise systems to cloud-based SaaS platforms, we build robust, scalable software that simplifies operations, enhances agility, and supports long-term growth.",
-  },
-  {
-    icon: "cloudService",
-    title: "Cloud Services",
-    description:
-      "Secure your digital ecosystem with our end-to-end cybersecurity services—vulnerability assessments, threat monitoring, data protection, and regulatory compliance tailored to your industry.",
-    maxTitleWidth: 115,
-  },
-  {
-    icon: "ai",
-    title: "AI & Machine Learning",
-    description:
-      "Leverage the power of AI to make smarter decisions, personalize customer experiences, and automate critical workflows. Our solutions turn data into intelligent action.",
-  },
-  {
-    icon: "dataAnalytics",
-    title: "Data Analytics",
-    description:
-      "Make sense of your data with powerful dashboards, real-time reporting, and predictive analytics. We help you uncover insights that inform strategy and improve performance.",
-    maxTitleWidth: 115,
-  },
-  {
-    icon: "ui",
-    title: "UI/UX Design and Prototyping",
-    description:
-      "We design user-focused digital interfaces and experiences that combine visual appeal with ease of use, enhancing engagement and increasing conversion rates.",
-    maxTitleWidth: 211,
-  },
-  {
-    icon: "odoo",
-    title: "Odoo Development and Customization",
-    description:
-      "Adapt Odoo to your business with tailored modules, features, and workflows for better efficiency and control.",
-  },
-];
+import { services } from "@/data/homeData";
 
 const OurServices = () => {
   const { t } = useTranslation();
