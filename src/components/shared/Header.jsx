@@ -1,6 +1,6 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { Container } from "react-bootstrap";
+import { Container, Modal } from "react-bootstrap";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
@@ -9,6 +9,8 @@ import { usePathname } from "next/navigation";
 const Header = () => {
   const { t } = useTranslation();
   const pathname = usePathname();
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const homeLinks = useMemo(
     () => [
@@ -22,6 +24,10 @@ const Header = () => {
   );
 
   const isActive = (href) => pathname === href || pathname === href + "/";
+
+  const handleMenuClick = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <header>
@@ -38,7 +44,10 @@ const Header = () => {
               />
             </Link>
           </div>
-          <nav aria-label="Main navigation" className="menu_links">
+          <nav
+            aria-label="Main navigation"
+            className="menu_links d-none d-lg-flex"
+          >
             <ul>
               {homeLinks?.map(({ href, name }, index) => (
                 <li key={index}>
@@ -50,8 +59,64 @@ const Header = () => {
             </ul>
             <LanguageSwitcher />
           </nav>
+          {/* Mobile Menu Icon */}
+          <div className="mobile_menu_icon d-lg-none" onClick={handleMenuClick}>
+            {isMobileMenuOpen ? (
+              <Image
+                src={"/images/icons/close.svg"}
+                width={24}
+                height={24}
+                alt="menu"
+              />
+            ) : (
+              <Image
+                src={"/images/icons/menu.svg"}
+                width={40}
+                height={37}
+                alt="menu"
+              />
+            )}
+          </div>
         </div>
       </Container>
+      <Modal
+        show={isMobileMenuOpen}
+        onHide={() => setIsMobileMenuOpen(false)}
+        fullscreen
+        className="mobile_menu_modal"
+      >
+        <div className="modal_header">
+          <Link href="/">
+            <Image
+              src="/images/icons/logo.svg"
+              width={126}
+              height={24}
+              alt="logo"
+              priority
+            />
+          </Link>
+          <Image
+            src={"/images/icons/close.svg"}
+            width={24}
+            height={24}
+            alt="menu"
+            className="close_icon"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+        </div>
+        <nav aria-label="Main navigation" className="mobile_menu_links">
+          <ul>
+            {homeLinks?.map(({ href, name }, index) => (
+              <li key={index}>
+                <Link href={href} className={isActive(href) ? "active" : ""}>
+                  {t(name)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <LanguageSwitcher />
+        </nav>
+      </Modal>
     </header>
   );
 };

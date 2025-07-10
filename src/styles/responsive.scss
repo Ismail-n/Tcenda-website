@@ -1,0 +1,54 @@
+// HEADER RESPONSIVE
+// HEADER
+.modal-backdrop.show {
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .mobile_menu_modal {
+    min-height: 100vh;
+    .modal_header {
+      padding: 43px 25px;
+      display: flex;
+      justify-content: space-between;
+      .close_icon {
+        margin-inline-end: 10px;
+      }
+    }
+    .modal-content {
+      background-color: var(--bg-color);
+    }
+    .mobile_menu_links {
+      width: 300px;
+      max-width: 100%;
+      margin: 0 auto;
+      margin-top: 60px;
+      ul li a,
+      button {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 46px;
+        margin: 10px 0;
+        color: var(--text-color);
+        border-radius: 100px;
+      }
+      a {
+        &.active,
+        &:hover {
+          background: var(--common-gradient-color);
+        }
+      }
+      button {
+        background-color: transparent;
+        display: block;
+        margin: auto;
+        width: 125px;
+        height: 46px;
+        border-color: var(--text-color);
+      }
+    }
+  }
+}

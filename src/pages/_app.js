@@ -5,6 +5,7 @@ import "@/styles/globals.scss";
 import "@/styles/style.scss";
 import "@/styles/titles.scss";
 import "@/styles/fonts.scss";
+import "@/styles/responsive.scss";
 
 export default function App({ Component, pageProps }) {
   return (

@@ -112,6 +112,12 @@ const services = [
       "From complex enterprise systems to cloud-based SaaS platforms, we build robust, scalable software that simplifies operations, enhances agility, and supports long-term growth.",
   },
   {
+    icon: "odoo",
+    title: "Odoo Development and Customization",
+    description:
+      "Adapt Odoo to your business with tailored modules, features, and workflows for better efficiency and control.",
+  },
+  {
     icon: "cloudService",
     title: "Cloud Services",
     description:
@@ -137,12 +143,6 @@ const services = [
     description:
       "We design user-focused digital interfaces and experiences that combine visual appeal with ease of use, enhancing engagement and increasing conversion rates.",
     maxTitleWidth: 211,
-  },
-  {
-    icon: "odoo",
-    title: "Odoo Development and Customization",
-    description:
-      "Adapt Odoo to your business with tailored modules, features, and workflows for better efficiency and control.",
   },
 ];
 
