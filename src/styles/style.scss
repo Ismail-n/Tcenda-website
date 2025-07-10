@@ -21,6 +21,8 @@ header {
         font-weight: 700;
         border-radius: 100px;
         transition: background 0.3s ease;
+        display: inline-block;
+        vertical-align: middle;
         &.active {
           background: var(--hover-gradient);
         }
@@ -62,7 +64,7 @@ footer {
     display: flex;
     gap: 68px;
     .service_item {
-      min-width: 200px;
+      min-width: 220px;
     }
     .single_item {
       h2 {
@@ -748,20 +750,151 @@ footer {
         height: 100%;
       }
     }
+    &#mobile-app {
+      .top_section_title {
+        max-width: 953px;
+      }
+      .top_section_sub_title {
+        max-width: 510px;
+      }
+    }
+    &#cloud-services {
+      .top_section_title {
+        max-width: 950px;
+      }
+    }
+    &#ai-ml {
+      .top_section_sub_title {
+        max-width: 790px;
+      }
+    }
+    &#data-analytics {
+      .top_section_sub_title {
+        max-width: 860px;
+      }
+    }
+    &#odoo {
+      .top_section_title {
+        max-width: 1029px;
+      }
+      .top_section_sub_title {
+        max-width: 778px;
+      }
+    }
   }
   .services_tab {
-    background-color: var(--black-color);
-    border: 20px;
+    margin-top: 120px;
+    background-color: #1b1b1b;
+    border-radius: 20px;
     padding: 10px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     button {
       border: unset;
-      background-color: var(--black-color);
+      background-color: transparent;
       color: var(--text-color);
       font-size: 18px;
       line-height: normal;
       max-width: 162px;
+      padding: 0 20px;
+      &.active {
+        color: var(--primary-color);
+      }
+    }
+  }
+  .overview_section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 42px;
+    .img_section {
+      img {
+        object-fit: contain;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      h2 {
+        font-size: 30px;
+        line-height: 100%;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 25px;
+      }
+      ul {
+        list-style: disc;
+        padding-inline-start: 15px;
+        li {
+          line-height: normal;
+        }
+      }
+    }
+  }
+  #full-stack {
+    .overview_section {
+      .content {
+        h2 {
+          max-width: 418px;
+        }
+      }
+    }
+  }
+  .services_inner,
+  .tech_stack_titles {
+    padding-top: 50px;
+    padding-bottom: 23px;
+
+    .top_section_title {
+      max-width: 100%;
+    }
+  }
+  .service_categories {
+    padding: 0 20px;
+    .single_tech_card {
+      margin-top: 25px;
+      padding: 25px;
+      background-color: #1b1b1b;
+      border-radius: 20px;
+      min-height: 341px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        font-size: 30px;
+        line-height: 100%;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 15px;
+      }
+    }
+  }
+  .tech_stacks {
+    padding: 0 72px;
+    .single_tech {
+      margin-top: 25px;
+      min-height: 151px;
+      border: 1px solid var(--common-border-color);
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      h2 {
+        font-size: 20px;
+        line-height: 100%;
+        text-align: center;
+      }
     }
   }
 }
@@ -919,7 +1052,7 @@ footer {
       .contact_info_section {
         position: relative;
         color: white;
-        padding: 60px 20px 150px;
+        padding: 40px 50px;
         overflow: hidden;
       }
 
@@ -929,7 +1062,7 @@ footer {
 
       .headline {
         font-size: 48px;
-        margin-bottom: 30px;
+        margin-bottom: 7px;
         font-weight: 600;
         max-width: 397px;
       }
@@ -941,7 +1074,10 @@ footer {
 
       h5 {
         font-size: 20px;
-        margin-bottom: 8px;
+        margin-bottom: 15px;
+      }
+      .location_block {
+        margin-bottom: 25px;
       }
 
       .icon_text {

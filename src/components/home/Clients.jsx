@@ -4,8 +4,7 @@ import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-
-const clientsLogo = ["HM", "ashjar", "send", "sign", "ease", "appex"];
+import { clientsLogo } from "@/data/homeData";
 
 const Clients = () => {
   const { t } = useTranslation();

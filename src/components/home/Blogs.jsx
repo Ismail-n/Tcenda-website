@@ -4,33 +4,7 @@ import { useTranslation } from "react-i18next";
 import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
 import Image from "next/image";
-
-const blogPosts = [
-  {
-    image: "blog1",
-    title: "How AI is Driving Innovation in Middle east",
-    description:
-      "Explore real-world applications of AI and how businesses are leveraging it to automate tasks, enhance customer experience, and make smarter decisions.",
-    author: "John Deo",
-    date: "26 June 2025",
-  },
-  {
-    image: "blog2",
-    title: "Cybersecurity Trends in 2025",
-    description:
-      "Understand the latest cybersecurity threats, tools, and best practices to keep your data and infrastructure safe in a rapidly evolving digital world.",
-    author: "John Deo",
-    date: "26 June 2025",
-  },
-  {
-    image: "blog3",
-    title: "Mobile-First Digital Strategy",
-    description:
-      "Explore real-world applications of AI and how businesses are leveraging it to automate tasks, enhance customer experience, and make smarter decisions.",
-    author: "John Deo",
-    date: "26 June 2025",
-  },
-];
+import { blogPosts } from "@/data/homeData";
 
 const Blogs = () => {
   const { t } = useTranslation();

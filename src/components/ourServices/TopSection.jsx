@@ -3,19 +3,15 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
-const TopSection = () => {
+const TopSection = ({ selectedService }) => {
   const { t } = useTranslation();
   return (
-    <section className="top_section">
+    <section className="top_section" id={selectedService.id}>
       <Container>
         <div className="top_row text-center">
-          <h1 className="top_section_title">
-            {t("Innovative Services to Power Your Growth")}
-          </h1>
+          <h1 className="top_section_title">{t(selectedService?.mainTitle)}</h1>
           <p className="top_section_sub_title">
-            {t(
-              "Unlock new possibilities with us — through cutting-edge technology, expert guidance, and solutions tailored to your business goals."
-            )}
+            {t(selectedService?.mainSubTitle)}
           </p>
         </div>
       </Container>

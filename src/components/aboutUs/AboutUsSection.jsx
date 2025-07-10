@@ -4,37 +4,7 @@ import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-
-const riseValues = [
-  {
-    id: 1,
-    letter: "R",
-    title: "Revolutionise Local Industries",
-    description:
-      "Empowering Saudi businesses with AI, custom apps, and digital automation across key sectors.",
-  },
-  {
-    id: 2,
-    letter: "I",
-    title: "Innovate with Purpose",
-    description:
-      "We turn innovation into impact with smart, efficient, ROI-driven solutions.",
-  },
-  {
-    id: 3,
-    letter: "S",
-    title: "Strengthen National Vision",
-    description:
-      "Driving Vision 2030 with smart city, e-governance, & sector-driven digital solutions.",
-  },
-  {
-    id: 4,
-    letter: "E",
-    title: "Elevate Service Standards",
-    description:
-      "We unite global quality with local insight, delivering trusted, long-term digital partnerships.",
-  },
-];
+import { riseValues } from "@/data/aboutUsData";
 
 const AboutUsSection = () => {
   const { t } = useTranslation();
@@ -87,7 +57,7 @@ const RiseCard = ({ item }) => {
   const { letter, title, description } = item || {};
   return (
     <Col lg={3} md={6}>
-      <article  className="single_rise">
+      <article className="single_rise">
         <Image
           src={`/images/aboutUs/${letter}.svg`}
           width={102}

@@ -4,41 +4,7 @@ import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-
-const serviceModels = [
-  {
-    icon: "project",
-    title: "Fixed Scope Projects",
-    description:
-      "Ideal for well-scoped initiatives with clear timelines and budgets",
-    points: [
-      "Skilled experts across all technologies and domains",
-      "Transparent execution with detailed milestones",
-      "Time-bound delivery that ensures long-term impact",
-    ],
-  },
-  {
-    icon: "managedService",
-    title: "Managed Services",
-    description: "Perfect for businesses seeking round-the-clock reliability",
-    points: [
-      "24/7 monitoring for seamless uptime",
-      "Cost-efficient innovation for evolving needs",
-      "Scalable support tailored to your operational goals",
-    ],
-  },
-  {
-    icon: "staff",
-    title: "Staff Augmentation",
-    description:
-      "Best suited for teams needing expert skills without long hiring cycles",
-    points: [
-      "On-demand specialists across roles and tech stacks",
-      "Seamless integration into your existing teams",
-      "Transparent management and measurable outcomes",
-    ],
-  },
-];
+import { serviceModels } from "@/data/homeData";
 
 const EngagementModels = () => {
   const { t } = useTranslation();

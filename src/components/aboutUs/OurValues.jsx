@@ -1,46 +1,8 @@
+import { coreValues } from "@/data/aboutUsData";
 import Image from "next/image";
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-
-const coreValues = [
-  {
-    id: 1,
-    icon: "innovation",
-    title: "Innovation with Purpose",
-    description: "We build smart solutions that solve real problems.",
-  },
-  {
-    id: 2,
-    icon: "customerFirstApproach",
-    title: "Customer-First Approach",
-    description: "Your goals guide everything we create.",
-  },
-  {
-    id: 3,
-    icon: "quality",
-    title: "Quality-Driven",
-    description: "We focus on performance, reliability, and clean design.",
-  },
-  {
-    id: 4,
-    icon: "agile",
-    title: "Agile & Adaptive",
-    description: "We focus on performance, reliability, and clean design.",
-  },
-  {
-    id: 5,
-    icon: "transparent",
-    title: "Transparent & Honest",
-    description: "Clear communication, always.",
-  },
-  {
-    id: 6,
-    icon: "customerFirst",
-    title: "Customer First",
-    description: "We listen, respond, and deliver with integrity.",
-  },
-];
 
 const OurValues = () => {
   const { t } = useTranslation();
