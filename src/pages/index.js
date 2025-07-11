@@ -23,8 +23,8 @@ export default function Home() {
         <Industries />
         <Clients />
         <ConsultOurExperts />
-        <Blogs />
-        <ClientTestimonials />
+        {/* <Blogs /> */}
+        {/* <ClientTestimonials /> */}
       </main>
     </>
   );

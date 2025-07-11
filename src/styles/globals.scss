@@ -59,6 +59,11 @@ a {
   transition: background 0.3s ease, padding 0.3s ease, font-size 0.3s ease;
 }
 
+button:disabled{
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
 // Stop Body Scrolling When needed
 .no-scroll {
   overflow: hidden !important;

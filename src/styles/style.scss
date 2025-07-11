@@ -22,12 +22,14 @@ header {
         transition: background 0.3s ease;
         display: inline-block;
         vertical-align: middle;
-        &.active {
-          background: var(--hover-gradient);
-        }
         &:hover {
           text-decoration: underline;
           color: var(--primary-color);
+        }
+        &.active {
+          background: var(--hover-gradient);
+          text-decoration: unset;
+          color: var(--text-color);
         }
       }
     }
@@ -58,7 +60,7 @@ header {
   }
 }
 footer {
-  padding-top: 80px;
+  // padding-top: 80px;
   @media (max-width: 575px) {
     padding-top: 30px;
   }

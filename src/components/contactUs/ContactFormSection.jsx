@@ -32,6 +32,7 @@ const ContactFormSection = () => {
   const SERVICE_ID = "service_m1tsr4h";
   const TEMPLATE_ID = "template_6wl6bat";
   const PUBLIC_KEY = "W7aMVGuT0tr6SpaBw";
+
   const handleSubmit = (values, { resetForm }) => {
     emailjs
       .send(SERVICE_ID, TEMPLATE_ID, values, PUBLIC_KEY)

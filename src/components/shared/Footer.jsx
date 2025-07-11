@@ -8,20 +8,58 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
   const { t } = useTranslation();
   const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleGetInTouchClick = () => {
-    if (!email.trim()) return alert("Email is required.");
+    if (!email.trim()) return toast.error("Email is required.");
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
-      return alert("Please enter a valid email.");
-    console.log("Get in Touch Email:", email);
+      return toast.error("Please enter a valid email.");
+
+    const SERVICE_ID = "service_m1tsr4h";
+    const TEMPLATE_ID = "template_n7iidwo";
+    const PUBLIC_KEY = "W7aMVGuT0tr6SpaBw";
+
+    setIsLoading(true);
+    emailjs
+      .send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          user_email: email,
+          to_name: "Tod",
+          from_site: "TOD Website",
+          time: new Date().toLocaleString(),
+        },
+        PUBLIC_KEY
+      )
+      .then((result) => {
+        const { status, text } = result || {};
+        if (status) {
+          toast.success("Message sent successfully!");
+          setEmail("");
+        } else {
+          toast.error(text);
+        }
+      })
+      .catch((error) => {
+        console.error("Email sending failed:", error);
+        toast.error("Failed to send message. Please try again."); // Error toast
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   return (
     <footer>
+      <ToastContainer position="top-right" autoClose={3000} />
       <Container>
         <Row>
           {/* <Col lg={4}>
@@ -109,7 +147,11 @@ const Footer = () => {
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder={t("Email Address")}
                       />
-                      <button type="button" onClick={handleGetInTouchClick}>
+                      <button
+                        type="button"
+                        disabled={isLoading}
+                        onClick={handleGetInTouchClick}
+                      >
                         {t("Get in Touch")}
                       </button>
                     </div>

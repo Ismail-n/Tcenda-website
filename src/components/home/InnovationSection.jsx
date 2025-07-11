@@ -19,7 +19,7 @@ const InnovationSection = () => {
           <Col lg={6}>
             <h3>
               {t(
-                "We design advanced digital solutions tailored to Saudi businesses — simplifying operations, enhancing performance, and supporting Vision 2030 goals."
+                "We design & develop advanced digital solutions tailored to Saudi businesses — simplifying operations, enhancing performance, and supporting Vision 2030 goals."
               )}
             </h3>
             <button type="button" onClick={()=>router.push('/about-us')}>{t("Read More >>")}</button>
