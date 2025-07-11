@@ -138,7 +138,78 @@ const Footer = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="conversion_inner">
+                  <div className="connect_on_div">
+                    <div className="connect_on_inner">
+                      <div className="social_links">
+                        <h2>{t("Follow Us")}</h2>
+                        <div className="icons">
+                          <Link
+                            href="https://www.linkedin.com/company/tod-%D8%B7%D9%88%D8%AF"
+                            aria-label="LinkedIn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Image
+                              src="/images/icons/linkedIn.svg"
+                              width={36}
+                              height={36}
+                              alt="LinkedIn"
+                            />
+                          </Link>
+                          <Link
+                            href="https://facebook.com"
+                            aria-label="Facebook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Image
+                              src="/images/icons/facebook.svg"
+                              width={36}
+                              height={36}
+                              alt="facebook"
+                            />
+                          </Link>
+                          <Link
+                            href="https://facebook.com"
+                            aria-label="Facebook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Image
+                              src="/images/icons/instagram.svg"
+                              width={36}
+                              height={36}
+                              alt="facebook"
+                            />
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="connect_on_inner">
+                        <div className="logo">
+                          <Link href="/">
+                            <Image
+                              src="/images/icons/logo.svg"
+                              width={126}
+                              height={24}
+                              alt="logo"
+                              priority
+                            />
+                          </Link>
+                        </div>
+                      </div>
+                      <Image
+                        src="/images/icons/vision2030.png"
+                        width={100}
+                        height={67}
+                        alt="vision"
+                        className="vision_img d-blo"
+                      />
+                    </div>
+                  </div>
+
+                  {/* <div className="conversion_inner">
                     <h2>{t("Start a Conversation with Us")}</h2>
                     <div className="get_in_touch_input">
                       <input
@@ -155,79 +226,12 @@ const Footer = () => {
                         {t("Get in Touch")}
                       </button>
                     </div>
-                  </div>
+                  </div> */}
                 </Col>
               </Row>
             </div>
           </Col>
-          <Col lg={12}>
-            <div className="g_between connect_on_div common_border">
-              <div className="connect_on_inner">
-                <div className="logo">
-                  <Link href="/">
-                    <Image
-                      src="/images/icons/logo.svg"
-                      width={126}
-                      height={24}
-                      alt="logo"
-                      priority
-                    />
-                  </Link>
-                </div>
-                <div className="social_links">
-                  <h2>{t("Follow Us")}</h2>
-                  <div className="icons">
-                    <Link
-                      href="https://www.linkedin.com/company/tod-%D8%B7%D9%88%D8%AF"
-                      aria-label="LinkedIn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Image
-                        src="/images/icons/linkedIn.svg"
-                        width={36}
-                        height={36}
-                        alt="LinkedIn"
-                      />
-                    </Link>
-                    <Link
-                      href="https://facebook.com"
-                      aria-label="Facebook"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Image
-                        src="/images/icons/facebook.svg"
-                        width={36}
-                        height={36}
-                        alt="facebook"
-                      />
-                    </Link>
-                    <Link
-                      href="https://facebook.com"
-                      aria-label="Facebook"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Image
-                        src="/images/icons/instagram.svg"
-                        width={36}
-                        height={36}
-                        alt="facebook"
-                      />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <Image
-                src="/images/icons/vision2030.png"
-                width={100}
-                height={67}
-                alt="vision"
-                className="vision_img"
-              />
-            </div>
-          </Col>
+
           <Col lg={12}>
             <div className="reserved_row">
               <h2>© 2025 Tod All Rights Reserved.</h2>

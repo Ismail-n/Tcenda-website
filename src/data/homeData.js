@@ -126,7 +126,7 @@ const services = [
   },
   {
     icon: "web",
-    title: "Full Stack Development",
+    title: "Web Development",
     description:
       "From complex enterprise systems to cloud-based SaaS platforms, we build robust, scalable software that simplifies operations, enhances agility, and supports long-term growth.",
   },
@@ -144,14 +144,14 @@ const services = [
   },
   {
     icon: "cloudService",
-    title: "Cloud Services",
+    title: "Managed Cloud Services",
     description:
       "Secure your digital ecosystem with our end-to-end cybersecurity services—vulnerability assessments, threat monitoring, data protection, and regulatory compliance tailored to your industry.",
-    maxTitleWidth: 115,
+    maxTitleWidth: 222,
   },
   {
     icon: "ai",
-    title: "AI & Machine Learning",
+    title: "AI & ML",
     description:
       "Leverage the power of AI to make smarter decisions, personalize customer experiences, and automate critical workflows. Our solutions turn data into intelligent action.",
   },

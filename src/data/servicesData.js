@@ -542,7 +542,7 @@ const servicesData = [
 const servicesTabs = [
   { id: "mobile-app", text: "Mobile App Development" },
   { id: "web", text: "Web Development" },
-  { id: "digital", text: "Digital Transformation" },
+  // { id: "digital", text: "Digital Transformation" },
   { id: "odoo", text: "Odoo Development & Customisation" },
   { id: "cloud-services", text: "Managed Cloud Services" },
   { id: "ai-ml", text: "AI/ML" },
