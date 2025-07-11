@@ -27,13 +27,13 @@ const Industries = () => {
       <Container>
         <Title title={t("Industries")} />
         <SubTitle subTitle={t("Industry Solutions Built for local Market")} />
-        <div className="sub_title_2_div">
+        {/* <div className="sub_title_2_div">
           <p className="sub_title_2">
             {t(
               "We understand the unique digital needs of the Saudi market — from food delivery apps to secure healthcare systems to Real Estate Solutions or the ever growing local market."
             )}
           </p>
-        </div>
+        </div> */}
         {/* Desktop Grid View */}
         <Row className="industries_row d-none d-md-flex">
           {industries.map((item) => (

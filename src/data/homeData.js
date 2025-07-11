@@ -129,18 +129,21 @@ const services = [
     title: "Web Development",
     description:
       "From complex enterprise systems to cloud-based SaaS platforms, we build robust, scalable software that simplifies operations, enhances agility, and supports long-term growth.",
+    maxTitleWidth: 115,
   },
   {
     icon: "digital",
     title: "Digital Transformation",
     description:
       "Drive digital transformation with tailored strategies, modern tools, and streamlined workflows that boost efficiency and accelerate growth.",
+    maxTitleWidth: 115,
   },
   {
     icon: "odoo",
-    title: "Odoo Development and Customization",
+    title: "Odoo Customisation",
     description:
       "Adapt Odoo to your business with tailored modules, features, and workflows for better efficiency and control.",
+    maxTitleWidth: 115,
   },
   {
     icon: "cloudService",
@@ -151,7 +154,7 @@ const services = [
   },
   {
     icon: "ai",
-    title: "AI & ML",
+    title: "Artificial Intelligence & Machine Learning",
     description:
       "Leverage the power of AI to make smarter decisions, personalize customer experiences, and automate critical workflows. Our solutions turn data into intelligent action.",
   },
@@ -164,10 +167,10 @@ const services = [
   },
   {
     icon: "ui",
-    title: "UI/UX Design and Prototyping",
+    title: "UI/UX Design",
     description:
       "We design user-focused digital interfaces and experiences that combine visual appeal with ease of use, enhancing engagement and increasing conversion rates.",
-    maxTitleWidth: 211,
+    maxTitleWidth: 115,
   },
 ];
 
