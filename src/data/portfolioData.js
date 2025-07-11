@@ -58,8 +58,8 @@ const portfolios = [
     caseStudyLink: "#",
     imageDetails: {
       image: "ashjarSpace",
-      imageWidth: 343,
-      imageHeight: 495,
+      imageWidth: 576,
+      imageHeight: 440,
     },
     background: "linear-gradient(to right, #FAFFD9, #C5D271)",
   },

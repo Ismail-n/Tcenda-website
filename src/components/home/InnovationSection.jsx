@@ -22,7 +22,7 @@ const InnovationSection = () => {
                 "We design & develop advanced digital solutions tailored to Saudi businesses — simplifying operations, enhancing performance, and supporting Vision 2030 goals."
               )}
             </h3>
-            <button type="button" onClick={()=>router.push('/about-us')}>{t("Read More >>")}</button>
+            <button type="button" onClick={()=>router.push('/about-us')}>{t("Know More >>")}</button>
           </Col>
         </Row>
       </Container>
