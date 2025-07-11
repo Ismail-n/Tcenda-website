@@ -123,7 +123,9 @@ const Header = () => {
             {homeLinks?.map(({ href, name }, index) => (
               <li key={index}>
                 <Link href={href} className={isActive(href) ? "active" : ""}>
-                  {t(name)}
+                  <span onClick={() => setIsMobileMenuOpen(false)}>
+                    {t(name)}
+                  </span>
                 </Link>
               </li>
             ))}

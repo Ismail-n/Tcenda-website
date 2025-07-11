@@ -60,9 +60,9 @@ const Clients = () => {
       <Container>
         <Title title={t("Clients")} />
         <SubTitle subTitle={t("10+ collaborations with top-tier partners")} />
-        <Row>
-          {/* DESKTOP */}
-          <div className="clients_logos d-none d-md-flex flex-wrap justify-content-center gap-4">
+        {/* DESKTOP */}
+        {/* <div className="clients_logos d-none d-md-flex flex-wrap justify-content-center gap-4"> */}
+        {/* <div className="clients_logos ">
             {clientsLogo?.map((logo) => (
               <Image
                 key={logo}
@@ -71,11 +71,43 @@ const Clients = () => {
                 height={80}
                 alt={`${logo} logo`}
               />
-            ))}
-          </div>
+              ))}
+              </div> */}
+      </Container>
 
-          {/* MOBILE */}
-          <div className="clients_logos d-block d-md-none">
+      <div className="marqueeWrapper">
+        <div className="marquee">
+          {[
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+          ].map((logo, index) => (
+            <div key={index} className="brand">
+              <Image
+                key={logo}
+                src={`/images/icons/clients/${logo}.svg`}
+                width={160}
+                height={80}
+                alt={`${logo} logo`}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* MOBILE */}
+      {/* <div className="clients_logos d-block d-md-none">
             <div ref={sliderRef} className="keen-slider">
               {clientsLogo?.map((logo) => (
                 <div className="keen-slider__slide client_slide" key={logo}>
@@ -88,9 +120,7 @@ const Clients = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </Row>
-      </Container>
+          </div> */}
     </section>
   );
 };

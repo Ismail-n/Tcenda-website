@@ -22,11 +22,11 @@ const ConsultOurExperts = () => {
                   "Have a challenge to solve? A bold vision to bring to life?"
                 )}
                 <br />
-                <span className="px-2">
+                <span >
                   {t("Let's create a solution together.")}
                 </span>
                 <br />
-                <span className="px-2">{t("Right here in Saudi Arabia.")}</span>
+                <span >{t("Right here in Saudi Arabia.")}</span>
               </h3>
               <Link href="#">
                 <button

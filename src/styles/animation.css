@@ -1,0 +1,27 @@
+.animated-word {
+    display: inline-block;
+    animation: revealLeftToRight 0.6s ease forwards;
+    overflow: hidden;
+}
+
+@keyframes revealLeftToRight {
+    0% {
+        clip-path: inset(0 100% 0 0);
+        opacity: 0;
+    }
+
+    100% {
+        clip-path: inset(0 0% 0 0);
+        opacity: 1;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

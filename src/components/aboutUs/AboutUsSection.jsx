@@ -63,6 +63,7 @@ const RiseCard = ({ item }) => {
           width={102}
           height={115}
           alt={`${letter} - ${t(title)}`}
+          className="letter_img"
         />
         <h3>{t(title)}</h3>
         <p>{t(description)}</p>
