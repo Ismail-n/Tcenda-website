@@ -6,26 +6,24 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
+
 const ContactFormSection = () => {
   const { t } = useTranslation();
+
   const initialValues = {
     name: "",
-    company: "",
     email: "",
     code: "+966",
     mobile: "",
-    reference: "",
     message: "",
   };
 
   const validationSchema = Yup.object({
     name: Yup.string().required("Required"),
-    // company: Yup.string().required("Required"),
     email: Yup.string().email("Invalid email").required("Required"),
     mobile: Yup.string()
       .required("Required")
       .matches(/^[0-9]+$/, "Only numbers are allowed"),
-    // reference: Yup.string().required("Required"),
     message: Yup.string().required("Required"),
   });
 
@@ -47,9 +45,10 @@ const ContactFormSection = () => {
       })
       .catch((error) => {
         console.error("Email sending failed:", error);
-        toast.error("Failed to send message. Please try again."); // Error toast
+        toast.error("Failed to send message. Please try again."); 
       });
   };
+
   return (
     <section className="contact_form">
       <Container>
@@ -71,20 +70,6 @@ const ContactFormSection = () => {
                   />
                   <ErrorMessage name="name" component="div" className="error" />
                 </div>
-                <div className="flex-1">
-                  <label>{t("Company")}</label>
-                  <Field
-                    name="company"
-                    type="text"
-                    placeholder={t("Company")}
-                    className="input"
-                  />
-                  <ErrorMessage
-                    name="company"
-                    component="div"
-                    className="error"
-                  />
-                </div>
               </div>
 
               <div className="mb-25-gap-15">
@@ -102,6 +87,8 @@ const ContactFormSection = () => {
                     className="error"
                   />
                 </div>
+              </div>
+              <div className="mb-25-gap-15">
                 <div className="flex-1">
                   <label>{t("Mobile Number")}</label>
                   <div className="flex-gap-10">
@@ -128,21 +115,6 @@ const ContactFormSection = () => {
                     className="error"
                   />
                 </div>
-              </div>
-
-              <div className="mb-25">
-                <label>{t("Reference")}</label>
-                <Field
-                  name="reference"
-                  type="text"
-                  placeholder={t("Reference")}
-                  className="input"
-                />
-                <ErrorMessage
-                  name="reference"
-                  component="div"
-                  className="error"
-                />
               </div>
 
               <div className="mb-25">

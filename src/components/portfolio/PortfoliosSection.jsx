@@ -40,7 +40,7 @@ const PortfoliosSection = () => {
                     <Image
                       src={`/images/portfolio/${logoDetails.logo}.svg`}
                       alt={`${title} Logo`}
-                      className="logo_img"
+                      className={`logo_img`}
                       width={logoDetails.logoWidth}
                       height={logoDetails.logoHeight}
                       priority={index === 0}

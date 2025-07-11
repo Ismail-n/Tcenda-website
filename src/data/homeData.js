@@ -72,8 +72,9 @@ const testimonials = [
 
 const serviceModels = [
   {
+    id: "project",
     icon: "project",
-    title: "Fixed Scope Projects",
+    title: "Fixed Price Projects",
     description:
       "Ideal for well-scoped initiatives with clear timelines and budgets",
     points: [
@@ -83,18 +84,20 @@ const serviceModels = [
     ],
   },
   {
+    id: "service",
     icon: "managedService",
-    title: "Managed Services",
-    description: "Perfect for businesses seeking round-the-clock reliability",
+    title: "Hourly Projects",
+    description: "Best suited for changing needs, billed by the hour",
     points: [
-      "24/7 monitoring for seamless uptime",
-      "Cost-efficient innovation for evolving needs",
-      "Scalable support tailored to your operational goals",
+      "Pay-as-you-go model with no long-term commitments",
+      "Agile support for urgent or evolving tasks",
+      "Full visibility into hours spent and task progress",
     ],
   },
   {
+    id: "staff",
     icon: "staff",
-    title: "Staff Augmentation",
+    title: "Hire Developer on Demand",
     description:
       "Best suited for teams needing expert skills without long hiring cycles",
     points: [
@@ -126,6 +129,12 @@ const services = [
     title: "Full Stack Development",
     description:
       "From complex enterprise systems to cloud-based SaaS platforms, we build robust, scalable software that simplifies operations, enhances agility, and supports long-term growth.",
+  },
+  {
+    icon: "digital",
+    title: "Digital Transformation",
+    description:
+      "Drive digital transformation with tailored strategies, modern tools, and streamlined workflows that boost efficiency and accelerate growth.",
   },
   {
     icon: "odoo",

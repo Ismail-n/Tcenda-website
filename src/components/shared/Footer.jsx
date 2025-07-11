@@ -178,7 +178,7 @@ const Footer = () => {
                   <h2>{t("Follow Us")}</h2>
                   <div className="icons">
                     <Link
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/company/tod-%D8%B7%D9%88%D8%AF"
                       aria-label="LinkedIn"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -198,6 +198,19 @@ const Footer = () => {
                     >
                       <Image
                         src="/images/icons/facebook.svg"
+                        width={36}
+                        height={36}
+                        alt="facebook"
+                      />
+                    </Link>
+                    <Link
+                      href="https://facebook.com"
+                      aria-label="Facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src="/images/icons/instagram.svg"
                         width={36}
                         height={36}
                         alt="facebook"

@@ -54,7 +54,7 @@ const OurServices = () => {
             {services?.map((item) => (
               <ServiceCard item={item} t={t} key={item.title} />
             ))}
-            <Col lg={8}>
+            <Col lg={4}>
               <div className="explore_services">
                 <div className="gradient_effect"></div>
                 <div className="content">

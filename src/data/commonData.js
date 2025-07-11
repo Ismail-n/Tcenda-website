@@ -5,19 +5,24 @@ const footerServices = [
     hash: "#mobile-app",
   },
   {
-    name: "Full Stack Development",
+    name: "Web Development",
     href: "/our-services",
-    hash: "#full-stack",
+    hash: "#web",
   },
-  { name: "Cloud Services", href: "/our-services", hash: "#cloud-services" },
-  { name: "AI/ML", href: "/our-services", hash: "#ai-ml" },
-  { name: "Data Analytics", href: "/our-services", hash: "#data-analytics" },
-  { name: "UI/UX Design & Prototyping", href: "/our-services", hash: "#ui-ux" },
+  {
+    name: "Digital Transformation",
+    href: "/our-services",
+    hash: "#digital",
+  },
   {
     name: "Odoo Development & Customisation",
     href: "/our-services",
     hash: "#odoo",
   },
+  { name: "Managed Cloud Services", href: "/our-services", hash: "#cloud-services" },
+  { name: "AI/ML", href: "/our-services", hash: "#ai-ml" },
+  { name: "Data Analytics", href: "/our-services", hash: "#data-analytics" },
+  { name: "UI/UX Design & Prototyping", href: "/our-services", hash: "#ui-ux" },
 ];
 
 const footerCompany = [

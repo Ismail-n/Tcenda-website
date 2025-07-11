@@ -37,7 +37,8 @@ const TopSection = () => {
       <Container>
         <div className="top_row">
           <h1 className="top_section_title">
-            {t("Empowering Saudi Businesses to Scale with")} <br />
+            {t("Empowering Saudi Businesses to Scale with")} 
+            <br />
             <span className="animated-word" key={index}>
               {t(words[index])}
             </span>

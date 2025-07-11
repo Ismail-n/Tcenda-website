@@ -64,6 +64,10 @@ button:disabled{
   cursor: not-allowed;
 }
 
+img {
+  max-width: 100%;
+}
+
 // Stop Body Scrolling When needed
 .no-scroll {
   overflow: hidden !important;

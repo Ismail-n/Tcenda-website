@@ -9,7 +9,7 @@ const TopSection = () => {
   return (
     <section className="top_section">
       <Container>
-        <div className="top_row text-center">
+        <div className="top_row text-md-center">
           <h1 className="top_section_title mx-auto">
             {t("Crafting Digital Success Stories in Saudi Arabia")}
           </h1>

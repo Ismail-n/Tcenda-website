@@ -76,7 +76,7 @@ const servicesData = [
     },
   },
   {
-    id: "full-stack",
+    id: "web",
     mainTitle: "Innovative Services to Power Your Growth",
     mainSubTitle:
       "Unlock new possibilities with us — through cutting-edge technology, expert guidance, and solutions tailored to your business goals.",
@@ -541,12 +541,13 @@ const servicesData = [
 
 const servicesTabs = [
   { id: "mobile-app", text: "Mobile App Development" },
-  { id: "full-stack", text: "Full-Stack Development" },
-  { id: "cloud-services", text: "Cloud Services" },
+  { id: "web", text: "Web Development" },
+  { id: "digital", text: "Digital Transformation" },
+  { id: "odoo", text: "Odoo Development & Customisation" },
+  { id: "cloud-services", text: "Managed Cloud Services" },
   { id: "ai-ml", text: "AI/ML" },
   { id: "data-analytics", text: "Data Analytics" },
   { id: "ui-ux", text: "UI/UX Design & Prototyping" },
-  { id: "odoo", text: "Odoo Development & Customisation" },
 ];
 
 export { servicesData, servicesTabs };

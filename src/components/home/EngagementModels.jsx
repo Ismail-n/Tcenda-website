@@ -37,10 +37,10 @@ export default EngagementModels;
 
 const EngagementCard = ({ item }) => {
   const { t } = useTranslation();
-  const { icon, title, description, points } = item || {};
+  const { icon, title, description, points, id } = item || {};
   return (
     <Col lg={4}>
-      <div className="single_card">
+      <div className="single_card" id={id}>
         <div className="gradient_effect"></div>
         <Image
           src={`images/icons/engagementModels/${icon}.svg`}
@@ -70,7 +70,7 @@ const EngagementCard = ({ item }) => {
 
 const MobileEngagementCard = ({ item }) => {
   const { t } = useTranslation();
-  const { icon, title, description, points } = item || {};
+  const { icon, title, description, points, id } = item || {};
   const [selectedCardId, setSelectedCardId] = useState(
     serviceModels[0]?.icon || null
   );
@@ -78,7 +78,8 @@ const MobileEngagementCard = ({ item }) => {
   return (
     <Col lg={4}>
       <div
-        className={`single_card ${selectedCardId === icon ? "open" :""}`}
+        className={`single_card ${selectedCardId === icon ? "open" : ""}`}
+        id={id}
         onClick={() => setSelectedCardId(selectedCardId === icon ? null : icon)}
       >
         <div className="gradient_effect"></div>
