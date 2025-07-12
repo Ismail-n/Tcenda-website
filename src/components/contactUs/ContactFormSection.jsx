@@ -137,7 +137,7 @@ const ContactFormSection = () => {
                 disabled={isSubmitting}
                 className="submit-btn"
               >
-                {t("Submit")}
+                {t("Request a Free Consultation")}
               </button>
             </Form>
           )}

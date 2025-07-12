@@ -61,6 +61,13 @@ const ContactUsSection = () => {
                   </div>
                 </div>
               </section>
+              <Image
+                src="/images/contactUs/mobileContactBg.webp"
+                width={333}
+                height={201}
+                alt="bg vector"
+                className="contact_bg_vector d-md-none"
+              />
             </div>
             <div className="contact_form_section">
               <ContactFormSection />

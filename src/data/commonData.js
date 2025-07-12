@@ -19,24 +19,25 @@ const footerServices = [
     href: "/our-services",
     hash: "#odoo",
   },
-  { name: "Managed Cloud Services", href: "/our-services", hash: "#cloud-services" },
+  {
+    name: "Managed Cloud Services",
+    href: "/our-services",
+    hash: "#cloud-services",
+  },
   { name: "AI/ML", href: "/our-services", hash: "#ai-ml" },
   { name: "Data Analytics", href: "/our-services", hash: "#data-analytics" },
   { name: "UI/UX Design & Prototyping", href: "/our-services", hash: "#ui-ux" },
 ];
 
 const footerCompany = [
-  { name: "About Us", href: "/about-us" },
-  { name: "Portfolio", href: "/portfolio" },
-  { name: "Services", href: "/our-services" },
   // { name: "Resources", href: "#" },
 ];
 
 const footerQuickLinks = [
-  // { name: "Career", href: "#" },
+  { name: "About Us", href: "/about-us" },
+  { name: "Portfolio", href: "/portfolio" },
+  { name: "Services", href: "/our-services" },
   { name: "Contact Us", href: "/contact-us" },
-  // { name: "Become a Partner", href: "#" },
-  // { name: "Blogs", href: "#" },
 ];
 
 export { footerServices, footerCompany, footerQuickLinks };
