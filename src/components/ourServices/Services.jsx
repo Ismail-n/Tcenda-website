@@ -36,43 +36,56 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
     const newService =
       servicesData?.find((service) => service?.id === id) || {};
     setSelectedService(newService);
-
-    // ✅ Update URL hash without reloading the page
-    // router.replace(`#${id}`, undefined, { shallow: true });
   };
-  
 
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // }, [selectedService]);
+  const groupedSlides = [];
+  for (let i = 0; i < servicesData.length; i += 3) {
+    groupedSlides.push(servicesData.slice(i, i + 3));
+  }
 
   return (
     <section className={`services_section`} id={`${selectedService?.id}`}>
       <Container>
-        <div className="services_tab">
-          {servicesTabs?.map(({ id, text }) => (
-            <button
-              type="button"
-              key={id}
-              className={`${id === activeServiceTab ? "active" : ""}`}
-              onClick={() => handleTabChange(id)}
-              aria-label={`${t("Switch to")} ${t(text)} ${t("services")}`}
-            >
-              {t(text)}
-            </button>
-          ))}
+        {/* DESKTOP TAB*/}
+        <div className="d-none d-md-block">
+          <div className="services_tab">
+            {servicesTabs?.map(({ id, text }) => (
+              <button
+                type="button"
+                key={id}
+                className={`${id === activeServiceTab ? "active" : ""}`}
+                onClick={() => handleTabChange(id)}
+                aria-label={`${t("Switch to")} ${t(text)} ${t("services")}`}
+              >
+                {t(text)}
+              </button>
+            ))}
+          </div>
         </div>
-
-        <div className="services_inner">
-          <div className="text-center">
-            <h2 className="top_section_title">{t(selectedService?.title)}</h2>
-            <p className="top_section_sub_title">
-              {t(selectedService?.subtitle)}
-            </p>
+        {/* MOBILE TAB */}
+        <div className="d-md-none">
+          <div className="mobile_services_tab">
+            <select
+              value={activeServiceTab}
+              onChange={(e) => handleTabChange(e.target.value)}
+            >
+              {servicesTabs?.map(({ id, text }) => (
+                <option key={id} value={id}>
+                  {t(text)}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
 
-        {/* TECH CATEGORIES */}
+        <div className="services_inner">
+          <div className="">
+            <h2 className="title">{t(selectedService?.title)}</h2>
+            <p className="sub_title">{t(selectedService?.subtitle)}</p>
+          </div>
+        </div>
+
+        {/* SERVICE CARD/CATEGORIES */}
         <div className="service_categories">
           <Row>
             {categories?.map((item) => (
@@ -83,9 +96,9 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
 
         {/* TECH STACKS */}
         <div className="tech_stack_titles">
-          <div className="text-center">
-            <h2 className="top_section_title">{t(techStack?.title)}</h2>
-            <p className="top_section_sub_title">{t(techStack?.subtitle)}</p>
+          <div className="">
+            <h2 className="title">{t(techStack?.title)}</h2>
+            <p className="sub_title">{t(techStack?.subtitle)}</p>
           </div>
         </div>
         <div className="tech_stacks">
@@ -155,7 +168,7 @@ const TechCard = ({ item }) => {
   const { icon, title } = item || {};
   const { t } = useTranslation();
   return (
-    <Col lg={3}>
+    <Col lg={3} xs={6}>
       <div className="single_tech">
         <Image
           src={`/images/services/${icon}.svg`}

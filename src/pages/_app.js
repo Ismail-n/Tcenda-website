@@ -6,7 +6,7 @@ import "@/styles/style.scss";
 import "@/styles/titles.scss";
 import "@/styles/fonts.scss";
 import "@/styles/responsive.scss";
-import "@/styles/animation.css";
+import "@/styles/animation.scss";
 
 export default function App({ Component, pageProps }) {
   return (

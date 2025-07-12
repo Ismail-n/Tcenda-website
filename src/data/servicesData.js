@@ -11,18 +11,21 @@ const servicesData = [
       {
         icon: "mobileApp/androidApp",
         title: "Android App Development",
+        titleMaxWidth: 169,
         subtitle:
           "Powerful, user-friendly Android apps built to meet your business goals and user needs.",
       },
       {
         icon: "mobileApp/iosApp",
         title: "iOS App Development",
+        titleMaxWidth: 169,
         subtitle:
           "We craft elegant, high-performance iOS apps tailored for iPhone, iPad, and Apple Watch.",
       },
       {
         icon: "mobileApp/flutterApp",
         title: "Flutter App Development",
+        titleMaxWidth: 169,
         subtitle:
           "Deliver seamless mobile experiences on Android and iOS with Flutter development done right.",
       },
@@ -43,6 +46,7 @@ const servicesData = [
       {
         icon: "mobileApp/webApp",
         title: "Web App Development",
+        titleMaxWidth: 169,
         subtitle:
           "Custom web applications built for performance, flexibility, and long-term growth.",
       },
@@ -87,24 +91,28 @@ const servicesData = [
       {
         icon: "fullStack/frontEnd",
         title: "Frontend Development",
+        titleMaxWidth: 169,
         subtitle:
           "We craft fast, responsive, and visually stunning user interfaces that deliver seamless digital experiences across all devices.",
       },
       {
         icon: "fullStack/backend",
         title: "Backend Development",
+        titleMaxWidth: 169,
         subtitle:
           "We engineer the logic, data, and infrastructure that drive your apps — built for performance and growth.",
       },
       {
         icon: "fullStack/fullStack",
         title: "Full-Stack Development",
+        titleMaxWidth: 169,
         subtitle:
           "End-to-end development covering UI, backend, and everything in between — all in one expert team.",
       },
       {
         icon: "fullStack/customWeb",
         title: "Custom Web Applications",
+        titleMaxWidth: 169,
         subtitle:
           "Powerful, purpose-driven web apps — built from scratch to meet your unique requirements.",
       },
@@ -118,6 +126,7 @@ const servicesData = [
       {
         icon: "fullStack/webPortal",
         title: "Web Portal Development",
+        titleMaxWidth: 169,
         subtitle:
           "From user dashboards to enterprise portals, we create tailored solutions that drive engagement and efficiency.",
       },
@@ -144,8 +153,94 @@ const servicesData = [
     overview: {
       image: "fullStackOverview",
       heading: "Mobile Solutions that Deliver — With Us",
+      maxHeading: 452,
       paragraphs: [
         "Unlock the power of mobile with expertly crafted, high-performance applications tailored to your business needs. At TOD, we specialize in designing and developing custom mobile apps that are intuitive, scalable, and built to deliver real results.Whether you're launching a new product, streamlining internal operations, or enhancing customer engagement, our mobile solutions are designed to meet your goals. We work across iOS and Android platforms, using the latest technologies and frameworks to ensure speed, stability, and stunning UI/UX. From strategy and prototyping to development and deployment — we guide you at every step. With TOD, your mobile app isn't just a tool, it's a growth engine.",
+      ],
+    },
+  },
+  {
+    id: "digital",
+    mainTitle: "Reimagine Your Business for the Digital Age",
+    mainSubTitle:
+      "At TOD, Modernize your operations and elevate customer experiences with agile, data-driven solutions — built for Vision 2030",
+    title: "Build Smart. Transform Fast.",
+    subtitle:
+      "Achieve more with digital solutions built to streamline operations, cut friction, and drive measurable business outcomes.",
+    categories: [
+      {
+        icon: "digitalTransformation/business",
+        title: "Business Process Automation",
+        subtitle:
+          "Streamline operations, reduce manual work, and boost productivity with intelligent automation tailored to your business workflows.",
+      },
+      {
+        icon: "digitalTransformation/legacy",
+        title: "Legacy System Modernization",
+        subtitle:
+          "Upgrade legacy infrastructure to modern, scalable, and secure platforms that support agility and growth.",
+      },
+      {
+        icon: "digitalTransformation/cloudFirst",
+        title: "Cloud-First Transformation",
+        titleMaxWidth: 240,
+        subtitle:
+          "Shift to a cloud-first strategy that ensures availability, flexibility, and cost-efficiency across all your digital operations.",
+      },
+      {
+        icon: "digitalTransformation/enterprise",
+        title: "Enterprise          System Integration",
+        subtitle:
+          "Achieve operational harmony with seamless integration between your ERP, CRM, HRMS, and other core systems.",
+        titleMaxWidth: 240,
+      },
+      {
+        icon: "digitalTransformation/dataDriven",
+        title: "Data-Driven Decision Making",
+        subtitle:
+          "Leverage analytics and dashboards to make faster, smarter decisions that fuel innovation and efficiency.",
+        titleMaxWidth: 216,
+      },
+      {
+        icon: "digitalTransformation/AIPowered",
+        title: "AI-Powered Optimization",
+        titleMaxWidth: 240,
+        subtitle:
+          "Embed AI to automate processes, personalize services, and gain predictive insights across departments.",
+      },
+    ],
+    techStack: {
+      title: "Transforming with Purpose",
+      subtitle:
+        "From assessment to execution, we partner with you to build an ecosystem of connected digital capabilities that unlock real business value.",
+      technologies: [
+        { icon: "digitalTransformation/microsoft", title: "Microsoft Tools" },
+        { icon: "digitalTransformation/SAP", title: "SAP" },
+        { icon: "digitalTransformation/AWS", title: "AWS Cloud Services" },
+        {
+          icon: "digitalTransformation/RPA",
+          title: "Robotic Process Automation (RPA)",
+        },
+        {
+          icon: "digitalTransformation/dataLake",
+          title: "Data Lakes & Warehousing",
+        },
+        {
+          icon: "digitalTransformation/BI",
+          title: "Business Intelligence Tools",
+        },
+        { icon: "digitalTransformation/ML", title: "AI/ML Frameworks" },
+        {
+          icon: "digitalTransformation/APIS",
+          title: "APIs & Microservices Architecture",
+        },
+      ],
+    },
+    overview: {
+      image: "digitalTransform",
+      heading: "Digital Transformation that Matters in the Kingdom",
+      paragraphs: [
+        "At TOD, we understand Saudi Arabia's unique regulatory, cultural, and business environment. Our digital transformation solutions are localized to ensure compliance, user adoption, and meaningful ROI. Whether it's optimizing citizen services for government bodies, digitizing F&B supply chains, or enabling eCommerce personalization — we build strategic systems that align with your business and Vision 2030 priorities.",
       ],
     },
   },
@@ -161,30 +256,35 @@ const servicesData = [
       {
         icon: "cloudServices/infrastructure",
         title: "Cloud Infrastructure Setup",
+        titleMaxWidth: 220,
         subtitle:
           "From architecture to automation, we set up cloud environments that are fast, flexible, and future-ready.",
       },
       {
         icon: "cloudServices/migration",
         title: "Cloud Migration",
+        titleMaxWidth: 140,
         subtitle:
           "Move your applications, data, and infrastructure to the cloud — safely and efficiently.",
       },
       {
         icon: "cloudServices/devOps",
         title: "DevOps & CI/CD",
+        titleMaxWidth: 107,
         subtitle:
           "We streamline development and deployment with efficient DevOps and CI/CD pipelines.",
       },
       {
         icon: "cloudServices/security",
         title: "Cloud Security",
+        titleMaxWidth: 129,
         subtitle:
           "From identity management to threat detection — we keep your cloud safe and resilient.",
       },
       {
         icon: "cloudServices/hybrid",
         title: "Hybrid Cloud Solutions",
+        titleMaxWidth: 169,
         subtitle:
           "We build hybrid cloud architectures that combine flexibility, performance, and security across environments.",
       },
@@ -201,14 +301,14 @@ const servicesData = [
       subtitle:
         "From infrastructure setup to DevOps, we simplify cloud adoption and management — helping you innovate faster and reduce operational overhead.",
       technologies: [
-        { icon: "cloudServices/aws", title: "AWS" },
+        { icon: "cloudServices/AWS", title: "AWS" },
         { icon: "cloudServices/microsoftAzure", title: "Microsoft Azure" },
         { icon: "cloudServices/googleCloud", title: "Google Cloud" },
         { icon: "cloudServices/docker", title: "Docker" },
         { icon: "cloudServices/kubernetes", title: "Kubernetes" },
         { icon: "cloudServices/terraform", title: "Terraform" },
         { icon: "cloudServices/jenkins", title: "Jenkins" },
-        { icon: "cloudServices/gitLab", title: "GitLab CI/CD" },
+        { icon: "cloudServices/gitlab", title: "GitLab CI/CD" },
         { icon: "cloudServices/ansible", title: "Ansible" },
         { icon: "cloudServices/cloudflare", title: "Cloudflare" },
         { icon: "cloudServices/prometheus", title: "Prometheus" },
@@ -242,6 +342,7 @@ const servicesData = [
       {
         icon: "aiml/recommendationSystems",
         title: "Recommendation Systems",
+        titleMaxWidth: 141,
         subtitle:
           "We build intelligent recommendation systems that personalize content, products, and user experiences.",
       },
@@ -268,6 +369,7 @@ const servicesData = [
       {
         icon: "aiml/aIModel",
         title: "AI Model Development & Training",
+        titleMaxWidth: 245,
         subtitle:
           "From concept to deployment, we develop intelligent models that learn, adapt, and deliver results.",
       },
@@ -311,6 +413,7 @@ const servicesData = [
       {
         icon: "dataAnalytics/BI",
         title: "Business Intelligence (BI)",
+        titleMaxWidth: 169,
         subtitle:
           "We turn complex data into clear, actionable insights that drive smart business decisions.",
       },
@@ -331,6 +434,7 @@ const servicesData = [
       {
         icon: "dataAnalytics/ETL",
         title: "ETL & Data Integration",
+        titleMaxWidth: 169,
         subtitle:
           "We streamline data from multiple sources with efficient ETL pipelines and seamless integration.",
       },
@@ -415,6 +519,7 @@ const servicesData = [
       {
         icon: "uiux/hfp",
         title: "High-Fidelity Prototyping",
+        titleMaxWidth: 189,
         subtitle:
           "We create interactive, high-fidelity prototypes that mirror the final product experience — ready for testing and validation.",
       },
@@ -428,6 +533,7 @@ const servicesData = [
       {
         icon: "uiux/designSystem",
         title: "Design System Development",
+        titleMaxWidth: 189,
         subtitle:
           "Unify your brand and streamline your workflow with reusable components and clear design guidelines.",
       },
@@ -493,6 +599,7 @@ const servicesData = [
       {
         icon: "odoo/OIS",
         title: "Odoo Integration Services",
+        titleMaxWidth: 200,
         subtitle:
           "We seamlessly integrate Odoo with third-party apps, tools, and APIs to streamline your operations.",
       },
@@ -515,7 +622,7 @@ const servicesData = [
         "From custom module development to seamless integration and theme customization, we adapt Odoo to fit your workflows — not the other way around.",
       technologies: [
         { icon: "odoo/odoo", title: "Odoo (v13 - v17)" },
-        { icon: "odoo/Python", title: "Python" },
+        { icon: "odoo/python", title: "Python" },
         { icon: "odoo/postgreSQL", title: "PostgreSQL" },
         { icon: "odoo/XML", title: "XML / QWeb" },
         { icon: "odoo/javaScript", title: "JavaScript" },
@@ -542,7 +649,7 @@ const servicesData = [
 const servicesTabs = [
   { id: "mobile-app", text: "Mobile App Development" },
   { id: "web", text: "Web Development" },
-  // { id: "digital", text: "Digital Transformation" },
+  { id: "digital", text: "Digital Transformation" },
   { id: "odoo", text: "Odoo Development & Customisation" },
   { id: "cloud-services", text: "Managed Cloud Services" },
   { id: "ai-ml", text: "AI/ML" },

@@ -11,6 +11,7 @@ const Header = () => {
   const pathname = usePathname();
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
 
   const homeLinks = useMemo(
     () => [
@@ -43,11 +44,86 @@ const Header = () => {
     };
   }, [isMobileMenuOpen]);
 
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setShowHeader(false); // scrolling down
+      } else {
+        setShowHeader(true); // scrolling up
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header>
-      <Container>
-        <div className="g_between">
-          <div className="logo">
+    <>
+      <header className={`header ${showHeader ? "visible" : "hidden"}`}>
+        <Container>
+          <div className="g_between">
+            <div className="logo">
+              <Link href="/">
+                <Image
+                  src="/images/icons/logo.svg"
+                  width={126}
+                  height={24}
+                  alt="logo"
+                  priority
+                />
+              </Link>
+            </div>
+            <nav
+              aria-label="Main navigation"
+              className="menu_links d-none d-lg-flex"
+            >
+              <ul>
+                {homeLinks?.map(({ href, name }, index) => (
+                  <li key={index}>
+                    <Link
+                      href={href}
+                      className={isActive(href) ? "active" : ""}
+                    >
+                      {t(name)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <LanguageSwitcher />
+            </nav>
+            {/* Mobile Menu Icon */}
+            <div
+              className="mobile_menu_icon d-lg-none"
+              onClick={handleMenuClick}
+            >
+              {isMobileMenuOpen ? (
+                <Image
+                  src={"/images/icons/close.svg"}
+                  width={24}
+                  height={24}
+                  alt="menu"
+                />
+              ) : (
+                <Image
+                  src={"/images/icons/menu.svg"}
+                  width={40}
+                  height={37}
+                  alt="menu"
+                />
+              )}
+            </div>
+          </div>
+        </Container>
+        <Modal
+          show={isMobileMenuOpen}
+          onHide={() => setIsMobileMenuOpen(false)}
+          fullscreen
+          className="mobile_menu_modal"
+        >
+          <div className="modal_header">
             <Link href="/">
               <Image
                 src="/images/icons/logo.svg"
@@ -57,83 +133,33 @@ const Header = () => {
                 priority
               />
             </Link>
+            <Image
+              src={"/images/icons/close.svg"}
+              width={24}
+              height={24}
+              alt="menu"
+              className="close_icon"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
           </div>
-          <nav
-            aria-label="Main navigation"
-            className="menu_links d-none d-lg-flex"
-          >
+          <nav aria-label="Main navigation" className="mobile_menu_links">
             <ul>
               {homeLinks?.map(({ href, name }, index) => (
                 <li key={index}>
                   <Link href={href} className={isActive(href) ? "active" : ""}>
-                    {t(name)}
+                    <span onClick={() => setIsMobileMenuOpen(false)}>
+                      {t(name)}
+                    </span>
                   </Link>
                 </li>
               ))}
             </ul>
             <LanguageSwitcher />
           </nav>
-          {/* Mobile Menu Icon */}
-          <div className="mobile_menu_icon d-lg-none" onClick={handleMenuClick}>
-            {isMobileMenuOpen ? (
-              <Image
-                src={"/images/icons/close.svg"}
-                width={24}
-                height={24}
-                alt="menu"
-              />
-            ) : (
-              <Image
-                src={"/images/icons/menu.svg"}
-                width={40}
-                height={37}
-                alt="menu"
-              />
-            )}
-          </div>
-        </div>
-      </Container>
-      <Modal
-        show={isMobileMenuOpen}
-        onHide={() => setIsMobileMenuOpen(false)}
-        fullscreen
-        className="mobile_menu_modal"
-      >
-        <div className="modal_header">
-          <Link href="/">
-            <Image
-              src="/images/icons/logo.svg"
-              width={126}
-              height={24}
-              alt="logo"
-              priority
-            />
-          </Link>
-          <Image
-            src={"/images/icons/close.svg"}
-            width={24}
-            height={24}
-            alt="menu"
-            className="close_icon"
-            onClick={() => setIsMobileMenuOpen(false)}
-          />
-        </div>
-        <nav aria-label="Main navigation" className="mobile_menu_links">
-          <ul>
-            {homeLinks?.map(({ href, name }, index) => (
-              <li key={index}>
-                <Link href={href} className={isActive(href) ? "active" : ""}>
-                  <span onClick={() => setIsMobileMenuOpen(false)}>
-                    {t(name)}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <LanguageSwitcher />
-        </nav>
-      </Modal>
-    </header>
+        </Modal>
+      </header>
+      <div className="header_padding"></div>
+    </>
   );
 };
 

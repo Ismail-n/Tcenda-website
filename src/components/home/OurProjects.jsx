@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useKeenSlider } from "keen-slider/react";
+import { portfolios } from "@/data/portfolioData";
 
 const ourProjectsData = [
   {
@@ -77,7 +78,7 @@ const OurProjects = () => {
             className="keen-slider portfolio_inner_section"
             ref={sliderInstanceRef}
           >
-            {ourProjectsData?.map(
+            {portfolios?.map(
               (
                 {
                   id,
@@ -114,7 +115,7 @@ const OurProjects = () => {
                       )}
                       <h3>{t(title)}</h3>
                       <p>{t(description)}</p>
-                      <div className="store_btns">
+                      <div className="store_btns d-none d-md-flex">
                         {appStoreLink && (
                           <a
                             href={appStoreLink}
@@ -156,12 +157,47 @@ const OurProjects = () => {
                   </div>
                   <div className="right">
                     <Image
-                      src={`/images/portfolio/${imageDetails.image}.webp`}
+                      src={`/images/portfolio/${imageDetails.image}.png`}
                       width={imageDetails.imageWidth}
                       height={imageDetails.imageHeight}
                       alt={`${title} Preview`}
                       className="preview_img"
                     />
+
+                    <div className="store_btns d-md-none ">
+                      <div className="d-flex gap- mt-4">
+                        {appStoreLink && (
+                          <a
+                            href={appStoreLink}
+                            aria-label={`Download ${title} on the App Store`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Image
+                              src={"/images/icons/appStore.svg"}
+                              width={108}
+                              height={33}
+                              alt="Download on the App Store"
+                            />
+                          </a>
+                        )}
+                        {playStoreLink && (
+                          <a
+                            href={playStoreLink}
+                            aria-label={`Download ${title} on the App Store`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Image
+                              src={"/images/icons/playStore.svg"}
+                              width={108}
+                              height={33}
+                              alt="Get it on Google Play"
+                            />
+                          </a>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 </div>
               )

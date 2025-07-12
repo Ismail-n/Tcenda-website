@@ -24,7 +24,7 @@
   }
 
   .title {
-    font-size: 36px;
+    font-size: 32px;
   }
   .sub_title_2_div {
     margin-top: 20px;
@@ -34,7 +34,7 @@
   }
   .sub_title {
     margin-top: 15px;
-    font-size: 30px;
+    font-size: 22px;;
     line-height: 100%;
   }
 
@@ -100,4 +100,11 @@
     }
   }
   // HEADER END
+}
+
+@media (max-width: 375px) {
+  // GLOBAL/COMMON START
+  .container {
+    max-width: 90%;
+  }
 }

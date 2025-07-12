@@ -2,6 +2,7 @@ import {
   footerCompany,
   footerQuickLinks,
   footerServices,
+  footerServices2,
 } from "@/data/commonData";
 import Image from "next/image";
 import Link from "next/link";
@@ -100,7 +101,7 @@ const Footer = () => {
           <Col lg={12}>
             <div className="right_content">
               <Row>
-                <Col lg={6}>
+                <Col lg={5}>
                   <div className="inner_section">
                     <div className="single_item service_item">
                       <h2>{t("Services")}</h2>
@@ -114,19 +115,23 @@ const Footer = () => {
                     </div>
                   </div>
                 </Col>
-
-                <Col lg={6}>
-                  <div className="top_link">
-                    <div className="single_item company_links">
-                      <h2>{t("Company")}</h2>
+                <Col lg={5}>
+                  <div className="inner_section service2">
+                    <div className="single_item service_item">
+                      <h2></h2>
                       <ul>
-                        {footerCompany?.map(({ name, href }, index) => (
+                        {footerServices2?.map(({ name, href, hash }, index) => (
                           <li key={index}>
-                            <Link href={href}>{t(name)}</Link>
+                            <Link href={`${href}${hash}`}>{t(name)}</Link>
                           </li>
                         ))}
                       </ul>
                     </div>
+                  </div>
+                </Col>
+
+                <Col lg={2}>
+                  <div className="top_link">
                     <div className="single_item quick_links">
                       <h2>{t("Quick Links")}</h2>
                       <ul>
@@ -138,7 +143,56 @@ const Footer = () => {
                       </ul>
                     </div>
                   </div>
+
+                  {/* <div className="conversion_inner">
+                    <h2>{t("Start a Conversation with Us")}</h2>
+                    <div className="get_in_touch_input">
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder={t("Email Address")}
+                      />
+                      <button
+                        type="button"
+                        disabled={isLoading}
+                        onClick={handleGetInTouchClick}
+                      >
+                        {t("Get in Touch")}
+                      </button>
+                    </div>
+                  </div> */}
+                </Col>
+              </Row>
+              <Row>
+                <Col lg={12}>
+                  <div className="connect_on_inner d-md-none">
+                    <div className="logo d-block mx-auto w_fit_content mt-2">
+                      <Link href="/">
+                        <Image
+                          src="/images/icons/logo.svg"
+                          width={126}
+                          height={24}
+                          alt="logo"
+                          priority
+                        />
+                      </Link>
+                    </div>
+                  </div>
                   <div className="connect_on_div">
+                    <div className="connect_on_inner d-none d-md-block">
+                      <div className="logo">
+                        <Link href="/">
+                          <Image
+                            src="/images/icons/logo.svg"
+                            width={126}
+                            height={24}
+                            alt="logo"
+                            priority
+                          />
+                        </Link>
+                      </div>
+                    </div>
                     <div className="connect_on_inner">
                       <div className="social_links">
                         <h2>{t("Follow Us")}</h2>
@@ -186,19 +240,6 @@ const Footer = () => {
                       </div>
                     </div>
                     <div>
-                      <div className="connect_on_inner">
-                        <div className="logo">
-                          <Link href="/">
-                            <Image
-                              src="/images/icons/logo.svg"
-                              width={126}
-                              height={24}
-                              alt="logo"
-                              priority
-                            />
-                          </Link>
-                        </div>
-                      </div>
                       <Image
                         src="/images/icons/vision2030.png"
                         width={100}
@@ -208,25 +249,6 @@ const Footer = () => {
                       />
                     </div>
                   </div>
-
-                  {/* <div className="conversion_inner">
-                    <h2>{t("Start a Conversation with Us")}</h2>
-                    <div className="get_in_touch_input">
-                      <input
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder={t("Email Address")}
-                      />
-                      <button
-                        type="button"
-                        disabled={isLoading}
-                        onClick={handleGetInTouchClick}
-                      >
-                        {t("Get in Touch")}
-                      </button>
-                    </div>
-                  </div> */}
                 </Col>
               </Row>
             </div>

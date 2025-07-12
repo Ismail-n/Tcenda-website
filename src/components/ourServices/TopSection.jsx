@@ -8,7 +8,7 @@ const TopSection = ({ selectedService }) => {
   return (
     <section className="top_section" id={selectedService.id}>
       <Container>
-        <div className="top_row text-center">
+        <div className="top_row text-md-center">
           <h1 className="top_section_title">{t(selectedService?.mainTitle)}</h1>
           <p className="top_section_sub_title">
             {t(selectedService?.mainSubTitle)}
@@ -21,6 +21,15 @@ const TopSection = ({ selectedService }) => {
           width={1920}
           height={247}
           alt="bg image"
+          priority
+          className="d-none d-lg-block"
+        />
+        <Image
+          src={"/images/aboutUs/mobileTopBg.webp"}
+          width={393}
+          height={322}
+          alt="bg image"
+          className="d-lg-none"
           priority
         />
       </div>

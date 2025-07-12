@@ -36,18 +36,7 @@ const OurServices = () => {
       <Container>
         <Title title={t("Our Services")} />
         <SubTitle subTitle={t("Solutions Designed for the Saudi Market")} />
-        {/* <div className="sub_title_2_div">
-          <p className="sub_title_2">
-            {t(
-              "Partner with us to bring your ideas to life, overcome tech challenges, and keep your systems running strong."
-            )}
-          </p>
-          <p className="sub_title_2">
-            {t(
-              "From ideation to execution, we partner with Saudi brands to deliver digital excellence."
-            )}
-          </p>
-        </div> */}
+
         {/* DESKTOP */}
         <div className="d-none d-md-block">
           <Row className="services_row">

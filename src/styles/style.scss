@@ -1,5 +1,20 @@
 header {
-  margin: 30px 0;
+  // margin: 30px 0;
+  .hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+  .visible {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+  }
+  padding-top: 30px;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  top: 0;
+  background-color: var(--black-color);
   .menu_links {
     display: flex;
     align-items: center;
@@ -59,6 +74,12 @@ header {
     }
   }
 }
+.header_padding {
+  margin-top: 180px;
+  @media (max-width: 575px) {
+    margin-top: 140px;
+  }
+}
 footer {
   // padding-top: 80px;
   @media (max-width: 575px) {
@@ -83,15 +104,35 @@ footer {
     // .service_item {
     //   min-width: 220px;
     // }
+    .service2 {
+      @media (min-width: 575px) {
+        margin-left: auto;
+        display: block;
+        margin-left: 12%;
+      }
+      @media (max-width: 575px) {
+        .service_item {
+          h2 {
+            display: none;
+          }
+        }
+      }
+    }
     .single_item {
       h2 {
         font-size: 20px;
         font-weight: 700;
         line-height: 20px;
         margin-bottom: 30px;
+        @media (min-width: 575px) {
+          min-height: 20px;
+        }
       }
       ul li {
         margin-bottom: 25px;
+        @media (max-width: 575px) {
+          margin-bottom: 15px;
+        }
         a {
           font-size: 18px;
           color: var(--footer-link-color);
@@ -103,6 +144,12 @@ footer {
       }
     }
     .top_link {
+      @media (min-width: 575px) {
+        margin-left: auto;
+        display: block;
+        width: fit-content;
+      }
+
       @media (min-width: 575px) {
         display: flex;
         justify-content: space-between;
@@ -157,11 +204,12 @@ footer {
     }
   }
   .vision_img {
-    margin-top: 29px;
   }
   .connect_on_div {
     margin-top: 40px;
-    padding-right: 20px;
+    @media (max-width: 575px) {
+      margin-top: 25px;
+    }
     // @media (max-width: 575px) {
     //   margin-top: 35px;
     //   display: block;
@@ -171,6 +219,7 @@ footer {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .connect_on_inner {
       // @media (min-width: 575px) {
       //   display: flex;
@@ -207,6 +256,11 @@ footer {
   }
   .reserved_row {
     padding: 30px 0;
+    border-top: 1px solid var(--common-border-color);
+    margin-top: 50px;
+    @media (max-width: 575px) {
+      margin-top: 25px;
+    }
     h2 {
       font-size: 18px;
       // font-weight: 300;
@@ -222,7 +276,7 @@ footer {
       margin-inline-start: 40px;
     }
     @media (max-width: 575px) {
-      margin-top: 85px;
+      margin-top: 40px;
     }
     .main_btn {
       margin-top: 30px;
@@ -236,6 +290,22 @@ footer {
     img {
       width: 100%;
       height: auto;
+    }
+    .scroll-wrapper {
+      overflow: hidden;
+      width: 100%;
+      height: 400px;
+      .scroll-content {
+        height: 100%;
+        display: flex;
+        width: fit-content;
+        animation: scroll 10s linear infinite;
+        img {
+          height: auto;
+          flex-shrink: 0;
+          object-fit: cover;
+        }
+      }
     }
   }
   .innovation_section {
@@ -280,6 +350,10 @@ footer {
       @media (max-width: 575px) {
         margin-top: 40px;
       }
+      @media (max-width: 375px) {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
 
       .portfolio_inner_section {
         margin-top: 0px;
@@ -288,6 +362,9 @@ footer {
           margin-top: 0;
         }
       }
+    }
+    .project_slider_controls {
+      
     }
   }
   .our_services {
@@ -304,7 +381,7 @@ footer {
         gap: 15px;
         justify-content: center;
         @media (max-width: 575px) {
-          min-height: 310px;
+          min-height: 290px;
           margin-top: 20px;
         }
         h2 {
@@ -393,14 +470,14 @@ footer {
           border-radius: 16px;
           opacity: 0.3;
         }
-        padding: 29px 25px;
+        padding: 25px;
         border: 1px solid #34dfff80;
         border-radius: 16px;
         margin-top: 28px;
         height: calc(100% - 28px);
         h2 {
           color: var(--primary-color);
-          margin-top: 23px;
+          margin-top: 15px;
           font-size: 30px;
           font-weight: 700;
           margin-bottom: 15px;
@@ -413,7 +490,7 @@ footer {
           font-weight: 500;
         }
         .points {
-          margin-top: 30px;
+          margin-top: 15px;
           .single_point {
             display: flex;
             gap: 15px;
@@ -430,18 +507,12 @@ footer {
             }
           }
         }
-        &#staff {
-          h2 {
-            margin-top: 8px;
-            margin-bottom: 6px;
-          }
-        }
-        &#project,
-        &#service {
-          p {
-            padding-top: 10px;
-          }
-        }
+        // &#staff {
+        //   h2 {
+        //     margin-top: 8px;
+        //     margin-bottom: 6px;
+        //   }
+        // }
       }
     }
     .mobile_models_cards {
@@ -624,6 +695,8 @@ footer {
     width: 100%;
     @media (max-width: 575px) {
       flex-direction: column;
+      border: 1px solid #fff3;
+      border-radius: 20px;
     }
     .left_section {
       background: linear-gradient(
@@ -637,6 +710,13 @@ footer {
       border-top-left-radius: 30px;
       border-bottom-left-radius: 30px;
       position: relative;
+
+      @media (max-width: 575px) {
+        // background: #1b1b1b;
+        // border: 1px solid #ffffff33;
+        // border-bottom: unset;
+        background: unset;
+      }
       @media (max-width: 575px) {
         flex-direction: column;
         border-top-left-radius: 20px;
@@ -677,7 +757,7 @@ footer {
     .right_section {
       width: 510px;
       max-width: 100%;
-      background-color: #1b1b1b;
+      // background-color: #1b1b1b;
       padding: 40px;
       @media (min-width: 575px) {
         border-top-right-radius: 30px;
@@ -758,16 +838,23 @@ footer {
     margin-top: 25px;
     text-align: center;
     @media (max-width: 575px) {
+      min-height: 120px;
       margin-top: 20px;
-      padding: 20px;
+      padding: 15px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
     }
+
     h3 {
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 100%;
       margin-top: 10px;
       @media (max-width: 575px) {
         margin-top: 15px;
+        font-size: 14px;
       }
     }
   }
@@ -1159,13 +1246,13 @@ footer {
       }
 
       @media (max-width: 575px) {
-        margin-top: 30px;
+        margin-top: 0;
       }
       .preview_img {
         object-fit: contain;
         @media (max-width: 575px) {
-          height: auto;
           max-height: 313px;
+          height: 200px;
         }
       }
     }
@@ -1264,6 +1351,9 @@ footer {
       }
     }
   }
+  .sub_title {
+    max-width: 100%;
+  }
   .services_tab {
     margin-top: 120px;
     background-color: #1b1b1b;
@@ -1286,14 +1376,42 @@ footer {
       }
     }
   }
+  .mobile_services_tab {
+    select {
+      background-color: #1b1b1b;
+      height: 60px;
+      width: 100%;
+      border-radius: 14px;
+      border: none;
+      color: var(--primary-color);
+      font-size: 18px;
+      padding: 0 20px;
+      font-weight: 700;
+      outline: none;
+      appearance: none; /* Remove default arrow */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url("/images/icons/arrowDown.svg"); /* Custom arrow */
+      background-repeat: no-repeat;
+      background-position: right 20px center; /* Adjust arrow position */
+      background-size: 16px; /* Icon size */
+      //  background: url('/images/icons/arrowDown.svg') no-repeat right 1rem center;
+    }
+  }
   .overview_section {
     display: flex;
     align-items: center;
     gap: 40px;
     padding: 0 42px;
+    @media (max-width: 575px) {
+      flex-direction: column;
+      gap: 44px;
+      padding: 0;
+    }
     .img_section {
       img {
         object-fit: contain;
+        height: auto;
       }
     }
     .content {
@@ -1302,6 +1420,9 @@ footer {
       justify-content: center;
       height: 100%;
       width: 50%;
+      @media (max-width: 575px) {
+        width: 100%;
+      }
       h2 {
         font-size: 30px;
         line-height: 100%;
@@ -1310,6 +1431,10 @@ footer {
         font-size: 16px;
         line-height: 20px;
         margin-top: 25px;
+        font-weight: 500;
+        @media (max-width: 575px) {
+          margin-top: 35px;
+        }
       }
       ul {
         list-style: disc;
@@ -1332,25 +1457,33 @@ footer {
   .services_inner,
   .tech_stack_titles {
     padding-top: 50px;
-    padding-bottom: 23px;
+    padding-bottom: 10px;
 
     .top_section_title {
       max-width: 100%;
+      @media (max-width: 575px) {
+        // max-width: 207px;
+        // display: block;
+        // margin: auto;
+      }
     }
   }
   .service_categories {
-    padding: 0 20px;
     .single_tech_card {
       margin-top: 25px;
       padding: 25px;
       background-color: #1b1b1b;
       border-radius: 20px;
-      min-height: 341px;
+      min-height: 290px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      // justify-content: center;
+      padding-top: 50px;
+      @media (max-width: 575px) {
+        min-height: 310px;
+      }
       h2 {
-        font-size: 30px;
+        font-size: 24px;
         line-height: 100%;
         margin-top: 20px;
       }
@@ -1358,11 +1491,14 @@ footer {
         font-size: 16px;
         line-height: 22px;
         margin-top: 15px;
+        font-weight: 500;
       }
     }
   }
   .tech_stacks {
-    padding: 0 72px;
+    @media (min-width: 575px) {
+      // padding: 0 72px;
+    }
     .single_tech {
       margin-top: 25px;
       min-height: 151px;
@@ -1373,6 +1509,9 @@ footer {
       flex-direction: column;
       align-items: center;
       gap: 20px;
+      @media (max-width: 575px) {
+        margin-top: 15px;
+      }
       h2 {
         font-size: 20px;
         line-height: 100%;
@@ -1609,7 +1748,7 @@ footer {
         margin-top: 5px;
       }
 
-      .icon_text p {
+      .icon_text a {
         margin: 0;
         line-height: 1.5;
       }
@@ -1659,7 +1798,11 @@ footer {
       gap: 10px;
       select {
         max-width: 80px;
-        background-color: #1b1b1b;
+        background-color: #000;
+        appearance: none;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
       }
     }
   }

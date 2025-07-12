@@ -72,6 +72,18 @@ const TopSection = () => {
         </div>
       </Container>
       <div className="top_bg">
+        {/* <div className="scroll-wrapper">
+          <div className="scroll-content">
+            <Image
+              src={"/images/home/homeLargeBg.png"}
+              width={1920}
+              height={421}
+              alt="bg image"
+              priority
+              className="d-none d-lg-block"
+            />
+          </div>
+        </div> */}
         <Image
           src={"/images/home/topBg.webp"}
           width={1920}
@@ -83,7 +95,7 @@ const TopSection = () => {
         <Image
           src={"/images/home/mobileTopBg.webp"}
           width={393}
-          height={332}
+          height={107}
           alt="bg image"
           className="d-lg-none"
           priority

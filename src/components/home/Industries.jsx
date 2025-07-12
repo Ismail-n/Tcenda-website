@@ -5,22 +5,23 @@ import SubTitle from "../common/SubTitle";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 import { industries } from "@/data/homeData";
-import { useKeenSlider } from "keen-slider/react";
+// import { useKeenSlider } from "keen-slider/react";
+// import "keen-slider/keen-slider.min.css";
 
 const Industries = () => {
   const { t } = useTranslation();
-  const [currentSlide, setCurrentSlide] = useState(0);
+  // const [currentSlide, setCurrentSlide] = useState(0);
 
-  const [sliderRef, instanceRef] = useKeenSlider({
-    slides: {
-      perView: 1.1,
-      spacing: 16,
-    },
-    loop: false,
-    slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel);
-    },
-  });
+  // const [sliderRef, instanceRef] = useKeenSlider({
+  //   slides: {
+  //     perView: 1.1,
+  //     spacing: 16,
+  //   },
+  //   loop: false,
+  //   slideChanged(slider) {
+  //     setCurrentSlide(slider.track.details.rel);
+  //   },
+  // });
 
   return (
     <section className="industries common_section">
@@ -35,14 +36,14 @@ const Industries = () => {
           </p>
         </div> */}
         {/* Desktop Grid View */}
-        <Row className="industries_row d-none d-md-flex">
+        <Row className="industries_row">
           {industries.map((item) => (
             <IndustryCard item={item} key={item.title} />
           ))}
         </Row>
 
         {/* Mobile Slider View */}
-        <div className="d-block d-md-none industries_row">
+        {/* <div className="d-block d-md-none industries_row">
           <div ref={sliderRef} className="keen-slider">
             {industries.map((item) => (
               <div className="keen-slider__slide" key={item.title}>
@@ -59,7 +60,6 @@ const Industries = () => {
             ))}
           </div>
 
-          {/* Dots */}
           <div className="common_dots">
             {industries.map((_, idx) => (
               <button
@@ -69,7 +69,7 @@ const Industries = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </Container>
     </section>
   );
@@ -81,7 +81,7 @@ const IndustryCard = ({ item }) => {
   const { icon, title } = item || {};
   const { t } = useTranslation();
   return (
-    <Col lg={4}>
+    <Col lg={4} xs={6}>
       <div className="single_industry">
         <Image
           src={`/images/icons/industries/${icon}.svg`}

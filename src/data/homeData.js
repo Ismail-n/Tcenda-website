@@ -75,6 +75,7 @@ const serviceModels = [
     id: "project",
     icon: "project",
     title: "Fixed Price Projects",
+    maxTitleWidth: 161,
     description:
       "Ideal for well-scoped initiatives with clear timelines and budgets",
     points: [
@@ -87,6 +88,7 @@ const serviceModels = [
     id: "service",
     icon: "managedService",
     title: "Hourly Projects",
+    maxTitleWidth: 106,
     description: "Best suited for changing needs, billed by the hour",
     points: [
       "Pay-as-you-go model with no long-term commitments",
@@ -97,7 +99,8 @@ const serviceModels = [
   {
     id: "staff",
     icon: "staff",
-    title: "Hire Developer on Demand",
+    title: "Developer on Demand",
+    maxTitleWidth: 155,
     description:
       "Best suited for teams needing expert skills without long hiring cycles",
     points: [

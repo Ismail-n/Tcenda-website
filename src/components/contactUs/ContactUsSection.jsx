@@ -47,7 +47,7 @@ const ContactUsSection = () => {
                         height={24}
                         alt="location"
                       />
-                      <p>{t("+966 1 4323949")}</p>
+                      <a href="tel:+966554848908">{t("+966 55 484 8908")}</a>
                     </div>
                     <div className="icon_text">
                       <Image
@@ -56,7 +56,7 @@ const ContactUsSection = () => {
                         height={24}
                         alt="location"
                       />
-                      <p>{t("todinfo@tod.com")}</p>
+                      <a href="mailto:todinfo@tod.com">{t("todinfo@tod.com")}</a>
                     </div>
                   </div>
                 </div>

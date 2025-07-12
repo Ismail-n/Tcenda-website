@@ -37,7 +37,7 @@ export default EngagementModels;
 
 const EngagementCard = ({ item }) => {
   const { t } = useTranslation();
-  const { icon, title, description, points, id } = item || {};
+  const { icon, title, description, points, id, maxTitleWidth } = item || {};
   return (
     <Col lg={4}>
       <div className="single_card" id={id}>
@@ -48,7 +48,7 @@ const EngagementCard = ({ item }) => {
           height={64}
           alt={icon || "engagement icon"}
         />
-        <h2>{t(title)}</h2>
+        <h2 style={{ maxWidth: maxTitleWidth || "auot" }}>{t(title)}</h2>
         <p>{t(description)}</p>
         <div className="points">
           {points?.map((point, index) => (

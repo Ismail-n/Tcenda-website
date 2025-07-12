@@ -15,18 +15,28 @@ const footerServices = [
     hash: "#digital",
   },
   {
-    name: "Odoo Development & Customisation",
+    name: "Odoo Customisation",
     href: "/our-services",
     hash: "#odoo",
   },
+  // {
+  //   name: "Managed Cloud Services",
+  //   href: "/our-services",
+  //   hash: "#cloud-services",
+  // },
+  // { name: "AI/ML", href: "/our-services", hash: "#ai-ml" },
+  // { name: "Data Analytics", href: "/our-services", hash: "#data-analytics" },
+  // { name: "UI/UX Design & Prototyping", href: "/our-services", hash: "#ui-ux" },
+];
+const footerServices2 = [
   {
     name: "Managed Cloud Services",
     href: "/our-services",
     hash: "#cloud-services",
   },
-  { name: "AI/ML", href: "/our-services", hash: "#ai-ml" },
+  { name: "Artificial Intelligence & Machine Learning", href: "/our-services", hash: "#ai-ml" },
   { name: "Data Analytics", href: "/our-services", hash: "#data-analytics" },
-  { name: "UI/UX Design & Prototyping", href: "/our-services", hash: "#ui-ux" },
+  { name: "UI/UX Design", href: "/our-services", hash: "#ui-ux" },
 ];
 
 const footerCompany = [
@@ -40,4 +50,4 @@ const footerQuickLinks = [
   { name: "Contact Us", href: "/contact-us" },
 ];
 
-export { footerServices, footerCompany, footerQuickLinks };
+export { footerServices, footerCompany, footerQuickLinks, footerServices2 };
