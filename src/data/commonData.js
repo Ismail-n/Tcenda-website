@@ -29,14 +29,14 @@ const footerCompany = [
   { name: "About Us", href: "/about-us" },
   { name: "Portfolio", href: "/portfolio" },
   { name: "Services", href: "/our-services" },
-  { name: "Resources", href: "#" },
+  // { name: "Resources", href: "#" },
 ];
 
 const footerQuickLinks = [
-  { name: "Career", href: "#" },
+  // { name: "Career", href: "#" },
   { name: "Contact Us", href: "/contact-us" },
-  { name: "Become a Partner", href: "#" },
-  { name: "Blogs", href: "#" },
+  // { name: "Become a Partner", href: "#" },
+  // { name: "Blogs", href: "#" },
 ];
 
 export { footerServices, footerCompany, footerQuickLinks };

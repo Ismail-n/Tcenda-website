@@ -17,7 +17,7 @@ export default function Home() {
       <main className="home">
         <TopSection />
         <InnovationSection />
-        {/* <OurProjects /> */}
+        <OurProjects />
         <OurServices />
         <EngagementModels />
         <Industries />

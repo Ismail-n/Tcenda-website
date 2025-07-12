@@ -1,18 +1,12 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const TopSection = () => {
   const { t } = useTranslation();
   const router = useRouter();
-
-  const scrollToContact = () => {
-    router.push("/contact-us");
-    // const el = document.getElementById("contact");
-    // if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
 
   const words = [
     "Digital Transformation",
@@ -22,26 +16,45 @@ const TopSection = () => {
     "Artificial Intelligence",
   ];
 
-  const [index, setIndex] = useState(0);
+  const [wordIndex, setWordIndex] = useState(0);
+  const [letterIndex, setLetterIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
 
+  // Typing effect
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % words.length);
-    }, 2500); // 2.5 seconds per word
+    const currentWord = t(words[wordIndex]);
+    if (letterIndex < currentWord.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText((prev) => prev + currentWord.charAt(letterIndex));
+        setLetterIndex(letterIndex + 1);
+      }, 100); // Typing speed per letter
 
-    return () => clearInterval(interval);
-  }, []);
+      return () => clearTimeout(timeout);
+    } else {
+      // Wait before showing next word
+      const timeout = setTimeout(() => {
+        setLetterIndex(0);
+        setDisplayText("");
+        setWordIndex((prev) => (prev + 1) % words.length);
+      }, 2000); // Hold current word for 2s
+
+      return () => clearTimeout(timeout);
+    }
+  }, [letterIndex, wordIndex, t]);
+
+  const scrollToContact = () => {
+    router.push("/contact-us");
+  };
 
   return (
     <section className="top_section">
       <Container>
         <div className="top_row">
           <h1 className="top_section_title">
-            {t("Empowering Saudi Businesses to Scale with")} 
+            {t("Empowering Saudi Businesses to Scale with")}
             <br />
-            <span className="animated-word" key={index}>
-              {t(words[index])}
-            </span>
+            <span className="animated-typing">{displayText}</span>
+            <span className="cursor">|</span>
           </h1>
           <p className="top_section_sub_title">
             {t(

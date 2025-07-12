@@ -156,7 +156,7 @@ const Footer = () => {
                               alt="LinkedIn"
                             />
                           </Link>
-                          <Link
+                          {/* <Link
                             href="https://facebook.com"
                             aria-label="Facebook"
                             target="_blank"
@@ -168,10 +168,10 @@ const Footer = () => {
                               height={36}
                               alt="facebook"
                             />
-                          </Link>
+                          </Link> */}
                           <Link
-                            href="https://facebook.com"
-                            aria-label="Facebook"
+                            href="https://www.instagram.com/tod.dev/?igsh=MWw2OXkyZmtpa3hsbA%3D%3D&utm_source=qr#"
+                            aria-label="Instagram"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -179,7 +179,7 @@ const Footer = () => {
                               src="/images/icons/instagram.svg"
                               width={36}
                               height={36}
-                              alt="facebook"
+                              alt="instagram"
                             />
                           </Link>
                         </div>

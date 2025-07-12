@@ -2,6 +2,7 @@
   max-width: 883px;
   font-size: 56px;
   font-weight: normal;
+  line-height: 100%;
   span {
     background: var(--common-gradient-color);
     -webkit-background-clip: text;
@@ -15,7 +16,7 @@
 .top_section_sub_title {
   margin-top: 15px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .main_btn {
@@ -37,7 +38,7 @@
 .sub_title {
   color: var(--text-color);
   font-size: 30px;
-  // font-weight: 500;
+  font-weight: 500;
   line-height: 100%;
   margin-top: 16px;
   max-width: 855px;
@@ -46,7 +47,7 @@
   margin-top: 15px;
   .sub_title_2 {
     font-size: 16px;
-    // font-weight: 300;
+    font-weight: 500;
     line-height: 100%;
   }
 }
