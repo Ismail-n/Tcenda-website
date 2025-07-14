@@ -3,6 +3,11 @@
 .modal-backdrop.show {
   opacity: 0;
 }
+@media (max-width: 1200px) {
+  .service_btn {
+    font-size: 18px;
+  }
+}
 @media (max-width: 575px) {
   // GLOBAL/COMMON START
   .container {
@@ -50,6 +55,23 @@
   // GLOBAL/COMMON END
 
   // HEADER START
+  header {
+    padding: 35px 10px;
+    .logo {
+      img {
+        width: 100px;
+        height: 24px;
+      }
+    }
+    .mobile_menu_icon {
+      width: 30px;
+      height: auto;
+    }
+    .language_btn {
+      min-width: 65px;
+      height: 30px;
+    }
+  }
   .mobile_menu_modal {
     min-height: 120vh;
     background: var(--black-color);

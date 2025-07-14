@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Title from "../common/Title";
@@ -59,13 +59,16 @@ const ourProjectsData = [
 const OurProjects = () => {
   const { t } = useTranslation();
 
-  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderInstanceRef, slider] = useKeenSlider({
     slides: {
       perView: 1,
       spacing: 16,
     },
     loop: true,
+    slideChanged: (slider) => {
+      setCurrentSlide(slider.track.details.rel);
+    },
     breakpoints: {
       "(max-width: 575px)": {
         slides: {
@@ -82,6 +85,8 @@ const OurProjects = () => {
       <Container>
         <Title title={t("Explore Our Projects")} />
         <SubTitle subTitle={t("What Do We Offer?")} />
+      </Container>
+      <Container fluid="sm">
         <div className="position-relative wrapper_section">
           <div
             className="keen-slider portfolio_inner_section"
@@ -103,7 +108,9 @@ const OurProjects = () => {
                 index
               ) => (
                 <div
-                  className="portfolio_inner keen-slider__slide"
+                  className={`portfolio_inner keen-slider__slide ${
+                    currentSlide === index ? "active" : ""
+                  }`}
                   key={id}
                   id={id}
                   style={{

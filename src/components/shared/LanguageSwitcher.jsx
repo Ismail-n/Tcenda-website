@@ -22,8 +22,9 @@ export default function LanguageSwitcher() {
 
   return (
     <button
-    className="language_btn"
-     onClick={() => changeLanguage(lang === "en" ? "ar" : "en")}>
+      className="language_btn"
+      onClick={() => changeLanguage(lang === "en" ? "ar" : "en")}
+    >
       {lang === "en" ? "العربية" : "English"}
     </button>
   );

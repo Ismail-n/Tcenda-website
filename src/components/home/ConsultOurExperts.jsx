@@ -38,7 +38,7 @@ const ConsultOurExperts = () => {
       const { status, text } = result || {};
 
       if (status) {
-        toast.success("Message sent successfully!");
+       toast.success("Thank You! We'll get back to you soon.");
         resetForm();
       } else {
         toast.error(text || "Failed to send message.");

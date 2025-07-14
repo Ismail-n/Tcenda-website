@@ -4,7 +4,6 @@ import { Container, Modal } from "react-bootstrap";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useRouter } from "next/router";
 
@@ -119,8 +118,10 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-              <LanguageSwitcher />
             </nav>
+            <div className="d-none d-lg-flex">
+              <LanguageSwitcher />
+            </div>
             {/* Mobile Menu Icon */}
             <div className="d-flex align-items-center gap-2 d-lg-none ">
               {!isMobileMenuOpen && <LanguageSwitcher />}

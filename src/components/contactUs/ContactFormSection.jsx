@@ -35,7 +35,7 @@ const ContactFormSection = () => {
       const { status, text } = result || {};
 
       if (status) {
-        toast.success("Message sent successfully!");
+        toast.success("Thank You! We'll get back to you soon.");
         resetForm();
       } else {
         toast.error(text || "Failed to send message.");
@@ -56,68 +56,71 @@ const ContactFormSection = () => {
         onSubmit={handleSubmit}
       >
         {({ isSubmitting, isValid, dirty }) => (
-          <Form>
-            <div className="mb-25-gap-15">
-              <div className="flex-1">
-                <label>{t("Name")}</label>
+          <Form className="common_form">
+            <div className="form_field">
+              <Field
+                name="name"
+                type="text"
+                placeholder={t("Name")}
+                className="input"
+              />
+              <ErrorMessage
+                name="name"
+                component="div"
+                className="text-danger"
+              />
+            </div>
+            <div className="form_field">
+              <Field
+                type="email"
+                name="email"
+                placeholder={t("Email Address")}
+                className="input"
+              />
+              <ErrorMessage
+                name="email"
+                component="div"
+                className="text-danger"
+              />
+            </div>
+            <div className="form_field">
+              <div className="phone_div">
                 <Field
-                  name="name"
-                  type="text"
-                  placeholder={t("Name")}
+                  as="select"
+                  name="code"
+                  className="input mw-80"
+                  placeholder={t("Select County code")}
+                >
+                  <option value="+966">+966</option>
+                  <option value="+91">+91</option>
+                  <option value="+1">+1</option>
+                </Field>
+                <Field
+                  name="mobile"
+                  type="tel"
+                  placeholder={t("Mobile Number")}
                   className="input"
                 />
-                <ErrorMessage name="name" component="div" className="error" />
               </div>
+              <ErrorMessage
+                name="mobile"
+                component="div"
+                className="text-danger"
+              />
             </div>
-
-            <div className="mb-25-gap-15">
-              <div className="flex-1">
-                <label>{t("Email Address")}</label>
-                <Field
-                  type="email"
-                  name="email"
-                  placeholder={t("Email Address")}
-                  className="input"
-                />
-                <ErrorMessage name="email" component="div" className="error" />
-              </div>
-            </div>
-            <div className="mb-25-gap-15">
-              <div className="flex-1">
-                <label>{t("Mobile Number")}</label>
-                <div className="flex-gap-10">
-                  <Field
-                    as="select"
-                    name="code"
-                    className="input mw-80"
-                    placeholder={t("Select County code")}
-                  >
-                    <option value="+966">+966</option>
-                    <option value="+91">+91</option>
-                    <option value="+1">+1</option>
-                  </Field>
-                  <Field
-                    name="mobile"
-                    type="tel"
-                    placeholder={t("Mobile Number")}
-                    className="input"
-                  />
-                </div>
-                <ErrorMessage name="mobile" component="div" className="error" />
-              </div>
-            </div>
-
-            <div className="mb-25">
-              <label>{t("Describe Your Project")}</label>
+            <div className="form_field">
               <Field
                 as="textarea"
                 name="message"
-                placeholder={t("Write here...")}
+                placeholder={t("Describe Your Project")}
                 className="textarea"
               />
-              <ErrorMessage name="message" component="div" className="error" />
+              <ErrorMessage
+                name="message"
+                component="div"
+                className="text-danger"
+              />
             </div>
-
             <button
               type="submit"
               disabled={isSubmitting}

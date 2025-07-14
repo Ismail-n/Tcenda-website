@@ -27,7 +27,7 @@ const TopSection = () => {
           className="d-none d-lg-block"
         />
         <Image
-          src={"/images/home/mobileTopBgNew.webp"}
+          src={"/images/home/mobileTopBgNew1.webp"}
           width={393}
           height={144}
           alt="bg image"

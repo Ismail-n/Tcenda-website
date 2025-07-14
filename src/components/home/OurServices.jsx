@@ -110,8 +110,9 @@ export default OurServices;
 const ServiceCard = ({ item, t }) => {
   const { icon, title, description, maxTitleWidth } = item || {};
   return (
-    <Col lg={4}>
+    <Col lg={4} md={6}>
       <div className="single_service">
+        {/* <div className="gradient-border-box"></div> */}
         <Image
           src={`/images/icons/services/${icon}.svg`}
           width={48}
