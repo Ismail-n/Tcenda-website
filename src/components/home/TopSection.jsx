@@ -93,9 +93,9 @@ const TopSection = () => {
           className="d-none d-lg-block"
         />
         <Image
-          src={"/images/home/mobileTopBg.webp"}
+          src={"/images/home/mobileTopBgNew.webp"}
           width={393}
-          height={107}
+          height={144}
           alt="bg image"
           className="d-lg-none"
           priority

@@ -34,7 +34,7 @@
   }
   .sub_title {
     margin-top: 15px;
-    font-size: 22px;;
+    font-size: 22px;
     line-height: 100%;
   }
 
@@ -51,7 +51,8 @@
 
   // HEADER START
   .mobile_menu_modal {
-    min-height: 100vh;
+    min-height: 120vh;
+    background: var(--black-color);
     .modal_header {
       padding: 43px 25px;
       display: flex;
@@ -68,7 +69,8 @@
       width: 300px;
       max-width: 100%;
       margin: 0 auto;
-      margin-top: 60px;
+      margin-top: 30px;
+      min-height: 830px;
       ul li a,
       button {
         font-size: 20px;
@@ -96,6 +98,23 @@
         height: 46px;
         border-color: var(--text-color);
         margin-top: 15px;
+      }
+    }
+    .sub_link {
+      button {
+        border: unset;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        gap: 10px;
+        min-width: 200px;
+      }
+      ul li {
+        a {
+          font-weight: 500;
+          background: transparent !important;
+          margin: 5px 0;
+        }
       }
     }
   }

@@ -1,13 +1,13 @@
 header {
   // margin: 30px 0;
-  .hidden {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
-  }
-  .visible {
-    transform: translateY(0);
-    transition: transform 0.3s ease;
-  }
+  // &.hidden {
+  //   transform: translateY(-100%);
+  //   transition: transform 0.3s ease;
+  // }
+  // &.visible {
+  //   transform: translateY(0);
+  //   transition: transform 0.3s ease;
+  // }
   padding-top: 30px;
   padding-bottom: 10px;
   position: fixed;
@@ -72,6 +72,18 @@ header {
       align-items: center;
       cursor: pointer;
     }
+    .language_btn {
+      border: 1px solid var(--text-color);
+      background-color: transparent;
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-color);
+      padding: 0 24px;
+      text-align: center;
+      height: 35px;
+      min-width: 65px;
+    }
   }
 }
 .header_padding {
@@ -84,6 +96,9 @@ footer {
   // padding-top: 80px;
   @media (max-width: 575px) {
     padding-top: 30px;
+    .mobile_footer_logo {
+      margin-bottom: 45px;
+    }
   }
   .left_content {
     p {
@@ -364,7 +379,6 @@ footer {
       }
     }
     .project_slider_controls {
-      
     }
   }
   .our_services {
@@ -865,28 +879,43 @@ footer {
   margin-top: 50px;
   .top_section {
     // min-height: 307px;
-    min-height: 207px;
-    position: relative;
-    margin: 60px 0;
+    @media (min-width: 575px) {
+      min-height: 207px;
+      position: relative;
+    }
+    @media (min-width: 575px) {
+      margin: 60px 0;
+    }
     .top_section_title {
       max-width: 802px;
       display: block;
       margin: auto;
     }
     .top_bg {
-      position: absolute;
-      // bottom: 0;
-      top: 0;
-      left: 0;
-      height: 287px;
-      z-index: -1;
+      @media (max-width: 575px) {
+        margin-top: 30px;
+      }
+      @media (min-width: 575px) {
+        position: absolute;
+        // bottom: 0;
+        top: 0;
+        left: 0;
+        height: 287px;
+        z-index: -1;
+      }
+
+      width: 100%;
+
       img {
         height: 100%;
+        width: 100%;
       }
     }
   }
   .about_us_section {
-    padding-top: 50px;
+    @media (min-width: 575px) {
+      padding-top: 50px;
+    }
   }
   .inner_desc {
     margin-top: 5px;
@@ -983,6 +1012,9 @@ footer {
           font-size: 36px;
           line-height: 100%;
           font-weight: 500;
+          @media (max-width: 575px) {
+            font-size: 32px;
+          }
         }
         p {
           margin-top: 15px;
@@ -1126,7 +1158,12 @@ footer {
   .top_section {
     position: relative;
     margin: 60px 0;
-    min-height: 247px;
+    @media (min-width: 575px) {
+      min-height: 247px;
+    }
+    @media (max-width: 575px) {
+      margin-bottom: 0;
+    }
     .top_section_sub_title {
       max-width: 761px;
       display: block;
@@ -1136,14 +1173,20 @@ footer {
       }
     }
     .top_bg {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 247px;
-      z-index: -1;
+      @media (max-width: 575px) {
+        margin-top: 30px;
+      }
+      @media (min-width: 575px) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 247px;
+        z-index: -1;
+      }
+      width: 100%;
       img {
         height: 100%;
-        // object-fit: contain;
+        width: 100%;
       }
     }
   }
@@ -1151,7 +1194,9 @@ footer {
 
 // COMMON PORTFOLIO FOR HOME PAGE AND PORTFOLIO PAGE
 .portfolio_inner_section {
-  margin-top: 50px;
+  @media (min-width: 575px) {
+    margin-top: 50px;
+  }
   .portfolio_inner {
     min-height: 530px;
     padding: 62px 62px 30px 70px;
@@ -1170,6 +1215,9 @@ footer {
         width: 50px;
         height: 50px;
       }
+    }
+    @media (max-width: 375px) {
+      padding: 15px;
     }
     .left {
       max-width: 418px;
@@ -1208,6 +1256,9 @@ footer {
           gap: 15px;
           @media (max-width: 575px) {
             margin-top: 15px;
+            .inner_btn_div {
+              gap: 10px;
+            }
           }
           img {
             object-fit: contain;
@@ -1247,6 +1298,13 @@ footer {
 
       @media (max-width: 575px) {
         margin-top: 0;
+        .store_btns {
+          @media (max-width: 575px) {
+            .inner_btn_div {
+              gap: 10px;
+            }
+          }
+        }
       }
       .preview_img {
         object-fit: contain;
@@ -1293,10 +1351,13 @@ footer {
 .our_services {
   margin-top: 50px;
   .top_section {
-    // min-height: 307px;
-    min-height: 207px;
-    position: relative;
-    margin: 60px 0;
+    @media (min-width: 575px) {
+      min-height: 207px;
+      position: relative;
+    }
+    @media (min-width: 575px) {
+      margin: 60px 0;
+    }
     .top_section_title {
       max-width: 846px;
       display: block;
@@ -1309,14 +1370,20 @@ footer {
       margin-top: 15px;
     }
     .top_bg {
-      position: absolute;
-      // bottom: 0;
-      top: 0;
-      left: 0;
-      height: 287px;
-      z-index: -1;
+      @media (max-width: 575px) {
+        margin-top: 30px;
+      }
+      @media (min-width: 575px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 287px;
+        z-index: -1;
+      }
+      width: 100%;
       img {
         height: 100%;
+        width: 100%;
       }
     }
     &#mobile-app {
@@ -1458,6 +1525,9 @@ footer {
   .tech_stack_titles {
     padding-top: 50px;
     padding-bottom: 10px;
+    @media (max-width: 575px) {
+      padding-top: 30px;
+    }
 
     .top_section_title {
       max-width: 100%;
@@ -1480,7 +1550,7 @@ footer {
       // justify-content: center;
       padding-top: 50px;
       @media (max-width: 575px) {
-        min-height: 310px;
+        min-height: fit-content;
       }
       h2 {
         font-size: 24px;
@@ -1542,13 +1612,18 @@ footer {
       margin: auto;
     }
     .top_bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 287px;
-      z-index: -1;
-      img {
-        height: 100%;
+      @media (max-width: 575px) {
+        margin-top: 30px;
+      }
+      @media (min-width: 575px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 287px;
+        z-index: -1;
+        img {
+          height: 100%;
+        }
       }
     }
   }

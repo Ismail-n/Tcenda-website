@@ -650,11 +650,11 @@ const servicesTabs = [
   { id: "mobile-app", text: "Mobile App Development" },
   { id: "web", text: "Web Development" },
   { id: "digital", text: "Digital Transformation" },
-  { id: "odoo", text: "Odoo Development & Customisation" },
+  { id: "odoo", text: "Odoo Customisation" },
   { id: "cloud-services", text: "Managed Cloud Services" },
   { id: "ai-ml", text: "AI/ML" },
   { id: "data-analytics", text: "Data Analytics" },
-  { id: "ui-ux", text: "UI/UX Design & Prototyping" },
+  { id: "ui-ux", text: "UI/UX Design" },
 ];
 
 export { servicesData, servicesTabs };

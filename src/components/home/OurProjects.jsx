@@ -66,6 +66,15 @@ const OurProjects = () => {
       spacing: 16,
     },
     loop: true,
+    breakpoints: {
+      "(max-width: 575px)": {
+        slides: {
+          perView: 1.2,
+          spacing: 16,
+          origin: "center",
+        },
+      },
+    },
   });
 
   return (
@@ -165,7 +174,7 @@ const OurProjects = () => {
                     />
 
                     <div className="store_btns d-md-none ">
-                      <div className="d-flex gap- mt-4">
+                      <div className="d-flex mt-4 inner_btn_div flex-wrap">
                         {appStoreLink && (
                           <a
                             href={appStoreLink}

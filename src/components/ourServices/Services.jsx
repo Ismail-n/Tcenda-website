@@ -63,7 +63,7 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
           </div>
         </div>
         {/* MOBILE TAB */}
-        <div className="d-md-none">
+        {/* <div className="d-md-none">
           <div className="mobile_services_tab">
             <select
               value={activeServiceTab}
@@ -76,7 +76,7 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
               ))}
             </select>
           </div>
-        </div>
+        </div> */}
 
         <div className="services_inner">
           <div className="">

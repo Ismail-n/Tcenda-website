@@ -19,16 +19,25 @@ const TopSection = () => {
             )}
           </p>
         </div>
-        <div className="top_bg">
-          <Image
-            src={"/images/aboutUs/topBg.webp"}
-            width={1920}
-            height={247}
-            alt="Background of Saudi digital success"
-            priority
-          />
-        </div>
       </Container>
+      <div className="top_bg">
+        <Image
+          src={"/images/aboutUs/topBg.webp"}
+          width={1920}
+          height={247}
+          alt="Background of Saudi digital success"
+          className="d-none d-lg-block"
+          priority
+        />
+        <Image
+          src={"/images/home/mobileTopBgNew.webp"}
+          width={393}
+          height={144}
+          alt="bg image"
+          className="d-lg-none"
+          priority
+        />
+      </div>
     </section>
   );
 };

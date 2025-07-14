@@ -8,9 +8,9 @@ const TopSection = () => {
   return (
     <section className="top_section">
       <Container>
-        <div className="top_row">
-          <h1 className="top_section_title text-center">{t("Contact Us")}</h1>
-          <p className="top_section_sub_title text-center">
+        <div className="top_row text-md-center">
+          <h1 className="top_section_title ">{t("Contact Us")}</h1>
+          <p className="top_section_sub_title">
             {t(
               "Let's Connect and Build Something Amazing, Right Here in Saudi Arabia."
             )}
@@ -23,6 +23,15 @@ const TopSection = () => {
           width={1920}
           height={421}
           alt="bg image"
+          priority
+          className="d-none d-lg-block"
+        />
+        <Image
+          src={"/images/home/mobileTopBgNew.webp"}
+          width={393}
+          height={144}
+          alt="bg image"
+          className="d-lg-none"
           priority
         />
       </div>

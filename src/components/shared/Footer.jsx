@@ -101,6 +101,21 @@ const Footer = () => {
           <Col lg={12}>
             <div className="right_content">
               <Row>
+                <Col lg={12}>
+                  <div className="connect_on_inner d-md-none mobile_footer_logo">
+                    <div className="logo w_fit_content mt-2">
+                      <Link href="/">
+                        <Image
+                          src="/images/icons/logo.svg"
+                          width={126}
+                          height={24}
+                          alt="logo"
+                          priority
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </Col>
                 <Col lg={5}>
                   <div className="inner_section">
                     <div className="single_item service_item">
@@ -166,19 +181,6 @@ const Footer = () => {
               </Row>
               <Row>
                 <Col lg={12}>
-                  <div className="connect_on_inner d-md-none">
-                    <div className="logo d-block mx-auto w_fit_content mt-2">
-                      <Link href="/">
-                        <Image
-                          src="/images/icons/logo.svg"
-                          width={126}
-                          height={24}
-                          alt="logo"
-                          priority
-                        />
-                      </Link>
-                    </div>
-                  </div>
                   <div className="connect_on_div">
                     <div className="connect_on_inner d-none d-md-block">
                       <div className="logo">
