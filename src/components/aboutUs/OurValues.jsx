@@ -9,7 +9,7 @@ const OurValues = () => {
   return (
     <section className="our_values">
       <Container>
-        <Row>
+        <Row className="mx-0">
           <div className="inner_section">
             <h2>{t("Our Values")}</h2>
             <h3>

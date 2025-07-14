@@ -652,7 +652,7 @@ const servicesTabs = [
   { id: "digital", text: "Digital Transformation" },
   { id: "odoo", text: "Odoo Customisation" },
   { id: "cloud-services", text: "Managed Cloud Services" },
-  { id: "ai-ml", text: "AI/ML" },
+  { id: "ai-ml", text: "AI & ML" },
   { id: "data-analytics", text: "Data Analytics" },
   { id: "ui-ux", text: "UI/UX Design" },
 ];

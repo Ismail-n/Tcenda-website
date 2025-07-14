@@ -7,12 +7,43 @@ import "@/styles/titles.scss";
 import "@/styles/fonts.scss";
 import "@/styles/responsive.scss";
 import "@/styles/animation.scss";
+import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from "next/router";
+
+const pageVariants = {
+  initial: { opacity: 0, y: -100 },
+  in: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", bounce: 0.4 },
+  },
+  out: { opacity: 0, y: 100 },
+};
+
+const pageTransition = {
+  type: "tween",
+  ease: "easeInOut",
+  duration: 0.4,
+};
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
     <>
       <Header />
-      <Component {...pageProps} />
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.div
+          key={router.asPath}
+          initial="initial"
+          animate="in"
+          exit="out"
+          variants={pageVariants}
+          transition={pageTransition}
+        >
+          <Component {...pageProps} />
+        </motion.div>
+      </AnimatePresence>
       <Footer />
     </>
   );

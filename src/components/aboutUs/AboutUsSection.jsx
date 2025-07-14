@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
@@ -8,6 +8,7 @@ import { riseValues } from "@/data/aboutUsData";
 
 const AboutUsSection = () => {
   const { t } = useTranslation();
+  const [showMore, setShowMore] = useState(false);
   return (
     <section className="about_us_section common_section">
       <Container>
@@ -20,18 +21,29 @@ const AboutUsSection = () => {
             {t(
               "At TOD, we specialize in delivering innovative, scalable, and intelligent technology solutions designed to fuel real business growth. Our team thrives on solving complex challenges with clarity and creativity — blending cutting-edge tech with strategic thinking. We believe great solutions start with great understanding, which is why we take a user-centric approach to everything we build."
             )}
+
+            <span
+              onClick={() => setShowMore(!showMore)}
+              className="mx-2 text-decoration-underline cursor-pointer text_primary"
+            >
+              {showMore ? t("Read Less") : t("Read More")}
+            </span>
           </p>
-          <p>
-            {t(
-              "From digital transformation to automation and product development, we partner with forward-thinking companies to craft experiences that not only perform but also evolve with the changing demands of the digital world. With TOD, you're not just investing in technology — you're investing in a smarter, more adaptable future."
-            )}
-          </p>
-          <p>
-            {t(
-              "Whether it's custom software, AI integration, or enterprise solutions"
-            )}
-          </p>
-          <p>{t("— We're here to build what's next.")}</p>
+          {showMore && (
+            <>
+              <p>
+                {t(
+                  "From digital transformation to automation and product development, we partner with forward-thinking companies to craft experiences that not only perform but also evolve with the changing demands of the digital world. With TOD, you're not just investing in technology — you're investing in a smarter, more adaptable future."
+                )}
+              </p>
+              <p>
+                {t(
+                  "Whether it's custom software, AI integration, or enterprise solutions"
+                )}
+              </p>
+              <p>{t("— We're here to build what's next.")}</p>
+            </>
+          )}
         </div>
         <div className="rise_section">
           <p>

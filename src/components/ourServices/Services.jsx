@@ -18,19 +18,17 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
       const id = router.asPath.split("#")[1]; // e.g., "full-stack"
       handleTabChange(id);
 
-      // Optional scroll (in case it's not already scrolled by hash)
-      const el = document.getElementById(id);
-      if (el) {
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100);
-      }
+      // SCROLL TO TOP
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 100);
     }
-  }, []);
+  }, [router]);
 
   const { overview, categories, techStack } = selectedService || {};
 
   const handleTabChange = (id) => {
+    console.log(id);
     setActiveServiceTab(id);
 
     const newService =

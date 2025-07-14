@@ -133,3 +133,18 @@ img {
     }
   }
 }
+
+.loader  {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+// COLORS
+.text_primary{
+  color: var(--primary-color);
+}

@@ -19,15 +19,7 @@ const footerServices = [
     href: "/our-services",
     hash: "#odoo",
   },
-  // {
-  //   name: "Managed Cloud Services",
-  //   href: "/our-services",
-  //   hash: "#cloud-services",
-  // },
-  // { name: "AI/ML", href: "/our-services", hash: "#ai-ml" },
-  // { name: "Data Analytics", href: "/our-services", hash: "#data-analytics" },
-  // { name: "UI/UX Design & Prototyping", href: "/our-services", hash: "#ui-ux" },
-];
+ ];
 const footerServices2 = [
   {
     name: "Managed Cloud Services",

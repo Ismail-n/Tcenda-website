@@ -9,7 +9,7 @@ const OurVisionMission = () => {
   return (
     <section className="our_vision_mission">
       <Container>
-        <Row className="inner_row">
+        <Row className="inner_row mx-0">
           {ourVisionMission?.map(({ id, title, description, className }) => (
             <Col lg={6} key={id}>
               <div className={`inner_section ${className}`}>
@@ -19,7 +19,7 @@ const OurVisionMission = () => {
             </Col>
           ))}
         </Row>
-        <Row className="committed_row">
+        <Row className="committed_row mx-0">
           <div className="inner_section">
             <p>
               <Image

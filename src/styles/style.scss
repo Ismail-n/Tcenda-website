@@ -12,7 +12,7 @@ header {
   padding-bottom: 10px;
   position: fixed;
   width: 100%;
-  z-index: 10000;
+  z-index: 100;
   top: 0;
   background-color: var(--black-color);
   .menu_links {
@@ -753,6 +753,7 @@ footer {
           line-height: 30px;
           margin-top: 10px;
           max-width: 381px;
+          font-weight: 500;
           @media (max-width: 575px) {
             margin-top: 20px;
           }
@@ -924,9 +925,9 @@ footer {
       line-height: 24px;
       font-weight: 500;
       margin-top: 25px;
-      &:last-child {
-        margin-top: 0;
-      }
+      // &:last-child {
+      //   margin-top: 0;
+      // }
     }
   }
   .rise_section {
@@ -1060,7 +1061,8 @@ footer {
           font-weight: 700;
           color: var(--black-color);
           @media (max-width: 575px) {
-            line-height: 40px;
+            line-height: 30px;
+            font-size: 18px;
           }
           .quotes_start {
             position: absolute;
@@ -1105,11 +1107,18 @@ footer {
         font-size: 36px;
         line-height: 100%;
         font-weight: 700;
+        @media (max-width: 575px) {
+          font-size: 30px;
+        }
       }
       & > h3 {
         font-size: 20px;
         line-height: 100%;
         margin-top: 14px;
+        font-weight: 500;
+        @media (max-width: 575px) {
+          font-size: 16px;
+        }
       }
       .core_values {
         margin-top: 30px;
@@ -1128,6 +1137,10 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (max-width: 575px) {
+              min-width: 50px;
+              height: 50px;
+            }
           }
           .content {
             @media (min-width: 575px) {
@@ -1142,6 +1155,7 @@ footer {
               font-size: 16px;
               line-height: 100%;
               margin-top: 5px;
+              font-weight: 500;
               @media (max-width: 575px) {
                 margin-top: 10px;
               }
@@ -1551,6 +1565,11 @@ footer {
       padding-top: 50px;
       @media (max-width: 575px) {
         min-height: fit-content;
+        padding: 25px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
       }
       h2 {
         font-size: 24px;
@@ -1581,11 +1600,15 @@ footer {
       gap: 20px;
       @media (max-width: 575px) {
         margin-top: 15px;
+        padding: 5px;
       }
       h2 {
         font-size: 20px;
         line-height: 100%;
         text-align: center;
+        @media (max-width: 575px) {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -1664,7 +1687,9 @@ footer {
       }
 
       .left_content {
-        background-color: var(--primary-color);
+        @media (min-width: 575px) {
+          background-color: var(--primary-color);
+        }
         border-radius: 20px;
         min-height: 400px;
         min-width: 490px;
@@ -1748,17 +1773,22 @@ footer {
           }
 
           .submit-btn {
-            background-color: #00c4cc;
+            background: #494949;
             border: none;
-            padding: 12px 30px;
+            width: 271px;
+            height: 50px;
             border-radius: 30px;
             font-size: 16px;
             color: white;
             cursor: pointer;
             float: right;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
           }
 
-          .submit-btn:hover {
+          .submit-btn.active {
             background-color: #00b1b8;
           }
 
@@ -1851,7 +1881,7 @@ footer {
     input,
     textarea,
     select {
-      background-color: transparent;
+      background-color: transparent !important;
       width: 100%;
       border: none;
       border-bottom: 1px solid #494949;
@@ -1873,7 +1903,7 @@ footer {
       gap: 10px;
       select {
         max-width: 80px;
-        background-color: #000;
+        background-color: #000 !important;
         appearance: none;
         outline: none;
         -webkit-appearance: none;
@@ -1890,7 +1920,11 @@ footer {
     background: #494949;
     border-radius: 100px;
     border: none;
-    &:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &.active {
       background-color: var(--primary-color);
     }
     @media (max-width: 575px) {

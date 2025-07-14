@@ -9,6 +9,7 @@ import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import Loader from "../common/Loader";
 
 const initialValues = {
   name: "",
@@ -22,12 +23,14 @@ const ConsultOurExperts = () => {
   const { t } = useTranslation();
 
   const validationSchema = Yup.object({
-    name: Yup.string().required("Required"),
-    email: Yup.string().email("Invalid email").required("Required"),
+    name: Yup.string().required("Please enter your name"),
+    email: Yup.string()
+      .email("A valid work email is required")
+      .required("Please enter your email address"),
     mobile: Yup.string()
-      .required("Required")
+      .required("Enter your 9-digit mobile number")
       .matches(/^[0-9]+$/, "Only numbers are allowed"),
-    message: Yup.string().required("Required"),
+    message: Yup.string().required("Briefly describe your project needs"),
   });
 
   const SERVICE_ID = "service_m1tsr4h";
@@ -82,13 +85,13 @@ const ConsultOurExperts = () => {
               validationSchema={validationSchema}
               onSubmit={handleSubmit}
             >
-              {({ isSubmitting }) => (
+              {({ isSubmitting, isValid, dirty }) => (
                 <Form className="common_form">
                   <div className="form_field">
                     <Field
                       name="name"
                       type="text"
-                      placeholder={t("Full Name")}
+                      placeholder={t("Name")}
                       className="input"
                     />
                     <ErrorMessage
@@ -101,7 +104,7 @@ const ConsultOurExperts = () => {
                     <Field
                       type="email"
                       name="email"
-                      placeholder={t("Work Email")}
+                      placeholder={t("Email Address")}
                       className="input"
                     />
                     <ErrorMessage
@@ -124,7 +127,7 @@ const ConsultOurExperts = () => {
                       </Field>
                       <Field
                         name="mobile"
-                        type="text"
+                        type="tel"
                         placeholder={t("Mobile Number")}
                         className="input"
                       />
@@ -139,7 +142,7 @@ const ConsultOurExperts = () => {
                     <Field
                       as="textarea"
                       name="message"
-                      placeholder={t("Brief Description About the Project")}
+                      placeholder={t("Describe Your Project")}
                       className="textarea"
                     />
                     <ErrorMessage
@@ -151,9 +154,10 @@ const ConsultOurExperts = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="submit-btn"
+                    className={`submit-btn ${isValid && dirty ? "active" : ""}`}
                   >
                     {t("Request a Free Consultation")}
+                    {isSubmitting && <Loader />}
                   </button>
                 </Form>
               )}

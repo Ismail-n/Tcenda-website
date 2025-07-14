@@ -123,7 +123,7 @@ const Footer = () => {
                       <ul>
                         {footerServices?.map(({ name, href, hash }, index) => (
                           <li key={index}>
-                            <Link href={`${href}${hash}`}>{t(name)}</Link>
+                            <Link href={`${href}${hash}`}>{t(name)}</Link>{" "}
                           </li>
                         ))}
                       </ul>

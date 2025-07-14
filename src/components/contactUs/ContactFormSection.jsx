@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
+import Loader from "../common/Loader";
 
 const ContactFormSection = () => {
   const { t } = useTranslation();
@@ -19,12 +20,14 @@ const ContactFormSection = () => {
   };
 
   const validationSchema = Yup.object({
-    name: Yup.string().required("Required"),
-    email: Yup.string().email("Invalid email").required("Required"),
+    name: Yup.string().required("Please enter your name"),
+    email: Yup.string()
+      .email("A valid work email is required")
+      .required("Please enter your email address"),
     mobile: Yup.string()
-      .required("Required")
+      .required("Enter your 9-digit mobile number")
       .matches(/^[0-9]+$/, "Only numbers are allowed"),
-    message: Yup.string().required("Required"),
+    message: Yup.string().required("Briefly describe your project needs"),
   });
 
   const SERVICE_ID = "service_m1tsr4h";
@@ -45,19 +48,18 @@ const ContactFormSection = () => {
       })
       .catch((error) => {
         console.error("Email sending failed:", error);
-        toast.error("Failed to send message. Please try again."); 
+        toast.error("Failed to send message. Please try again.");
       });
   };
 
   return (
     <section className="contact_form">
-      <Container>
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
-          {({ isSubmitting }) => (
+          {({ isSubmitting, isValid, dirty }) => (
             <Form>
               <div className="mb-25-gap-15">
                 <div className="flex-1">
@@ -104,7 +106,7 @@ const ContactFormSection = () => {
                     </Field>
                     <Field
                       name="mobile"
-                      type="text"
+                      type="tel"
                       placeholder={t("Mobile Number")}
                       className="input"
                     />
@@ -135,14 +137,14 @@ const ContactFormSection = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="submit-btn"
+                className={`submit-btn ${isValid && dirty ? "active" : ""}`}
               >
                 {t("Request a Free Consultation")}
+                {isSubmitting && <Loader />}
               </button>
             </Form>
           )}
         </Formik>
-      </Container>
     </section>
   );
 };
