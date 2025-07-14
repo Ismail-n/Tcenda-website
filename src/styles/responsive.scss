@@ -34,7 +34,7 @@
   }
   .sub_title {
     margin-top: 15px;
-    font-size: 16px;
+    font-size: 28px;
     line-height: 100%;
   }
 
@@ -58,6 +58,7 @@
       display: flex;
       justify-content: space-between;
       position: fixed;
+      align-items: center;
       width: 100%;
       background: #000;
       .close_icon {
@@ -91,6 +92,7 @@
         &.active,
         &:hover {
           background: var(--common-gradient-color);
+          font-weight: 700;
         }
       }
       button {
@@ -117,6 +119,9 @@
           font-weight: 500;
           background: transparent !important;
           margin: 5px 0;
+          &.active {
+            background: var(--primary-color) !important;
+          }
         }
       }
     }

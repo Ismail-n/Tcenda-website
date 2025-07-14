@@ -6,10 +6,11 @@ import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const { t } = useTranslation();
-  const pathname = usePathname();
+  const { pathname, asPath } = useRouter();
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showHeader, setShowHeader] = useState(true);
@@ -29,7 +30,10 @@ const Header = () => {
           { name: "Web Development", href: "/our-services#web" },
           { name: "Digital Transformation", href: "/our-services#digital" },
           { name: "Odoo Customisation", href: "/our-services#odoo" },
-          { name: "Managed Cloud Services", href: "/our-services#cloud-services" },
+          {
+            name: "Managed Cloud Services",
+            href: "/our-services#cloud-services",
+          },
           { name: "AI/ML", href: "/our-services#ai-ml" },
           { name: "Data Analytics", href: "/our-services#data-analytics" },
           { name: "UI/UX Design", href: "/our-services#ui-ux" },
@@ -41,6 +45,13 @@ const Header = () => {
   );
 
   const isActive = (href) => pathname === href || pathname === href + "/";
+
+  const isSubLinkActive = (href) => {
+    const [baseHref, hash] = href.split("#");
+    const [currentPath, currentHash] = asPath.split("#");
+
+    return pathname === baseHref && currentHash === hash;
+  };
 
   const handleMenuClick = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -179,7 +190,7 @@ const Header = () => {
                               <Link
                                 href={subItem.href}
                                 className={
-                                  isActive(subItem.href) ? "active" : ""
+                                  isSubLinkActive(subItem.href) ? "active" : ""
                                 }
                               >
                                 <span

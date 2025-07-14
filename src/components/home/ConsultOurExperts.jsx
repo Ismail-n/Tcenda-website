@@ -10,6 +10,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import Loader from "../common/Loader";
+import { ContactUsValidationSchema } from "../utils/Validations";
 
 const initialValues = {
   name: "",
@@ -22,37 +23,32 @@ const initialValues = {
 const ConsultOurExperts = () => {
   const { t } = useTranslation();
 
-  const validationSchema = Yup.object({
-    name: Yup.string().required("Please enter your name"),
-    email: Yup.string()
-      .email("A valid work email is required")
-      .required("Please enter your email address"),
-    mobile: Yup.string()
-      .required("Enter your 9-digit mobile number")
-      .matches(/^[0-9]+$/, "Only numbers are allowed"),
-    message: Yup.string().required("Briefly describe your project needs"),
-  });
-
   const SERVICE_ID = "service_m1tsr4h";
   const TEMPLATE_ID = "template_6wl6bat";
   const PUBLIC_KEY = "W7aMVGuT0tr6SpaBw";
 
-  const handleSubmit = (values, { resetForm }) => {
-    emailjs
-      .send(SERVICE_ID, TEMPLATE_ID, values, PUBLIC_KEY)
-      .then((result) => {
-        const { status, text } = result || {};
-        if (status) {
-          toast.success("Message sent successfully!");
-          resetForm();
-        } else {
-          toast.error(text);
-        }
-      })
-      .catch((error) => {
-        console.error("Email sending failed:", error);
-        toast.error("Failed to send message. Please try again.");
-      });
+  const handleSubmit = async (values, { resetForm, setSubmitting }) => {
+    try {
+      const result = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        values,
+        PUBLIC_KEY
+      );
+      const { status, text } = result || {};
+
+      if (status) {
+        toast.success("Message sent successfully!");
+        resetForm();
+      } else {
+        toast.error(text || "Failed to send message.");
+      }
+    } catch (error) {
+      console.error("Email sending failed:", error);
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -82,7 +78,7 @@ const ConsultOurExperts = () => {
           <div className="right_section">
             <Formik
               initialValues={initialValues}
-              validationSchema={validationSchema}
+              validationSchema={ContactUsValidationSchema}
               onSubmit={handleSubmit}
             >
               {({ isSubmitting, isValid, dirty }) => (
@@ -163,48 +159,6 @@ const ConsultOurExperts = () => {
               )}
             </Formik>
           </div>
-
-          {/* <div className="inner_section">
-            <div className="content">
-              <h2>{t("Let us move your business forward")}</h2>
-              <h3>
-                {t(
-                  "Have a challenge to solve? A bold vision to bring to life?"
-                )}
-                <br />
-                <span >
-                  {t("Let's create a solution together.")}
-                </span>
-                <br />
-                <span >{t("Right here in Saudi Arabia.")}</span>
-              </h3>
-              <Link href="#">
-                <button
-                  type="button"
-                  className="service_btn"
-                  onClick={() => router.push("/contact-us")}
-                >
-                  {t("Consult Our Experts")} <ArrowRight />
-                </button>
-              </Link>
-            </div>
-            <div className="vector_img">
-              <Image
-                src="/images/home/contactOurExportVector.webp"
-                width={584}
-                height={325}
-                alt={t("Consult with our experts illustration")}
-                className="d-none d-lg-block"
-              />
-              <Image
-                src="/images/home/mobileContactOurExportVector.webp"
-                width={323}
-                height={270}
-                alt={t("Consult with our experts illustration")}
-                className="d-lg-none"
-              />
-            </div>
-          </div> */}
         </div>
       </Container>
     </section>
