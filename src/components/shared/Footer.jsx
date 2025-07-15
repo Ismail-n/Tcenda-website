@@ -63,41 +63,6 @@ const Footer = () => {
       <ToastContainer position="top-right" autoClose={3000} />
       <Container>
         <Row>
-          {/* <Col lg={4}>
-            <div className="left_content">
-              <div className="logo">
-                <Link href="/">
-                  <Image
-                    src="/images/icons/logo.svg"
-                    width={126}
-                    height={24}
-                    alt="logo"
-                    priority
-                  />
-                </Link>
-              </div>
-              <p>
-                {t(
-                  "Welcome to Tod Al-Ufuq — where visionary thinking meets technological excellence."
-                )}
-              </p>
-              <h2>
-                {t(
-                  "We are a purpose-driven technology company fueled by innovation and committed to shaping the digital future of the Kingdom."
-                )}
-                <br />
-                <br />
-                {t(
-                  "Our solutions are grounded in local insights, developed by experts who understand the region's evolving digital landscape."
-                )}
-                <br />
-                <br />
-                {t(
-                  "At Tod Al-Ufuq, we design and build secure, scalable, and smart technology tailored to the needs of modern enterprises — helping them grow stronger, move faster, and reach beyond expectations in today's connected world."
-                )}
-              </h2>
-            </div>
-          </Col> */}
           <Col lg={12}>
             <div className="right_content">
               <Row>
@@ -107,8 +72,8 @@ const Footer = () => {
                       <Link href="/">
                         <Image
                           src="/images/icons/logo.svg"
-                          width={126}
-                          height={24}
+                          width={67}
+                          height={65}
                           alt="logo"
                           priority
                         />
@@ -187,8 +152,8 @@ const Footer = () => {
                         <Link href="/">
                           <Image
                             src="/images/icons/logo.svg"
-                            width={126}
-                            height={24}
+                            width={67}
+                            height={65}
                             alt="logo"
                             priority
                           />

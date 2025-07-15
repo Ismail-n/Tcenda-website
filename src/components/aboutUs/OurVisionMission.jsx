@@ -30,7 +30,7 @@ const OurVisionMission = () => {
                 className="quotes_start"
               />
               {t(
-                "At Tod-ul-Ufaq, we are committed to driving Saudi Arabia's digital transformation by delivering smart, scalable, and locally aligned solutions. Guided by Vision 2030, we combine innovation, agility, and a deep understanding of the market to empower businesses and build lasting partnerships. Together,"
+                "At Tod, we are committed to driving Saudi Arabia's digital transformation by delivering smart, scalable, and locally aligned solutions. Guided by Vision 2030, we combine innovation, agility, and a deep understanding of the market to empower businesses and build lasting partnerships. Together,"
               )}
               <br />
               {t("we are shaping what's next.")}
@@ -42,7 +42,7 @@ const OurVisionMission = () => {
                 className="quotes_end"
               />
             </p>
-            <h3>{t(" Abdullah, CEO, Tod-ul-Ufaq")}</h3>
+            <h3>{t(" Abdullah, CEO, Tod")}</h3>
           </div>
         </Row>
       </Container>

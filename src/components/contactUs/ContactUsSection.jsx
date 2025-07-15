@@ -15,9 +15,9 @@ const ContactUsSection = () => {
               <section className="contact_info_section">
                 <div className="info_wrapper">
                   <h2 className="headline">
-                    {t("Let's Build Something Great Here In")}
+                    {t("Let's Build Something Great Here In Saudi Arabia")}
 
-                    <span className="highlight">{t("Saudi Arabia")}</span>
+                    {/* <span className="highlight">{t("Saudi Arabia")}</span> */}
                   </h2>
 
                   <div className="location_block">

@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
 import Loader from "../common/Loader";
 import { ContactUsValidationSchema } from "../utils/Validations";
+import Title from "../common/Title";
 
 const ContactFormSection = () => {
   const { t } = useTranslation();
@@ -50,6 +51,12 @@ const ContactFormSection = () => {
 
   return (
     <section className="contact_form">
+      <Title title={t("Get In Touch")} />
+      <p>
+        {t(
+          "Have a project in mind or need expert guidance? Our team is here to help you move forward."
+        )}
+      </p>
       <Formik
         initialValues={initialValues}
         validationSchema={ContactUsValidationSchema}
@@ -121,14 +128,16 @@ const ContactFormSection = () => {
                 className="text-danger"
               />
             </div>
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className={`submit-btn ${isValid && dirty ? "active" : ""}`}
-            >
-              {t("Request a Free Consultation")}
-              {isSubmitting && <Loader />}
-            </button>
+            <div className="btn_div">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className={`submit-btn ${isValid && dirty ? "active" : ""}`}
+              >
+                {t("Request a Free Consultation")}
+                {isSubmitting && <Loader />}
+              </button>
+            </div>
           </Form>
         )}
       </Formik>

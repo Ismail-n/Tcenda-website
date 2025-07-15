@@ -14,6 +14,9 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showHeader, setShowHeader] = useState(true);
   const [openDropdown, setOpenDropdown] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+  const [isPortfolioDetail, setIsPortfolioDetail] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const homeLinks = useMemo(
     () => [
@@ -43,6 +46,14 @@ const Header = () => {
     []
   );
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    setIsPortfolioDetail(pathname === "/portfolio/[slug]");
+  }, [pathname]);
+
   const isActive = (href) => pathname === href || pathname === href + "/";
 
   const isSubLinkActive = (href) => {
@@ -71,32 +82,60 @@ const Header = () => {
   }, [isMobileMenuOpen]);
 
   useEffect(() => {
+    if (!isClient) return; // Only run on client
+
     let lastScrollY = window.scrollY;
 
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        setShowHeader(false); // scrolling down
+        setShowHeader(false);
       } else {
-        setShowHeader(true); // scrolling up
+        setShowHeader(true);
       }
       lastScrollY = window.scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isClient]);
+
+  useEffect(() => {
+    if (!isClient) return; // Only run on client
+
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+
+      if (window.scrollY > lastScrollY) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isClient]);
 
   return (
     <>
-      <header className={`header ${showHeader ? "visible" : "hidden"}`}>
+      <header
+        className={`header ${showHeader ? "visible" : "hidden header_2"} ${
+          isPortfolioDetail ? "portfolio-detail-header" : ""
+        } ${isScrolled ? "scrolled" : ""}`}
+      >
         <Container>
           <div className="g_between">
             <div className="logo">
               <Link href="/">
                 <Image
-                  src="/images/icons/logo.svg"
-                  width={126}
-                  height={24}
+                  src={`/images/icons/${
+                    isPortfolioDetail && showHeader ? "logoBlack" : "logo"
+                  }.svg`}
+                  width={67}
+                  height={65}
                   alt="logo"
                   priority
                 />
@@ -195,7 +234,10 @@ const Header = () => {
                                 }
                               >
                                 <span
-                                  onClick={() => setIsMobileMenuOpen(false)}
+                                  onClick={() => {
+                                    setOpenDropdown(false);
+                                    setIsMobileMenuOpen(false);
+                                  }}
                                 >
                                   {t(subItem.name)}
                                 </span>

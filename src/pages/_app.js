@@ -9,6 +9,7 @@ import "@/styles/responsive.scss";
 import "@/styles/animation.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import ClientOnly from "@/components/ClientOnly";
 
 const pageVariants = {
   initial: { opacity: 0, y: -100 },
@@ -41,7 +42,9 @@ export default function App({ Component, pageProps }) {
           variants={pageVariants}
           transition={pageTransition}
         >
-          <Component {...pageProps} />
+          <ClientOnly>
+            <Component {...pageProps} />
+          </ClientOnly>
         </motion.div>
       </AnimatePresence>
       <Footer />

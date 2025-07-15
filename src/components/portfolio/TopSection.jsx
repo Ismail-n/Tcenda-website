@@ -1,11 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const TopSection = () => {
   const { t } = useTranslation();
-
   return (
     <section className="top_section">
       <Container>

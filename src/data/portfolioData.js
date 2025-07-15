@@ -34,7 +34,7 @@ const portfolios = [
     appStoreLink: "https://apps.apple.com/gb/app/ashjar-friends/id6670760287",
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.ashjarcafe.sa",
-    caseStudyLink: "",
+    caseStudyLink: "ashjar-friends",
     imageDetails: {
       image: "ashjarFriends",
       imageWidth: 448,

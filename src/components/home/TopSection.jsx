@@ -51,8 +51,8 @@ const TopSection = () => {
       <Container>
         <div className="top_row">
           <h1 className="top_section_title">
-            {t("Empowering Saudi Businesses to Scale with")}
-            <br />
+            {t("Empowering Businesses to Scale with")}
+            {/* <br /> */} {" "}
             <span className="animated-typing">{displayText}</span>
             <span className="cursor">|</span>
           </h1>

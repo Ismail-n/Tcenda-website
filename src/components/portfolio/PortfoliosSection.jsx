@@ -83,7 +83,10 @@ const PortfoliosSection = () => {
                   </div>
                 </div>
                 {caseStudyLink && (
-                  <Link href={caseStudyLink} className="case_study_btn">
+                  <Link
+                    href={`/portfolio/${caseStudyLink}`}
+                    className="case_study_btn d-none d-md-flex"
+                  >
                     <span>{t("View Case Study")}</span>
                     <ArrowRight />
                   </Link>
@@ -132,6 +135,15 @@ const PortfoliosSection = () => {
                       </a>
                     )}
                   </div>
+                  {caseStudyLink && (
+                    <Link
+                      href={`/portfolio/${caseStudyLink}`}
+                      className="case_study_btn"
+                    >
+                      <span>{t("View Case Study")}</span>
+                      <ArrowRight />
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
