@@ -1028,8 +1028,9 @@ footer {
       height: 257px;
       position: relative;
       @media (max-width: 575px) {
-        height: 423px;
-        padding: 30px 25px;
+        min-height: 423px;
+        height: fit-content;
+        padding: 25px 20px;
       }
       &::before {
         position: absolute;
@@ -1044,6 +1045,7 @@ footer {
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
+          top: 47%;
         }
       }
       .inner_section {

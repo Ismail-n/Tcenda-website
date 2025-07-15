@@ -13,7 +13,10 @@ import SEO from "@/components/SEO";
 export default function Home() {
   return (
     <>
-      <SEO title="Home" description="Welcome to Tod — delivering innovative web solutions, high-performance apps, and exceptional user experiences tailored for your business success." />
+      <SEO
+        title="Home"
+        description="Welcome to Tod — delivering innovative web solutions, high-performance apps, and exceptional user experiences tailored for your business success."
+      />
       <main className="home">
         <TopSection />
         <InnovationSection />
