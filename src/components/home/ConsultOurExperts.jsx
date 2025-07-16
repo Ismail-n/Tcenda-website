@@ -11,6 +11,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import Loader from "../common/Loader";
 import { ContactUsValidationSchema } from "../utils/Validations";
+import Title from "../common/Title";
 
 const initialValues = {
   name: "",
@@ -38,7 +39,7 @@ const ConsultOurExperts = () => {
       const { status, text } = result || {};
 
       if (status) {
-       toast.success(t("Thank You! We'll get back to you soon."));
+        toast.success(t("Thank You! We'll get back to you soon."));
         resetForm();
       } else {
         toast.error(text || t("Failed to send message."));
@@ -83,6 +84,8 @@ const ConsultOurExperts = () => {
             >
               {({ isSubmitting, isValid, dirty }) => (
                 <Form className="common_form">
+                  <Title title={t("Get In Touch")} />
+                  <p className="para">{t("Have a project in mind or need expert guidance? Our team is here to help you move forward.")}</p>
                   <div className="form_field">
                     <Field
                       name="name"
