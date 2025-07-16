@@ -1751,7 +1751,7 @@ footer {
     .inner_section {
       border: 1px solid var(--common-border-color);
       border-radius: 20px;
-      background: #1e1e1e;
+      // background: #1e1e1e;
       padding: 0px;
       z-index: +1;
       & > h2 {
@@ -1767,29 +1767,39 @@ footer {
       display: flex;
       justify-content: space-between;
       @media (max-width: 575px) {
-        flex-direction: column-reverse;
         background: #000;
+        display: flex;
+        flex-direction: column;
       }
-
+      .para {
+        font-weight: 500;
+        margin-top: 20px;
+      }
       .left_content {
+        position: relative;
         @media (min-width: 575px) {
-          background-color: var(--primary-color);
+          // background-color: var(--primary-color);
         }
         border-radius: 20px;
         min-height: 400px;
         min-width: 490px;
         max-width: 100%;
-        @media (min-width: 575px) {
-          background-image: url("/images/contactUs/contactBg.webp");
-          background-repeat: no-repeat;
-          background-position: bottom;
-          background-size: contain;
-        }
+
         @media (max-width: 575px) {
           min-width: 100%;
-          .contact_bg_vector {
-            width: 100%;
-            height: auto;
+        }
+
+        .contact_bg_vector {
+          width: 398px;
+          max-width: 100%;
+          height: auto;
+          bottom: 0;
+          position: absolute;
+
+          @media (max-width: 575px) {
+            width: 251px;
+            left: 50%;
+            transform: translateX(-50%);
           }
         }
       }
@@ -1805,6 +1815,7 @@ footer {
         .title {
           color: var(--text-color);
           margin-bottom: 10px;
+          margin-top: 5px;
         }
         & > p {
           font-weight: 500;
@@ -1813,6 +1824,9 @@ footer {
       }
       .contact_form_section {
         min-height: 629px;
+        @media (max-width: 575px) {
+          min-height: fit-content;
+        }
       }
 
       // .contact_form_section {
@@ -1907,7 +1921,7 @@ footer {
       // }
 
       .contact_info_section {
-        position: relative;
+        // position: relative;
         color: white;
         padding: 40px 50px;
         overflow: hidden;
@@ -1991,6 +2005,48 @@ footer {
       }
     }
   }
+  .address_row {
+    margin-top: 56px;
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 100%;
+      margin-bottom: 50px;
+      @media (max-width: 575px) {
+        margin-bottom: 20px;
+      }
+    }
+    h5 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+    .contact_block{
+      margin-top: 20px;
+    }
+    .inner_div {
+      @media (min-width: 575px) {
+        display: flex;
+        gap: 160px;
+      }
+      .icon_text {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        margin-top: 20px;
+        font-weight: 500;
+      }
+      .address_block {
+        max-width: 400px;
+        a {
+          display: flex;
+          align-items: center;
+          gap: 13px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }
 
 // COMMON FORM
@@ -2025,7 +2081,7 @@ footer {
       gap: 10px;
       select {
         max-width: 80px;
-        background-color: #1b1b1b !important;
+        // background-color: #1b1b1b !important;
         appearance: none;
         outline: none;
         -webkit-appearance: none;
@@ -2065,7 +2121,8 @@ footer {
     .inner_row {
       @media (min-width: 575px) {
         min-height: 700px;
-        height: 100vh;
+        padding-top: 90px;
+        // height: 100vh;
       }
       align-items: center;
       margin-top: -180px;
@@ -2148,7 +2205,7 @@ footer {
         padding-top: 50px;
         display: flex;
         flex-wrap: wrap;
-        gap: 60px;
+        gap: 30px 60px;
 
         .single_tag {
           position: relative;
@@ -2186,7 +2243,7 @@ footer {
           //   }
           // }
           // width: 211px;
-          min-height: 85px;
+          min-height: 75px;
           max-width: 100%;
           h2 {
             font-size: 22px;
@@ -2198,7 +2255,12 @@ footer {
             color: var(--gray-color);
           }
           @media (max-width: 575px) {
-            max-width: 50%;
+            width: 34%;
+            &:last-child {
+              &::after {
+                content: unset;
+              }
+            }
             h2 {
               font-size: 18px;
             }

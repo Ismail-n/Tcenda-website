@@ -15,70 +15,80 @@ const ContactUsSection = () => {
               <section className="contact_info_section">
                 <div className="info_wrapper">
                   <h2 className="headline">
-                    {t("Let's Build Something Great Here In Saudi Arabia")}
-
-                    {/* <span className="highlight">{t("Saudi Arabia")}</span> */}
+                    {t("Book a Free Consultation with Our Technology Experts.")}
                   </h2>
 
-                  <div className="location_block">
-                    <h5>{t("Location")}</h5>
-                    <div className="icon_text">
-                      <a
-                        href="https://www.google.com/maps/search/?api=1&query=Prince+Mohammed+Ibn+Salman+Ibn+Abdulaziz+Rd,+Ar+Rabi,+Riyadh+13315"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="icon_text"
-                      >
-                        <Image
-                          src="/images/icons/location.svg"
-                          width={24}
-                          height={24}
-                          alt="location"
-                        />
-                        <p>
-                          {t("Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,")}
-                          <br />
-                          {t("Ar Rabi, Riyadh 13315")}
-                        </p>
-                      </a>
-                    </div>
-                  </div>
+                  <p className="para">
+                    {t(
+                      "Have a project in mind or need expert guidance? Our team is here to help you move forward."
+                    )}
+                  </p>
 
-                  <div className="contact_block">
-                    <h5>{t("Contact Us")}</h5>
-                    <div className="icon_text">
-                      <Image
-                        src={`/images/icons/call.svg`}
-                        width={24}
-                        height={24}
-                        alt="location"
-                      />
-                      <a href="tel:+966554848908">+966 55 484 8908</a>
-                    </div>
-                    <div className="icon_text">
-                      <Image
-                        src={`/images/icons/sms.svg`}
-                        width={24}
-                        height={24}
-                        alt="location"
-                      />
-                      <a href="mailto:business@tod.com.sa">
-                        {t("business@tod.com.sa")}
-                      </a>
-                    </div>
-                  </div>
+                  <Image
+                    src={"/images/home/contactOurExportVector.webp"}
+                    width={372}
+                    height={207}
+                    alt={t("Consult with our experts illustration")}
+                    className="contact_bg_vector"
+                  />
                 </div>
               </section>
-              <Image
-                src="/images/contactUs/mobileContactBg.webp"
-                width={333}
-                height={201}
-                alt="bg vector"
-                className="contact_bg_vector d-md-none"
-              />
             </div>
             <div className="contact_form_section">
               <ContactFormSection />
+            </div>
+          </div>
+        </Row>
+        <Row>
+          <div className="address_row">
+            <h2>{t("Let's Build Something Great  Here In Saudi Arabia")}</h2>
+            <div className="inner_div">
+              <div className="address_block">
+                <h5>{t("Location")}</h5>
+                <div className="icon_text">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Prince+Mohammed+Ibn+Salman+Ibn+Abdulaziz+Rd,+Ar+Rabi,+Riyadh+13315"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=""
+                  >
+                    <Image
+                      src="/images/icons/location.svg"
+                      width={24}
+                      height={24}
+                      alt="location"
+                    />
+                    <p>
+                      {t("Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,")}
+                      {t("Ar Rabi, Riyadh 13315")}
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div className="contact_block">
+                <h5>{t("Contact Us")}</h5>
+                <div className="icon_text">
+                  <Image
+                    src={`/images/icons/call.svg`}
+                    width={24}
+                    height={24}
+                    alt="location"
+                  />
+                  <a href="tel:+966554848908">+966 55 484 8908</a>
+                </div>
+                <div className="icon_text">
+                  <Image
+                    src={`/images/icons/sms.svg`}
+                    width={24}
+                    height={24}
+                    alt="location"
+                  />
+                  <a href="mailto:business@tod.com.sa">
+                    {t("business@tod.com.sa")}
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </Row>

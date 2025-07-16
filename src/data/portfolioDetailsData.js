@@ -122,7 +122,7 @@ const portfolioDetails = [
           { label: "Industry", value: "Retail" },
           { label: "Services", value: "Retail" },
           { label: "Business Type", value: "Retail" },
-          { label: "Business Type", value: "Retail" },
+          // { label: "Business Type", value: "Retail" },
         ],
       },
       projectGoals: {

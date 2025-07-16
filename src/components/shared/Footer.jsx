@@ -71,7 +71,7 @@ const Footer = () => {
                     <div className="logo w_fit_content mt-2">
                       <Link href="/">
                         <Image
-                          src="/images/icons/logo.svg"
+                          src="/images/icons/logoNew.svg"
                           width={67}
                           height={65}
                           alt="logo"
@@ -151,7 +151,7 @@ const Footer = () => {
                       <div className="logo">
                         <Link href="/">
                           <Image
-                            src="/images/icons/logo.svg"
+                            src="/images/icons/logoNew.svg"
                             width={67}
                             height={65}
                             alt="logo"

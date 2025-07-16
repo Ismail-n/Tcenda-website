@@ -132,7 +132,7 @@ const Header = () => {
               <Link href="/">
                 <Image
                   src={`/images/icons/${
-                    isPortfolioDetail && !isScrolled ? "logoBlack" : "logo"
+                    isPortfolioDetail && !isScrolled ? "logoBlack" : "logoNew"
                   }.svg`}
                   width={67}
                   height={65}
@@ -193,7 +193,7 @@ const Header = () => {
           <div className="modal_header">
             <Link href="/">
               <Image
-                src={`/images/icons/logo.svg`}
+                src={`/images/icons/logoNew.svg`}
                 width={126}
                 height={24}
                 alt="logo"
