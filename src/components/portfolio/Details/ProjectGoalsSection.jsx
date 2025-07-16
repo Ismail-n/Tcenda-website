@@ -25,7 +25,7 @@ const ProjectGoalsSection = ({ data }) => {
               alt={t("Project Illustration")}
             />
           </div>
-          <Col>
+          <Col className="text-end">
             {goals[0] && (
               <div className="single_goal">
                 <h2>{t(goals[0].title)}</h2>

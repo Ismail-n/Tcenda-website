@@ -24,7 +24,7 @@ const AboutUsSection = ({ data }) => {
               {description?.length > 0 &&
                 description?.map((item) => (
                   <p key={item} className="desc">
-                    {t(description)}
+                    {t(item)}
                   </p>
                 ))}
               {/* TAGS */}

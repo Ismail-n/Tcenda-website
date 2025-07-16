@@ -132,7 +132,7 @@ const Header = () => {
               <Link href="/">
                 <Image
                   src={`/images/icons/${
-                    isPortfolioDetail && showHeader ? "logoBlack" : "logo"
+                    isPortfolioDetail && !isScrolled ? "logoBlack" : "logo"
                   }.svg`}
                   width={67}
                   height={65}

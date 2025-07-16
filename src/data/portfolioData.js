@@ -55,7 +55,7 @@ const portfolios = [
     appStoreLink: "https://apps.apple.com/sa/app/ashjar-space/id6476087387",
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.ashjarbooking&hl=en",
-    caseStudyLink: "",
+    caseStudyLink: "ashjar-space",
     imageDetails: {
       image: "ashjarSpace",
       imageWidth: 548,
@@ -94,7 +94,7 @@ const portfolios = [
     appStoreLink: "https://apps.apple.com/gb/app/ashjar/id6474177129?uo=2",
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.ashjar.sa",
-    caseStudyLink: "",
+    caseStudyLink: "send",
     imageDetails: {
       image: "send",
       imageWidth: 480,
