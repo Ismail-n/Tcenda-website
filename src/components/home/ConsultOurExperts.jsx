@@ -69,8 +69,8 @@ const ConsultOurExperts = () => {
             </div>
             <Image
               src={"/images/home/contactOurExportVector.webp"}
-              width={372}
-              height={207}
+              width={399}
+              height={222}
               alt={t("Consult with our experts illustration")}
               className="vector_bg"
             />

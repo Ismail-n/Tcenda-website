@@ -298,7 +298,8 @@ and collaborate.`,
       top: {
         background: "linear-gradient(120deg, #87C5B2, #D6FFF2)",
         title: "Half Million",
-        subtitle: "Half Million is more than just a coffee chain — it's a local movement brewing community, quality, and innovation across Saudi Arabia. With a passion for delivering handcrafted coffee with speed and precision, Half Million connects coffee lovers to their favorite brews through convenient pickup, curbside service, and reliable delivery. Whether you're on the move or taking a moment to unwind, Half Million makes exceptional coffee effortlessly accessible.",
+        subtitle:
+          "Half Million is more than just a coffee chain — it's a local movement brewing community, quality, and innovation across Saudi Arabia. With a passion for delivering handcrafted coffee with speed and precision, Half Million connects coffee lovers to their favorite brews through convenient pickup, curbside service, and reliable delivery. Whether you're on the move or taking a moment to unwind, Half Million makes exceptional coffee effortlessly accessible.",
         image: "/images/portfolioDetails/halfMillion/topBg.webp",
         appStoreLinks: {
           ios: "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
@@ -394,13 +395,11 @@ and collaborate.`,
       top: {
         background: "linear-gradient(120deg, #FFFFFF, #ABDBFF)",
         title: "Ease",
-        subtitle: `EASE is an intuitive digital signage platform crafted to turn ordinary screens into impactful communication tools. Whether it's in cafs, corporate offices, retail chains, or education environments, EASE enables users to remotely manage and deploy content across multiple screens — all from a single dashboard.
-        With drag-and-drop functionality, real-time updates, and rich multimedia support, EASE empowers brands and teams to communicate smarter, faster, and with greater flexibility.`,
+        subtitle: `EASE is an intuitive digital signage platform crafted to turn ordinary screens into impactful communication tools. Whether it's in cafs, corporate offices, retail chains, or education environments, EASE enables users to remotely manage and deploy content across multiple screens — all from a single dashboard.`,
         image: "/images/portfolioDetails/ease/topBg.webp",
         appStoreLinks: {
           ios: "#",
-          android:
-            "#",
+          android: "#",
         },
       },
       aboutUs: {
@@ -413,7 +412,7 @@ and collaborate.`,
         tags: [
           { label: "Industry", value: "SAAS" },
           { label: "Services", value: "Web App, Dashboard" },
-          { label: "Business Type", value: "B2B" }
+          { label: "Business Type", value: "B2B" },
         ],
       },
       projectGoals: {
@@ -447,526 +446,507 @@ and collaborate.`,
       execution: {
         image: "/images/portfolioDetails/ease/execution.webp",
         description:
-          "Control Every Screen — From Anywhere  Update content across locations in seconds, monitor screen health, and automate your signage strategy — all from one powerful, user-friendly dashboard.",
+          "Control Every Screen — From Anywhere Update content across locations in seconds, monitor screen health, and automate your signage strategy — all from one powerful, user-friendly dashboard.",
         descriptionBackground: "#ABDBFF80",
       },
       featuresOverview: {
         title: "Built for Scale, Designed for Simplicity",
         titleMaxWidth: 807,
-      items: [
-        {
-          title: "",
-          maxTitleWidth: 1085,
-          images: {
-            url: "/images/portfolioDetails/ease/feature1.webp",
-            width: 1070,
-            height: 563,
+        items: [
+          {
+            title: "",
+            maxTitleWidth: 1085,
+            images: {
+              url: "/images/portfolioDetails/ease/feature1.webp",
+              width: 1070,
+              height: 563,
+            },
           },
-        },
-        // {
-        //   title: "Seamless Access to Points, Deals, and Member Benefits",
-        //   maxTitleWidth: 505,
-        //   images: {
-        //     url: "/images/portfolioDetails/send/feature2.webp",
-        //     width: 248,
-        //     height: 507,
-        //   },
-        // },
-      ],
-      description:
-        "EASE bridges the gap between powerful features and user-friendly design. Whether you're a marketing manager updating retail screens or an IT admin overseeing nationwide deployments, the platform is built to grow with your needs. No steep learning curve — just streamlined digital signage at your fingertips.",
-    },
-    highlightBanner: {
-      backgroundColor: "#ABDBFF80",
-      title: "Effortless Onboarding, Engaging Displays",
-      description:
-        "Get started with Ease in just a few clicks and begin managing your digital displays like a pro. Create, schedule, and publish content effortlessly — all from a single dashboard. Whether you're showcasing daily offers or broadcasting internal updates, Ease makes visual communication seamless and effective.",
-      image: "/images/portfolioDetails/ease/highLightBanner.webp",
+          // {
+          //   title: "Seamless Access to Points, Deals, and Member Benefits",
+          //   maxTitleWidth: 505,
+          //   images: {
+          //     url: "/images/portfolioDetails/send/feature2.webp",
+          //     width: 248,
+          //     height: 507,
+          //   },
+          // },
+        ],
+        description:
+          "EASE bridges the gap between powerful features and user-friendly design. Whether you're a marketing manager updating retail screens or an IT admin overseeing nationwide deployments, the platform is built to grow with your needs. No steep learning curve — just streamlined digital signage at your fingertips.",
+      },
+      highlightBanner: {
+        backgroundColor: "#ABDBFF80",
+        title: "Effortless Onboarding, Engaging Displays",
+        description:
+          "Get started with Ease in just a few clicks and begin managing your digital displays like a pro. Create, schedule, and publish content effortlessly — all from a single dashboard. Whether you're showcasing daily offers or broadcasting internal updates, Ease makes visual communication seamless and effective.",
+        image: "/images/portfolioDetails/ease/highLightBanner.webp",
+      },
     },
   },
-  },
-{
-  id: "screen-me",
+  {
+    id: "screen-me",
     sections: {
-    top: {
-      background: "linear-gradient(120deg, #FFA27B, #FE6789)",
+      top: {
+        background: "linear-gradient(120deg, #FFA27B, #FE6789)",
         title: "ScreenMe",
-          subtitle: "Saving lives through proactive screening and timely intervention. Your health, reimagined through prevention.",
+        subtitle:
+          "Saving lives through proactive screening and timely intervention. Your health, reimagined through prevention.",
         image: "/images/portfolioDetails/screenMe/topBg.webp",
-      appStoreLinks: {
-          ios: "# " ,            
-      android:
-      "#",
+        appStoreLinks: {
+          ios: "# ",
+          android: "#",
         },
-  },
-  aboutUs: {
-    image: "/images/portfolioDetails/screenMe/aboutUs.webp",
-      title: "About Us",
+      },
+      aboutUs: {
+        image: "/images/portfolioDetails/screenMe/aboutUs.webp",
+        title: "About Us",
         description: [
           "At ScreenMe, we're on a mission to ensure that no one dies from a preventable cancer.",
           "By combining cutting-edge diagnostics, data-driven screening, and user-centric health journeys, we empower individuals to take control of their health before symptoms appear.",
           "Our focus is clear: early detection saves lives.",
           "From seamless at-home testing to intuitive digital reports and expert guidance, every step of the ScreenMe experience is designed to make prevention easy, accessible, and impactful.",
         ],
-          tags: [
-            { label: "Industry", value: "Healthcare" },
-            { label: "Services", value: "Web Platform" },
-            { label: "Business Type", value: "Mission-Driven" }
-          ],
+        tags: [
+          { label: "Industry", value: "Healthcare" },
+          { label: "Services", value: "Web Platform" },
+          { label: "Business Type", value: "Mission-Driven" },
+        ],
       },
-  projectGoals: {
-    title: "Project Goals",
-      image: {
-      url: "/images/portfolioDetails/screenMe/projectGoals.webp",
+      projectGoals: {
+        title: "Project Goals",
+        image: {
+          url: "/images/portfolioDetails/screenMe/projectGoals.webp",
         },
-    goals: [
-      {
-        title: "Transforming Prevention into Action",
+        goals: [
+          {
+            title: "Transforming Prevention into Action",
+            description:
+              "We aimed to simplify and amplify access to cancer screening by turning a traditionally complex medical process into a smooth digital experience. The goal: empower users with confidence, clarity, and control.",
+          },
+          {
+            title: "Educating While Engaging",
+            description:
+              "Our content strategy focused on eliminating fear and misinformation, replacing it with medically accurate, digestible education that motivates early screening and regular checkups.",
+          },
+          {
+            title: "Designing for Empathy and Trust",
+            description:
+              "We needed a human-first interface that makes people feel safe and supported. Every detail, from visuals to content, had to inspire users to act — and return.",
+          },
+          {
+            title: " Scalable Infrastructure for High-Impact Screening",
+            description:
+              "ScreenMe is built to support large-scale, real-time screening workflows with maximum efficiency. From automated risk assessments to streamlined appointment scheduling.",
+          },
+        ],
+      },
+      execution: {
+        image: "/images/portfolioDetails/screenMe/execution.webp",
         description:
-          "We aimed to simplify and amplify access to cancer screening by turning a traditionally complex medical process into a smooth digital experience. The goal: empower users with confidence, clarity, and control.",
-      },
-      {
-        title: "Educating While Engaging",
-        description:
-          "Our content strategy focused on eliminating fear and misinformation, replacing it with medically accurate, digestible education that motivates early screening and regular checkups.",
-      },
-      {
-        title: "Designing for Empathy and Trust",
-        description:
-          "We needed a human-first interface that makes people feel safe and supported. Every detail, from visuals to content, had to inspire users to act — and return.",
-      },
-      {
-        title: " Scalable Infrastructure for High-Impact Screening",
-        description:
-          "ScreenMe is built to support large-scale, real-time screening workflows with maximum efficiency. From automated risk assessments to streamlined appointment scheduling.",
-      },
-    ],
-      },
-  execution: {
-    image: "/images/portfolioDetails/screenMe/execution.webp",
-      description:
-    "ScreenMe is a digital health platform dedicated to saving lives through the power of early detection.  By redesigning how people engage with screening, ScreenMe ensures that timely intervention becomes the norm — not the exception. With an intuitive design, clear communication, and accessible tools, ScreenMe is making cancer prevention personal, practical, and powerful.",
+          "ScreenMe is a digital health platform dedicated to saving lives through the power of early detection.  By redesigning how people engage with screening, ScreenMe ensures that timely intervention becomes the norm — not the exception. With an intuitive design, clear communication, and accessible tools, ScreenMe is making cancer prevention personal, practical, and powerful.",
         descriptionBackground: "#FF9D7C",
-      }, 
+      },
       featuresOverview: {
         title: "Seamless Entry, Life - Saving Results",
-titleMaxWidth: 754,
-  items: [
-    {
-      title: "",
-      maxTitleWidth: 563,
-      images: {
-        url: "/images/portfolioDetails/screenMe/feature1.webp",
-        width: 1070,
-        height: 563,
+        titleMaxWidth: 754,
+        items: [
+          {
+            title: "",
+            maxTitleWidth: 563,
+            images: {
+              url: "/images/portfolioDetails/screenMe/feature1.webp",
+              width: 1070,
+              height: 563,
+            },
+          },
+        ],
+        description:
+          "Too often, cancer is only discussed after diagnosis. ScreenMe is rewriting that narrative — shifting the focus from treatment to prevention. By normalizing routine screenings and making them as simple as checking your email, we're creating a future where early detection becomes second nature, and more lives are saved with less intervention.",
       },
-    }
-  ],
-    description:
-"Too often, cancer is only discussed after diagnosis. ScreenMe is rewriting that narrative — shifting the focus from treatment to prevention. By normalizing routine screenings and making them as simple as checking your email, we're creating a future where early detection becomes second nature, and more lives are saved with less intervention.",
-      },
-highlightBanner: {
-  backgroundColor: "#FF8A81",
-    title: `Health Outcomes Made Stronger`,
-      description:
-  `Health Outcomes Made Stronger
+      highlightBanner: {
+        backgroundColor: "#FF8A81",
+        title: `Health Outcomes Made Stronger`,
+        description: `Health Outcomes Made Stronger
 Get started with ScreenMe in just a few taps.  Create your profile, schedule your screening, and begin your journey toward prevention. Personalized recommendations, timely reminders, and expert support — all designed to make life-saving decisions simple, accessible, and routine.`,
         image: "/images/portfolioDetails/screenMe/highLightBanner.webp",
-      }, 
+      },
     },
   },
-{
-  id: "service-now",
+  {
+    id: "service-now",
     sections: {
-    top: {
-      background: "linear-gradient(120deg, #FFFFFF, #1576EC)",
+      top: {
+        background: "linear-gradient(120deg, #FFFFFF, #1576EC)",
         title: "Service Now",
-          subtitle: "Service Now connects you with trusted handymen for repairs, maintenance, and more — anytime, anywhere. Quick booking, real results. ",
-            image: "/images/portfolioDetails/serviceNow/topBg.webp",
-              appStoreLinks: {
-        ios: "https://apps.apple.com/in/app/service-hub-customer/id6461084774",
-          android:
-        "#",
+        subtitle:
+          "Service Now connects you with trusted handymen for repairs, maintenance, and more — anytime, anywhere. Quick booking, real results. ",
+        image: "/images/portfolioDetails/serviceNow/topBg.webp",
+        appStoreLinks: {
+          ios: "https://apps.apple.com/in/app/service-hub-customer/id6461084774",
+          android: "#",
         },
-    },
-    aboutUs: {
-      image: "/images/portfolioDetails/serviceNow/aboutUs.webp",
+      },
+      aboutUs: {
+        image: "/images/portfolioDetails/serviceNow/aboutUs.webp",
         title: "About Us",
-          description: [
-            `At Service Now, we believe dependable home services should be effortless. Whether it's a broken faucet, an AC tune-up, or general maintenance, our network of verified handymen is just a click away.`,
-            ` We're redefining convenience with a seamless platform that connects users to trusted professionals based on location, service need, and availability. The goal? Speed, safety, and satisfaction — delivered to your home.`,
-          ],
-            tags: [
-              { label: "Industry", value: "Retail" },
-              { label: "Services", value: "Handyman" },
-              { label: "Business Type", value: "Retail" },
-            ],
+        description: [
+          `At Service Now, we believe dependable home services should be effortless. Whether it's a broken faucet, an AC tune-up, or general maintenance, our network of verified handymen is just a click away.`,
+          ` We're redefining convenience with a seamless platform that connects users to trusted professionals based on location, service need, and availability. The goal? Speed, safety, and satisfaction — delivered to your home.`,
+        ],
+        tags: [
+          { label: "Industry", value: "Retail" },
+          { label: "Services", value: "Handyman" },
+          { label: "Business Type", value: "Retail" },
+        ],
       },
-    projectGoals: {
-      title: "Project Goals",
+      projectGoals: {
+        title: "Project Goals",
         image: {
-        url: "/images/portfolioDetails/serviceNow/projectGoals.webp",
+          url: "/images/portfolioDetails/serviceNow/projectGoals.webp",
         },
-      goals: [
-        {
-          title: "Streamlined Booking Experience",
-          description:
-            "We designed a frictionless user journey focused on urgency and clarity. From service selection to live status updates, every interaction was tailored for speed and trust.",
-        },
-        {
-          title: "Enable Smart Scheduling",
-          description:
-            "A dynamic scheduling engine was built to allow users to book appointments in real-time, with flexibility for rescheduling and intelligent matching based on technician availability.",
-        },
-        {
-          title: "Build Trust, One Service at a Time",
-          description:
-            "Through in-app ratings, verified reviews, and a simplified support system, we empowered users to confidently select the right handyman for the job.",
-        },
-        {
-          title: "Seamless Service, Real-Time Convenience",
-          description:
-            "The goal was to build a hyper-responsive service platform that simplifies finding and booking reliable help. Whether it's plumbing, electrical, or general repairs",
-        },
-      ],
+        goals: [
+          {
+            title: "Streamlined Booking Experience",
+            description:
+              "We designed a frictionless user journey focused on urgency and clarity. From service selection to live status updates, every interaction was tailored for speed and trust.",
+          },
+          {
+            title: "Enable Smart Scheduling",
+            description:
+              "A dynamic scheduling engine was built to allow users to book appointments in real-time, with flexibility for rescheduling and intelligent matching based on technician availability.",
+          },
+          {
+            title: "Build Trust, One Service at a Time",
+            description:
+              "Through in-app ratings, verified reviews, and a simplified support system, we empowered users to confidently select the right handyman for the job.",
+          },
+          {
+            title: "Seamless Service, Real-Time Convenience",
+            description:
+              "The goal was to build a hyper-responsive service platform that simplifies finding and booking reliable help. Whether it's plumbing, electrical, or general repairs",
+          },
+        ],
       },
-    execution: {
-      image: "/images/portfolioDetails/serviceNow/execution.webp",
+      execution: {
+        image: "/images/portfolioDetails/serviceNow/execution.webp",
         description:
-      "Reliable Repairs. Right When You Need Them.  Service Now empowers users with real-time service access, flexible booking, and vetted professionals. Whether it's a minor fix or a major repair, your solution is just a few taps away.",
+          "Reliable Repairs. Right When You Need Them.  Service Now empowers users with real-time service access, flexible booking, and vetted professionals. Whether it's a minor fix or a major repair, your solution is just a few taps away.",
         descriptionBackground: "#0F73EE",
       },
       featuresOverview: {
         title: "Skilled Help When You Need It Most.",
-    titleMaxWidth: 790,
-      items: [
-        {
-          title: "Trusted Service Now — Just a Tap Away.",
-          maxTitleWidth: 330,
-          images: {
-            url: "/images/portfolioDetails/serviceNow/feature1.webp",
-            width: 504,
-            height: 494,
+        titleMaxWidth: 790,
+        items: [
+          {
+            title: "Trusted Service Now — Just a Tap Away.",
+            maxTitleWidth: 330,
+            images: {
+              url: "/images/portfolioDetails/serviceNow/feature1.webp",
+              width: 504,
+              height: 494,
+            },
           },
-        },
-        {
-          title: "Seamless Access to Points, Deals, and Member Benefits",
-          maxTitleWidth: 463,
-          images: {
-            url: "/images/portfolioDetails/serviceNow/feature2.webp",
-            width: 500,
-            height: 495,
+          {
+            title: "Seamless Access to Points, Deals, and Member Benefits",
+            maxTitleWidth: 463,
+            images: {
+              url: "/images/portfolioDetails/serviceNow/feature2.webp",
+              width: 500,
+              height: 495,
+            },
           },
-        },
-      ],
-        description:
-    "",
+        ],
+        description: "",
       },
-  highlightBanner: {
-    backgroundColor: "#0F73EE",
-      title: "Making Home Services Effortless",
+      highlightBanner: {
+        backgroundColor: "#0F73EE",
+        title: "Making Home Services Effortless",
         description:
-    "Service Now isn't just about repairs — it's about peace of mind. By bridging technology with trusted local professionals, we make it easier than ever to take care of your home. No more waiting, no more uncertainty — just dependable help, delivered fast.",
-      image: "/images/portfolioDetails/serviceNow/highLightBanner.webp",
+          "Service Now isn't just about repairs — it's about peace of mind. By bridging technology with trusted local professionals, we make it easier than ever to take care of your home. No more waiting, no more uncertainty — just dependable help, delivered fast.",
+        image: "/images/portfolioDetails/serviceNow/highLightBanner.webp",
       },
-},
+    },
   },
-{
-  id: "cup-crew",
+  {
+    id: "cup-crew",
     sections: {
-    top: {
-      background: "linear-gradient(0deg, #14463A, #D4B38B)",
+      top: {
+        background: "linear-gradient(0deg, #14463A, #D4B38B)",
         title: "CupCrew - Where Every Cup Counts",
-          subtitle: "Brewing community, one cup at a time",
-            image: "/images/portfolioDetails/cupCrew/topBg.webp",
-              appStoreLinks: {
-        ios: "#",
-          android:
-        "#",
-                },
-    },
-    aboutUs: {
-      image: "/images/portfolioDetails/cupCrew/aboutUs.webp",
+        subtitle: "Brewing community, one cup at a time",
+        image: "/images/portfolioDetails/cupCrew/topBg.webp",
+        appStoreLinks: {
+          ios: "#",
+          android: "#",
+        },
+      },
+      aboutUs: {
+        image: "/images/portfolioDetails/cupCrew/aboutUs.webp",
         title: "About Us",
-          description: [
-            "At CupCrew, we believe every cup of coffee is an opportunity—to connect, recharge, and share a moment. Founded on the passion for great brews and community, we bring people together over perfectly crafted coffee and welcoming spaces. Whether you're here for your daily fix or to catch up with friends, CupCrew is where every cup counts.",
-          ],
-            tags: [
-              { label: "Industry", value: "Food & Bevrage" },
-              { label: "Services", value: "Product Development" },
-              { label: "Business Type", value: "Retail" }
-            ],
-            },
-    projectGoals: {
-      title: "Project Goals",
+        description: [
+          "At CupCrew, we believe every cup of coffee is an opportunity—to connect, recharge, and share a moment. Founded on the passion for great brews and community, we bring people together over perfectly crafted coffee and welcoming spaces. Whether you're here for your daily fix or to catch up with friends, CupCrew is where every cup counts.",
+        ],
+        tags: [
+          { label: "Industry", value: "Food & Bevrage" },
+          { label: "Services", value: "Product Development" },
+          { label: "Business Type", value: "Retail" },
+        ],
+      },
+      projectGoals: {
+        title: "Project Goals",
         image: {
-        url: "/images/portfolioDetails/cupCrew/projectGoals.webp",
-                },
-      goals: [
-        {
-          title: "Creating a Connected Coffee Culture",
-          description:
-            "Our goal was to build a platform that deepens coffee lovers' relationships with their favorite brews. By fostering loyalty through personalized moments and a sense of belonging, CupCrew elevates the everyday sip.",
+          url: "/images/portfolioDetails/cupCrew/projectGoals.webp",
         },
-        {
-          title: "Celebrating Every Cup",
-          description:
-            "CupCrew rewards every visit. From personalized perks to milestones, we turned each user's journey into a rewarding ritual that feels special.",
-        },
-        {
-          title: "Seamless Customer Experience",
-          description:
-            "We designed an intuitive, mobile-first platform that effortlessly blends digital orders, offers, and loyalty programs—ensuring quick, convenient, and delightful interactions.",
-        },
-        {
-          title: "Promoting Sustainable Sipping",
-          description:
-            "We're proud to support ethical coffee practices. Our platform highlights local roasters and environmentally responsible partners to make each sip more conscious.",
-        },
-      ],
-            },
-    execution: {
-      image: "/images/portfolioDetails/cupCrew/execution.webp",
-        description:
-      `CupCrew is a modern coffee experience brand that reimagines daily rituals by blending connection, community, and personalization.
-Designed for those who cherish meaningful moments, CupCrew offers curated coffee experiences and rewards that celebrate every sip—with warmth, intention, and a sense of belonging.`,
-        descriptionBackground: "#14463A80",
-            },
-    featuresOverview: {
-      title: "Brewed Loyalty, Growing Connections",
-        titleMaxWidth: 800,
-          items: [
-            {
-              title: "Building Loyalty Through Every Reward and Connection",
-              maxTitleWidth: 337,
-              images: {
-                url: "/images/portfolioDetails/cupCrew/feature1.webp",
-                width: 512,
-                height: 496,
-              },
-            },
-            {
-              title: "Seamless Access to Points, Deals, and Member Benefits",
-              maxTitleWidth: 396,
-              images: {
-                url: "/images/portfolioDetails/cupCrew/feature2.webp",
-                width: 510,
-                height: 496,
-              },
-            },
-          ],
+        goals: [
+          {
+            title: "Creating a Connected Coffee Culture",
             description:
-      `CupCrew is your personal coffee loyalty companion—designed to make every sip more rewarding.
-Just download the app, sign up, and start collecting points with every order. Easily track your perks, unlock exclusive offers, check café availability, and stay in the loop with seasonal specials. With a smooth, user-friendly interface, CupCrew makes loyalty feel as good as your favorite cup.
-Just sip, scan, and savor the perks.`,
+              "Our goal was to build a platform that deepens coffee lovers' relationships with their favorite brews. By fostering loyalty through personalized moments and a sense of belonging, CupCrew elevates the everyday sip.",
+          },
+          {
+            title: "Celebrating Every Cup",
+            description:
+              "CupCrew rewards every visit. From personalized perks to milestones, we turned each user's journey into a rewarding ritual that feels special.",
+          },
+          {
+            title: "Seamless Customer Experience",
+            description:
+              "We designed an intuitive, mobile-first platform that effortlessly blends digital orders, offers, and loyalty programs—ensuring quick, convenient, and delightful interactions.",
+          },
+          {
+            title: "Promoting Sustainable Sipping",
+            description:
+              "We're proud to support ethical coffee practices. Our platform highlights local roasters and environmentally responsible partners to make each sip more conscious.",
+          },
+        ],
+      },
+      execution: {
+        image: "/images/portfolioDetails/cupCrew/execution.webp",
+        description: `CupCrew is a modern coffee experience brand that reimagines daily rituals by blending connection, community, and personalization. Designed for those who cherish meaningful moments, CupCrew offers curated coffee experiences and rewards that celebrate every sip—with warmth, intention, and a sense of belonging.`,
+        descriptionBackground: "#14463A80",
+      },
+      featuresOverview: {
+        title: "Brewed Loyalty, Growing Connections",
+        titleMaxWidth: 800,
+        items: [
+          {
+            title: "Building Loyalty Through Every Reward and Connection",
+            maxTitleWidth: 337,
+            images: {
+              url: "/images/portfolioDetails/cupCrew/feature1.webp",
+              width: 512,
+              height: 496,
             },
-    highlightBanner: {
-      backgroundColor: "#1A4B3F80",
+          },
+          {
+            title: "Seamless Access to Points, Deals, and Member Benefits",
+            maxTitleWidth: 396,
+            images: {
+              url: "/images/portfolioDetails/cupCrew/feature2.webp",
+              width: 510,
+              height: 496,
+            },
+          },
+        ],
+        description: `CupCrew is your personal coffee loyalty companion—designed to make every sip more rewarding. Just download the app, sign up, and start collecting points with every order. Easily track your perks, unlock exclusive offers, check café availability, and stay in the loop with seasonal specials. With a smooth, user-friendly interface, CupCrew makes loyalty feel as good as your favorite cup. Just sip, scan, and savor the perks.`,
+      },
+      highlightBanner: {
+        backgroundColor: "#1A4B3F80",
         title: "Sipping Made Simple, Rewards Made Delightful",
-          description:
-      `CupCrew turns your everyday coffee into a personalized journey filled with rewards, surprises, and joyful moments. From effortless sign-up to curated perks, every detail is brewed with care.
-Loyalty has never been smarter, warmer, or more delightful—just the way coffee should be.`,
+        description: `CupCrew turns your everyday coffee into a personalized journey filled with rewards, surprises, and joyful moments. From effortless sign-up to curated perks, every detail is brewed with care. Loyalty has never been smarter, warmer, or more delightful—just the way coffee should be.`,
         image: "/images/portfolioDetails/cupCrew/highLightBanner.webp",
-            },
-  },
-},
-{
-  id: "real-estate",
-    sections: {
-    top: {
-      background: "linear-gradient(120deg, #A2D8FF, #0C3553)",
-        title: "Real Estate — Find Your Space, Live Your Dream",
-          subtitle: "Discover homes that match your lifestyle, effortlessly.",
-            image: "/images/portfolioDetails/realEstate/topBg.webp",
-              appStoreLinks: {
-        ios: "#",
-          android:
-        "#",
-                },
+      },
     },
-    aboutUs: {
-      image: "/images/portfolioDetails/realEstate/aboutUs.webp",
+  },
+  {
+    id: "real-estate",
+    sections: {
+      top: {
+        background: "linear-gradient(120deg, #A2D8FF, #0C3553)",
+        title: "Real Estate — Find Your Space, Live Your Dream",
+        subtitle: "Discover homes that match your lifestyle, effortlessly.",
+        image: "/images/portfolioDetails/realEstate/topBg.webp",
+        appStoreLinks: {
+          ios: "#",
+          android: "#",
+        },
+      },
+      aboutUs: {
+        image: "/images/portfolioDetails/realEstate/aboutUs.webp",
         title: "About Us",
-          description: [
-            `At Takween, we're redefining how people find their perfect home. Whether you're buying, renting, or investing, our all-in-one platform connects you with the right listings—quickly, smartly, and with confidence.
-Built for modern house-hunters, our app blends smart search tools, personalized recommendations, and real-time updates to make your property journey seamless. From cozy studios to dream homes, we help you explore options, schedule visits, and take the next step—all in one place.`,
-                ],
-          tags: [
-                { label: "Industry", value: "Real Estate" },
-              { label: "Services", value: "Product Development" },
-              { label: "Business Type", value: "Retail" }
-            ],
-            },
-    projectGoals: {
-      title: "Project Goals",
+        description: [
+          `At Takween, we're redefining how people find their perfect home.Whether you're buying, renting, or investing, our all-in-one platform connects you with the right listings—quickly, smartly, and with confidence. Built for modern house-hunters, our app blends smart search tools, personalized recommendations, and real-time updates to make your property journey seamless. From cozy studios to dream homes, we help you explore options, schedule visits, and take the next step—all in one place.`,
+        ],
+        tags: [
+          { label: "Industry", value: "Real Estate" },
+          { label: "Services", value: "Product Development" },
+          { label: "Business Type", value: "Retail" },
+        ],
+      },
+      projectGoals: {
+        title: "Project Goals",
         image: {
-        url: "/images/portfolioDetails/realEstate/projectGoals.webp",
-                },
-      goals: [
-        {
-          title: "Simplify the Property Search Experience",
-          description:
-            "Create an intuitive platform where users can easily browse, filter, and discover properties based on location, budget, lifestyle, and preferences.",
+          url: "/images/portfolioDetails/realEstate/projectGoals.webp",
         },
-        {
-          title: "Enhance Transparency and Trust",
-          description:
-            "Provide verified listings, real-time updates, and complete property details so users can make informed and confident decisions.",
-        },
-        {
-          title: "Enable Smart, Personalised Recommendations",
-          description:
-            "Create an intuitive platform where users can easily browse, filter, and discover properties based on location, budget, lifestyle, and preferences.",
-        },
-        {
-          title: "Streamline the End-to-End Journey",
-          description:
-            "Integrate scheduling, communication, and virtual tour features to make the entire home discovery and buying/renting process smooth and convenient.",
-        },
-      ],
-            },
-    execution: {
-      image: "/images/portfolioDetails/realEstate/execution.webp",
-        description:
-        `Real Estate App is a modern real estate platform that reimagines how you find a home—combining smart technology, human insight, and seamless experiences.
+        goals: [
+          {
+            title: "Simplify the Property Search Experience",
+            description:
+              "Create an intuitive platform where users can easily browse, filter, and discover properties based on location, budget, lifestyle, and preferences.",
+          },
+          {
+            title: "Enhance Transparency and Trust",
+            description:
+              "Provide verified listings, real-time updates, and complete property details so users can make informed and confident decisions.",
+          },
+          {
+            title: "Enable Smart, Personalised Recommendations",
+            description:
+              "Create an intuitive platform where users can easily browse, filter, and discover properties based on location, budget, lifestyle, and preferences.",
+          },
+          {
+            title: "Streamline the End-to-End Journey",
+            description:
+              "Integrate scheduling, communication, and virtual tour features to make the entire home discovery and buying/renting process smooth and convenient.",
+          },
+        ],
+      },
+      execution: {
+        image: "/images/portfolioDetails/realEstate/execution.webp",
+        description: `Real Estate App is a modern real estate platform that reimagines how you find a home—combining smart technology, human insight, and seamless experiences.
 Crafted for those who seek more than just a place to live, Takween connects you to homes that match your lifestyle, dreams, and goals.  Whether you're buying, renting, or exploring new investments, we make your journey smooth, personal, and rewarding—because finding a home should feel just right.`,
         descriptionBackground: "#143B5880",
-            },
-    featuresOverview: {
-      title: "Smart Choices, Growing Dreams",
+      },
+      featuresOverview: {
+        title: "Smart Choices, Growing Dreams",
         titleMaxWidth: 691,
-          items: [
-            {
-              title: "Building Trust Through Every Home and Highlight",
-              maxTitleWidth: 487,
-              images: {
-                url: "/images/portfolioDetails/realEstate/feature1.webp",
-                width: 242,
-                height: 500,
-              },
+        items: [
+          {
+            title: "Building Trust Through Every Home and Highlight",
+            maxTitleWidth: 487,
+            images: {
+              url: "/images/portfolioDetails/realEstate/feature1.webp",
+              width: 242,
+              height: 500,
             },
-            {
-              title: "Real-Time Insights, Updates, and Confidence in Every Step",
-              maxTitleWidth: 399,
-              images: {
-                url: "/images/portfolioDetails/realEstate/feature2.webp",
-                width: 234,
-                height: 483,
-              },
+          },
+          {
+            title: "Real-Time Insights, Updates, and Confidence in Every Step",
+            maxTitleWidth: 399,
+            images: {
+              url: "/images/portfolioDetails/realEstate/feature2.webp",
+              width: 234,
+              height: 483,
             },
-          ],
-            description:
-      `Real Estate App is your personal home-finding companion—designed to make the journey easier, smarter, and more rewarding.Just download the app, sign up, and start exploring curated property listings tailored to your preferences. Easily track your favorite homes, get personalized recommendations, receive exclusive offers, and stay informed on new listings, price changes, and local market trends—all from one convenient app. Just browse, save, and find your perfect space.`,
-            },
-    highlightBanner: {
-      backgroundColor: "#143B5880",
+          },
+        ],
+        description: `Real Estate App is your personal home-finding companion—designed to make the journey easier, smarter, and more rewarding.Just download the app, sign up, and start exploring curated property listings tailored to your preferences. Easily track your favorite homes, get personalized recommendations, receive exclusive offers, and stay informed on new listings, price changes, and local market trends—all from one convenient app. Just browse, save, and find your perfect space.`,
+      },
+      highlightBanner: {
+        backgroundColor: "#143B5880",
         title: "Finding Made Easy, Rewards Made Valuable",
-          description:
-      `Our app simplifies your journey to the perfect home with intuitive tools and personalized insights.
+        description: `Our app simplifies your journey to the perfect home with intuitive tools and personalized insights.
 Earn valuable rewards and unlock exclusive offers that make every step toward your dream home feel more rewarding.
 Smart search. Trusted results. Your dream home—closer than ever.`,
         image: "/images/portfolioDetails/realEstate/highLightBanner.webp",
-            },
-  },
-},
-{
-  id: "health-care",
-    sections: {
-    top: {
-      background: "linear-gradient(120deg, #FFFFFF, #0BA69A)",
-        title: "Healthcare Companion",
-          subtitle: "Smarter Tools for Smarter Healthcare - Right in Your Pocket",
-            image: "/images/portfolioDetails/healthCare/topBg.webp",
-              appStoreLinks: {
-        ios: "#",
-          android:
-        "#",
-                },
+      },
     },
-    aboutUs: {
-      image: "/images/portfolioDetails/healthCare/aboutUs.webp",
+  },
+  {
+    id: "health-care",
+    sections: {
+      top: {
+        background: "linear-gradient(120deg, #FFFFFF, #0BA69A)",
+        title: "Healthcare Companion",
+        subtitle: "Smarter Tools for Smarter Healthcare - Right in Your Pocket",
+        image: "/images/portfolioDetails/healthCare/topBg.webp",
+        appStoreLinks: {
+          ios: "#",
+          android: "#",
+        },
+      },
+      aboutUs: {
+        image: "/images/portfolioDetails/healthCare/aboutUs.webp",
         title: "About Us",
-          description: [
-            `In today's fast-paced medical world, access, coordination, and data matter more than ever. `,
-            `Our dual mobile app solution—built for consultants and hospitals—bridges the gap between care providers and healthcare facilities, enabling faster decisions, real-time updates, and seamless patient tracking.`,
-                ],
-          tags: [
-                { label: "Industry", value: "Healthcare" },
-              { label: "Services", value: "Product" },
-              { label: "Business Type", value: "Healthcare" }
-            ],
-            },
-    projectGoals: {
-      title: "Project Goals",
+        description: [
+          `In today's fast-paced medical world, access, coordination, and data matter more than ever. `,
+          `Our dual mobile app solution—built for consultants and hospitals—bridges the gap between care providers and healthcare facilities, enabling faster decisions, real-time updates, and seamless patient tracking.`,
+        ],
+        tags: [
+          { label: "Industry", value: "Healthcare" },
+          { label: "Services", value: "Product" },
+          { label: "Business Type", value: "Healthcare" },
+        ],
+      },
+      projectGoals: {
+        title: "Project Goals",
         image: {
-        url: "/images/portfolioDetails/healthCare/projectGoals.webp",
-                },
-      goals: [
-        {
-          title: "Empowering Healthcare Professionals",
-          description:
-            "The Consultant App helps doctors and specialists stay informed, manage appointments, access reports, and collaborate with teams securely from anywhere.",
+          url: "/images/portfolioDetails/healthCare/projectGoals.webp",
         },
-        {
-          title: "Real-Time, Secure Connectivity",
-          description:
-            "Both apps are designed with HIPAA-compliant standards in mind, ensuring privacy while improving access and operations across departments.",
-        },
-        {
-          title: "Smart Facility Management",
-          description:
-            "The Hospital App offers admin staff, nurses, and hospital teams tools to coordinate bookings, streamline communication, and track medical workflows efficiently.",
-        },
-        {
-          title: "Connecting Care, Anytime & Anywhere",
-          description:
-            "Our goal was to build a dual-platform ecosystem that empowers both healthcare providers and patients. The Consultant App enables doctors to manage appointments, patient records, and consultations on the go",
-        },
-      ],
-            },
-    execution: {
-      image: "/images/portfolioDetails/healthCare/execution.webp",
-        description:
-        `From Signup to Support — Seamless Healthcare Tools
+        goals: [
+          {
+            title: "Empowering Healthcare Professionals",
+            description:
+              "The Consultant App helps doctors and specialists stay informed, manage appointments, access reports, and collaborate with teams securely from anywhere.",
+          },
+          {
+            title: "Real-Time, Secure Connectivity",
+            description:
+              "Both apps are designed with HIPAA-compliant standards in mind, ensuring privacy while improving access and operations across departments.",
+          },
+          {
+            title: "Smart Facility Management",
+            description:
+              "The Hospital App offers admin staff, nurses, and hospital teams tools to coordinate bookings, streamline communication, and track medical workflows efficiently.",
+          },
+          {
+            title: "Connecting Care, Anytime & Anywhere",
+            description:
+              "Our goal was to build a dual-platform ecosystem that empowers both healthcare providers and patients. The Consultant App enables doctors to manage appointments, patient records, and consultations on the go",
+          },
+        ],
+      },
+      execution: {
+        image: "/images/portfolioDetails/healthCare/execution.webp",
+        description: `From Signup to Support — Seamless Healthcare Tools
  Join the platform in minutes. Whether you're a hospital team or a practicing consultant, our dual-app ecosystem is designed to deliver clarity, control, and connection—every step of the way.`,
         descriptionBackground: "#1DADA1",
-            },
-    featuresOverview: {
-      title: "Skilled Help When You Need It Most.",
+      },
+      featuresOverview: {
+        title: "Skilled Help When You Need It Most.",
         titleMaxWidth: 790,
-          items: [
-            {
-              title: "Trusted Service Now — Just a Tap Away.",
-              maxTitleWidth: 330,
-              images: {
-                url: "/images/portfolioDetails/healthCare/feature1.webp",
-                width: 510,
-                height: 492,
-              },
+        items: [
+          {
+            title: "Trusted Service Now — Just a Tap Away.",
+            maxTitleWidth: 330,
+            images: {
+              url: "/images/portfolioDetails/healthCare/feature1.webp",
+              width: 510,
+              height: 492,
             },
-            {
-              title: "Real-Time Access for any Emergency.",
-              maxTitleWidth: 354,
-              images: {
-                url: "/images/portfolioDetails/healthCare/feature2.webp",
-                width: 499,
-                height: 495,
-              },
+          },
+          {
+            title: "Real-Time Access for any Emergency.",
+            maxTitleWidth: 354,
+            images: {
+              url: "/images/portfolioDetails/healthCare/feature2.webp",
+              width: 499,
+              height: 495,
             },
-          ],
-            description:
-      ``,
-            },
-    highlightBanner: {
-      backgroundColor: "#1DADA1",
+          },
+        ],
+        description: ``,
+      },
+      highlightBanner: {
+        backgroundColor: "#1DADA1",
         title: "Designed for Better Care, Built for Everyday Use",
-          description:
-      `We combined intuitive UX with robust backend support to ensure that every stakeholder—from frontline doctors to hospital admin—can use the tools with minimal training and maximum benefit.`,
+        description: `We combined intuitive UX with robust backend support to ensure that every stakeholder—from frontline doctors to hospital admin—can use the tools with minimal training and maximum benefit.`,
         image: "/images/portfolioDetails/healthCare/highLightBanner.webp",
-            },
+      },
+    },
   },
-},
- {
+  {
     id: "sign",
     sections: {
       top: {
@@ -992,7 +972,7 @@ Smart search. Trusted results. Your dream home—closer than ever.`,
         tags: [
           { label: "Industry", value: "F&B" },
           { label: "Services", value: "B2C | Quick Service" },
-          { label: "Business Type", value: "Retail" }
+          { label: "Business Type", value: "Retail" },
         ],
       },
       projectGoals: {
@@ -1052,8 +1032,7 @@ Smart search. Trusted results. Your dream home—closer than ever.`,
             },
           },
         ],
-        description:
-          "",
+        description: "",
       },
       highlightBanner: {
         backgroundColor: "#FD93C5",
