@@ -203,6 +203,19 @@ const Footer = () => {
                               alt="instagram"
                             />
                           </Link>
+                          <Link
+                            href="https://x.com/todcomsa?s=11&t=lG3tydHI4tkzXwsvpgOCCA"
+                            aria-label="X"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Image
+                              src="/images/icons/X.svg"
+                              width={36}
+                              height={36}
+                              alt="X"
+                            />
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -223,7 +236,7 @@ const Footer = () => {
 
           <Col lg={12}>
             <div className="reserved_row">
-              <h2>© 2025 Tod All Rights Reserved.</h2>
+              <h2>{t("© 2025 Tod All Rights Reserved.")}</h2>
             </div>
           </Col>
         </Row>

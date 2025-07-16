@@ -1,0 +1,11 @@
+html[dir="rtl"] {
+  .project_slider_controls .slider_btn {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .service_btn,
+  .portfolio_inner_section .portfolio_inner .case_study_btn {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}

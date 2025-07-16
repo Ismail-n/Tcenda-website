@@ -2,6 +2,7 @@ const riseValues = [
   {
     id: 1,
     letter: "R",
+    letterAr: "R1",
     title: "Revolutionise Local Industries",
     description:
       "Empowering Saudi businesses with AI, custom apps, and digital automation across key sectors.",
@@ -9,6 +10,7 @@ const riseValues = [
   {
     id: 2,
     letter: "I",
+    letterAr: "I1",
     title: "Innovate with Purpose",
     description:
       "We turn innovation into impact with smart, efficient, ROI-driven solutions.",
@@ -16,6 +18,7 @@ const riseValues = [
   {
     id: 3,
     letter: "S",
+    letterAr: "S1",
     title: "Strengthen National Vision",
     description:
       "Driving Vision 2030 with smart city, e-governance, & sector-driven digital solutions.",
@@ -23,6 +26,7 @@ const riseValues = [
   {
     id: 4,
     letter: "E",
+    letterAr: "E1",
     title: "Elevate Service Standards",
     description:
       "We unite global quality with local insight, delivering trusted, long-term digital partnerships.",

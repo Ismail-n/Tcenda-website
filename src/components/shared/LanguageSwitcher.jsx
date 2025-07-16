@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import i18n from "../../../i18n";
 
 export default function LanguageSwitcher() {
@@ -10,21 +10,10 @@ export default function LanguageSwitcher() {
     localStorage.setItem("lang", lng);
     setLang(lng);
 
-    // ✅ Set dir attribute on <html>
-    document.documentElement.dir = lng === "ar" ? "rtl" : "ltr";
+    // Apply new direction immediately
     document.documentElement.lang = lng;
+    document.documentElement.dir = lng === "ar" ? "rtl" : "ltr";
   };
-
-  useEffect(() => {
-    const storedLang = localStorage.getItem("lang");
-    const initialLang = storedLang || i18n.language || "en";
-    i18n.changeLanguage(initialLang);
-    setLang(initialLang);
-
-    // ✅ Set dir/lang on first render
-    document.documentElement.dir = initialLang === "ar" ? "rtl" : "ltr";
-    document.documentElement.lang = initialLang;
-  }, []);
 
   return (
     <button

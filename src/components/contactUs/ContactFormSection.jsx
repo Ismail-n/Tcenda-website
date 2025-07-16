@@ -21,9 +21,9 @@ const ContactFormSection = () => {
     message: "",
   };
 
-  const SERVICE_ID = "service_m1tsr4h";
-  const TEMPLATE_ID = "template_6wl6bat";
-  const PUBLIC_KEY = "W7aMVGuT0tr6SpaBw";
+  const SERVICE_ID = "service_o1vmwom";
+  const TEMPLATE_ID = "template_ciaxgel";
+  const PUBLIC_KEY = "R-k8S0O-yOiGJFhKw";
 
   const handleSubmit = async (values, { resetForm, setSubmitting }) => {
     try {

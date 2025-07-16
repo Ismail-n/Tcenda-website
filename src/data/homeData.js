@@ -122,12 +122,14 @@ const industries = [
 
 const services = [
   {
+    id: 1,
     icon: "mobileApp",
     title: "Mobile App Development",
     description:
       "We transform your ideas into sleek, high-performance mobile apps built for scale. Whether iOS or Android, our solutions are tailored to deliver seamless user experiences and drive business results.",
   },
   {
+    id: 2,
     icon: "web",
     title: "Web Development",
     description:
@@ -135,6 +137,7 @@ const services = [
     maxTitleWidth: 115,
   },
   {
+    id: 3,
     icon: "digital",
     title: "Digital Transformation",
     description:
@@ -142,6 +145,7 @@ const services = [
     maxTitleWidth: 115,
   },
   {
+    id: 4,
     icon: "odoo",
     title: "Odoo Customisation",
     description:
@@ -149,6 +153,7 @@ const services = [
     maxTitleWidth: 115,
   },
   {
+    id: 5,
     icon: "cloudService",
     title: "Managed Cloud Services",
     description:
@@ -156,12 +161,14 @@ const services = [
     maxTitleWidth: 222,
   },
   {
+    id: 6,
     icon: "ai",
     title: "Artificial Intelligence & Machine Learning",
     description:
       "Leverage the power of AI to make smarter decisions, personalize customer experiences, and automate critical workflows. Our solutions turn data into intelligent action.",
   },
   {
+    id: 7,
     icon: "dataAnalytics",
     title: "Data Analytics",
     description:
@@ -169,6 +176,7 @@ const services = [
     maxTitleWidth: 115,
   },
   {
+    id: 8,
     icon: "ui",
     title: "UI/UX Design",
     description:

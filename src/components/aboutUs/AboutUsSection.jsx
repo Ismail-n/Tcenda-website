@@ -65,13 +65,16 @@ const AboutUsSection = () => {
 export default AboutUsSection;
 
 const RiseCard = ({ item }) => {
-  const { t } = useTranslation();
-  const { letter, title, description } = item || {};
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+  const { letter, letterAr, title, description } = item || {};
   return (
     <Col lg={3} md={6}>
       <article className="single_rise">
         <Image
-          src={`/images/aboutUs/${letter}.svg`}
+          src={`/images/aboutUs/${language == "en" ? letter : letterAr}.svg`}
           width={102}
           height={115}
           alt={`${letter} - ${t(title)}`}

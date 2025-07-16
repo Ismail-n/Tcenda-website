@@ -23,9 +23,9 @@ const initialValues = {
 const ConsultOurExperts = () => {
   const { t } = useTranslation();
 
-  const SERVICE_ID = "service_m1tsr4h";
-  const TEMPLATE_ID = "template_6wl6bat";
-  const PUBLIC_KEY = "W7aMVGuT0tr6SpaBw";
+  const SERVICE_ID = "service_o1vmwom";
+  const TEMPLATE_ID = "template_ciaxgel";
+  const PUBLIC_KEY = "R-k8S0O-yOiGJFhKw";
 
   const handleSubmit = async (values, { resetForm, setSubmitting }) => {
     try {
@@ -38,10 +38,10 @@ const ConsultOurExperts = () => {
       const { status, text } = result || {};
 
       if (status) {
-       toast.success("Thank You! We'll get back to you soon.");
+       toast.success(t("Thank You! We'll get back to you soon."));
         resetForm();
       } else {
-        toast.error(text || "Failed to send message.");
+        toast.error(text || t("Failed to send message."));
       }
     } catch (error) {
       console.error("Email sending failed:", error);
@@ -114,7 +114,7 @@ const ConsultOurExperts = () => {
                       <Field
                         as="select"
                         name="code"
-                        className="input mw-80"
+                        className="input mw-80 ltr"
                         placeholder={t("Select County code")}
                       >
                         <option value="+966">+966</option>

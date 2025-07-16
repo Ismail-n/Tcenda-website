@@ -10,7 +10,10 @@ import { services } from "@/data/homeData";
 import { useKeenSlider } from "keen-slider/react";
 
 const OurServices = () => {
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -67,7 +70,12 @@ const OurServices = () => {
                   <div className="keen-slider__slide" key={idx}>
                     <div className="slide_group_row">
                       {group.map((item) => (
-                        <ServiceCard item={item} t={t} key={item.title} />
+                        <ServiceCard
+                          item={item}
+                          t={t}
+                          key={item.title}
+                          language={language}
+                        />
                       ))}
                       {idx === 2 && (
                         <div className="explore_services">
@@ -107,7 +115,7 @@ const OurServices = () => {
 
 export default OurServices;
 
-const ServiceCard = ({ item, t }) => {
+const ServiceCard = ({ item, t, language }) => {
   const { icon, title, description, maxTitleWidth } = item || {};
   return (
     <Col lg={4} md={6}>

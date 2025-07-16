@@ -75,7 +75,7 @@ const Clients = () => {
               </div> */}
       </Container>
 
-      <div className="marqueeWrapper">
+      <div className="marqueeWrapper ltr">
         <div className="marquee">
           {[
             ...clientsLogo,
