@@ -189,7 +189,7 @@ const servicesData = [
       },
       {
         icon: "digitalTransformation/enterprise",
-        title: "Enterprise          System Integration",
+        title: "Enterprise System Integration",
         subtitle:
           "Achieve operational harmony with seamless integration between your ERP, CRM, HRMS, and other core systems.",
         titleMaxWidth: 240,

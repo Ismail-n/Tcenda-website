@@ -1984,7 +1984,7 @@ footer {
             font-size: 16px;
             min-width: 261px;
             display: flex;
-            justify-content: end;
+            justify-content: center;
             padding: 0 10px;
           }
         }
@@ -2148,31 +2148,44 @@ footer {
         padding-top: 50px;
         display: flex;
         flex-wrap: wrap;
+        gap: 60px;
+
         .single_tag {
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 55px;
+            background: #717171;
+            inset-inline-start: -30px;
+            top: 0;
+          }
           &:nth-child(1) {
-            border-right: 1px solid #717171;
-            padding-left: 20px;
-          }
-          &:nth-child(3) {
-            border-top: 1px solid #717171;
-            border-right: 1px solid #717171;
-            padding-left: 20px;
-          }
-          &:nth-child(4) {
-            border-top: 1px solid #717171;
-          }
-          &:nth-child(3),
-          &:nth-child(4) {
-            padding-top: 30px;
-          }
-          &:nth-child(2),
-          &:nth-child(4) {
-            padding-left: 50px;
-            @media (max-width: 575px) {
-              padding-left: 30px;
+            &::after {
+              content: unset;
             }
           }
-          width: 211px;
+          // &:nth-child(3) {
+          //   border-top: 1px solid #717171;
+          //   border-right: 1px solid #717171;
+          //   padding-left: 20px;
+          // }
+          // &:nth-child(4) {
+          //   border-top: 1px solid #717171;
+          // }
+          // &:nth-child(3),
+          // &:nth-child(4) {
+          //   padding-top: 30px;
+          // }
+          // &:nth-child(2),
+          // &:nth-child(4) {
+          //   padding-left: 50px;
+          //   @media (max-width: 575px) {
+          //     padding-left: 30px;
+          //   }
+          // }
+          // width: 211px;
           min-height: 85px;
           max-width: 100%;
           h2 {
@@ -2325,7 +2338,7 @@ footer {
     position: relative;
     .content {
       min-height: 635px;
-      padding-right: 50px;
+      padding-inline-end: 50px;
       @media (max-width: 575px) {
         min-height: 500px;
         padding-right: 0;

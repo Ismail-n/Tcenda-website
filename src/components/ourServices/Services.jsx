@@ -28,7 +28,6 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
   const { overview, categories, techStack } = selectedService || {};
 
   const handleTabChange = (id) => {
-    console.log(id);
     setActiveServiceTab(id);
 
     const newService =
@@ -174,7 +173,7 @@ const TechCard = ({ item }) => {
           width={48}
           height={48}
         />
-        <h2>{t(title)}</h2>
+        <h2 className="adam_font">{title}</h2>
       </div>
     </Col>
   );

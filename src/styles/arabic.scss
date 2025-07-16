@@ -8,4 +8,7 @@ html[dir="rtl"] {
       transform: rotate(180deg);
     }
   }
+  header .menu_links ul {
+    height: 64px;
+  }
 }

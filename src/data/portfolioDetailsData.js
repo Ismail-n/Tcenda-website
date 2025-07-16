@@ -37,7 +37,7 @@ const portfolioDetails = [
           {
             title: "Conceptualisation of the project",
             description:
-              "We started by mapping the Ashjar Café customer journey to understand what loyal guests truly value. These insights shaped the Ashjar Friend app’s features, rewards, and personalized experience—designed to boost engagement and satisfaction at every visit.",
+              "We started by mapping the Ashjar Café customer journey to understand what loyal guests truly value. These insights shaped the Ashjar Friend app's features, rewards, and personalized experience—designed to boost engagement and satisfaction at every visit.",
           },
           {
             title: "From First Sip to Favorites - We Remember",
@@ -134,7 +134,7 @@ const portfolioDetails = [
           {
             title: "Conceptualisation of the project",
             description:
-              "We started by mapping the Ashjar Café customer journey to understand what loyal guests truly value. These insights shaped the Ashjar Friend app’s features, rewards, and personalized experience—designed to boost engagement and satisfaction at every visit.",
+              "We started by mapping the Ashjar Café customer journey to understand what loyal guests truly value. These insights shaped the Ashjar Friend app's features, rewards, and personalized experience—designed to boost engagement and satisfaction at every visit.",
           },
           {
             title: "From First Sip to Favorites - We Remember",
@@ -231,7 +231,7 @@ const portfolioDetails = [
           {
             title: "Conceptualisation of the project",
             description:
-              "We started by mapping the Ashjar Café customer journey to understand what loyal guests truly value. These insights shaped the Ashjar Friend app’s features, rewards, and personalized experience—designed to boost engagement and satisfaction at every visit.",
+              "We started by mapping the Ashjar Café customer journey to understand what loyal guests truly value. These insights shaped the Ashjar Friend app's features, rewards, and personalized experience—designed to boost engagement and satisfaction at every visit.",
           },
           {
             title: "From First Sip to Favorites - We Remember",

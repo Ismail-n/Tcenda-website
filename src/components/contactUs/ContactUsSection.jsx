@@ -36,9 +36,9 @@ const ContactUsSection = () => {
                           alt="location"
                         />
                         <p>
-                          Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,
+                          {t("Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,")}
                           <br />
-                          Ar Rabi, Riyadh 13315
+                          {t("Ar Rabi, Riyadh 13315")}
                         </p>
                       </a>
                     </div>
@@ -53,7 +53,7 @@ const ContactUsSection = () => {
                         height={24}
                         alt="location"
                       />
-                      <a href="tel:+966554848908">{t("+966 55 484 8908")}</a>
+                      <a href="tel:+966554848908">+966 55 484 8908</a>
                     </div>
                     <div className="icon_text">
                       <Image
