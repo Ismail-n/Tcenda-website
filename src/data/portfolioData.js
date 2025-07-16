@@ -13,7 +13,7 @@ const portfolios = [
       "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.halfmillion.android&hl=en_IN",
-    caseStudyLink: "",
+    caseStudyLink: "half-million",
     imageDetails: {
       image: "halfMillion",
       imageWidth: 466,
@@ -73,7 +73,7 @@ const portfolios = [
     title: "Ease",
     description:
       "Manage Operations, Sales, and Finance — All from One Central Dashboard. Intelligent Business Management, Right at Your Fingertips.",
-    caseStudyLink: "",
+    caseStudyLink: "ease",
     imageDetails: {
       image: "ease",
       imageWidth: 537,
@@ -114,7 +114,7 @@ const portfolios = [
       "Browse, Order, and Collect from Your Favorite Local Cafés — Enjoy Smooth Payments and Loyalty Benefits, All in One App.",
     appStoreLink: "#",
     playStoreLink: "#",
-    caseStudyLink: "",
+    caseStudyLink: "cup-crew",
     imageDetails: {
       image: "cupCrew",
       imageWidth: 420,
@@ -134,7 +134,7 @@ const portfolios = [
       "Tailored Search, Virtual Tours, and Agent Support for Buyers and Renters. Built to Serve Saudi's Growing Real Estate Market.",
     appStoreLink: "#",
     playStoreLink: "#",
-    caseStudyLink: "",
+    caseStudyLink: "real-estate",
     imageDetails: {
       image: "realEstate",
       imageWidth: 537,
@@ -174,7 +174,7 @@ const portfolios = [
       "Fast, Secure, and Personalized Screenings Tailored to Your Lifestyle. Track, Analyze, and Stay Ahead with Health Insights at Your Fingertips.",
     appStoreLink: "#",
     playStoreLink: "#",
-    caseStudyLink: "",
+    caseStudyLink: "screen-me",
     imageDetails: {
       image: "screenMe",
       imageWidth: 511,
@@ -195,7 +195,7 @@ const portfolios = [
     appStoreLink:
       "https://apps.apple.com/in/app/service-hub-customer/id6461084774",
     playStoreLink: "#",
-    caseStudyLink: "",
+    caseStudyLink: "service-now",
     imageDetails: {
       image: "serviceNow",
       imageWidth: 289,
@@ -215,13 +215,33 @@ const portfolios = [
       "Browse Specialists, Book Instantly, and Get Reminders All from Your Phone. A Seamless Healthcare & Services Booking Platform.",
     appStoreLink: "#",
     playStoreLink: "#",
-    caseStudyLink: "",
+    caseStudyLink: "health-care",
     imageDetails: {
       image: "healthCare",
       imageWidth: 351,
       imageHeight: 431,
     },
     background: "linear-gradient(to left, #0BA69A, #FFFFFF)",
+  },
+  {
+    id: "sign",
+    logoDetails: {
+      logo: "",
+      logoWidth: 80,
+      logoHeight: 80,
+    },
+    title: "Sign",
+    description:
+      "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
+    appStoreLink: "#",
+    playStoreLink: "#",
+    caseStudyLink: "sign",
+    imageDetails: {
+      image: "sign",
+      imageWidth: 453,
+      imageHeight: 436,
+    },
+    background: "linear-gradient(to left, #FF91C5, #FFFFFF)",
   },
 ];
 
