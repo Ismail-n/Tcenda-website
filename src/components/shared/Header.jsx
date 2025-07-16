@@ -54,8 +54,12 @@ const Header = () => {
     setIsPortfolioDetail(pathname === "/portfolio/[slug]");
   }, [pathname]);
 
-  const isActive = (href) => pathname === href || pathname === href + "/";
-
+  const isActive = (href) => {
+    if (href === "/portfolio" && pathname.startsWith("/portfolio")) {
+      return true;
+    }
+    return pathname === href || pathname === href + "/";
+  };
   const isSubLinkActive = (href) => {
     const [baseHref, hash] = href.split("#");
     const [currentPath, currentHash] = asPath.split("#");
@@ -174,7 +178,9 @@ const Header = () => {
                   />
                 ) : (
                   <Image
-                    src={`/images/icons/${isPortfolioDetail && !isScrolled ? "menuBlack" : "menu"}.svg`}
+                    src={`/images/icons/${
+                      isPortfolioDetail && !isScrolled ? "menuBlack" : "menu"
+                    }.svg`}
                     width={40}
                     height={37}
                     alt="menu"
