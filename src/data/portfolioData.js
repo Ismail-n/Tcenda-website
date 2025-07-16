@@ -224,24 +224,24 @@ const portfolios = [
     background: "linear-gradient(to left, #0BA69A, #FFFFFF)",
   },
   {
-    id: "sign",
+    id: "fresh-cart",
     logoDetails: {
-      logo: "",
+      logo: "freshcartLogo",
       logoWidth: 80,
       logoHeight: 80,
     },
-    title: "Sign",
+    title: "Fresh Cart - Freshness Delivered Fast",
     description:
       "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
     appStoreLink: "#",
     playStoreLink: "#",
-    caseStudyLink: "sign",
+    caseStudyLink: "fresh-cart",
     imageDetails: {
-      image: "sign",
-      imageWidth: 453,
-      imageHeight: 436,
+      image: "freshCart",
+      imageWidth: 465,
+      imageHeight: 406,
     },
-    background: "linear-gradient(to left, #FF91C5, #FFFFFF)",
+    background: "linear-gradient(to left, #38A856, #FFFFFF)",
   },
 ];
 
