@@ -10,6 +10,7 @@ import "@/styles/animation.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import ClientOnly from "@/components/ClientOnly";
+import WhatsAppButton from "@/components/shared/WhatsAppButton";
 
 const pageVariants = {
   initial: { opacity: 0, y: -100 },
@@ -44,6 +45,7 @@ export default function App({ Component, pageProps }) {
         >
           <ClientOnly>
             <Component {...pageProps} />
+            <WhatsAppButton />
           </ClientOnly>
         </motion.div>
       </AnimatePresence>
