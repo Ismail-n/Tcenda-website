@@ -394,7 +394,8 @@ and collaborate.`,
       top: {
         background: "linear-gradient(120deg, #FFFFFF, #ABDBFF)",
         title: "Ease",
-        subtitle: `EASE is an intuitive digital signage platform crafted to turn ordinary screens into impactful communication tools. Whether it's in cafs, corporate offices, retail chains, or education environments, EASE enables users to remotely manage and deploy content across multiple screens — all from a single dashboard.`,
+        subtitle: `EASE is an intuitive digital signage platform crafted to turn ordinary screens into impactful communication tools. Whether it's in cafs, corporate offices, retail chains, or education environments, EASE enables users to remotely manage and deploy content across multiple screens — all from a single dashboard.
+        With drag-and-drop functionality, real-time updates, and rich multimedia support, EASE empowers brands and teams to communicate smarter, faster, and with greater flexibility.`,
         image: "/images/portfolioDetails/ease/topBg.webp",
         appStoreLinks: {
           ios: "#",
@@ -965,6 +966,103 @@ Smart search. Trusted results. Your dream home—closer than ever.`,
             },
   },
 },
+ {
+    id: "fresh-cart",
+    sections: {
+      top: {
+        background: "linear-gradient(120deg, #FFFFFF, #38A856)",
+        title: "Fresh Cart — Freshness Delivered Fast",
+        subtitle:
+          "Fresh groceries, fast to your door.",
+        image: "/images/portfolioDetails/freshCart/topBg.webp",
+        appStoreLinks: {
+          ios: "#",
+          android: "#",
+        },
+      },
+      aboutUs: {
+        image: "/images/portfolioDetails/freshCart/aboutUs.webp",
+        title: "About Us",
+        description: [
+          `Fresh Cart brings the market to your doorstep with high-quality groceries delivered quickly and reliably.`,
+          `We’re committed to making your shopping easy, convenient, and fresh—every time—so you can enjoy more time doing what you love.`
+        ],
+        tags: [
+          { label: "Industry", value: "E-Commerce" },
+          { label: "Services", value: "Retail" },
+          { label: "Business Type", value: "Retail" }
+        ],
+      },
+      projectGoals: {
+        title: "Project Goals",
+        image: {
+          url: "/images/portfolioDetails/freshCart/projectGoals.webp",
+        },
+        goals: [
+          {
+            title: "Deliver Freshness with Speed",
+            description:
+              "Ensure prompt and reliable delivery of fresh groceries, maintaining quality from farm to doorstep.",
+          },
+          {
+            title: "Personalize Customer Experience",
+            description:
+              "Leverage data to offer tailored recommendations and deals based on user preferences and purchase history.",
+          },
+          {
+            title: "Simplify Grocery Shopping",
+            description:
+              "Ensure prompt and reliable delivery of fresh groceries, maintaining quality from farm to doorstep.",
+          },
+          {
+            title: "Promote Sustainable Practices",
+            description:
+              "Incorporate eco-friendly packaging and partner with local suppliers to support sustainable and responsible sourcing.",
+          },
+        ],
+      },
+      execution: {
+        image: "/images/portfolioDetails/freshCart/execution.webp",
+        description:
+          `Fresh Cart is a modern grocery experience brand that redefines everyday shopping by combining freshness, convenience, and personalization.
+Crafted for those who value quality and care, Fresh Cart delivers curated grocery selections and tailored rewards that make every basket feel thoughtful, fresh, and connected.`,
+        descriptionBackground: "#38A855",
+      },
+      featuresOverview: {
+        title: "Freshly Picked, Naturally Connected",
+        titleMaxWidth: 539,
+        items: [
+          {
+            title: `Nurturing Trust With Every Fresh Pick`,
+            maxTitleWidth: 365,
+            images: {
+              url: "/images/portfolioDetails/freshCart/feature1.webp",
+              width: 512,
+              height: 496,
+            },
+          },
+          {
+            title: `Instant Access to Freshness, Savings, and Smiles`,
+            maxTitleWidth: 514,
+            images: {
+              url: "/images/portfolioDetails/freshCart/feature2.webp",
+              width: 510,
+              height: 500,
+            },
+          },
+        ],
+        description: `Fresh Cart is your personal grocery loyalty companion—designed to make every shopping trip more rewarding. Just download the app, sign up, and start earning points every time you fill your basket with fresh, quality produce. Easily track your rewards, unlock exclusive deals, and enjoy personalized offers based on your preferences. Discover new products, check item availability, and stay updated on seasonal specials—all in one convenient app.
+Just shop, scan, and enjoy the benefits.`,
+      },
+      highlightBanner: {
+        backgroundColor: "#38A85580",
+        title: `Shopping Made Easy, Rewards Made Fresh`,
+        description:  `Fresh Cart makes grocery shopping effortless and rewarding.  With a user-friendly app, you can quickly find fresh products, earn points, and enjoy exclusive deals—bringing convenience and value right to your doorstep.
+Freshness meets function—delivered.`,
+        image: "/images/portfolioDetails/freshCart/highLightBanner.webp",
+      },
+    },
+  },
  {
     id: "sign",
     sections: {

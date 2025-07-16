@@ -224,6 +224,26 @@ const portfolios = [
     background: "linear-gradient(to left, #0BA69A, #FFFFFF)",
   },
   {
+    id: "sign",
+    logoDetails: {
+      logo: "signLogo",
+      logoWidth: 80,
+      logoHeight: 80,
+    },
+    title: "Sign",
+    description:
+      "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
+    appStoreLink: "#",
+    playStoreLink: "#",
+    caseStudyLink: "sign",
+    imageDetails: {
+      image: "sign",
+      imageWidth: 465,
+      imageHeight: 406,
+    },
+    background: "linear-gradient(to left, #FF91C5, #FFFFFF)",
+  },
+  {
     id: "fresh-cart",
     logoDetails: {
       logo: "freshcartLogo",
@@ -231,8 +251,7 @@ const portfolios = [
       logoHeight: 80,
     },
     title: "Fresh Cart - Freshness Delivered Fast",
-    description:
-      "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
+    description: "Fresh groceries, fast to your door.",
     appStoreLink: "#",
     playStoreLink: "#",
     caseStudyLink: "fresh-cart",
