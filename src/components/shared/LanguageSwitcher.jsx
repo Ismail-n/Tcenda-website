@@ -6,18 +6,24 @@ export default function LanguageSwitcher() {
 
   const changeLanguage = (lng) => {
     if (lng === lang) return;
-    i18n.changeLanguage(lng); // ✅ change i18n language
-    localStorage.setItem("lang", lng); // ✅ save to storage
+    i18n.changeLanguage(lng);
+    localStorage.setItem("lang", lng);
     setLang(lng);
+
+    // ✅ Set dir attribute on <html>
+    document.documentElement.dir = lng === "ar" ? "rtl" : "ltr";
+    document.documentElement.lang = lng;
   };
 
-  // Optional: load saved lang on first render
   useEffect(() => {
     const storedLang = localStorage.getItem("lang");
-    if (storedLang && storedLang !== i18n.language) {
-      i18n.changeLanguage(storedLang);
-      setLang(storedLang);
-    }
+    const initialLang = storedLang || i18n.language || "en";
+    i18n.changeLanguage(initialLang);
+    setLang(initialLang);
+
+    // ✅ Set dir/lang on first render
+    document.documentElement.dir = initialLang === "ar" ? "rtl" : "ltr";
+    document.documentElement.lang = initialLang;
   }, []);
 
   return (

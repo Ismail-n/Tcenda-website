@@ -23,18 +23,24 @@ const ContactUsSection = () => {
                   <div className="location_block">
                     <h5>{t("Location")}</h5>
                     <div className="icon_text">
-                      <Image
-                        src={`/images/icons/location.svg`}
-                        width={24}
-                        height={24}
-                        alt="location"
-                      />
-                      <p>
-                        {t("Eraija Dist.., P.O.Box : 6597,")}
-                        <br />
-
-                        {t("Riyadh Eraija Dist.")}
-                      </p>
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=Prince+Mohammed+Ibn+Salman+Ibn+Abdulaziz+Rd,+Ar+Rabi,+Riyadh+13315"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="icon_text"
+                      >
+                        <Image
+                          src="/images/icons/location.svg"
+                          width={24}
+                          height={24}
+                          alt="location"
+                        />
+                        <p>
+                          Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,
+                          <br />
+                          Ar Rabi, Riyadh 13315
+                        </p>
+                      </a>
                     </div>
                   </div>
 
@@ -56,7 +62,9 @@ const ContactUsSection = () => {
                         height={24}
                         alt="location"
                       />
-                      <a href="mailto:todinfo@tod.com">{t("todinfo@tod.com")}</a>
+                      <a href="mailto:business@tod.com.sa">
+                        {t("business@tod.com.sa")}
+                      </a>
                     </div>
                   </div>
                 </div>
