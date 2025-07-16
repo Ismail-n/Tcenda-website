@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
 import Loader from "../common/Loader";
-import { ContactUsValidationSchema } from "../utils/Validations";
+import { ContactUsValidationSchema, isArabicText } from "../utils/Validations";
 import Title from "../common/Title";
 
 const ContactFormSection = () => {
@@ -62,14 +62,14 @@ const ContactFormSection = () => {
         validationSchema={ContactUsValidationSchema}
         onSubmit={handleSubmit}
       >
-        {({ isSubmitting, isValid, dirty }) => (
+        {({ isSubmitting, isValid, dirty, values }) => (
           <Form className="common_form">
             <div className="form_field">
               <Field
                 name="name"
                 type="text"
                 placeholder={t("Name")}
-                className="input"
+                className={isArabicText(values.name) ? "rtl" : ""}
               />
               <ErrorMessage
                 name="name"
@@ -106,7 +106,7 @@ const ContactFormSection = () => {
                   name="mobile"
                   type="tel"
                   placeholder={t("Mobile Number")}
-                  className="input"
+                  className={isArabicText(values.mobile) ? "rtl" : ""}
                 />
               </div>
               <ErrorMessage
@@ -120,7 +120,7 @@ const ContactFormSection = () => {
                 as="textarea"
                 name="message"
                 placeholder={t("Describe Your Project")}
-                className="textarea"
+                className={isArabicText(values.message) ? "rtl" : ""}
               />
               <ErrorMessage
                 name="message"

@@ -41,7 +41,7 @@ const ContactUsSection = () => {
         </Row>
         <Row>
           <div className="address_row">
-            <h2>{t("Let's Build Something Great  Here In Saudi Arabia")}</h2>
+            <h2>{t("Let's Build Something Great Here In Saudi Arabia")}</h2>
             <div className="inner_div">
               <div className="address_block">
                 <h5>{t("Location")}</h5>

@@ -10,7 +10,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import Loader from "../common/Loader";
-import { ContactUsValidationSchema } from "../utils/Validations";
+import { ContactUsValidationSchema, isArabicText } from "../utils/Validations";
 import Title from "../common/Title";
 
 const initialValues = {
@@ -82,16 +82,20 @@ const ConsultOurExperts = () => {
               validationSchema={ContactUsValidationSchema}
               onSubmit={handleSubmit}
             >
-              {({ isSubmitting, isValid, dirty }) => (
+              {({ isSubmitting, isValid, dirty, values }) => (
                 <Form className="common_form">
                   <Title title={t("Get In Touch")} />
-                  <p className="para">{t("Have a project in mind or need expert guidance? Our team is here to help you move forward.")}</p>
+                  <p className="para">
+                    {t(
+                      "Have a project in mind or need expert guidance? Our team is here to help you move forward."
+                    )}
+                  </p>
                   <div className="form_field">
                     <Field
                       name="name"
                       type="text"
                       placeholder={t("Name")}
-                      className="input"
+                      className={isArabicText(values.name) ? "rtl" : ""}
                     />
                     <ErrorMessage
                       name="name"
@@ -128,7 +132,7 @@ const ConsultOurExperts = () => {
                         name="mobile"
                         type="tel"
                         placeholder={t("Mobile Number")}
-                        className="input"
+                        className={isArabicText(values.mobile) ? "rtl" : ""}
                       />
                     </div>
                     <ErrorMessage
@@ -142,7 +146,7 @@ const ConsultOurExperts = () => {
                       as="textarea"
                       name="message"
                       placeholder={t("Describe Your Project")}
-                      className="textarea"
+                      className={isArabicText(values.message) ? "rtl" : ""}
                     />
                     <ErrorMessage
                       name="message"
