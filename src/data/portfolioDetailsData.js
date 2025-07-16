@@ -37,7 +37,7 @@ const portfolioDetails = [
           {
             title: "Conceptualisation of the project",
             description:
-              "We started by mapping the Ashjar Café customer journey to understand what loyal guests truly value. These insights shaped the Ashjar Friend app’s features, rewards, and personalized experience—designed to boost engagement and satisfaction at every visit.",
+              "We started by mapping the Ashjar Café customer journey to understand what loyal guests truly value. These insights shaped the Ashjar Friend app's features, rewards, and personalized experience—designed to boost engagement and satisfaction at every visit.",
           },
           {
             title: "From First Sip to Favorites - We Remember",
@@ -134,7 +134,7 @@ const portfolioDetails = [
           {
             title: "Conceptualisation of the project",
             description:
-              "We started by mapping the Ashjar Café customer journey to understand what loyal guests truly value. These insights shaped the Ashjar Friend app’s features, rewards, and personalized experience—designed to boost engagement and satisfaction at every visit.",
+              "We started by mapping the Ashjar Café customer journey to understand what loyal guests truly value. These insights shaped the Ashjar Friend app's features, rewards, and personalized experience—designed to boost engagement and satisfaction at every visit.",
           },
           {
             title: "From First Sip to Favorites - We Remember",
@@ -298,7 +298,7 @@ and collaborate.`,
       top: {
         background: "linear-gradient(120deg, #87C5B2, #D6FFF2)",
         title: "Half Million",
-        subtitle: "Half Million is more than just a coffee chain — it’s a local movement brewing community, quality, and innovation across Saudi Arabia. With a passion for delivering handcrafted coffee with speed and precision, Half Million connects coffee lovers to their favorite brews through convenient pickup, curbside service, and reliable delivery. Whether you’re on the move or taking a moment to unwind, Half Million makes exceptional coffee effortlessly accessible.",
+        subtitle: "Half Million is more than just a coffee chain — it's a local movement brewing community, quality, and innovation across Saudi Arabia. With a passion for delivering handcrafted coffee with speed and precision, Half Million connects coffee lovers to their favorite brews through convenient pickup, curbside service, and reliable delivery. Whether you're on the move or taking a moment to unwind, Half Million makes exceptional coffee effortlessly accessible.",
         image: "/images/portfolioDetails/halfMillion/topBg.webp",
         appStoreLinks: {
           ios: "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
@@ -310,8 +310,8 @@ and collaborate.`,
         image: "/images/portfolioDetails/halfMillion/aboutUs.webp",
         title: "About Us",
         description: [
-          "With a growing presence across Saudi Arabia, Half Million isn’t just serving coffee — it’s crafting everyday rituals rooted in convenience, taste, and community. From streamlined curbside pickups to fast, reliable deliveries, the brand blends quality with accessibility. ",
-          "Whether you’re grabbing your morning cup or fueling a late-night study session, Half Million is always within reach — delivering not just coffee, but a consistently great experience.",
+          "With a growing presence across Saudi Arabia, Half Million isn't just serving coffee — it's crafting everyday rituals rooted in convenience, taste, and community. From streamlined curbside pickups to fast, reliable deliveries, the brand blends quality with accessibility. ",
+          "Whether you're grabbing your morning cup or fueling a late-night study session, Half Million is always within reach — delivering not just coffee, but a consistently great experience.",
         ],
         tags: [
           { label: "Industry", value: "F&B" },
@@ -394,7 +394,7 @@ and collaborate.`,
       top: {
         background: "linear-gradient(120deg, #FFFFFF, #ABDBFF)",
         title: "Ease",
-        subtitle: `EASE is an intuitive digital signage platform crafted to turn ordinary screens into impactful communication tools. Whether it’s in cafs, corporate offices, retail chains, or education environments, EASE enables users to remotely manage and deploy content across multiple screens — all from a single dashboard.
+        subtitle: `EASE is an intuitive digital signage platform crafted to turn ordinary screens into impactful communication tools. Whether it's in cafs, corporate offices, retail chains, or education environments, EASE enables users to remotely manage and deploy content across multiple screens — all from a single dashboard.
         With drag-and-drop functionality, real-time updates, and rich multimedia support, EASE empowers brands and teams to communicate smarter, faster, and with greater flexibility.`,
         image: "/images/portfolioDetails/ease/topBg.webp",
         appStoreLinks: {
@@ -407,7 +407,7 @@ and collaborate.`,
         image: "/images/portfolioDetails/ease/aboutUs.webp",
         title: "About Us",
         description: [
-          "Built with scalability and simplicity at its core, Ease helps organizations of all sizes communicate smarter. Our platform bridges the gap between static displays and dynamic engagement—empowering businesses, schools, and institutions to deliver the right message at the right time. Whether it’s a single screen in a storefront or a complex network of displays across multiple locations, Ease ensures your content is always impactful, timely, and on-brand.",
+          "Built with scalability and simplicity at its core, Ease helps organizations of all sizes communicate smarter. Our platform bridges the gap between static displays and dynamic engagement—empowering businesses, schools, and institutions to deliver the right message at the right time. Whether it's a single screen in a storefront or a complex network of displays across multiple locations, Ease ensures your content is always impactful, timely, and on-brand.",
           "",
         ],
         tags: [
@@ -425,7 +425,7 @@ and collaborate.`,
           {
             title: "Centralized Display Management",
             description:
-              "Our objective was to build a scalable dashboard that simplifies the creation and scheduling of content for screen networks — whether it’s one display or thousands.",
+              "Our objective was to build a scalable dashboard that simplifies the creation and scheduling of content for screen networks — whether it's one display or thousands.",
           },
           {
             title: "Remote Control, Real-Time Updates",
@@ -474,7 +474,7 @@ and collaborate.`,
         // },
       ],
       description:
-        "EASE bridges the gap between powerful features and user-friendly design. Whether you’re a marketing manager updating retail screens or an IT admin overseeing nationwide deployments, the platform is built to grow with your needs. No steep learning curve — just streamlined digital signage at your fingertips.",
+        "EASE bridges the gap between powerful features and user-friendly design. Whether you're a marketing manager updating retail screens or an IT admin overseeing nationwide deployments, the platform is built to grow with your needs. No steep learning curve — just streamlined digital signage at your fingertips.",
     },
     highlightBanner: {
       backgroundColor: "#ABDBFF80",
@@ -503,7 +503,7 @@ and collaborate.`,
     image: "/images/portfolioDetails/screenMe/aboutUs.webp",
       title: "About Us",
         description: [
-          "At ScreenMe, we’re on a mission to ensure that no one dies from a preventable cancer.",
+          "At ScreenMe, we're on a mission to ensure that no one dies from a preventable cancer.",
           "By combining cutting-edge diagnostics, data-driven screening, and user-centric health journeys, we empower individuals to take control of their health before symptoms appear.",
           "Our focus is clear: early detection saves lives.",
           "From seamless at-home testing to intuitive digital reports and expert guidance, every step of the ScreenMe experience is designed to make prevention easy, accessible, and impactful.",
@@ -563,7 +563,7 @@ titleMaxWidth: 754,
     }
   ],
     description:
-"Too often, cancer is only discussed after diagnosis. ScreenMe is rewriting that narrative — shifting the focus from treatment to prevention. By normalizing routine screenings and making them as simple as checking your email, we’re creating a future where early detection becomes second nature, and more lives are saved with less intervention.",
+"Too often, cancer is only discussed after diagnosis. ScreenMe is rewriting that narrative — shifting the focus from treatment to prevention. By normalizing routine screenings and making them as simple as checking your email, we're creating a future where early detection becomes second nature, and more lives are saved with less intervention.",
       },
 highlightBanner: {
   backgroundColor: "#FF8A81",
@@ -594,7 +594,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         title: "About Us",
           description: [
             `At Service Now, we believe dependable home services should be effortless. Whether it's a broken faucet, an AC tune-up, or general maintenance, our network of verified handymen is just a click away.`,
-            ` We’re redefining convenience with a seamless platform that connects users to trusted professionals based on location, service need, and availability. The goal? Speed, safety, and satisfaction — delivered to your home.`,
+            ` We're redefining convenience with a seamless platform that connects users to trusted professionals based on location, service need, and availability. The goal? Speed, safety, and satisfaction — delivered to your home.`,
           ],
             tags: [
               { label: "Industry", value: "Retail" },
@@ -626,14 +626,14 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         {
           title: "Seamless Service, Real-Time Convenience",
           description:
-            "The goal was to build a hyper-responsive service platform that simplifies finding and booking reliable help. Whether it’s plumbing, electrical, or general repairs",
+            "The goal was to build a hyper-responsive service platform that simplifies finding and booking reliable help. Whether it's plumbing, electrical, or general repairs",
         },
       ],
       },
     execution: {
       image: "/images/portfolioDetails/serviceNow/execution.webp",
         description:
-      "Reliable Repairs. Right When You Need Them.  Service Now empowers users with real-time service access, flexible booking, and vetted professionals. Whether it’s a minor fix or a major repair, your solution is just a few taps away.",
+      "Reliable Repairs. Right When You Need Them.  Service Now empowers users with real-time service access, flexible booking, and vetted professionals. Whether it's a minor fix or a major repair, your solution is just a few taps away.",
         descriptionBackground: "#0F73EE",
       },
       featuresOverview: {
@@ -666,7 +666,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
     backgroundColor: "#0F73EE",
       title: "Making Home Services Effortless",
         description:
-    "Service Now isn’t just about repairs — it’s about peace of mind. By bridging technology with trusted local professionals, we make it easier than ever to take care of your home. No more waiting, no more uncertainty — just dependable help, delivered fast.",
+    "Service Now isn't just about repairs — it's about peace of mind. By bridging technology with trusted local professionals, we make it easier than ever to take care of your home. No more waiting, no more uncertainty — just dependable help, delivered fast.",
       image: "/images/portfolioDetails/serviceNow/highLightBanner.webp",
       },
 },
@@ -675,8 +675,8 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
   id: "cup-crew",
     sections: {
     top: {
-      background: "linear-gradient(120deg, #14463A, #D4B38B)",
-        title: "CupCrew – Where Every Cup Counts",
+      background: "linear-gradient(0deg, #14463A, #D4B38B)",
+        title: "CupCrew - Where Every Cup Counts",
           subtitle: "Brewing community, one cup at a time",
             image: "/images/portfolioDetails/cupCrew/topBg.webp",
               appStoreLinks: {
@@ -706,12 +706,12 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         {
           title: "Creating a Connected Coffee Culture",
           description:
-            "Our goal was to build a platform that deepens coffee lovers’ relationships with their favorite brews. By fostering loyalty through personalized moments and a sense of belonging, CupCrew elevates the everyday sip.",
+            "Our goal was to build a platform that deepens coffee lovers' relationships with their favorite brews. By fostering loyalty through personalized moments and a sense of belonging, CupCrew elevates the everyday sip.",
         },
         {
           title: "Celebrating Every Cup",
           description:
-            "CupCrew rewards every visit. From personalized perks to milestones, we turned each user’s journey into a rewarding ritual that feels special.",
+            "CupCrew rewards every visit. From personalized perks to milestones, we turned each user's journey into a rewarding ritual that feels special.",
         },
         {
           title: "Seamless Customer Experience",
@@ -788,7 +788,7 @@ Loyalty has never been smarter, warmer, or more delightful—just the way coffee
       image: "/images/portfolioDetails/realEstate/aboutUs.webp",
         title: "About Us",
           description: [
-            `At Takween, we’re redefining how people find their perfect home. Whether you’re buying, renting, or investing, our all-in-one platform connects you with the right listings—quickly, smartly, and with confidence.
+            `At Takween, we're redefining how people find their perfect home. Whether you're buying, renting, or investing, our all-in-one platform connects you with the right listings—quickly, smartly, and with confidence.
 Built for modern house-hunters, our app blends smart search tools, personalized recommendations, and real-time updates to make your property journey seamless. From cozy studios to dream homes, we help you explore options, schedule visits, and take the next step—all in one place.`,
                 ],
           tags: [
@@ -875,7 +875,7 @@ Smart search. Trusted results. Your dream home—closer than ever.`,
     top: {
       background: "linear-gradient(120deg, #FFFFFF, #0BA69A)",
         title: "Healthcare Companion",
-          subtitle: "Smarter Tools for Smarter Healthcare – Right in Your Pocket",
+          subtitle: "Smarter Tools for Smarter Healthcare - Right in Your Pocket",
             image: "/images/portfolioDetails/healthCare/topBg.webp",
               appStoreLinks: {
         ios: "#",
@@ -887,7 +887,7 @@ Smart search. Trusted results. Your dream home—closer than ever.`,
       image: "/images/portfolioDetails/healthCare/aboutUs.webp",
         title: "About Us",
           description: [
-            `In today’s fast-paced medical world, access, coordination, and data matter more than ever. `,
+            `In today's fast-paced medical world, access, coordination, and data matter more than ever. `,
             `Our dual mobile app solution—built for consultants and hospitals—bridges the gap between care providers and healthcare facilities, enabling faster decisions, real-time updates, and seamless patient tracking.`,
                 ],
           tags: [
@@ -1026,11 +1026,11 @@ Smart search. Trusted results. Your dream home—closer than ever.`,
       execution: {
         image: "/images/portfolioDetails/sign/execution.webp",
         description:
-          "Sign redefines casual dining convenience. It brings together bold flavors, real-time tech, and frictionless ordering in one clean, powerful mobile experience.This isn't just another food app — it’s the easiest way to order your favorite burger, chill your thirst, and skip the wait.",
+          "Sign redefines casual dining convenience. It brings together bold flavors, real-time tech, and frictionless ordering in one clean, powerful mobile experience.This isn't just another food app — it's the easiest way to order your favorite burger, chill your thirst, and skip the wait.",
         descriptionBackground: "#FD93C5",
       },
       featuresOverview: {
-        title: "What’s Inside the App",
+        title: "What's Inside the App",
         titleMaxWidth: 470,
         items: [
           {
@@ -1059,7 +1059,7 @@ Smart search. Trusted results. Your dream home—closer than ever.`,
         backgroundColor: "#FD93C5",
         title: "Order Fast. Eat Fresh. Feel Good.",
         description:
-          "Sign is more than mobile food ordering — it’s a flavorful experience built for today’s pace. Whether it’s lunch hour or late-night cravings, the app delivers speed, control, and comfort in every bite.",
+          "Sign is more than mobile food ordering — it's a flavorful experience built for today's pace. Whether it's lunch hour or late-night cravings, the app delivers speed, control, and comfort in every bite.",
         image: "/images/portfolioDetails/sign/highLightBanner.webp",
       },
     },
