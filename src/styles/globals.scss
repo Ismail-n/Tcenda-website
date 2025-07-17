@@ -150,22 +150,6 @@ img {
   color: var(--primary-color);
 }
 
-.whatsapp_float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  // background-color: #25d366;
-  color: white;
-  border-radius: 50%;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.whatsapp_float:hover {
-  transform: scale(1.1);
-}
-
 .ltr {
   direction: ltr;
 }

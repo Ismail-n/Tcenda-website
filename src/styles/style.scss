@@ -2646,3 +2646,28 @@ footer {
     -webkit-mask-composite: destination-out;
   }
 }
+
+.floating_buttons {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  .call_float {
+    display: none;
+  }
+  @media (max-width: 575px) {
+    gap: 15px;
+    bottom: 40px;
+    right: 25px;
+    .call_float {
+      display: inline;
+    }
+    .whatsapp_float {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
