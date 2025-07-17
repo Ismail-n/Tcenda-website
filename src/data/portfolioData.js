@@ -206,7 +206,7 @@ const portfolios = [
   {
     id: "health-care",
     logoDetails: {
-      logo: "",
+      logo: "heathCare",
       logoWidth: 80,
       logoHeight: 80,
     },
