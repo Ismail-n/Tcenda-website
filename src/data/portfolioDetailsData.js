@@ -814,8 +814,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
       },
       execution: {
         image: "/images/portfolioDetails/realEstate/execution.webp",
-        description: `Real Estate App is a modern real estate platform that reimagines how you find a home—combining smart technology, human insight, and seamless experiences.
-Crafted for those who seek more than just a place to live, Takween connects you to homes that match your lifestyle, dreams, and goals.  Whether you're buying, renting, or exploring new investments, we make your journey smooth, personal, and rewarding—because finding a home should feel just right.`,
+        description: `Real Estate App is a modern real estate platform that reimagines how you find a home—combining smart technology, human insight, and seamless experiences. Crafted for those who seek more than just a place to live, Takween connects you to homes that match your lifestyle, dreams, and goals. Whether you're buying, renting, or exploring new investments, we make your journey smooth, personal, and rewarding—because finding a home should feel just right.`,
         descriptionBackground: "#143B5880",
       },
       featuresOverview: {
@@ -846,9 +845,7 @@ Crafted for those who seek more than just a place to live, Takween connects you 
       highlightBanner: {
         backgroundColor: "#143B5880",
         title: "Finding Made Easy, Rewards Made Valuable",
-        description: `Our app simplifies your journey to the perfect home with intuitive tools and personalized insights.
-Earn valuable rewards and unlock exclusive offers that make every step toward your dream home feel more rewarding.
-Smart search. Trusted results. Your dream home—closer than ever.`,
+        description: `Our app simplifies your journey to the perfect home with intuitive tools and personalized insights. Earn valuable rewards and unlock exclusive offers that make every step toward your dream home feel more rewarding. Smart search. Trusted results. Your dream home—closer than ever.`,
         image: "/images/portfolioDetails/realEstate/highLightBanner.webp",
       },
     },
@@ -870,7 +867,7 @@ Smart search. Trusted results. Your dream home—closer than ever.`,
         image: "/images/portfolioDetails/healthCare/aboutUs.webp",
         title: "About Us",
         description: [
-          `In today's fast-paced medical world, access, coordination, and data matter more than ever. `,
+          `In today's fast-paced medical world, access, coordination, and data matter more than ever.`,
           `Our dual mobile app solution—built for consultants and hospitals—bridges the gap between care providers and healthcare facilities, enabling faster decisions, real-time updates, and seamless patient tracking.`,
         ],
         tags: [
@@ -909,8 +906,7 @@ Smart search. Trusted results. Your dream home—closer than ever.`,
       },
       execution: {
         image: "/images/portfolioDetails/healthCare/execution.webp",
-        description: `From Signup to Support — Seamless Healthcare Tools
- Join the platform in minutes. Whether you're a hospital team or a practicing consultant, our dual-app ecosystem is designed to deliver clarity, control, and connection—every step of the way.`,
+        description: `From Signup to Support — Seamless Healthcare Tools Join the platform in minutes. Whether you're a hospital team or a practicing consultant, our dual-app ecosystem is designed to deliver clarity, control, and connection—every step of the way.`,
         descriptionBackground: "#1DADA1",
       },
       featuresOverview: {
@@ -966,8 +962,7 @@ Smart search. Trusted results. Your dream home—closer than ever.`,
         title: "About Us",
         description: [
           `Sign is a modern mobile app designed for food lovers who crave speed, flavor, and convenience. Whether you're grabbing a juicy burger on the go or cooling down with your favorite drink, Sign delivers a seamless ordering experience right from your phone.`,
-          `From easy menu browsing and real-time order tracking to secure checkout, Sign is your shortcut to satisfaction — fresh, fast, and made just how you like it.
-`,
+          `From easy menu browsing and real-time order tracking to secure checkout, Sign is your shortcut to satisfaction — fresh, fast, and made just how you like it.`,
         ],
         tags: [
           { label: "Industry", value: "F&B" },
@@ -1014,7 +1009,7 @@ Smart search. Trusted results. Your dream home—closer than ever.`,
         titleMaxWidth: 470,
         items: [
           {
-            title: "Crave. Tap. Enjoy. With Clear User Interface",
+            title: "Crave. Tap. Enjoy. With Clear User Interface",
             maxTitleWidth: 335,
             images: {
               url: "/images/portfolioDetails/sign/feature1.webp",
