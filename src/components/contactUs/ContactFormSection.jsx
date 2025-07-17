@@ -21,29 +21,30 @@ const ContactFormSection = () => {
     message: "",
   };
 
-  const SERVICE_ID = "service_o1vmwom";
-  const TEMPLATE_ID = "template_ciaxgel";
-  const PUBLIC_KEY = "R-k8S0O-yOiGJFhKw";
+  const API_URL = process.env.NEXT_PUBLIC_CONTACT_API_URL;
+  const AUTH_TOKEN = process.env.NEXT_PUBLIC_CONTACT_API_TOKEN;
 
   const handleSubmit = async (values, { resetForm, setSubmitting }) => {
     try {
-      const result = await emailjs.send(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        values,
-        PUBLIC_KEY
-      );
-      const { status, text } = result || {};
+      const response = await fetch(`${API_URL}/api/v1/common/contactUs`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: AUTH_TOKEN,
+        },
+        body: JSON.stringify(values),
+      });
 
-      if (status) {
-        toast.success("Thank You! We'll get back to you soon.");
-        resetForm();
-      } else {
-        toast.error(text || "Failed to send message.");
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Something went wrong");
       }
+
+      toast.success("Thank You! We'll get back to you soon.");
+      resetForm();
     } catch (error) {
-      console.error("Email sending failed:", error);
-      toast.error("Failed to send message. Please try again.");
+      console.error("SMTP email send failed:", error);
+      toast.error(error.message || "Failed to send message. Please try again.");
     } finally {
       setSubmitting(false);
     }
