@@ -7,6 +7,7 @@ import Industries from "@/components/home/Industries";
 import InnovationSection from "@/components/home/InnovationSection";
 import OurProjects from "@/components/home/OurProjects";
 import OurServices from "@/components/home/OurServices";
+import ProjectVideo from "@/components/home/ProjectVideo";
 import TopSection from "@/components/home/TopSection";
 import SEO from "@/components/SEO";
 
@@ -20,7 +21,8 @@ export default function Home() {
       <main className="home">
         <TopSection />
         <InnovationSection />
-        <OurProjects />
+        <ProjectVideo />
+        {/* <OurProjects /> */}
         <OurServices />
         <EngagementModels />
         <Industries />

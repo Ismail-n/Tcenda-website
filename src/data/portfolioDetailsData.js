@@ -1044,8 +1044,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
       top: {
         background: "linear-gradient(120deg, #FFFFFF, #38A856)",
         title: "Fresh Cart — Freshness Delivered Fast",
-        subtitle:
-          "Fresh groceries, fast to your door.",
+        subtitle: "Fresh groceries, fast to your door.",
         image: "/images/portfolioDetails/freshCart/topBg.webp",
         appStoreLinks: {
           ios: "#",
@@ -1057,12 +1056,12 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         title: "About Us",
         description: [
           `Fresh Cart brings the market to your doorstep with high-quality groceries delivered quickly and reliably.`,
-          `We’re committed to making your shopping easy, convenient, and fresh—every time—so you can enjoy more time doing what you love.`
+          `We're committed to making your shopping easy, convenient, and fresh—every time—so you can enjoy more time doing what you love.`,
         ],
         tags: [
           { label: "Industry", value: "E-Commerce" },
           { label: "Services", value: "Retail" },
-          { label: "Business Type", value: "Retail" }
+          { label: "Business Type", value: "Retail" },
         ],
       },
       projectGoals: {
@@ -1095,9 +1094,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
       },
       execution: {
         image: "/images/portfolioDetails/freshCart/execution.webp",
-        description:
-          `Fresh Cart is a modern grocery experience brand that redefines everyday shopping by combining freshness, convenience, and personalization.
-Crafted for those who value quality and care, Fresh Cart delivers curated grocery selections and tailored rewards that make every basket feel thoughtful, fresh, and connected.`,
+        description: `Fresh Cart is a modern grocery experience brand that redefines everyday shopping by combining freshness, convenience, and personalization. Crafted for those who value quality and care, Fresh Cart delivers curated grocery selections and tailored rewards that make every basket feel thoughtful, fresh, and connected.`,
         descriptionBackground: "#38A855",
       },
       featuresOverview: {
@@ -1123,14 +1120,12 @@ Crafted for those who value quality and care, Fresh Cart delivers curated grocer
             },
           },
         ],
-        description: `Fresh Cart is your personal grocery loyalty companion—designed to make every shopping trip more rewarding. Just download the app, sign up, and start earning points every time you fill your basket with fresh, quality produce. Easily track your rewards, unlock exclusive deals, and enjoy personalized offers based on your preferences. Discover new products, check item availability, and stay updated on seasonal specials—all in one convenient app.
-Just shop, scan, and enjoy the benefits.`,
+        description: `Fresh Cart is your personal grocery loyalty companion—designed to make every shopping trip more rewarding. Just download the app, sign up, and start earning points every time you fill your basket with fresh, quality produce. Easily track your rewards, unlock exclusive deals, and enjoy personalized offers based on your preferences. Discover new products, check item availability, and stay updated on seasonal specials—all in one convenient app. Just shop, scan, and enjoy the benefits.`,
       },
       highlightBanner: {
         backgroundColor: "#38A85580",
         title: `Shopping Made Easy, Rewards Made Fresh`,
-        description:  `Fresh Cart makes grocery shopping effortless and rewarding. With a user-friendly app, you can quickly find fresh products, earn points, and enjoy exclusive deals—bringing convenience and value right to your doorstep.
-Freshness meets function—delivered.`,
+        description: `Fresh Cart makes grocery shopping effortless and rewarding. With a user-friendly app, you can quickly find fresh products, earn points, and enjoy exclusive deals—bringing convenience and value right to your doorstep. Freshness meets function—delivered.`,
         image: "/images/portfolioDetails/freshCart/highLightBanner.webp",
       },
     },

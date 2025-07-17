@@ -29,11 +29,15 @@ const ConsultOurExperts = () => {
   const PUBLIC_KEY = "R-k8S0O-yOiGJFhKw";
 
   const handleSubmit = async (values, { resetForm, setSubmitting }) => {
+    const updatedPayload = {
+      ...values,
+      title: values.email,
+    };
     try {
       const result = await emailjs.send(
         SERVICE_ID,
         TEMPLATE_ID,
-        values,
+        updatedPayload,
         PUBLIC_KEY
       );
       const { status, text } = result || {};

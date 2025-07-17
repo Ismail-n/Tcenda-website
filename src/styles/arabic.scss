@@ -1,4 +1,18 @@
 html[dir="rtl"] {
+  @media (max-width: 575px) {
+    .top_section_title {
+      line-height: 40px;
+    }
+    .top_section_sub_title {
+      line-height: 30px;
+    }
+    .about_us .our_values .inner_section > h3 {
+      line-height: 25px;
+    }
+    .contact_us .address_row h2 {
+      line-height: 35px;
+    }
+  }
   .project_slider_controls .slider_btn {
     transform: translateY(-50%) rotate(180deg);
   }
@@ -10,5 +24,69 @@ html[dir="rtl"] {
   }
   header .menu_links ul {
     height: 64px;
+  }
+  .top_section_title span {
+    line-height: 1.2;
+  }
+  .home .our_services .services_row .single_service p {
+    line-height: 24px;
+  }
+  .sub_title {
+    line-height: 40px;
+    @media (max-width: 575px) {
+      line-height: 35px;
+    }
+  }
+  .home .engagement_models .models_cards .single_card h2 {
+    line-height: 40px;
+    @media (max-width: 575px) {
+      line-height: 35px;
+    }
+  }
+  .home .engagement_models .models_cards .single_card p {
+    line-height: 24px;
+  }
+  .home .engagement_models .models_cards .single_card .points .single_point h3 {
+    line-height: 24px;
+  }
+  .consult_our_experts .inner_row .left_section .content h2 {
+    line-height: 42px;
+  }
+  .about_us .inner_desc p {
+    line-height: 30px;
+  }
+  .about_us .rise_section > p {
+    line-height: 30px;
+  }
+  .about_us .rise_section .rise_row .single_rise h3 {
+    line-height: 24px;
+  }
+  .about_us .rise_section .rise_row .single_rise p {
+    line-height: 22px;
+  }
+  .about_us .our_values .inner_section .core_values .single_value .content p {
+    line-height: 22px;
+  }
+
+  .about_us .our_values .inner_section .core_values .single_value .content h2 {
+    line-height: 26px;
+  }
+  .our_services .service_categories .single_tech_card h2 {
+    line-height: 30px;
+  }
+  .our_services .service_categories .single_tech_card p {
+    line-height: 26px;
+  }
+  .our_services .overview_section .content h2 {
+    line-height: 36px;
+  }
+  .our_services .overview_section .content p {
+    line-height: 24px;
+  }
+  .contact_us .our_values .inner_section .headline {
+    line-height: 54px;
+  }
+  .consult_our_experts .inner_row .para {
+    line-height: 26px;
   }
 }
