@@ -406,15 +406,19 @@ footer {
     .services_row {
       margin-top: 5px;
       .single_service {
+        overflow: hidden;
         // background: #1b1b1b;
         margin-top: 25px;
         border-radius: 20px;
         padding: 25px;
         min-height: 300px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        justify-content: center;
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          justify-content: center;
+          transition: filter 0.4s ease;
+        }
         position: relative;
         &::before {
           content: "";
@@ -434,6 +438,34 @@ footer {
           mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
           mask-composite: exclude;
           -webkit-mask-composite: destination-out;
+        }
+
+        .card-button {
+          position: absolute;
+          bottom: 20%;
+          left: 50%;
+          transform: translate(-50%, 100%);
+          opacity: 0;
+          background: var(--hover-gradient);
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 100px;
+          transition: all 0.4s ease;
+          pointer-events: none;
+          font-size: 16px;
+          white-space: nowrap;
+        }
+
+        &:hover {
+          .card-content {
+            filter: blur(3px);
+          }
+          .card-button {
+            transform: translate(-50%, 0%);
+            opacity: 1;
+            pointer-events: auto;
+          }
         }
         // border: 1px solid var(--primary-color);
         .gradient-border-box {
@@ -1225,7 +1257,7 @@ footer {
     .inner_section {
       // border: 1px solid var(--common-border-color);
       position: relative;
-        &::before {
+      &::before {
         content: "";
         position: absolute;
         inset: 0;
@@ -1722,10 +1754,41 @@ footer {
     .single_tech_card {
       margin-top: 25px;
       padding: 25px;
+      position: relative;
+      .card-content {
+        transition: filter 0.4s ease;
+      }
+      .card-button {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        opacity: 0;
+        background: var(--hover-gradient);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 100px;
+        transition: all 0.4s ease;
+        pointer-events: none;
+        font-size: 16px;
+        white-space: nowrap;
+      }
+
+      &:hover {
+        .card-content {
+          filter: blur(3px);
+        }
+        .card-button {
+          transform: translate(-50%, 0%);
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
       // background-color: #1b1b1b;
       // border: 1px solid var(--primary-color);
       position: relative;
-        &::before {
+      &::before {
         content: "";
         position: absolute;
         inset: 0;

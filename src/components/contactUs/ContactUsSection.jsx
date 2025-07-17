@@ -3,9 +3,14 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import ContactFormSection from "./ContactFormSection";
+import { useRouter } from "next/router";
 
 const ContactUsSection = () => {
   const { t } = useTranslation();
+
+  const router = useRouter();
+  const { service } = router.query;
+  
   return (
     <section className="our_values">
       <Container>

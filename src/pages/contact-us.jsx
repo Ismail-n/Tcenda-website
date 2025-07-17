@@ -15,7 +15,7 @@ const ContactUs = () => {
       <main className="contact_us">
         <TopSection />
         <ContactUsSection />
-         <Clients />
+        <Clients />
       </main>
     </>
   );

@@ -146,8 +146,9 @@ const ServiceTechCard = ({ item }) => {
     t,
     i18n: { language },
   } = useTranslation();
+  const router = useRouter();
 
-   const getTitleStyle = () => {
+  const getTitleStyle = () => {
     if (language === "ar") {
       return titleArMaxWidth
         ? { maxWidth: titleArMaxWidth }
@@ -161,16 +162,26 @@ const ServiceTechCard = ({ item }) => {
   return (
     <Col lg={4}>
       <div className="single_tech_card">
-        <Image
-          src={`/images/services/${icon}.svg`}
-          width={48}
-          height={48}
-          alt={title}
-        />
-        <h2 style={getTitleStyle()}>
-          {t(title)}
-        </h2>
-        <p>{t(subtitle)}</p>
+        <div className="card-content">
+          <Image
+            src={`/images/services/${icon}.svg`}
+            width={48}
+            height={48}
+            alt={title}
+          />
+          <h2 style={getTitleStyle()}>{t(title)}</h2>
+          <p>{t(subtitle)}</p>
+        </div>
+        <button
+          className="card-button"
+          onClick={() =>
+            router.push(
+              `/contact-us?service=${encodeURIComponent(item?.title)}`
+            )
+          }
+        >
+          {t("Request For Service")}
+        </button>
       </div>
     </Col>
   );

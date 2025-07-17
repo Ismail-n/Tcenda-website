@@ -8,6 +8,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { services } from "@/data/homeData";
 import { useKeenSlider } from "keen-slider/react";
+import { useRouter } from "next/router";
 
 const OurServices = () => {
   const {
@@ -120,6 +121,9 @@ const ServiceCard = ({ item }) => {
     t,
     i18n: { language },
   } = useTranslation();
+
+  const router = useRouter();
+
   const { icon, title, description, maxTitleWidth, maxTitleArWidth } =
     item || {};
 
@@ -138,15 +142,27 @@ const ServiceCard = ({ item }) => {
     <Col lg={4} md={6}>
       <div className="single_service">
         {/* <div className="gradient-border-box"></div> */}
-        <Image
-          src={`/images/icons/services/${icon}.svg`}
-          width={48}
-          height={48}
-          alt={t(title)}
-        />
-        <h2 style={getTitleStyle()}>{t(item.title)}</h2>
+        <div className="card-content">
+          <Image
+            src={`/images/icons/services/${icon}.svg`}
+            width={48}
+            height={48}
+            alt={t(title)}
+          />
+          <h2 style={getTitleStyle()}>{t(item.title)}</h2>
 
-        <p>{t(description)}</p>
+          <p>{t(description)}</p>
+        </div>
+        <button
+          className="card-button"
+          onClick={() =>
+            router.push(
+              `/contact-us?service=${encodeURIComponent(item?.title)}`
+            )
+          }
+        >
+          {t("Request For Service")}
+        </button>
       </div>
     </Col>
   );
