@@ -127,6 +127,7 @@ const services = [
     title: "Mobile App Development",
     description:
       "We transform your ideas into sleek, high-performance mobile apps built for scale. Whether iOS or Android, our solutions are tailored to deliver seamless user experiences and drive business results.",
+    maxTitleArWidth: 170,
   },
   {
     id: 2,
@@ -164,6 +165,7 @@ const services = [
     id: 6,
     icon: "ai",
     title: "Artificial Intelligence & Machine Learning",
+    maxTitleArWidth: 210,
     description:
       "Leverage the power of AI to make smarter decisions, personalize customer experiences, and automate critical workflows. Our solutions turn data into intelligent action.",
   },

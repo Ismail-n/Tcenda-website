@@ -122,6 +122,7 @@ const servicesData = [
         subtitle:
           "Easily manage and update your website with flexible, user-friendly CMS solutions built to fit your workflow.",
         titleMaxWidth: 169,
+        titleArMaxWidth: 190,
       },
       {
         icon: "fullStack/webPortal",
@@ -171,12 +172,14 @@ const servicesData = [
       {
         icon: "digitalTransformation/business",
         title: "Business Process Automation",
+        titleArMaxWidth: 190,
         subtitle:
           "Streamline operations, reduce manual work, and boost productivity with intelligent automation tailored to your business workflows.",
       },
       {
         icon: "digitalTransformation/legacy",
         title: "Legacy System Modernization",
+        titleArMaxWidth: 190,
         subtitle:
           "Upgrade legacy infrastructure to modern, scalable, and secure platforms that support agility and growth.",
       },
@@ -214,8 +217,16 @@ const servicesData = [
       subtitle:
         "From assessment to execution, we partner with you to build an ecosystem of connected digital capabilities that unlock real business value.",
       technologies: [
-        { icon: "digitalTransformation/microsoft", title: "Microsoft Tools" },
-        { icon: "digitalTransformation/SAP", title: "SAP" },
+        {
+          icon: "digitalTransformation/microsoft",
+          title: "Microsoft Tools",
+          titleArMaxWidth: 100,
+        },
+        {
+          icon: "digitalTransformation/SAP",
+          title: "SAP",
+          titleArMaxWidth: 150,
+        },
         { icon: "digitalTransformation/AWS", title: "AWS Cloud Services" },
         {
           icon: "digitalTransformation/RPA",
@@ -229,10 +240,15 @@ const servicesData = [
           icon: "digitalTransformation/BI",
           title: "Business Intelligence Tools",
         },
-        { icon: "digitalTransformation/ML", title: "AI/ML Frameworks" },
+        {
+          icon: "digitalTransformation/ML",
+          title: "AI/ML Frameworks",
+          titleArMaxWidth: 150,
+        },
         {
           icon: "digitalTransformation/APIS",
           title: "APIs & Microservices Architecture",
+          titleArMaxWidth: 150,
         },
       ],
     },
@@ -257,6 +273,7 @@ const servicesData = [
         icon: "cloudServices/infrastructure",
         title: "Cloud Infrastructure Setup",
         titleMaxWidth: 220,
+        titleArMaxWidth: 200,
         subtitle:
           "From architecture to automation, we set up cloud environments that are fast, flexible, and future-ready.",
       },
@@ -264,6 +281,8 @@ const servicesData = [
         icon: "cloudServices/migration",
         title: "Cloud Migration",
         titleMaxWidth: 140,
+        titleArMaxWidth: 150,
+
         subtitle:
           "Move your applications, data, and infrastructure to the cloud — safely and efficiently.",
       },
@@ -285,6 +304,8 @@ const servicesData = [
         icon: "cloudServices/hybrid",
         title: "Hybrid Cloud Solutions",
         titleMaxWidth: 169,
+        titleArMaxWidth: 200,
+
         subtitle:
           "We build hybrid cloud architectures that combine flexibility, performance, and security across environments.",
       },
@@ -294,6 +315,7 @@ const servicesData = [
         subtitle:
           "Strategic cloud consulting to align your tech infrastructure with your business goals.",
         titleMaxWidth: 134,
+        titleArMaxWidth: 150,
       },
     ],
     techStack: {
@@ -365,6 +387,7 @@ const servicesData = [
         subtitle:
           "From customer support to lead generation, our virtual agents handle it all — faster and smarter.",
         titleMaxWidth: 226,
+        titleArMaxWidth: 275,
       },
       {
         icon: "aiml/aIModel",
@@ -430,6 +453,7 @@ const servicesData = [
         subtitle:
           "We design and implement scalable data warehouses to centralize, store, and manage your business data efficiently.",
         titleMaxWidth: 169,
+        titleArMaxWidth: 130,
       },
       {
         icon: "dataAnalytics/ETL",
@@ -515,6 +539,7 @@ const servicesData = [
         subtitle:
           "We craft intuitive interfaces and cohesive visual systems that elevate user experience and brand identity.",
         titleMaxWidth: 195,
+        titleArMaxWidth: 305,
       },
       {
         icon: "uiux/hfp",
@@ -582,12 +607,14 @@ const servicesData = [
         subtitle:
           "From planning to deployment, we implement Odoo to streamline operations and boost efficiency.",
         titleMaxWidth: 198,
+        titleArMaxWidth: 100,
       },
       {
         icon: "odoo/CMD",
         title: "Custom Module Development",
         subtitle:
           "We develop custom modules tailored to your unique business needs — fully integrated and scalable.",
+        titleArMaxWidth: 150,
       },
       {
         icon: "odoo/theme",
@@ -608,12 +635,14 @@ const servicesData = [
         title: "Migration & Version Upgrade",
         subtitle:
           "Upgrade to the latest version with confidence — seamless data migration, feature compatibility, and full testing.",
+        titleArMaxWidth: 200,
       },
       {
         icon: "odoo/support",
         title: "Odoo Support & Maintenance",
         subtitle:
           "We provide ongoing Odoo support and maintenance to keep your system running smoothly and securely.",
+        titleArMaxWidth: 150,
       },
     ],
     techStack: {

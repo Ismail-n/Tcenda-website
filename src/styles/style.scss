@@ -347,8 +347,7 @@ footer {
       }
       @media (max-width: 575px) {
         font-size: 30px;
-              line-height: 40px;
-
+        line-height: 40px;
       }
     }
     h3 {
@@ -417,7 +416,26 @@ footer {
         gap: 15px;
         justify-content: center;
         position: relative;
-        border: 1px solid var(--primary-color);
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          z-index: -1;
+          border-radius: inherit;
+          padding: 1px;
+          background: linear-gradient(
+            to bottom,
+            rgba(0, 255, 255, 1),
+            // top: fully visible
+            rgba(0, 255, 255, 0.3),
+            // middle: less visible
+            rgba(0, 174, 239, 0.1) // bottom: slightly visible
+          );
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask-composite: exclude;
+          -webkit-mask-composite: destination-out;
+        }
+        // border: 1px solid var(--primary-color);
         .gradient-border-box {
           background: linear-gradient(
             180deg,
@@ -1065,23 +1083,46 @@ footer {
   .our_vision_mission {
     margin: 60px 0;
     .inner_row {
-      border: 1px solid var(--common-border-color);
+      // border: 1px solid var(--common-border-color);
       padding: 47px 65px;
       border-radius: 20px;
       align-items: center;
       height: 257px;
       position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 255, 255, 1),
+          // top: fully visible
+          rgba(0, 255, 255, 0.3),
+          // middle: less visible
+          rgba(0, 174, 239, 0.1) // bottom: slightly visible
+        );
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        -webkit-mask-composite: destination-out;
+      }
       @media (max-width: 575px) {
         min-height: 423px;
         height: fit-content;
         padding: 25px 20px;
       }
-      &::before {
+      &::after {
         position: absolute;
         content: "";
         width: 1px;
         height: 198px;
-        background: var(--common-border-color);
+        background: linear-gradient(
+          182deg,
+          rgba(68, 173, 193, 1) 0%,
+          rgba(5, 24, 28, 0.5) 100%
+        );
         left: 50%;
         @media (max-width: 575px) {
           width: 80%;
@@ -1182,7 +1223,27 @@ footer {
   }
   .our_values {
     .inner_section {
-      border: 1px solid var(--common-border-color);
+      // border: 1px solid var(--common-border-color);
+      position: relative;
+        &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 255, 255, 1),
+          // top: fully visible
+          rgba(0, 255, 255, 0.3),
+          // middle: less visible
+          rgba(0, 174, 239, 0.1) // bottom: slightly visible
+        );
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        -webkit-mask-composite: destination-out;
+      }
       border-radius: 20px;
       padding: 40px;
       @media (max-width: 575px) {
@@ -1662,7 +1723,27 @@ footer {
       margin-top: 25px;
       padding: 25px;
       // background-color: #1b1b1b;
-      border: 1px solid var(--primary-color);
+      // border: 1px solid var(--primary-color);
+      position: relative;
+        &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 255, 255, 1),
+          // top: fully visible
+          rgba(0, 255, 255, 0.3),
+          // middle: less visible
+          rgba(0, 174, 239, 0.1) // bottom: slightly visible
+        );
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        -webkit-mask-composite: destination-out;
+      }
       border-radius: 20px;
       min-height: 290px;
       display: flex;
@@ -2469,9 +2550,36 @@ footer {
       max-width: 100%;
       height: 85vh;
       object-fit: cover;
-       @media (max-width: 575px) {
+      @media (max-width: 575px) {
         height: auto;
       }
     }
+  }
+}
+
+.gradient-box {
+  position: relative;
+  width: 90%;
+  max-width: 22em;
+  border-radius: 1em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 255, 255, 1),
+      // top: fully visible
+      rgba(0, 255, 255, 0.3),
+      // middle: less visible
+      rgba(0, 174, 239, 0.1) // bottom: slightly visible
+    );
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
   }
 }

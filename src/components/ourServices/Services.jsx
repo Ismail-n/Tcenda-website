@@ -141,8 +141,23 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
 export default Services;
 
 const ServiceTechCard = ({ item }) => {
-  const { icon, title, subtitle, titleMaxWidth } = item || {};
-  const { t } = useTranslation();
+  const { icon, title, subtitle, titleMaxWidth, titleArMaxWidth } = item || {};
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+
+   const getTitleStyle = () => {
+    if (language === "ar") {
+      return titleArMaxWidth
+        ? { maxWidth: titleArMaxWidth }
+        : titleMaxWidth
+        ? { maxWidth: titleMaxWidth }
+        : {};
+    }
+    return titleMaxWidth ? { maxWidth: titleMaxWidth } : {};
+  };
+
   return (
     <Col lg={4}>
       <div className="single_tech_card">
@@ -152,7 +167,7 @@ const ServiceTechCard = ({ item }) => {
           height={48}
           alt={title}
         />
-        <h2 style={{ maxWidth: titleMaxWidth ? titleMaxWidth : "auto" }}>
+        <h2 style={getTitleStyle()}>
           {t(title)}
         </h2>
         <p>{t(subtitle)}</p>

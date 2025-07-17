@@ -115,8 +115,25 @@ const OurServices = () => {
 
 export default OurServices;
 
-const ServiceCard = ({ item, t, language }) => {
-  const { icon, title, description, maxTitleWidth } = item || {};
+const ServiceCard = ({ item }) => {
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+  const { icon, title, description, maxTitleWidth, maxTitleArWidth } =
+    item || {};
+
+  const getTitleStyle = () => {
+    if (language === "ar") {
+      return maxTitleArWidth
+        ? { maxWidth: maxTitleArWidth }
+        : maxTitleWidth
+        ? { maxWidth: maxTitleWidth }
+        : {};
+    }
+    return maxTitleWidth ? { maxWidth: maxTitleWidth } : {};
+  };
+
   return (
     <Col lg={4} md={6}>
       <div className="single_service">
@@ -127,9 +144,8 @@ const ServiceCard = ({ item, t, language }) => {
           height={48}
           alt={t(title)}
         />
-        <h2 style={item.maxTitleWidth ? { maxWidth: item.maxTitleWidth } : {}}>
-          {t(title)}
-        </h2>
+        <h2 style={getTitleStyle()}>{t(item.title)}</h2>
+
         <p>{t(description)}</p>
       </div>
     </Col>
