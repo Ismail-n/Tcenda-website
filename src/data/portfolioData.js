@@ -206,7 +206,7 @@ const portfolios = [
   {
     id: "health-care",
     logoDetails: {
-      logo: "",
+      logo: "heathCare",
       logoWidth: 80,
       logoHeight: 80,
     },
@@ -226,7 +226,7 @@ const portfolios = [
   {
     id: "sign",
     logoDetails: {
-      logo: "",
+      logo: "signLogo",
       logoWidth: 80,
       logoHeight: 80,
     },
@@ -238,10 +238,29 @@ const portfolios = [
     caseStudyLink: "sign",
     imageDetails: {
       image: "sign",
-      imageWidth: 453,
-      imageHeight: 436,
+      imageWidth: 465,
+      imageHeight: 406,
     },
     background: "linear-gradient(to left, #FF91C5, #FFFFFF)",
+  },
+  {
+    id: "fresh-cart",
+    logoDetails: {
+      logo: "freshcartLogo",
+      logoWidth: 80,
+      logoHeight: 80,
+    },
+    title: "Fresh Cart - Freshness Delivered Fast",
+    description: "Fresh groceries, fast to your door.",
+    appStoreLink: "#",
+    playStoreLink: "#",
+    caseStudyLink: "fresh-cart",
+    imageDetails: {
+      image: "freshCart",
+      imageWidth: 465,
+      imageHeight: 406,
+    },
+    background: "linear-gradient(to left, #38A856, #FFFFFF)",
   },
 ];
 
