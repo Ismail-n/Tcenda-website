@@ -36,39 +36,39 @@ const riseValues = [
 const coreValues = [
   {
     id: 1,
-    icon: "innovation",
+    icon: "value1",
     title: "Innovation with Purpose",
     description: "We build smart solutions that solve real problems.",
   },
   {
     id: 2,
-    icon: "customerFirstApproach",
+    icon: "value2",
     title: "Customer-First Approach",
     description: "Your goals guide everything we create.",
   },
   {
     id: 3,
-    icon: "quality",
+    icon: "value3",
     title: "Quality-Driven",
     description: "We focus on performance, reliability, and clean design.",
   },
   {
     id: 4,
-    icon: "agile",
+    icon: "value4",
     title: "Agile & Adaptive",
     description: "We focus on performance, reliability, and clean design.",
   },
   {
     id: 5,
-    icon: "transparent",
+    icon: "value5",
     title: "Transparent & Honest",
     description: "Clear communication, always.",
   },
   {
     id: 6,
-    icon: "customerFirst",
-    title: "Customer First",
-    description: "We listen, respond, and deliver with integrity.",
+    icon: "value6",
+    title: "Secure & Reliable",
+    description: "Always-on, safe, and stable connectivity you can trust.",
   },
 ];
 

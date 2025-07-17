@@ -14,7 +14,10 @@ export const ContactUsValidationSchema = Yup.object({
   mobile: Yup.string()
     .required("Enter your 9-digit mobile number")
     .matches(/^[0-9\u0660-\u0669]+$/, "Only numbers are allowed"),
-  message: Yup.string().required("Briefly describe your project needs"),
+  message: Yup.string()
+    .required("Briefly describe your project needs")
+    .min(5, "Message must be at least 5 characters")
+    .max(1000, "Message must be at most 1000 characters"),
 });
 
 export const isArabicText = (text) => {

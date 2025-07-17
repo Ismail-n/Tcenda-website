@@ -3,14 +3,10 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import ContactFormSection from "./ContactFormSection";
-import { useRouter } from "next/router";
 
 const ContactUsSection = () => {
   const { t } = useTranslation();
 
-  const router = useRouter();
-  const { service } = router.query;
-  
   return (
     <section className="our_values">
       <Container>
@@ -78,7 +74,7 @@ const ContactUsSection = () => {
                     src={`/images/icons/call.svg`}
                     width={24}
                     height={24}
-                    alt="location"
+                    alt="call"
                   />
                   <a href="tel:+966554848908">+966 55 484 8908</a>
                 </div>
@@ -87,7 +83,7 @@ const ContactUsSection = () => {
                     src={`/images/icons/sms.svg`}
                     width={24}
                     height={24}
-                    alt="location"
+                    alt="email"
                   />
                   <a href="mailto:business@tod.com.sa">
                     {t("business@tod.com.sa")}

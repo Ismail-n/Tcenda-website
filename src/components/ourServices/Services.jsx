@@ -180,7 +180,7 @@ const ServiceTechCard = ({ item }) => {
             )
           }
         >
-          {t("Request For Service")}
+          {t("Request This Service")}
         </button>
       </div>
     </Col>

@@ -23,9 +23,8 @@ const portfolioDetails = [
         ],
         tags: [
           { label: "Industry", value: "Retail" },
-          { label: "Services", value: "Retail" },
-          { label: "Business Type", value: "Retail" },
-          { label: "Business Type", value: "Retail" },
+          { label: "Services", value: "Digital Loyalty Platform" },
+          { label: "Business Type", value: "F&B Chain" },
         ],
       },
       projectGoals: {
@@ -119,8 +118,8 @@ const portfolioDetails = [
           "With real-time tracking, curated options, and loyalty integration, Ashjar Gift turns moments into memories—beautifully and effortlessly.",
         ],
         tags: [
-          { label: "Industry", value: "Retail" },
-          { label: "Services", value: "Retail" },
+          { label: "Industry", value: "eCommerce" },
+          { label: "Services", value: "Product Development" },
           { label: "Business Type", value: "Retail" },
           // { label: "Business Type", value: "Retail" },
         ],

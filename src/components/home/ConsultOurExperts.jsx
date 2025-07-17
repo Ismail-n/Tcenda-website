@@ -43,7 +43,7 @@ const ConsultOurExperts = () => {
         throw new Error(errorData.message || "Something went wrong");
       }
 
-      toast.success("Thank You! We'll get back to you soon.");
+      toast.success(t("Thank You! We'll get back to you soon."));
       resetForm();
     } catch (error) {
       console.error("SMTP email send failed:", error);

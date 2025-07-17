@@ -9,9 +9,13 @@ import * as Yup from "yup";
 import Loader from "../common/Loader";
 import { ContactUsValidationSchema, isArabicText } from "../utils/Validations";
 import Title from "../common/Title";
+import { useRouter } from "next/router";
 
 const ContactFormSection = () => {
   const { t } = useTranslation();
+
+  const router = useRouter();
+  const { service } = router.query;
 
   const initialValues = {
     name: "",
@@ -25,6 +29,10 @@ const ContactFormSection = () => {
   const AUTH_TOKEN = process.env.NEXT_PUBLIC_CONTACT_API_TOKEN;
 
   const handleSubmit = async (values, { resetForm, setSubmitting }) => {
+    const payload = {
+      ...values,
+      type: service || "",
+    };
     try {
       const response = await fetch(`${API_URL}/api/v1/common/contactUs`, {
         method: "POST",
@@ -40,7 +48,7 @@ const ContactFormSection = () => {
         throw new Error(errorData.message || "Something went wrong");
       }
 
-      toast.success("Thank You! We'll get back to you soon.");
+      toast.success(t("Thank You! We'll get back to you soon."));
       resetForm();
     } catch (error) {
       console.error("SMTP email send failed:", error);

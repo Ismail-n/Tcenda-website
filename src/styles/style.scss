@@ -286,7 +286,6 @@ footer {
   .reserved_row {
     padding: 30px 0;
     border-top: 1px solid var(--common-border-color);
-    margin-top: 50px;
     @media (max-width: 575px) {
       margin-top: 25px;
     }
@@ -294,6 +293,39 @@ footer {
       font-size: 18px;
       // font-weight: 300;
       text-align: center;
+    }
+  }
+
+  .footer_address {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid var(--common-border-color);
+    @media (min-width: 575px) {
+      display: flex;
+    }
+    .inner_images {
+      max-width: 100%;
+      @media (min-width: 575px) {
+        min-width: 739px;
+      }
+      display: flex;
+      align-items: end;
+      gap: 24px;
+      @media (max-width: 575px) {
+        flex-flow: column;
+        align-items: center;
+        gap: 40px;
+      }
+    }
+    .address_info {
+      @media (max-width: 575px) {
+        margin-top: 40px;
+      }
+      .single_add {
+        margin-top: 15px;
+        display: flex;
+        gap: 6px;
+      }
     }
   }
 }
@@ -978,8 +1010,8 @@ footer {
       margin-top: 20px;
       padding: 15px;
       img {
-        width: 50px;
-        height: 50px;
+        width: 48px;
+        height: 48px;
       }
     }
 
@@ -1299,19 +1331,20 @@ footer {
         }
       }
       .core_values {
-        margin-top: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px 80px;
+        @media (min-width: 575px) {
+          padding: 0 10px;
+        }
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 30px 80px;
         .single_value {
-          width: 331px;
+          margin-top: 27px;
           display: flex;
+          align-items: center;
           gap: 15px;
           .icon {
-            min-width: 60px;
-            height: 60px;
-            background-color: rgba(217, 217, 217, 0.2);
-            border-radius: 50%;
+            min-width: 48px;
+            height: 48px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1321,6 +1354,8 @@ footer {
             }
           }
           .content {
+            width: 353px;
+            max-width: 100%;
             @media (min-width: 575px) {
               margin-top: 9px;
             }
@@ -2657,6 +2692,10 @@ footer {
   flex-direction: column;
   .call_float {
     display: none;
+  }
+  img {
+    background-color: var(--black-color);
+    border-radius: 50%;
   }
   @media (max-width: 575px) {
     gap: 15px;

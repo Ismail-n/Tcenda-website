@@ -235,6 +235,64 @@ const Footer = () => {
           </Col>
 
           <Col lg={12}>
+            <div className="footer_address">
+              <div className="inner_images">
+                <Image
+                  src={"/images/icons/footerVector.webp"}
+                  width={457}
+                  height={140}
+                  alt="footer vector"
+                />
+                <Image
+                  src={"/images/icons/footerMap.webp"}
+                  width={208}
+                  height={160}
+                  alt="footer map"
+                />
+              </div>
+              <div className="address_info">
+                <div className="single_add">
+                  <Image
+                    src={"/images/icons/location.svg"}
+                    width={24}
+                    height={24}
+                    alt="location"
+                  />
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Prince+Mohammed+Ibn+Salman+Ibn+Abdulaziz+Rd,+Ar+Rabi,+Riyadh+13315"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=""
+                  >
+                    {t("Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,")}
+                    {t("Ar Rabi, Riyadh 13315")}
+                  </a>
+                </div>
+                <div className="single_add">
+                  <Image
+                    src={"/images/icons/call.svg"}
+                    width={24}
+                    height={24}
+                    alt="call"
+                  />
+                  <a href="tel:+966554848908">+966 55 484 8908</a>
+                </div>
+                <div className="single_add">
+                  <Image
+                    src={"/images/icons/sms.svg"}
+                    width={24}
+                    height={24}
+                    alt="email"
+                  />
+                  <a href="mailto:business@tod.com.sa">
+                    {t("business@tod.com.sa")}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Col>
+
+          <Col lg={12}>
             <div className="reserved_row">
               <h2>{t("© 2025 Tod All Rights Reserved.")}</h2>
             </div>
