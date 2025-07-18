@@ -112,8 +112,8 @@ const portfolios = [
     title: "Cup Crew",
     description:
       "Browse, Order, and Collect from Your Favorite Local Cafés — Enjoy Smooth Payments and Loyalty Benefits, All in One App.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "",
+    playStoreLink: "",
     caseStudyLink: "cup-crew",
     imageDetails: {
       image: "cupCrew",
@@ -121,6 +121,7 @@ const portfolios = [
       imageHeight: 408,
     },
     background: "linear-gradient(to left, #14463A, #D4B38B)",
+    backgroundAr: "linear-gradient(to right, #14463A, #D4B38B)",
   },
   {
     id: "real-estate",
@@ -132,8 +133,8 @@ const portfolios = [
     title: "Takween",
     description:
       "Tailored Search, Virtual Tours, and Agent Support for Buyers and Renters. Built to Serve Saudi's Growing Takween Market.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "",
+    playStoreLink: "",
     caseStudyLink: "real-estate",
     imageDetails: {
       image: "realEstate",
@@ -141,6 +142,7 @@ const portfolios = [
       imageHeight: 362,
     },
     background: "linear-gradient(to left, #0C3553, #A2D8FF)",
+    backgroundAr: "linear-gradient(to right, #0C3553, #A2D8FF)",
   },
   // {
   //   id: "burger-buzz",
@@ -152,8 +154,8 @@ const portfolios = [
   //   title: "Burger Buzz",
   //   description:
   //     "A Food Ordering App Designed to Satisfy Your Cravings in Record Time. Track Orders, Earn Rewards, and Enjoy Local Favorites Instantly.",
-  //   appStoreLink: "#",
-  //   playStoreLink: "#",
+  //   appStoreLink: "",
+  //   playStoreLink: "",
   //   caseStudyLink: "",
   //   imageDetails: {
   //     image: "burgerBuzz",
@@ -172,8 +174,8 @@ const portfolios = [
     title: "Screen Me",
     description:
       "Fast, Secure, and Personalized Screenings Tailored to Your Lifestyle. Track, Analyze, and Stay Ahead with Health Insights at Your Fingertips.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "",
+    playStoreLink: "",
     caseStudyLink: "screen-me",
     imageDetails: {
       image: "screenMe",
@@ -194,7 +196,7 @@ const portfolios = [
       "Designed to Optimize Field Operations with Real-Time Tracking and Task Management. Empowering Service Teams Across the Kingdom.",
     appStoreLink:
       "https://apps.apple.com/in/app/service-hub-customer/id6461084774",
-    playStoreLink: "#",
+    playStoreLink: "",
     caseStudyLink: "service-now",
     imageDetails: {
       image: "serviceNow",
@@ -202,6 +204,7 @@ const portfolios = [
       imageHeight: 415,
     },
     background: "linear-gradient(to left, #1576EC, #FFFFFF)",
+    backgroundAr: "linear-gradient(to right, #1576EC, #FFFFFF)",
   },
   {
     id: "health-care",
@@ -213,8 +216,8 @@ const portfolios = [
     title: "Healthcare App",
     description:
       "Browse Specialists, Book Instantly, and Get Reminders All from Your Phone. A Seamless Healthcare & Services Booking Platform.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "",
+    playStoreLink: "",
     caseStudyLink: "health-care",
     imageDetails: {
       image: "healthCare",
@@ -233,8 +236,8 @@ const portfolios = [
     title: "Sign",
     description:
       "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "",
+    playStoreLink: "",
     caseStudyLink: "sign",
     imageDetails: {
       image: "sign",
@@ -252,8 +255,8 @@ const portfolios = [
     },
     title: "Fresh Cart - Freshness Delivered Fast",
     description: "Fresh groceries, fast to your door.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "",
+    playStoreLink: "",
     caseStudyLink: "fresh-cart",
     imageDetails: {
       image: "freshCart",
@@ -272,8 +275,8 @@ const portfolios = [
     },
     title: "Ayz Rentals",
     description: "Fresh groceries, fast to your door.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "",
+    playStoreLink: "",
     caseStudyLink: "ayz-rentals",
     imageDetails: {
       image: "ayzRentals",
@@ -292,8 +295,8 @@ const portfolios = [
     },
     title: "6-8 Sports",
     description: "Maximize performance with 6-8 Sports—built by Olympians. Track your stats, train with pros, and level up your game.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "",
+    playStoreLink: "",
     caseStudyLink: "6-8-sports",
     imageDetails: {
       image: "6-8Sports",
@@ -311,8 +314,8 @@ const portfolios = [
     },
     title: "Mevron",
     description: "Next-gen ridesharing that's fast, safe, and rider-focused. Order rides in minutes, track your driver live, and pay by card or cash. Mevron empowers both riders and drivers for a seamless, community-first journey.",
-    appStoreLink: "#",
-    playStoreLink: "#",
+    appStoreLink: "",
+    playStoreLink: "",
     caseStudyLink: "mevron",
     imageDetails: {
       image: "mevron",
@@ -320,6 +323,7 @@ const portfolios = [
       imageHeight: 407,
     },
     background: "linear-gradient(to right, #F3953D, #161616)",
+    backgroundAr: "linear-gradient(to left, #F3953D, #161616)",
   },
 
 ];
