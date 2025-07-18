@@ -32,7 +32,7 @@ const AboutUsSection = ({ data }) => {
                 {tags?.map((item) => (
                   <div key={item?.label} className="single_tag">
                     <h2>{t(item?.label)}</h2>
-                    <p>{t(item?.value)}</p>
+                    <p style={{maxWidth:item?.maxSubTitleWidth ? item?.maxSubTitleWidth : "auto"}}>{t(item?.value)}</p>
                   </div>
                 ))}
               </div>

@@ -262,6 +262,66 @@ const portfolios = [
     },
     background: "linear-gradient(to left, #38A856, #FFFFFF)",
   },
+  // AYZ RENTALS
+  {
+    id: "ayz-rentals",
+    logoDetails: {
+      logo: "ayzRentalsLogo",
+      logoWidth: 80,
+      logoHeight: 80,
+    },
+    title: "Ayz Rentals",
+    description: "Fresh groceries, fast to your door.",
+    appStoreLink: "#",
+    playStoreLink: "#",
+    caseStudyLink: "ayz-rentals",
+    imageDetails: {
+      image: "ayzRentals",
+      imageWidth: 518,
+      imageHeight: 344,
+    },
+    background: "linear-gradient(to left, #FEC31D, #FFFFFF)",
+  },
+  // 6-8 Sports
+  {
+    id: "6-8-sports",
+    logoDetails: {
+      logo: "6-8SportsLogo",
+      logoWidth: 80,
+      logoHeight: 80,
+    },
+    title: "6-8 Sports",
+    description: "Maximize performance with 6-8 Sports—built by Olympians. Track your stats, train with pros, and level up your game.",
+    appStoreLink: "#",
+    playStoreLink: "#",
+    caseStudyLink: "6-8-sports",
+    imageDetails: {
+      image: "6-8Sports",
+      imageWidth: 518,
+      imageHeight: 344,
+    },
+    background: "linear-gradient(to right, #33B68F, #FFF291)",
+  },
+  {
+    id: "mevron",
+    logoDetails: {
+      logo: "mevronLogo",
+      logoWidth: 80,
+      logoHeight: 80,
+    },
+    title: "Mevron",
+    description: "Next-gen ridesharing that's fast, safe, and rider-focused. Order rides in minutes, track your driver live, and pay by card or cash. Mevron empowers both riders and drivers for a seamless, community-first journey.",
+    appStoreLink: "#",
+    playStoreLink: "#",
+    caseStudyLink: "mevron",
+    imageDetails: {
+      image: "mevron",
+      imageWidth: 327,
+      imageHeight: 407,
+    },
+    background: "linear-gradient(to right, #F3953D, #161616)",
+  },
+
 ];
 
 export { portfolios };

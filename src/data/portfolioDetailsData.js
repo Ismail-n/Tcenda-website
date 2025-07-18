@@ -1043,7 +1043,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
       top: {
         background: "linear-gradient(120deg, #FFFFFF, #38A856)",
         title: "Fresh Cart — Freshness Delivered Fast",
-        subtitle: "Fresh groceries, fast to your door.",
+        subtitle: "Rent anything and everything you want.",
         image: "/images/portfolioDetails/freshCart/topBg.webp",
         appStoreLinks: {
           ios: "#",
@@ -1126,6 +1126,263 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         title: `Shopping Made Easy, Rewards Made Fresh`,
         description: `Fresh Cart makes grocery shopping effortless and rewarding. With a user-friendly app, you can quickly find fresh products, earn points, and enjoy exclusive deals—bringing convenience and value right to your doorstep. Freshness meets function—delivered.`,
         image: "/images/portfolioDetails/freshCart/highLightBanner.webp",
+      },
+    },
+  },
+  {
+    id: "ayz-rentals",
+    sections: {
+      top: {
+        background: "linear-gradient(120deg, #FFFFFF, #FEC31D)",
+        title: "Ayz Rentals",
+        subtitle: "Rent anything and everything you want.",
+        image: "/images/portfolioDetails/ayzRentals/topBg.webp",
+        appStoreLinks: {
+          ios: "#",
+          android: "#",
+        },
+      },
+      aboutUs: {
+        image: "/images/portfolioDetails/ayzRentals/aboutUs.webp",
+        title: "About Us",
+        description: [
+          "AYZ Rentals offers a unique platform that makes renting easy, affordable, and accessible.",
+          "We provide a diverse collection of stylish, trendy, and high-quality products—ranging from electronics and appliances to furniture and lifestyle items—all available at competitive rental prices.",
+          "Whether you're furnishing a new home, hosting an event, or simply exploring a smarter way to access essentials without the upfront cost, AYZ Rentals is here to help you live better, for less.",
+        ],
+        tags: [
+          { label: "Industry", value: "Lifestyle & Rentals" },
+          { label: "Services", value: "Product Platform" },
+          { label: "Business Type", value: "Consumer-Focused"},
+        ],
+      },
+      projectGoals: {
+        title: "Project Goals",
+        image: {
+          url: "/images/portfolioDetails/ayzRentals/projectGoals.webp",
+        },
+        goals: [
+          {
+            title: "Simplify Access to High-Quality Rentals",
+            description: "Make it easy for users to browse, choose, and rent quality products with flexible terms and seamless delivery.",
+          },
+          {
+            title: "Build Trust Through Transparency",
+            description: "Ensure clear pricing, verified listings, user reviews, and dependable service so renters feel secure and informed.",
+          },
+          {
+            title: "Promote Smart, Sustainable Living",
+            description: "Encourage a rental-first mindset that reduces waste, supports affordability, and empowers conscious consumption.",
+          },
+          {
+            title: "Create a Seamless Rental Experience",
+            description: "From discovery to doorstep, provide a smooth, app-based journey with fast checkouts, easy returns, and responsive support.",
+          },
+        ],
+      },
+      execution: {
+        image: "/images/portfolioDetails/ayzRentals/execution.webp",
+        description: `AYZ Rentals reimagines how people access everyday essentials. Why buy when you can rent smarter? With a carefully curated catalog, intuitive platform, and commitment to reliability, we make modern living more flexible and budget-friendly. Whether for short-term needs or long-term convenience, AYZ Rentals makes renting feel effortless and empowering.`,
+        descriptionBackground: "#FEC31D",
+      },
+      featuresOverview: {
+        title: "Flexible Living, Smart Renting",
+        titleMaxWidth: 630,
+        items: [
+          {
+            title: "",
+            maxTitleWidth: 365,
+            images: {
+              url: "/images/portfolioDetails/ayzRentals/feature1.webp",
+              width: 1070,
+              height: 563,
+            },
+          }
+        ],
+        description: "AYZ Rentals is your go-to rental solution for lifestyle and home needs. No upfront purchases, no hassle—just browse, rent, and enjoy. Explore thousands of products across categories, set your rental duration, and receive doorstep delivery with easy returns. Track your orders, manage subscriptions, and get exclusive deals all in one place."
+      },
+      highlightBanner: {
+        backgroundColor: "#FEC31D",
+        title: "Access More. Spend Less. Live Smarter.",
+        description: "From stylish furniture to the latest gadgets, AYZ Rentals brings you premium products without the premium price tag. Join the rental revolution—affordable, flexible, and smarter than ever.",
+        image: "/images/portfolioDetails/ayzRentals/highLightBanner.webp",
+      },
+    },
+  },
+  {
+    id: "6-8-sports",
+    sections: {
+      top: {
+        background: "linear-gradient(180deg, #FFF291, #33B68F)",
+        title: "6-8 Sports",
+        subtitle: "Transforming how athletes train, track, and thrive.",
+        image: "/images/portfolioDetails/6-8Sports/topBg.webp",
+        appStoreLinks: {
+          ios: "#",
+          android: "#",
+        },
+      },
+      aboutUs: {
+        image: "/images/portfolioDetails/6-8Sports/aboutUs.webp",
+        title: "About Us",
+        description: [
+          "At 6-8 Sports, our mission is to accelerate the growth and exposure of developing sports through a revolutionary system built on standardized metrics, live-game tracking, and advanced data analytics.",
+          "We believe performance should be measurable, development should be data-driven, and athletes at all levels should have access to tools that unlock their full potential."
+        ],
+        tags: [
+          { label: "Industry", value: "Sports & Athletics" },
+          { label: "Services", value: "Mobile Platform, Analytics Tools",maxSubTitleWidth : 152 },
+          { label: "Business Type", value: "Data-Driven"},
+        ],
+      },
+      projectGoals: {
+        title: "Project Goals",
+        image: {
+          url: "/images/portfolioDetails/6-8Sports/projectGoals.webp",
+        },
+        goals: [
+          {
+            title: "Empower Athletes and Parents",
+            description: "Our 6-8 mobile app delivers key insights from our proprietary 6-8 Challenge and scoring system, allowing athletes and parents to visualize performance trends, set development goals, and track progress over time.",
+          },
+          {
+            title: "Standardize Metrics for Objective Growth",
+            description: "We're bringing consistency to sports development with standardized benchmarks and advanced analytics—making talent evaluation more transparent, objective, and scalable.",
+          },
+          {
+            title: "Equip Coaches, Teams, and Leagues",
+            description: "The 6-8 Game Desk replaces manual tracking with a digital dashboard that captures detailed team and player stats. Coaches gain powerful tools to assess performance, adjust training, and strategize more effectively.",
+          },
+          {
+            title: "Support Smarter, Systematic Training",
+            description: "Our clinics and training programs use real game data to provide personalized feedback and structured improvement paths tailored to each athlete's strengths and gaps.",
+          },
+        ],
+      },
+      execution: {
+        image: "/images/portfolioDetails/6-8Sports/execution.webp",
+        description: "6-8 Sports is more than a performance tracker.It's a full-circle development platform that combines real-time analytics, competitive benchmarks, and expert training guidance.From first-time players to elite competitors, we make growth measurable, training purposeful, and development more accessible than ever.",
+        descriptionBackground: "rgba(51, 182, 143, 0.5)",
+      },
+      featuresOverview: {
+        title: "Smarter Training. Stronger Athletes.",
+        titleMaxWidth: 760,
+        items: [
+          {
+            title: "Extensive Range of Powerful Features",
+            maxTitleWidth: 510,
+            images: {
+              url: "/images/portfolioDetails/6-8Sports/feature1.webp",
+              width: 242,
+              height: 500,
+            },
+          },
+          {
+            title: "Real-Time Insights, Updates, for Athletes",
+            maxTitleWidth: 390,
+            images: {
+              url: "/images/portfolioDetails/6-8Sports/feature1.webp",
+              width: 234,
+              height: 483,
+            },
+          }
+        ],
+        description: "The 6-8 Sports platform unites athletes, parents, and coaches in a shared system of performance and progress.Track live stats. Set goals. Compare benchmarks.Whether you're in the pool, on the field, or on the sidelines, 6-8 makes every rep count.Our mobile app, video training series, and live events are all powered by one unified data system—designed to elevate how the game is played and how athletes grow."
+      },
+      highlightBanner: {
+        backgroundColor: "rgba(51, 182, 143, 0.5)",
+        title: "Train with Purpose. Perform with Insight.",
+        description: "Join the 6-8 Sports ecosystem and take your performance to the next level — whether you're an athlete chasing your personal best, a parent supporting the journey, or a coach shaping the next generation.With real-time data, standardized metrics, and actionable insights, our platform equips you with the tools to compete smarter, train more effectively, and grow with confidence.",
+        image: "/images/portfolioDetails/6-8Sports/highLightBanner.webp",
+      },
+    },
+  },
+  {
+    id: "mevron",
+    sections: {
+      top: {
+        background: "linear-gradient(337.23deg, #000000 -58.46%, #F3953D 117.96%)",
+        title: "Mevron",
+        subtitle: "Your City, Your Ride — Reimagined.",
+        image: "/images/portfolioDetails/mevron/topBg.webp",
+        appStoreLinks: {
+          ios: "#",
+          android: "#",
+        },
+      },
+      aboutUs: {
+        image: "/images/portfolioDetails/mevron/aboutUs.webp",
+        title: "About Us",
+        description: [
+          "Mevron is a next-generation ride-hailing platform designed to simplify urban transportation while empowering local drivers. Whether you're commuting to work, heading to the airport, or exploring the city, Mevron connects you with fast, affordable, and reliable rides at the tap of a button.",
+          "From solo trips to ride-sharing options, Mevron offers flexible solutions tailored for modern city life — all delivered with a seamless, mobile-first experience."
+        ],
+        tags: [
+          { label: "Industry", value: "Mobility" },
+          { label: "Services", value: "Transportation",maxSubTitleWidth : 152 },
+          { label: "Business Type", value: "Mobile App"},
+        ],
+      },
+      projectGoals: {
+        title: "Project Goals",
+        image: {
+          url: "/images/portfolioDetails/mevron/projectGoals.webp",
+        },
+        goals: [
+          {
+            title: "Redefining Urban Mobility",
+            description: "We set out to build a competitive ride-sharing experience that rivals global platforms while staying rooted in local needs and expectations.",
+          },
+          {
+            title: "Local Empowerment, Global Standards",
+            description: "Mevron aims to empower local driver communities by providing tools and incentives that promote fairness, transparency, and profitability — all while maintaining the high standards expected from international ride platforms.",
+          },
+          {
+            title: "We set out to build a competitive ride-sharing experience that rivals global platforms while staying rooted in local needs and expectations.",
+            description: "Designed both for riders and drivers, the platform ensures effortless booking, transparent pricing, and intuitive trip management — all backed by real-time GPS tracking and secure digital payments.",
+          },
+          {
+            title: "Safety-First Innovation",
+            description: "With features like trip-sharing, emergency contacts, driver verification, and real-time tracking, Mevron prioritizes rider and driver safety at every stage of the journey.",
+          },
+        ],
+      },
+      execution: {
+        image: "/images/portfolioDetails/mevron/execution.webp",
+        description: "From onboarding new drivers to creating frictionless ride experiences, Mevron puts both convenience and accountability at the core. We focused on developing a clean user interface, reliable backend logic, and a scalable architecture that ensures smooth operations even under high demand.",
+        descriptionBackground: "rgba(243, 149, 61, 0.5)",
+      },
+      featuresOverview: {
+        title: "Smarter Mobility, Smoother Rides",
+        titleMaxWidth: 705,
+        items: [
+          {
+            title: "Robust Features for Real-World Journeys",
+            maxTitleWidth: 545,
+            images: {
+              url: "/images/portfolioDetails/mevron/feature1.webp",
+              width: 242,
+              height: 500,
+            },
+          },
+          {
+            title: "Live Tracking, Instant Updates, Real Confidence",
+            maxTitleWidth: 425,
+            images: {
+              url: "/images/portfolioDetails/mevron/feature1.webp",
+              width: 234,
+              height: 483,
+            },
+          }
+        ],
+        description: "Mevron stands at the intersection of convenience, technology, and community. By offering a platform that values both drivers and riders equally, Mevron is creating a new kind of mobility experience — one that's responsive, respectful, and ready for the demands of modern urban life. With robust backend systems and thoughtfully designed mobile apps, Mevron delivers unmatched reliability and ease of use. It's not just a ride — it's a smarter way to move, built for cities that never slow down."
+      },
+      highlightBanner: {
+        backgroundColor: "rgba(243, 149, 61, 0.5)",
+        
+        title: "Driven by Purpose, Powered by Innovation",
+        description: "Mevron isn't just a ride-hailing app — it's a smarter, safer, and more inclusive mobility platform designed to move people and cities forward. From seamless ride booking to community-first features, Mevron redefines what it means to ride with confidence and care.",
+        image: "/images/portfolioDetails/mevron/highLightBanner.webp",
       },
     },
   },
