@@ -39,7 +39,7 @@ const OurServices = () => {
     <section className="common_section our_services">
       <Container>
         <Title title={t("Our Services")} />
-        <SubTitle subTitle={t("Solutions Designed for the Saudi Market")} />
+        <SubTitle subTitle={t("Solutions Designed to Match Our Aspirations in Saudi Arabia")} />
 
         {/* DESKTOP */}
         <div className="d-none d-md-block">

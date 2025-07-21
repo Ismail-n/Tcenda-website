@@ -181,6 +181,7 @@ const portfolioDetails = [
             },
           },
         ],
+        maxItemWidth: 780,
         description:
           "Ashjar Gift is your personal gifting companion, designed to make thoughtful giving effortless. Simply download the app, sign up, and start discovering curated gifts for every occasion. Easily track your gift lists, unlock exclusive offers, and receive personalized recommendations tailored just for you. Stay updated on new collections, special promotions, and seasonal highlights—all in one place. With a clean design and intuitive interface, Ashjar Gift makes gifting simple—just browse, choose, and share the joy!",
       },
@@ -775,7 +776,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         image: "/images/portfolioDetails/realEstate/aboutUs.webp",
         title: "About Us",
         description: [
-          `At Takween, we're redefining how people find their perfect home.Whether you're buying, renting, or investing, our all-in-one platform connects you with the right listings—quickly, smartly, and with confidence. Built for modern house-hunters, our app blends smart search tools, personalized recommendations, and real-time updates to make your property journey seamless. From cozy studios to dream homes, we help you explore options, schedule visits, and take the next step—all in one place.`,
+          `At Real Estate, we're redefining how people find their perfect home.Whether you're buying, renting, or investing, our all-in-one platform connects you with the right listings—quickly, smartly, and with confidence. Built for modern house-hunters, our app blends smart search tools, personalized recommendations, and real-time updates to make your property journey seamless. From cozy studios to dream homes, we help you explore options, schedule visits, and take the next step—all in one place.`,
         ],
         tags: [
           { label: "Industry", value: "Real Estate" },
@@ -813,7 +814,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
       },
       execution: {
         image: "/images/portfolioDetails/realEstate/execution.webp",
-        description: `Real Estate App is a modern real estate platform that reimagines how you find a home—combining smart technology, human insight, and seamless experiences. Crafted for those who seek more than just a place to live, Takween connects you to homes that match your lifestyle, dreams, and goals. Whether you're buying, renting, or exploring new investments, we make your journey smooth, personal, and rewarding—because finding a home should feel just right.`,
+        description: `Real Estate App is a modern real estate platform that reimagines how you find a home—combining smart technology, human insight, and seamless experiences. Crafted for those who seek more than just a place to live, Real Estate connects you to homes that match your lifestyle, dreams, and goals. Whether you're buying, renting, or exploring new investments, we make your journey smooth, personal, and rewarding—because finding a home should feel just right.`,
         descriptionBackground: "#143B5880",
       },
       featuresOverview: {
@@ -839,6 +840,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
             },
           },
         ],
+        maxItemWidth: 780,
         description: `Real Estate App is your personal home-finding companion—designed to make the journey easier, smarter, and more rewarding.Just download the app, sign up, and start exploring curated property listings tailored to your preferences. Easily track your favorite homes, get personalized recommendations, receive exclusive offers, and stay informed on new listings, price changes, and local market trends—all from one convenient app. Just browse, save, and find your perfect space.`,
       },
       highlightBanner: {
@@ -1153,7 +1155,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         tags: [
           { label: "Industry", value: "Lifestyle & Rentals" },
           { label: "Services", value: "Product Platform" },
-          { label: "Business Type", value: "Consumer-Focused"},
+          { label: "Business Type", value: "Consumer-Focused" },
         ],
       },
       projectGoals: {
@@ -1164,19 +1166,23 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         goals: [
           {
             title: "Simplify Access to High-Quality Rentals",
-            description: "Make it easy for users to browse, choose, and rent quality products with flexible terms and seamless delivery.",
+            description:
+              "Make it easy for users to browse, choose, and rent quality products with flexible terms and seamless delivery.",
           },
           {
             title: "Build Trust Through Transparency",
-            description: "Ensure clear pricing, verified listings, user reviews, and dependable service so renters feel secure and informed.",
+            description:
+              "Ensure clear pricing, verified listings, user reviews, and dependable service so renters feel secure and informed.",
           },
           {
             title: "Promote Smart, Sustainable Living",
-            description: "Encourage a rental-first mindset that reduces waste, supports affordability, and empowers conscious consumption.",
+            description:
+              "Encourage a rental-first mindset that reduces waste, supports affordability, and empowers conscious consumption.",
           },
           {
             title: "Create a Seamless Rental Experience",
-            description: "From discovery to doorstep, provide a smooth, app-based journey with fast checkouts, easy returns, and responsive support.",
+            description:
+              "From discovery to doorstep, provide a smooth, app-based journey with fast checkouts, easy returns, and responsive support.",
           },
         ],
       },
@@ -1197,14 +1203,16 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
               width: 1070,
               height: 563,
             },
-          }
+          },
         ],
-        description: "AYZ Rentals is your go-to rental solution for lifestyle and home needs. No upfront purchases, no hassle—just browse, rent, and enjoy. Explore thousands of products across categories, set your rental duration, and receive doorstep delivery with easy returns. Track your orders, manage subscriptions, and get exclusive deals all in one place."
+        description:
+          "AYZ Rentals is your go-to rental solution for lifestyle and home needs. No upfront purchases, no hassle—just browse, rent, and enjoy. Explore thousands of products across categories, set your rental duration, and receive doorstep delivery with easy returns. Track your orders, manage subscriptions, and get exclusive deals all in one place.",
       },
       highlightBanner: {
         backgroundColor: "#FEC31D",
         title: "Access More. Spend Less. Live Smarter.",
-        description: "From stylish furniture to the latest gadgets, AYZ Rentals brings you premium products without the premium price tag. Join the rental revolution—affordable, flexible, and smarter than ever.",
+        description:
+          "From stylish furniture to the latest gadgets, AYZ Rentals brings you premium products without the premium price tag. Join the rental revolution—affordable, flexible, and smarter than ever.",
         image: "/images/portfolioDetails/ayzRentals/highLightBanner.webp",
       },
     },
@@ -1227,12 +1235,16 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         title: "About Us",
         description: [
           "At 6-8 Sports, our mission is to accelerate the growth and exposure of developing sports through a revolutionary system built on standardized metrics, live-game tracking, and advanced data analytics.",
-          "We believe performance should be measurable, development should be data-driven, and athletes at all levels should have access to tools that unlock their full potential."
+          "We believe performance should be measurable, development should be data-driven, and athletes at all levels should have access to tools that unlock their full potential.",
         ],
         tags: [
           { label: "Industry", value: "Sports & Athletics" },
-          { label: "Services", value: "Mobile Platform, Analytics Tools",maxSubTitleWidth : 152 },
-          { label: "Business Type", value: "Data-Driven"},
+          {
+            label: "Services",
+            value: "Mobile Platform, Analytics Tools",
+            maxSubTitleWidth: 152,
+          },
+          { label: "Business Type", value: "Data-Driven" },
         ],
       },
       projectGoals: {
@@ -1243,25 +1255,30 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         goals: [
           {
             title: "Empower Athletes and Parents",
-            description: "Our 6-8 mobile app delivers key insights from our proprietary 6-8 Challenge and scoring system, allowing athletes and parents to visualize performance trends, set development goals, and track progress over time.",
+            description:
+              "Our 6-8 mobile app delivers key insights from our proprietary 6-8 Challenge and scoring system, allowing athletes and parents to visualize performance trends, set development goals, and track progress over time.",
           },
           {
             title: "Standardize Metrics for Objective Growth",
-            description: "We're bringing consistency to sports development with standardized benchmarks and advanced analytics—making talent evaluation more transparent, objective, and scalable.",
+            description:
+              "We're bringing consistency to sports development with standardized benchmarks and advanced analytics—making talent evaluation more transparent, objective, and scalable.",
           },
           {
             title: "Equip Coaches, Teams, and Leagues",
-            description: "The 6-8 Game Desk replaces manual tracking with a digital dashboard that captures detailed team and player stats. Coaches gain powerful tools to assess performance, adjust training, and strategize more effectively.",
+            description:
+              "The 6-8 Game Desk replaces manual tracking with a digital dashboard that captures detailed team and player stats. Coaches gain powerful tools to assess performance, adjust training, and strategize more effectively.",
           },
           {
             title: "Support Smarter, Systematic Training",
-            description: "Our clinics and training programs use real game data to provide personalized feedback and structured improvement paths tailored to each athlete's strengths and gaps.",
+            description:
+              "Our clinics and training programs use real game data to provide personalized feedback and structured improvement paths tailored to each athlete's strengths and gaps.",
           },
         ],
       },
       execution: {
         image: "/images/portfolioDetails/6-8Sports/execution.webp",
-        description: "6-8 Sports is more than a performance tracker.It's a full-circle development platform that combines real-time analytics, competitive benchmarks, and expert training guidance.From first-time players to elite competitors, we make growth measurable, training purposeful, and development more accessible than ever.",
+        description:
+          "6-8 Sports is more than a performance tracker.It's a full-circle development platform that combines real-time analytics, competitive benchmarks, and expert training guidance.From first-time players to elite competitors, we make growth measurable, training purposeful, and development more accessible than ever.",
         descriptionBackground: "rgba(51, 182, 143, 0.5)",
       },
       featuresOverview: {
@@ -1285,14 +1302,17 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
               width: 234,
               height: 483,
             },
-          }
+          },
         ],
-        description: "The 6-8 Sports platform unites athletes, parents, and coaches in a shared system of performance and progress.Track live stats. Set goals. Compare benchmarks.Whether you're in the pool, on the field, or on the sidelines, 6-8 makes every rep count.Our mobile app, video training series, and live events are all powered by one unified data system—designed to elevate how the game is played and how athletes grow."
+        maxItemWidth: 780,
+        description:
+          "The 6-8 Sports platform unites athletes, parents, and coaches in a shared system of performance and progress.Track live stats. Set goals. Compare benchmarks.Whether you're in the pool, on the field, or on the sidelines, 6-8 makes every rep count.Our mobile app, video training series, and live events are all powered by one unified data system—designed to elevate how the game is played and how athletes grow.",
       },
       highlightBanner: {
         backgroundColor: "rgba(51, 182, 143, 0.5)",
         title: "Train with Purpose. Perform with Insight.",
-        description: "Join the 6-8 Sports ecosystem and take your performance to the next level — whether you're an athlete chasing your personal best, a parent supporting the journey, or a coach shaping the next generation.With real-time data, standardized metrics, and actionable insights, our platform equips you with the tools to compete smarter, train more effectively, and grow with confidence.",
+        description:
+          "Join the 6-8 Sports ecosystem and take your performance to the next level — whether you're an athlete chasing your personal best, a parent supporting the journey, or a coach shaping the next generation.With real-time data, standardized metrics, and actionable insights, our platform equips you with the tools to compete smarter, train more effectively, and grow with confidence.",
         image: "/images/portfolioDetails/6-8Sports/highLightBanner.webp",
       },
     },
@@ -1301,7 +1321,8 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
     id: "mevron",
     sections: {
       top: {
-        background: "linear-gradient(337.23deg, #000000 -58.46%, #F3953D 117.96%)",
+        background:
+          "linear-gradient(337.23deg, #000000 -58.46%, #F3953D 117.96%)",
         title: "Mevron",
         subtitle: "Your City, Your Ride — Reimagined.",
         image: "/images/portfolioDetails/mevron/topBg.webp",
@@ -1315,12 +1336,12 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         title: "About Us",
         description: [
           "Mevron is a next-generation ride-hailing platform designed to simplify urban transportation while empowering local drivers. Whether you're commuting to work, heading to the airport, or exploring the city, Mevron connects you with fast, affordable, and reliable rides at the tap of a button.",
-          "From solo trips to ride-sharing options, Mevron offers flexible solutions tailored for modern city life — all delivered with a seamless, mobile-first experience."
+          "From solo trips to ride-sharing options, Mevron offers flexible solutions tailored for modern city life — all delivered with a seamless, mobile-first experience.",
         ],
         tags: [
           { label: "Industry", value: "Mobility" },
-          { label: "Services", value: "Transportation",maxSubTitleWidth : 152 },
-          { label: "Business Type", value: "Mobile App"},
+          { label: "Services", value: "Transportation", maxSubTitleWidth: 152 },
+          { label: "Business Type", value: "Mobile App" },
         ],
       },
       projectGoals: {
@@ -1331,25 +1352,31 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         goals: [
           {
             title: "Redefining Urban Mobility",
-            description: "We set out to build a competitive ride-sharing experience that rivals global platforms while staying rooted in local needs and expectations.",
+            description:
+              "We set out to build a competitive ride-sharing experience that rivals global platforms while staying rooted in local needs and expectations.",
           },
           {
             title: "Local Empowerment, Global Standards",
-            description: "Mevron aims to empower local driver communities by providing tools and incentives that promote fairness, transparency, and profitability — all while maintaining the high standards expected from international ride platforms.",
+            description:
+              "Mevron aims to empower local driver communities by providing tools and incentives that promote fairness, transparency, and profitability — all while maintaining the high standards expected from international ride platforms.",
           },
           {
-            title: "We set out to build a competitive ride-sharing experience that rivals global platforms while staying rooted in local needs and expectations.",
-            description: "Designed both for riders and drivers, the platform ensures effortless booking, transparent pricing, and intuitive trip management — all backed by real-time GPS tracking and secure digital payments.",
+            title:
+              "We set out to build a competitive ride-sharing experience that rivals global platforms while staying rooted in local needs and expectations.",
+            description:
+              "Designed both for riders and drivers, the platform ensures effortless booking, transparent pricing, and intuitive trip management — all backed by real-time GPS tracking and secure digital payments.",
           },
           {
             title: "Safety-First Innovation",
-            description: "With features like trip-sharing, emergency contacts, driver verification, and real-time tracking, Mevron prioritizes rider and driver safety at every stage of the journey.",
+            description:
+              "With features like trip-sharing, emergency contacts, driver verification, and real-time tracking, Mevron prioritizes rider and driver safety at every stage of the journey.",
           },
         ],
       },
       execution: {
         image: "/images/portfolioDetails/mevron/execution.webp",
-        description: "From onboarding new drivers to creating frictionless ride experiences, Mevron puts both convenience and accountability at the core. We focused on developing a clean user interface, reliable backend logic, and a scalable architecture that ensures smooth operations even under high demand.",
+        description:
+          "From onboarding new drivers to creating frictionless ride experiences, Mevron puts both convenience and accountability at the core. We focused on developing a clean user interface, reliable backend logic, and a scalable architecture that ensures smooth operations even under high demand.",
         descriptionBackground: "rgba(243, 149, 61, 0.5)",
       },
       featuresOverview: {
@@ -1373,15 +1400,18 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
               width: 234,
               height: 483,
             },
-          }
+          },
         ],
-        description: "Mevron stands at the intersection of convenience, technology, and community. By offering a platform that values both drivers and riders equally, Mevron is creating a new kind of mobility experience — one that's responsive, respectful, and ready for the demands of modern urban life. With robust backend systems and thoughtfully designed mobile apps, Mevron delivers unmatched reliability and ease of use. It's not just a ride — it's a smarter way to move, built for cities that never slow down."
+          maxItemWidth:780,
+        description:
+          "Mevron stands at the intersection of convenience, technology, and community. By offering a platform that values both drivers and riders equally, Mevron is creating a new kind of mobility experience — one that's responsive, respectful, and ready for the demands of modern urban life. With robust backend systems and thoughtfully designed mobile apps, Mevron delivers unmatched reliability and ease of use. It's not just a ride — it's a smarter way to move, built for cities that never slow down.",
       },
       highlightBanner: {
         backgroundColor: "rgba(243, 149, 61, 0.5)",
-        
+
         title: "Driven by Purpose, Powered by Innovation",
-        description: "Mevron isn't just a ride-hailing app — it's a smarter, safer, and more inclusive mobility platform designed to move people and cities forward. From seamless ride booking to community-first features, Mevron redefines what it means to ride with confidence and care.",
+        description:
+          "Mevron isn't just a ride-hailing app — it's a smarter, safer, and more inclusive mobility platform designed to move people and cities forward. From seamless ride booking to community-first features, Mevron redefines what it means to ride with confidence and care.",
         image: "/images/portfolioDetails/mevron/highLightBanner.webp",
       },
     },

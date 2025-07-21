@@ -31,7 +31,7 @@ const Industries = () => {
         {/* <div className="sub_title_2_div">
           <p className="sub_title_2">
             {t(
-              "We understand the unique digital needs of the Saudi market — from food delivery apps to secure healthcare systems to Takween Solutions or the ever growing local market."
+              "We understand the unique digital needs of the Saudi market — from food delivery apps to secure healthcare systems to Real Estate Solutions or the ever growing local market."
             )}
           </p>
         </div> */}
