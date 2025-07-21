@@ -66,7 +66,7 @@ const Footer = () => {
           <Col lg={12}>
             <div className="right_content">
               <Row>
-                <Col lg={12}>
+                <Col md={12}>
                   <div className="connect_on_inner d-md-none mobile_footer_logo">
                     <div className="logo w_fit_content mt-2">
                       <Link href="/">
@@ -81,7 +81,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </Col>
-                <Col lg={5}>
+                <Col md={5}>
                   <div className="inner_section">
                     <div className="single_item service_item">
                       <h2>{t("Services")}</h2>
@@ -95,7 +95,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </Col>
-                <Col lg={5}>
+                <Col md={5}>
                   <div className="inner_section service2">
                     <div className="single_item service_item">
                       <h2></h2>
@@ -110,7 +110,7 @@ const Footer = () => {
                   </div>
                 </Col>
 
-                <Col lg={2}>
+                <Col md={2}>
                   <div className="top_link">
                     <div className="single_item quick_links">
                       <h2>{t("Quick Links")}</h2>

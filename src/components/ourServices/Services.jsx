@@ -44,7 +44,7 @@ const Services = ({ selectedService, servicesData, setSelectedService }) => {
     <section className={`services_section`} id={`${selectedService?.id}`}>
       <Container>
         {/* DESKTOP TAB*/}
-        <div className="d-none d-md-block">
+        <div className="d-none d-lg-block">
           <div className="services_tab">
             {servicesTabs?.map(({ id, text }) => (
               <button
@@ -160,7 +160,7 @@ const ServiceTechCard = ({ item }) => {
   };
 
   return (
-    <Col lg={4}>
+    <Col lg={4} md={6}>
       <div className="single_tech_card">
         <div className="card-content">
           <Image

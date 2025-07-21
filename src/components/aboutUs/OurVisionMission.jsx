@@ -11,7 +11,7 @@ const OurVisionMission = () => {
       <Container>
         <Row className="inner_row mx-0">
           {ourVisionMission?.map(({ id, title, description, className }) => (
-            <Col lg={6} key={id}>
+            <Col md={6} key={id}>
               <div className={`inner_section ${className}`}>
                 <h3>{t(title)}</h3>
                 <p>{t(description)}</p>

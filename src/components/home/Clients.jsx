@@ -92,6 +92,23 @@ const Clients = () => {
             ...clientsLogo,
             ...clientsLogo,
             ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
+            ...clientsLogo,
           ].map((logo, index) => (
             <div key={index} className="brand">
               <Image

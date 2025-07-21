@@ -13,7 +13,7 @@ const HighLightBanner = ({ data }) => {
     >
       <Container>
         <Row>
-          <Col lg={6}>
+          <Col md={6}>
             <div className="content">
               <h2>{t(title)}</h2>
               <p>{t(description)}</p>
