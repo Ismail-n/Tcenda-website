@@ -7,7 +7,10 @@ import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const PortfoliosSection = () => {
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
   return (
     <section className="portfolio_inner_section">
       <Container>
@@ -23,6 +26,7 @@ const PortfoliosSection = () => {
               caseStudyLink,
               imageDetails,
               background,
+              backgroundAr,
             },
             index
           ) => (
@@ -31,7 +35,8 @@ const PortfoliosSection = () => {
               key={id}
               id={id}
               style={{
-                background,
+                background:
+                  language === "ar" && backgroundAr ? backgroundAr : background,
               }}
             >
               <div className="left">
