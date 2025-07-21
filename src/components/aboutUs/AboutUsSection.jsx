@@ -41,7 +41,7 @@ const AboutUsSection = () => {
                   "Whether it's custom software, AI integration, or enterprise solutions"
                 )}
               </p>
-              <p>{t("— We're here to build what's next.")}</p>
+              <p>— {t("We're here to build what's next.")}</p>
             </>
           )}
         </div>
