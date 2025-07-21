@@ -184,6 +184,7 @@ const services = [
     description:
       "We design user-focused digital interfaces and experiences that combine visual appeal with ease of use, enhancing engagement and increasing conversion rates.",
     maxTitleWidth: 115,
+    maxTitleArWidth: 210,
   },
 ];
 

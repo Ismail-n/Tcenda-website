@@ -15,8 +15,6 @@
   }
 }
 
-
-
 .cursor {
   display: inline-block;
   margin-left: 3px;
@@ -25,7 +23,8 @@
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
 
@@ -34,7 +33,6 @@
   }
 }
 
-
 @keyframes scroll {
   0% {
     transform: translateX(0%);
@@ -42,5 +40,43 @@
 
   100% {
     transform: translateX(-50%);
+  }
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-9rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-9rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
   }
 }

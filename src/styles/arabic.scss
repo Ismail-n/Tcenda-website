@@ -92,4 +92,17 @@ html[dir="rtl"] {
   .portfolio_details .about_us_section .right_section .tags .single_tag h2 {
     line-height: 30px;
   }
+  .main_btn {
+    padding: 13px 40px;
+  }
+  .about_us .our_vision_mission .committed_row .inner_section p .quotes_end,
+  .about_us .our_vision_mission .committed_row .inner_section p .quotes_start {
+    transform: rotate(180deg);
+  }
+  .portfolio_inner_section .portfolio_inner .case_study_btn
+  {
+    width: fit-content;
+    padding: 5px 10px;
+    margin-top: 10px;
+  }
 }

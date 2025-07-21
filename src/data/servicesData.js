@@ -92,6 +92,7 @@ const servicesData = [
         icon: "fullStack/frontEnd",
         title: "Frontend Development",
         titleMaxWidth: 169,
+        titleArMaxWidth: 200,
         subtitle:
           "We craft fast, responsive, and visually stunning user interfaces that deliver seamless digital experiences across all devices.",
       },
@@ -187,6 +188,7 @@ const servicesData = [
         icon: "digitalTransformation/cloudFirst",
         title: "Cloud-First Transformation",
         titleMaxWidth: 240,
+        titleArMaxWidth: 300,
         subtitle:
           "Shift to a cloud-first strategy that ensures availability, flexibility, and cost-efficiency across all your digital operations.",
       },
@@ -281,8 +283,7 @@ const servicesData = [
         icon: "cloudServices/migration",
         title: "Cloud Migration",
         titleMaxWidth: 140,
-        titleArMaxWidth: 150,
-
+        titleArMaxWidth: 300,
         subtitle:
           "Move your applications, data, and infrastructure to the cloud — safely and efficiently.",
       },
@@ -315,7 +316,7 @@ const servicesData = [
         subtitle:
           "Strategic cloud consulting to align your tech infrastructure with your business goals.",
         titleMaxWidth: 134,
-        titleArMaxWidth: 150,
+        titleArMaxWidth: 300,
       },
     ],
     techStack: {
@@ -365,6 +366,7 @@ const servicesData = [
         icon: "aiml/recommendationSystems",
         title: "Recommendation Systems",
         titleMaxWidth: 141,
+         titleArMaxWidth: 190,
         subtitle:
           "We build intelligent recommendation systems that personalize content, products, and user experiences.",
       },

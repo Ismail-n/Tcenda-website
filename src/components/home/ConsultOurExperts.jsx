@@ -10,7 +10,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import Loader from "../common/Loader";
-import { ContactUsValidationSchema, isArabicText } from "../utils/Validations";
+import { ContactUsValidationSchema, getContactUsValidationSchema, isArabicText } from "../utils/Validations";
 import Title from "../common/Title";
 
 const initialValues = {
@@ -80,7 +80,7 @@ const ConsultOurExperts = () => {
           <div className="right_section">
             <Formik
               initialValues={initialValues}
-              validationSchema={ContactUsValidationSchema}
+              validationSchema={getContactUsValidationSchema(t)}
               onSubmit={handleSubmit}
             >
               {({ isSubmitting, isValid, dirty, values }) => (

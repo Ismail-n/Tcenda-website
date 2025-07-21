@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
 import Loader from "../common/Loader";
-import { ContactUsValidationSchema, isArabicText } from "../utils/Validations";
+import { ContactUsValidationSchema, getContactUsValidationSchema, isArabicText } from "../utils/Validations";
 import Title from "../common/Title";
 import { useRouter } from "next/router";
 
@@ -68,7 +68,7 @@ const ContactFormSection = () => {
       </p>
       <Formik
         initialValues={initialValues}
-        validationSchema={ContactUsValidationSchema}
+        validationSchema={getContactUsValidationSchema(t)}
         onSubmit={handleSubmit}
       >
         {({ isSubmitting, isValid, dirty, values }) => (

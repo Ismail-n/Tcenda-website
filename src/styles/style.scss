@@ -135,9 +135,9 @@ footer {
     // }
     .service2 {
       @media (min-width: 991px) {
-        margin-left: auto;
-        display: block;
-        margin-left: 12%;
+        // margin-left: auto;
+        // display: block;
+        // margin-left: 12%;
       }
       @media (max-width: 575px) {
         .service_item {
@@ -177,7 +177,7 @@ footer {
     }
     .top_link {
       @media (min-width: 575px) {
-        margin-left: auto;
+        margin-inline-start: auto;
         display: block;
         width: fit-content;
       }
@@ -447,7 +447,7 @@ footer {
       .single_service {
         overflow: hidden;
         // background: #1b1b1b;
-        margin-top: 25px;
+        margin-top: 35px;
         border-radius: 20px;
         padding: 25px;
         min-height: 300px;
@@ -542,6 +542,58 @@ footer {
           min-height: 100px;
         }
       }
+      .card__article {
+        position: relative;
+        overflow: hidden;
+      }
+      /* Naming animations in hover */
+      .card__article:hover .card__data {
+        animation: show-data 1s forwards;
+        opacity: 1;
+        transition: opacity 0.3s;
+        box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+      }
+      .card__article:hover {
+        animation: remove-overflow 2s forwards;
+      }
+
+      .card__article:not(:hover) {
+        animation: show-overflow 2s forwards;
+      }
+
+      .card__article:not(:hover) .card__data {
+        animation: remove-data 1s forwards;
+      }
+      .card__data {
+        width: 86%;
+        background: var(--hover-gradient);
+        padding: 15px 16px;
+        border-radius: 100px;
+        position: absolute;
+        bottom: -8rem;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        opacity: 0;
+        transition: opacity 1s 1s;
+        border: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: var(--text-color);
+        max-width: 210px;
+      }
+      .card__article:hover .card__data {
+        animation: show-data 1s forwards;
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+      .card__article:not(:hover) .card__data {
+        animation: remove-data 1s forwards;
+      }
+
       .explore_services {
         margin-top: 25px;
         border-radius: 20px;
@@ -600,7 +652,7 @@ footer {
   .engagement_models {
     .models_cards {
       margin-top: 25px;
-      @media (max-width: 575px) {
+      @media (max-width: 991px) {
         display: none;
       }
       .single_card {
@@ -818,7 +870,7 @@ footer {
     .marquee {
       display: flex;
       width: max-content;
-      animation: scroll 300s linear infinite;
+      animation: scroll 900s linear infinite;
     }
     .brand {
       display: flex;
@@ -2685,7 +2737,7 @@ footer {
       padding-inline-end: 50px;
       padding: 20px 0;
       @media (max-width: 991px) {
-      padding: 40px 0;
+        padding: 40px 0;
         min-height: fit-content;
       }
 
@@ -2794,10 +2846,14 @@ footer {
     right: 25px;
     .call_float {
       display: inline;
-    }
-    .whatsapp_float {
       width: 48px;
       height: 48px;
+    }
+    .whatsapp_float {
+      img {
+        width: 48px;
+        height: 48px;
+      }
     }
   }
 }

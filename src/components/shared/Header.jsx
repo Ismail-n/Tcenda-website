@@ -201,8 +201,9 @@ const Header = () => {
               <Image
                 src={`/images/icons/logoNew.svg`}
                 width={126}
-                height={24}
+                height={40}
                 alt="logo"
+                className="mobile_logo"
                 priority
               />
             </Link>

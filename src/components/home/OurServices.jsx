@@ -24,6 +24,7 @@ const OurServices = () => {
       perView: 1,
       spacing: 30,
     },
+    rtl:language === "ar",
 
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel);
@@ -39,7 +40,11 @@ const OurServices = () => {
     <section className="common_section our_services">
       <Container>
         <Title title={t("Our Services")} />
-        <SubTitle subTitle={t("Solutions Designed to Match Our Aspirations in Saudi Arabia")} />
+        <SubTitle
+          subTitle={t(
+            "Solutions Designed to Match Our Aspirations in Saudi Arabia"
+          )}
+        />
 
         {/* DESKTOP */}
         <div className="d-none d-md-block">
@@ -140,7 +145,7 @@ const ServiceCard = ({ item }) => {
 
   return (
     <Col lg={4} md={6}>
-      <div className="single_service">
+      <div className="single_service card__article">
         {/* <div className="gradient-border-box"></div> */}
         <div className="card-content">
           <Image
@@ -153,6 +158,16 @@ const ServiceCard = ({ item }) => {
 
           <p>{t(description)}</p>
         </div>
+        {/* <button
+          class="card__data"
+          onClick={() =>
+            router.push(
+              `/contact-us?service=${encodeURIComponent(item?.title)}`
+            )
+          }
+        >
+          {t("Request This Service")}
+        </button> */}
         <button
           className="card-button"
           onClick={() =>

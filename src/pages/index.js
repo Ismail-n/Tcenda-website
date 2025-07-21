@@ -21,8 +21,8 @@ export default function Home() {
       <main className="home">
         <TopSection />
         <InnovationSection />
-        <ProjectVideo />
-        {/* <OurProjects /> */}
+        {/* <ProjectVideo /> */}
+        <OurProjects />
         <OurServices />
         <EngagementModels />
         <Industries />

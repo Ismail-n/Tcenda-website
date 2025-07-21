@@ -1,27 +1,5 @@
 const portfolios = [
-  {
-    id: "half-million",
-    logoDetails: {
-      logo: "halfMillionLogo",
-      logoWidth: 80,
-      logoHeight: 80,
-    },
-    title: "Half Million",
-    description:
-      "Experience the Richness of Artisan Coffee — Anytime, Anywhere. Your Favorite Brews, Delivered Fresh from the Café to Your Pocket.",
-    appStoreLink:
-      "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
-    playStoreLink:
-      "https://play.google.com/store/apps/details?id=com.halfmillion.android&hl=en_IN",
-    caseStudyLink: "half-million",
-    imageDetails: {
-      image: "halfMillion",
-      imageWidth: 466,
-      imageHeight: 431,
-    },
-    background: "linear-gradient(to left, #87C5B2, #D3B48C)",
-  },
-  {
+   {
     id: "ashjar-friends",
     logoDetails: {
       logo: "ashjarFriendsLogo",
@@ -63,7 +41,7 @@ const portfolios = [
     },
     background: "linear-gradient(to right, #FAFFD9, #C5D271)",
   },
-  {
+   {
     id: "ease",
     logoDetails: {
       logo: "easeLogo",
@@ -101,6 +79,28 @@ const portfolios = [
       imageHeight: 419,
     },
     background: "linear-gradient(to right, #FFEBC2, #FBB21C)",
+  },
+  {
+    id: "half-million",
+    logoDetails: {
+      logo: "halfMillionLogo",
+      logoWidth: 80,
+      logoHeight: 80,
+    },
+    title: "Half Million",
+    description:
+      "Experience the Richness of Artisan Coffee — Anytime, Anywhere. Your Favorite Brews, Delivered Fresh from the Café to Your Pocket.",
+    appStoreLink:
+      "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.halfmillion.android&hl=en_IN",
+    caseStudyLink: "half-million",
+    imageDetails: {
+      image: "halfMillion",
+      imageWidth: 466,
+      imageHeight: 431,
+    },
+    background: "linear-gradient(to left, #87C5B2, #D3B48C)",
   },
   {
     id: "cup-crew",

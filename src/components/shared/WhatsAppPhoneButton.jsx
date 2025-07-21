@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const WhatsAppPhoneButton = () => {
-  const phoneNumber = "966538408310";
+  const phoneNumber = "966554848908";
   return (
     <div className="floating_buttons">
       {/* WhatsApp Button */}
@@ -32,7 +32,7 @@ const WhatsAppPhoneButton = () => {
 
       {/* Call Button */}
       <motion.a
-        href={`tel:${phoneNumber}`}
+        href={`tel:+${phoneNumber}`}
         className="call_float"
         animate={{ y: [0, -5, 0] }}
         transition={{
