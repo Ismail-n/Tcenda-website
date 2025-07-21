@@ -130,9 +130,9 @@ const portfolios = [
       logoWidth: 80,
       logoHeight: 80,
     },
-    title: "Takween",
+    title: "Real Estate",
     description:
-      "Tailored Search, Virtual Tours, and Agent Support for Buyers and Renters. Built to Serve Saudi's Growing Takween Market.",
+      "Tailored Search, Virtual Tours, and Agent Support for Buyers and Renters. Built to Serve Saudi's Growing Real Estate Market.",
     appStoreLink: "",
     playStoreLink: "",
     caseStudyLink: "real-estate",
