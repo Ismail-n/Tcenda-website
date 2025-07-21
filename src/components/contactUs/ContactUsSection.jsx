@@ -40,7 +40,7 @@ const ContactUsSection = () => {
             </div>
           </div>
         </Row>
-        <Row>
+        {/* <Row>
           <div className="address_row">
             <h2>{t("Let's Build Something Great Here In Saudi Arabia")}</h2>
             <div className="inner_div">
@@ -92,7 +92,7 @@ const ContactUsSection = () => {
               </div>
             </div>
           </div>
-        </Row>
+        </Row> */}
       </Container>
     </section>
   );
