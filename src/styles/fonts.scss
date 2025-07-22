@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Adam";
+  src: url("/fonts/adam/Adam-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Adam";
+  src: url("/fonts/adam/Adam-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Adam";
+  src: url("/fonts/adam/Adam-Light.ttf") format("truetype");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+@font-face {
+  font-family: "JF Flat";
+  src: url("/fonts/JF Flat Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+body {
+  font-family: "Adam", sans-serif;
+  // font-weight: 700 ;
+}
+.adam_font {
+  font-family: "Adam", sans-serif;
+}
+html[dir="rtl"] body {
+  font-family: "JF Flat";
+  line-height: normal !important;
+}

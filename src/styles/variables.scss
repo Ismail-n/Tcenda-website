@@ -1,0 +1,23 @@
+:root {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --sub-text-color: #A4A2A2;
+  --black-color: #000000;
+  --primary-color: #44adc1;
+  --gray-color: #B3B4BD;
+  // HEADER
+  --header-menu-bg: #4b4b4b;
+  --hover-gradient: linear-gradient(
+    90deg,
+    rgba(28, 149, 181, 1) 0%,
+    rgba(43, 183, 186, 1) 100%
+  );
+  --common-gradient-color: linear-gradient(
+    90deg,
+    rgba(28, 149, 181, 1) 0%,
+    rgba(36, 167, 184, 1) 53%,
+    rgba(43, 183, 186, 1) 100%
+  );
+  --common-border-color: #4b4b4b;
+  --footer-link-color: #b3b4bd;
+}
