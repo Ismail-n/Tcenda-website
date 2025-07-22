@@ -11,9 +11,7 @@ const TopSection = () => {
         <div className="top_row text-md-center">
           <h1 className="top_section_title ">{t("Contact Us")}</h1>
           <p className="top_section_sub_title">
-            {t(
-              "Let's Connect and Build Something Amazing, Right Here in Saudi Arabia."
-            )}
+            {t("Let's Connect and Build Something Amazing")}
           </p>
         </div>
       </Container>

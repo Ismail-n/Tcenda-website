@@ -51,7 +51,7 @@ const AboutUsSection = () => {
               "Our core strategic pillars are defined by R.I.S.E., reflecting our mission to elevate Saudi enterprises with responsible, intelligent, and sustainable digital innovation:"
             )}
           </p>
-          <Row className="rise_row">
+          <Row className="rise_row ltr">
             {riseValues?.map((item) => (
               <RiseCard key={item.id} item={item} />
             ))}
@@ -74,7 +74,7 @@ const RiseCard = ({ item }) => {
     <Col lg={3} md={6}>
       <article className="single_rise">
         <Image
-          src={`/images/aboutUs/${language == "en" ? letter : letterAr}.svg`}
+          src={`/images/aboutUs/${letter}.svg`}
           width={102}
           height={115}
           alt={`${letter} - ${t(title)}`}

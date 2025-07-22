@@ -10,7 +10,7 @@ const TopSection = () => {
       <Container>
         <div className="top_row text-md-center">
           <h1 className="top_section_title mx-auto">
-            {t("Crafting Digital Success Stories in Saudi Arabia")}
+            {t("Crafting Digital Success Stories")}
           </h1>
           <p className="top_section_sub_title">
             {t(

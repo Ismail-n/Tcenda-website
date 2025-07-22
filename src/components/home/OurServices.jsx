@@ -42,7 +42,7 @@ const OurServices = () => {
         <Title title={t("Our Services")} />
         <SubTitle
           subTitle={t(
-            "Solutions Designed to Match Our Aspirations in Saudi Arabia"
+            "Solutions Designed to Match Your Aspirations"
           )}
         />
 

@@ -5,7 +5,7 @@ const riseValues = [
     letterAr: "R1",
     title: "Revolutionise Local Industries",
     description:
-      "Empowering Saudi businesses with AI, custom apps, and digital automation across key sectors.",
+      "Empowering businesses with AI, custom apps, and digital automation across key sectors.",
   },
   {
     id: 2,

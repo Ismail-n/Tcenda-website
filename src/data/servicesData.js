@@ -1,7 +1,7 @@
 const servicesData = [
   {
     id: "mobile-app",
-    mainTitle: "Mobile Solutions Built for Growth in Saudi Arabia",
+    mainTitle: "Mobile Solutions Built for Growth",
     mainSubTitle:
       "Empower your business with expertly crafted mobile applications tailored to the needs, goals, and digital ambitions of Saudi enterprises.",
     title: "Build Smart. Launch Fast.",

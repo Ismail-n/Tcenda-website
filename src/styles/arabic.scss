@@ -60,9 +60,16 @@ html[dir="rtl"] {
   }
   .about_us .rise_section .rise_row .single_rise h3 {
     line-height: 24px;
+    max-width: 100%;
+    text-align: right;
   }
   .about_us .rise_section .rise_row .single_rise p {
     line-height: 22px;
+    text-align: right;
+  }
+  .about_us .rise_section .rise_row .single_rise img {
+    display: block;
+    margin-left: auto;
   }
   .about_us .our_values .inner_section .core_values .single_value .content p {
     line-height: 22px;
