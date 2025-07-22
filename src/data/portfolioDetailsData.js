@@ -200,8 +200,7 @@ const portfolioDetails = [
       top: {
         background: "linear-gradient(120deg, #FAFFD9, #C5D271)",
         title: "Ashjar Space - Where Calm Lives.",
-        subtitle: `Beautiful, functional spaces for modern minds to meet, create, 
-and collaborate.`,
+        subtitle: `Beautiful, functional spaces for modern minds to meet, create, and collaborate.`,
         image: "/images/portfolioDetails/ashjarSpace/topBg.webp",
         appStoreLinks: {
           ios: "https://apps.apple.com/sa/app/ashjar-space/id6476087387",
@@ -287,7 +286,7 @@ and collaborate.`,
         backgroundColor: "#C3D26D80",
         title: "Onboarding Made Simple, Rewards Made Sweet",
         description:
-          "Where Your Best Work Happens — Naturally.  Ashjar Space helps people think clearly, meet meaningfully, and create freely — all in a space that feels as calm as it is capable.",
+          "Where Your Best Work Happens — Naturally. Ashjar Space helps people think clearly, meet meaningfully, and create freely — all in a space that feels as calm as it is capable.",
         image: "/images/portfolioDetails/ashjarSpace/highLightBanner.webp",
       },
     },
