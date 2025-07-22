@@ -36,8 +36,30 @@ const EngagementModels = () => {
 export default EngagementModels;
 
 const EngagementCard = ({ item }) => {
-  const { t } = useTranslation();
-  const { icon, title, description, points, id, maxTitleWidth } = item || {};
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+  const {
+    icon,
+    title,
+    description,
+    points,
+    id,
+    maxTitleWidth,
+    maxTitleArWidth,
+  } = item || {};
+
+  const getTitleStyle = () => {
+    if (language === "ar") {
+      return maxTitleArWidth
+        ? { maxWidth: maxTitleArWidth }
+        : maxTitleWidth
+        ? { maxWidth: maxTitleWidth }
+        : {};
+    }
+    return maxTitleWidth ? { maxWidth: maxTitleWidth } : {};
+  };
   return (
     <Col lg={4}>
       <div className="single_card" id={id}>
@@ -48,7 +70,7 @@ const EngagementCard = ({ item }) => {
           height={64}
           alt={icon || "engagement icon"}
         />
-        <h2 style={{ maxWidth: maxTitleWidth || "auot" }}>{t(title)}</h2>
+        <h2 style={getTitleStyle()}>{t(title)}</h2>
         <p>{t(description)}</p>
         <div className="points">
           {points?.map((point, index) => (

@@ -89,6 +89,7 @@ const serviceModels = [
     icon: "managedService",
     title: "Hourly Projects",
     maxTitleWidth: 106,
+    maxTitleArWidth: 200,
     description: "Best suited for changing needs, billed by the hour",
     points: [
       "Pay-as-you-go model with no long-term commitments",
@@ -101,6 +102,7 @@ const serviceModels = [
     icon: "staff",
     title: "Developer on Demand",
     maxTitleWidth: 155,
+    maxTitleArWidth: 175,
     description:
       "Best suited for teams needing expert skills without long hiring cycles",
     points: [

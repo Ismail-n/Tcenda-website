@@ -129,6 +129,7 @@ const servicesData = [
         icon: "fullStack/webPortal",
         title: "Web Portal Development",
         titleMaxWidth: 169,
+         titleArMaxWidth: 240,
         subtitle:
           "From user dashboards to enterprise portals, we create tailored solutions that drive engagement and efficiency.",
       },
@@ -470,6 +471,7 @@ const servicesData = [
         subtitle:
           "Track trends, monitor operations, and respond in the moment — powered by real-time analytics.",
         titleMaxWidth: 144,
+         titleArMaxWidth: 180,
       },
       {
         icon: "dataAnalytics/dataGovernance",
