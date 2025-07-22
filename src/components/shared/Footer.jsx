@@ -18,51 +18,10 @@ const Footer = () => {
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleGetInTouchClick = () => {
-    if (!email.trim()) return toast.error("Email is required.");
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
-      return toast.error("Please enter a valid email.");
-
-    const SERVICE_ID = "service_m1tsr4h";
-    const TEMPLATE_ID = "template_n7iidwo";
-    const PUBLIC_KEY = "W7aMVGuT0tr6SpaBw";
-
-    setIsLoading(true);
-    emailjs
-      .send(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        {
-          user_email: email,
-          to_name: "Tod",
-          from_site: "TOD Website",
-          time: new Date().toLocaleString(),
-        },
-        PUBLIC_KEY
-      )
-      .then((result) => {
-        const { status, text } = result || {};
-        if (status) {
-          toast.success("Message sent successfully!");
-          setEmail("");
-        } else {
-          toast.error(text);
-        }
-      })
-      .catch((error) => {
-        console.error("Email sending failed:", error);
-        toast.error("Failed to send message. Please try again."); // Error toast
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
-  };
-
   return (
     <footer>
-      <ToastContainer position="top-right" autoClose={3000} />
       <Container>
-        <Row>
+        {/* <Row>
           <Col lg={12}>
             <div className="right_content">
               <Row>
@@ -123,25 +82,6 @@ const Footer = () => {
                       </ul>
                     </div>
                   </div>
-
-                  {/* <div className="conversion_inner">
-                    <h2>{t("Start a Conversation with Us")}</h2>
-                    <div className="get_in_touch_input">
-                      <input
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder={t("Email Address")}
-                      />
-                      <button
-                        type="button"
-                        disabled={isLoading}
-                        onClick={handleGetInTouchClick}
-                      >
-                        {t("Get in Touch")}
-                      </button>
-                    </div>
-                  </div> */}
                 </Col>
               </Row>
               <Row>
@@ -177,19 +117,6 @@ const Footer = () => {
                               alt="LinkedIn"
                             />
                           </Link>
-                          {/* <Link
-                            href="https://facebook.com"
-                            aria-label="Facebook"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <Image
-                              src="/images/icons/facebook.svg"
-                              width={36}
-                              height={36}
-                              alt="facebook"
-                            />
-                          </Link> */}
                           <Link
                             href="https://www.instagram.com/tod.dev/?igsh=MWw2OXkyZmtpa3hsbA%3D%3D&utm_source=qr#"
                             aria-label="Instagram"
@@ -297,7 +224,166 @@ const Footer = () => {
               <h2>{t("© 2025 Tod All Rights Reserved.")}</h2>
             </div>
           </Col>
-        </Row>
+        </Row> */}
+
+        <div className="new_footer_row">
+          <div className="single_item logo_section">
+            <Link href="/">
+              <Image
+                src="/images/icons/logoNew.svg"
+                width={67}
+                height={65}
+                alt="logo"
+                priority
+              />
+            </Link>
+            <h6>{t("© 2025 Tod All Rights Reserved.")}</h6>
+          </div>
+          <div className="single_item reach_section">
+            <div className="social_links">
+                        <h2>{t("Follow Us")}</h2>
+                        <div className="icons">
+                          <Link
+                            href="https://www.linkedin.com/company/tod-%D8%B7%D9%88%D8%AF"
+                            aria-label="LinkedIn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Image
+                              src="/images/icons/linkedIn.svg"
+                              width={36}
+                              height={36}
+                              alt="LinkedIn"
+                            />
+                          </Link>
+
+                          <Link
+                            href="https://www.instagram.com/tod.dev/?igsh=MWw2OXkyZmtpa3hsbA%3D%3D&utm_source=qr#"
+                            aria-label="Instagram"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Image
+                              src="/images/icons/instagram.svg"
+                              width={36}
+                              height={36}
+                              alt="instagram"
+                            />
+                          </Link>
+                          <Link
+                            href="https://x.com/todcomsa?s=11&t=lG3tydHI4tkzXwsvpgOCCA"
+                            aria-label="X"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Image
+                              src="/images/icons/X.svg"
+                              width={36}
+                              height={36}
+                              alt="X"
+                            />
+                          </Link>
+                        </div>
+                      </div>
+          </div>
+          <div className="single_item quick_links"></div>
+          <div className="single_item follow_us"></div>
+
+          <Col lg={12}>
+            <div className="right_content">
+              <Row>
+                <Col md={12}>
+                  <div className="connect_on_inner d-md-none mobile_footer_logo">
+                    <div className="logo w_fit_content mt-2">
+                      <Link href="/">
+                        <Image
+                          src="/images/icons/logoNew.svg"
+                          width={67}
+                          height={65}
+                          alt="logo"
+                          priority
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </Col>
+
+                <Col md={2}>
+                  <div className="top_link">
+                    <div className="single_item quick_links">
+                      <h2>{t("Quick Links")}</h2>
+                      <ul>
+                        {footerQuickLinks?.map(({ name, href }, index) => (
+                          <li key={index}>
+                            <Link href={href}>{t(name)}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col lg={12}>
+                  <div className="connect_on_div">
+                    <div className="connect_on_inner d-none d-md-block">
+                      <div className="logo">
+                        <Link href="/">
+                          <Image
+                            src="/images/icons/logoNew.svg"
+                            width={67}
+                            height={65}
+                            alt="logo"
+                            priority
+                          />
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="connect_on_inner">
+                      
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </Col>
+
+          <Col lg={12}>
+            <div className="footer_address">
+
+              <div className="address_info">
+                <div className="single_add">
+
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Prince+Mohammed+Ibn+Salman+Ibn+Abdulaziz+Rd,+Ar+Rabi,+Riyadh+13315"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=""
+                  >
+                    {t("Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,")}
+                    {t("Ar Rabi, Riyadh 13315")}
+                  </a>
+                </div>
+                <div className="single_add">
+
+                  <a href="tel:+966554848908">+966 55 484 8908</a>
+                </div>
+                <div className="single_add">
+
+                  <a href="mailto:business@tod.com.sa">
+                    {t("business@tod.com.sa")}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Col>
+
+          <Col lg={12}>
+            <div className="reserved_row">
+              <h2>{t("© 2025 Tod All Rights Reserved.")}</h2>
+            </div>
+          </Col>
+        </div>
       </Container>
     </footer>
   );

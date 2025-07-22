@@ -9,7 +9,7 @@ const ProjectVideo = () => {
           <Col lg={12}>
             <div className="video_section">
               <video
-                src="/video/dummyVideo.mp4"
+                src="/video/portfolioVideo.mp4"
                 autoPlay
                 muted
                 loop
