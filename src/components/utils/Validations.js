@@ -12,6 +12,10 @@ export const getContactUsValidationSchema = (t) =>
 
     email: Yup.string()
       .email(t("A valid work email is required"))
+      .matches(
+        /^[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,}$/,
+        t("Email must have a valid top-level domain")
+      )
       .required(t("Please enter your email address")),
 
     mobile: Yup.string()

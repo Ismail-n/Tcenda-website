@@ -146,7 +146,7 @@
   "Seamless integration into your existing teams": "دمج سلس مع فرقك الحالية",
   "Transparent management and measurable outcomes": "إدارة شفافة ونتائج قابلة للقياس",
   "Food & Beverage": "الأغذية والمشروبات",
-  "eCommerce & Retail": "التجارة الإلكترونية والتجزئة",
+  "E-commerce & Retail": "التجارة الإلكترونية والتجزئة",
   "Transportation": "النقل",
   "Takween": "تكوين",
   "Government": "الحكومة",
@@ -251,7 +251,7 @@
   "AI/ML Frameworks": "أطر الذكاء الاصطناعي وتعلم الآلة",
   "APIs & Microservices Architecture": "أنظمة تعتمد على واجهات API وخدمات صغيرة مستقلة لتحقيق أداء أسرع وتكامل أسهل",
   "Digital Transformation that Matters in the Kingdom": "التحول الرقمي الذي يصنع الفرق في المملكة",
-  "At TOD, we understand Saudi Arabia's unique regulatory, cultural, and business environment. Our digital transformation solutions are localized to ensure compliance, user adoption, and meaningful ROI. Whether it's optimizing citizen services for government bodies, digitizing F&B supply chains, or enabling eCommerce personalization — we build strategic systems that align with your business and Vision 2030 priorities.": "في طود، نحن نفهم البيئة التنظيمية والثقافية والتجارية الفريدة في المملكة العربية السعودية. حلول التحول الرقمي لدينا مصممة خصيصًا لضمان الامتثال وتبني المستخدم وتحقيق عائد استثماري ملموس. سواء كان الأمر يتعلق بتحسين خدمات المواطنين للجهات الحكومية، أو رقمنة سلاسل إمداد الأغذية والمشروبات، أو تمكين التخصيص في التجارة الإلكترونية — فإننا نبني أنظمة استراتيجية تتماشى مع عملك وأولويات رؤية 2030.",
+  "At TOD, we understand Saudi Arabia's unique regulatory, cultural, and business environment. Our digital transformation solutions are localized to ensure compliance, user adoption, and meaningful ROI. Whether it's optimizing citizen services for government bodies, digitizing F&B supply chains, or enabling E-commerce personalization — we build strategic systems that align with your business and Vision 2030 priorities.": "في طود، نحن نفهم البيئة التنظيمية والثقافية والتجارية الفريدة في المملكة العربية السعودية. حلول التحول الرقمي لدينا مصممة خصيصًا لضمان الامتثال وتبني المستخدم وتحقيق عائد استثماري ملموس. سواء كان الأمر يتعلق بتحسين خدمات المواطنين للجهات الحكومية، أو رقمنة سلاسل إمداد الأغذية والمشروبات، أو تمكين التخصيص في التجارة الإلكترونية — فإننا نبني أنظمة استراتيجية تتماشى مع عملك وأولويات رؤية 2030.",
   "Power your business with smart, scalable cloud services.": "قوّ عملك بخدمات سحابية ذكية وقابلة للتوسع.",
   "Modernize your infrastructure and accelerate digital transformation with end-to-end cloud consulting, deployment, and management.": "قم بتحديث بنيتك التحتية وتسريع التحول الرقمي من خلال استشارات سحابية شاملة ونشر وإدارة متكاملة.",
   "Cloud That Works for You": "سحابة ذكية... تواكب احتياجاتكد",
@@ -313,7 +313,7 @@
   "Pandas": "باندا",
   "Jupyter Notebooks": "جوبايتر نوتبوكس",
   "Mobile AI for designed specially for Saudi Consumers": "حلول ذكاء اصطناعي متنقلة مصممة خصيصًا لتلبية احتياجات المستهلكين في السعودية",
-  "AI isn't limited to dashboards. We embed it into mobile apps for finance, eCommerce, and logistics across Saudi Arabia — delivering intelligent, real-time decisioning and on-device ML that scales with your business needs.": "الذكاء الاصطناعي لا يقتصر على لوحات البيانات — بل نقوم بدمجه داخل تطبيقات الهاتف في مجالات التمويل، والتجارة الإلكترونية، والخدمات اللوجستية في أنحاء السعودية، لنقدّم قرارات ذكية لحظية وتقنيات تعلم آلي على الجهاز، قابلة للنمو والتوسع مع متطلبات أعمالك.",
+  "AI isn't limited to dashboards. We embed it into mobile apps for finance, E-commerce, and logistics across Saudi Arabia — delivering intelligent, real-time decisioning and on-device ML that scales with your business needs.": "الذكاء الاصطناعي لا يقتصر على لوحات البيانات — بل نقوم بدمجه داخل تطبيقات الهاتف في مجالات التمويل، والتجارة الإلكترونية، والخدمات اللوجستية في أنحاء السعودية، لنقدّم قرارات ذكية لحظية وتقنيات تعلم آلي على الجهاز، قابلة للنمو والتوسع مع متطلبات أعمالك.",
   "Transforming Data into Strategic Value": "تحويل البيانات إلى قيمة استراتيجية",
   "Leverage the power of analytics to make informed decisions, uncover hidden opportunities, and lead with confidence.": "استفد من قوة التحليلات لاتخاذ قرارات مدروسة، واكتشاف الفرص المخفية، والقيادة بثقة.",
   "Data-Driven. Decision-Ready.": "مدعوم بالبيانات. جاهز لاتخاذ القرار.",
@@ -622,7 +622,7 @@
   "Request This Service": "اطلب هذه الخدمة",
   "Digital Loyalty Platform": "منصة الولاء الرقمية",
   "F&B Chain": "سلسلة الأغذية والمشروبات",
-  "eCommerce": "التجارة الإلكترونية",
+  "E-commerce": "التجارة الإلكترونية",
   "Secure & Reliable": "آمن وموثوق",
   "Always-on, safe, and stable connectivity you can trust.": "اتصال دائم وآمن ومستقر يمكنك الوثوق به.",
   "Message must be at least 5 characters": "يجب أن تحتوي الرسالة على 5 أحرف على الأقل",
@@ -694,5 +694,6 @@
   "Driven by Purpose, Powered by Innovation": "مدفوعة بالهدف، مدعومة بالابتكار",
   "Mevron isn't just a ride-hailing app — it's a smarter, safer, and more inclusive mobility platform designed to move people and cities forward. From seamless ride booking to community-first features, Mevron redefines what it means to ride with confidence and care.": "ميفرون ليست مجرد تطبيق توصيل — بل منصة تنقل أذكى، وأكثر أمانًا، وشمولية، تهدف إلى نقل الأفراد والمدن نحو المستقبل. من الحجز السلس إلى ميزات تركز على المجتمع، تعيد ميفرون تعريف معنى الركوب بثقة واهتمام.",
   "Reach Us": "تواصل معنا",
-  "Real Estate": "العقارات"
+  "Real Estate": "العقارات",
+  "Email must have a valid top-level domain": "يجب أن يحتوي البريد الإلكتروني على نطاق علوي صالح"
 }

@@ -62,12 +62,12 @@ const ContactFormSection = () => {
       resetForm();
     } catch (error) {
       Swal.fire({
-        title: t("SMTP email send failed:"),
+        title: error.message || t("Failed to send message. Please try again."),
         icon: "error",
         timer: 3000,
         showConfirmButton: false,
       });
-      toast.error(error.message || "Failed to send message. Please try again.");
+      // toast.error(error.message || "Failed to send message. Please try again.");
     } finally {
       setSubmitting(false);
     }

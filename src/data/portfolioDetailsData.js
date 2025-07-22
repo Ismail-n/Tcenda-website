@@ -118,7 +118,7 @@ const portfolioDetails = [
           "With real-time tracking, curated options, and loyalty integration, Ashjar Gift turns moments into memories—beautifully and effortlessly.",
         ],
         tags: [
-          { label: "Industry", value: "eCommerce" },
+          { label: "Industry", value: "E-commerce" },
           { label: "Services", value: "Product Development" },
           { label: "Business Type", value: "Retail" },
           // { label: "Business Type", value: "Retail" },

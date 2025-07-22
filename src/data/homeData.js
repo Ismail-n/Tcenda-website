@@ -113,7 +113,7 @@ const serviceModels = [
 
 const industries = [
   { icon: "foodBeverage", title: "Food & Beverage" },
-  { icon: "eCommerce", title: "eCommerce & Retail" },
+  { icon: "eCommerce", title: "E-commerce & Retail" },
   { icon: "transportation", title: "Transportation" },
   { icon: "realEstate", title: "Real Estate" },
   { icon: "government", title: "Government" },

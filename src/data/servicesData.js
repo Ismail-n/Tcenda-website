@@ -258,7 +258,7 @@ const servicesData = [
       image: "digitalTransform",
       heading: "Digital Transformation that Matters in the Kingdom",
       paragraphs: [
-        "At TOD, we understand Saudi Arabia's unique regulatory, cultural, and business environment. Our digital transformation solutions are localized to ensure compliance, user adoption, and meaningful ROI. Whether it's optimizing citizen services for government bodies, digitizing F&B supply chains, or enabling eCommerce personalization — we build strategic systems that align with your business and Vision 2030 priorities.",
+        "At TOD, we understand Saudi Arabia's unique regulatory, cultural, and business environment. Our digital transformation solutions are localized to ensure compliance, user adoption, and meaningful ROI. Whether it's optimizing citizen services for government bodies, digitizing F&B supply chains, or enabling E-commerce personalization — we build strategic systems that align with your business and Vision 2030 priorities.",
       ],
     },
   },
@@ -422,7 +422,7 @@ const servicesData = [
       image: "aimlOverview",
       heading: "Mobile AI for designed specially for Saudi Consumers",
       paragraphs: [
-        "AI isn't limited to dashboards. We embed it into mobile apps for finance, eCommerce, and logistics across Saudi Arabia — delivering intelligent, real-time decisioning and on-device ML that scales with your business needs.",
+        "AI isn't limited to dashboards. We embed it into mobile apps for finance, E-commerce, and logistics across Saudi Arabia — delivering intelligent, real-time decisioning and on-device ML that scales with your business needs.",
       ],
     },
   },
