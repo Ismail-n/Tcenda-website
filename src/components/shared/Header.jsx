@@ -147,7 +147,7 @@ const Header = () => {
             </div>
             <nav
               aria-label="Main navigation"
-              className="menu_links d-none d-lg-flex"
+              className="menu_links d-none d-md-flex"
             >
               <ul>
                 {homeLinks?.map(({ href, name }, index) => (
@@ -162,11 +162,11 @@ const Header = () => {
                 ))}
               </ul>
             </nav>
-            <div className="d-none d-lg-flex">
+            <div className="d-none d-md-flex">
               <LanguageSwitcher />
             </div>
             {/* Mobile Menu Icon */}
-            <div className="d-flex align-items-center gap-2 d-lg-none ">
+            <div className="d-flex align-items-center gap-2 d-md-none ">
               {!isMobileMenuOpen && <LanguageSwitcher />}
               <div className="mobile_menu_icon " onClick={handleMenuClick}>
                 {isMobileMenuOpen ? (

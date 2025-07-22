@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { clientsLogo } from "@/data/homeData";
 import { useKeenSlider } from "keen-slider/react";
+import Marquee from "react-fast-marquee";
 
 const Clients = () => {
   const { t } = useTranslation();
@@ -76,50 +77,27 @@ const Clients = () => {
       </Container>
 
       <div className="marqueeWrapper ltr">
-        <div className="marquee">
-          {[
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-            ...clientsLogo,
-          ].map((logo, index) => (
-            <div key={index} className="brand">
-              <Image
-                key={logo}
-                src={`/images/icons/clients/${logo}.svg`}
-                width={160}
-                height={80}
-                alt={`${logo} logo`}
-              />
-            </div>
-          ))}
+        <div className="marquees">
+          <Marquee gradient={false} speed={50}>
+            {[
+              ...clientsLogo,
+              ...clientsLogo,
+              ...clientsLogo,
+              ...clientsLogo,
+              ...clientsLogo,
+              ...clientsLogo,
+            ].map((logo, index) => (
+              <div key={index} className="brand">
+                <Image
+                  key={logo}
+                  src={`/images/icons/clients/${logo}.svg`}
+                  width={160}
+                  height={80}
+                  alt={`${logo} logo`}
+                />
+              </div>
+            ))}
+          </Marquee>
         </div>
       </div>
 

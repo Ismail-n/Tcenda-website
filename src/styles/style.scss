@@ -60,6 +60,10 @@ header {
           text-decoration: unset;
           color: var(--text-color);
         }
+        @media (min-width: 768px) and (max-width: 1200px) {
+          padding: 10px 14px;
+          font-size: 14px;
+        }
       }
     }
   }
@@ -342,6 +346,12 @@ footer {
         display: none;
       }
     }
+    @media (min-width: 767px) and (max-width: 991) {
+      gap: 10px;
+    }
+    @media (min-width: 991px) and (max-width: 1200) {
+      gap: 10px;
+    }
     @media (max-width: 575px) {
       &.desktop {
         display: none;
@@ -394,6 +404,9 @@ footer {
         letter-spacing: 0%;
         text-transform: capitalize;
         margin-bottom: 20px;
+        @media (min-width: 767px) and (max-width: 991) {
+          font-size: 22px;
+        }
       }
       &.logo_section {
         max-width: 208px;
@@ -708,8 +721,9 @@ footer {
         padding: 23px 60px 34px 23px;
         position: relative;
         @media (max-width: 991px) {
-          height: calc(310px - 5px);
+          height: 290px;
           background: url("/images/home/tabletExploreServiceBg.webp");
+          background-repeat: no-repeat;
         }
         @media (max-width: 575px) {
           height: calc(310px - 5px);
@@ -976,13 +990,16 @@ footer {
     .marquee {
       display: flex;
       width: max-content;
-      animation: scroll 900s linear infinite;
+      // animation: scroll 900s linear infinite;
     }
     .brand {
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 0 40px;
+      @media (min-width: 575px) and (max-width: 1200px) {
+        padding: 0 20px;
+      }
       @media (max-width: 575px) {
         padding: 0 10px;
         img {
