@@ -332,6 +332,112 @@ footer {
       }
     }
   }
+  .new_footer_row {
+    padding-bottom: 50px;
+
+    @media (min-width: 575px) {
+      display: flex;
+      gap: 90px;
+      &.mobile {
+        display: none;
+      }
+    }
+    @media (max-width: 575px) {
+      &.desktop {
+        display: none;
+      }
+      .single_item {
+        max-width: 100% !important;
+        margin-top: 60px;
+        h2 {
+          text-align: center;
+        }
+      }
+      .logo_section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+      .quick_links {
+        max-width: 198px !important;
+        display: block;
+        margin: auto;
+        .inner_col:nth-child(1) {
+          a {
+            margin-bottom: 20px;
+            display: block;
+          }
+        }
+        a {
+          text-align: center;
+          width: 100%;
+          display: inline-block;
+        }
+      }
+      .reach_section {
+        .single_add {
+          justify-content: center;
+          text-align: justify;
+        }
+      }
+      .follow_us {
+        .icons {
+          justify-content: center;
+        }
+      }
+    }
+    .single_item {
+      h2 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+      }
+      &.logo_section {
+        max-width: 208px;
+
+        h6 {
+          font-size: 14px;
+          font-weight: 500;
+          margin-top: 20px;
+        }
+      }
+      &.reach_section {
+        max-width: 277px;
+        .single_add {
+          display: flex;
+          gap: 7px;
+          margin-top: 10px;
+          a {
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
+      }
+      &.quick_links {
+        max-width: 198px;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            margin-bottom: 20px;
+            width: 50%;
+            a {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      &.follow_us {
+        .icons {
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+  }
 }
 .home {
   .top_row {

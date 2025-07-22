@@ -6,7 +6,7 @@ const portfolios = [
       logoWidth: 80,
       logoHeight: 80,
     },
-    title: "Ashjar Friends App",
+    title: "Ashjar Friends",
     description:
       "Enjoy Seamless Loyalty Rewards, Personalized Offers, and Instant Access to Ashjar Perks. Your Cafe Experience, Elevated Right in Your Pocket.",
     appStoreLink: "https://apps.apple.com/gb/app/ashjar-friends/id6670760287",
@@ -130,7 +130,7 @@ const portfolios = [
       logoWidth: 80,
       logoHeight: 80,
     },
-    title: "Real Estate",
+    title: "Takween",
     description:
       "Tailored Search, Virtual Tours, and Agent Support for Buyers and Renters. Built to Serve Saudi's Growing Real Estate Market.",
     appStoreLink: "",
@@ -191,7 +191,7 @@ const portfolios = [
       logoWidth: 80,
       logoHeight: 80,
     },
-    title: "Service Now",
+    title: "Service Hub",
     description:
       "Designed to Optimize Field Operations with Real-Time Tracking and Task Management. Empowering Service Teams Across the Kingdom.",
     appStoreLink:
@@ -233,7 +233,7 @@ const portfolios = [
       logoWidth: 80,
       logoHeight: 80,
     },
-    title: "Sign",
+    title: "Sign Burger",
     description:
       "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
     appStoreLink: "",

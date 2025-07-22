@@ -578,9 +578,9 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
     sections: {
       top: {
         background: "linear-gradient(120deg, #FFFFFF, #1576EC)",
-        title: "Service Now",
+        title: "Service Hub",
         subtitle:
-          "Service Now connects you with trusted handymen for repairs, maintenance, and more — anytime, anywhere. Quick booking, real results. ",
+          "Service Hub connects you with trusted handymen for repairs, maintenance, and more — anytime, anywhere. Quick booking, real results. ",
         image: "/images/portfolioDetails/serviceNow/topBg.webp",
         appStoreLinks: {
           ios: "https://apps.apple.com/in/app/service-hub-customer/id6461084774",
@@ -591,7 +591,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         image: "/images/portfolioDetails/serviceNow/aboutUs.webp",
         title: "About Us",
         description: [
-          `At Service Now, we believe dependable home services should be effortless. Whether it's a broken faucet, an AC tune-up, or general maintenance, our network of verified handymen is just a click away.`,
+          `At Service Hub, we believe dependable home services should be effortless. Whether it's a broken faucet, an AC tune-up, or general maintenance, our network of verified handymen is just a click away.`,
           ` We're redefining convenience with a seamless platform that connects users to trusted professionals based on location, service need, and availability. The goal? Speed, safety, and satisfaction — delivered to your home.`,
         ],
         tags: [
@@ -631,7 +631,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
       execution: {
         image: "/images/portfolioDetails/serviceNow/execution.webp",
         description:
-          "Reliable Repairs. Right When You Need Them.  Service Now empowers users with real-time service access, flexible booking, and vetted professionals. Whether it's a minor fix or a major repair, your solution is just a few taps away.",
+          "Reliable Repairs. Right When You Need Them.  Service Hub empowers users with real-time service access, flexible booking, and vetted professionals. Whether it's a minor fix or a major repair, your solution is just a few taps away.",
         descriptionBackground: "#0F73EE",
       },
       featuresOverview: {
@@ -639,7 +639,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         titleMaxWidth: 790,
         items: [
           {
-            title: "Trusted Service Now — Just a Tap Away.",
+            title: "Trusted Service Hub — Just a Tap Away.",
             maxTitleWidth: 330,
             images: {
               url: "/images/portfolioDetails/serviceNow/feature1.webp",
@@ -663,7 +663,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         backgroundColor: "#0F73EE",
         title: "Making Home Services Effortless",
         description:
-          "Service Now isn't just about repairs — it's about peace of mind. By bridging technology with trusted local professionals, we make it easier than ever to take care of your home. No more waiting, no more uncertainty — just dependable help, delivered fast.",
+          "Service Hub isn't just about repairs — it's about peace of mind. By bridging technology with trusted local professionals, we make it easier than ever to take care of your home. No more waiting, no more uncertainty — just dependable help, delivered fast.",
         image: "/images/portfolioDetails/serviceNow/highLightBanner.webp",
       },
     },
@@ -764,7 +764,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
     sections: {
       top: {
         background: "linear-gradient(120deg, #A2D8FF, #0C3553)",
-        title: "Real Estate — Find Your Space, Live Your Dream",
+        title: "Takween — Find Your Space, Live Your Dream",
         subtitle: "Discover homes that match your lifestyle, effortlessly.",
         image: "/images/portfolioDetails/realEstate/topBg.webp",
         appStoreLinks: {
@@ -776,7 +776,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         image: "/images/portfolioDetails/realEstate/aboutUs.webp",
         title: "About Us",
         description: [
-          `At Real Estate, we're redefining how people find their perfect home.Whether you're buying, renting, or investing, our all-in-one platform connects you with the right listings—quickly, smartly, and with confidence. Built for modern house-hunters, our app blends smart search tools, personalized recommendations, and real-time updates to make your property journey seamless. From cozy studios to dream homes, we help you explore options, schedule visits, and take the next step—all in one place.`,
+          `At Takween, we're redefining how people find their perfect home.Whether you're buying, renting, or investing, our all-in-one platform connects you with the right listings—quickly, smartly, and with confidence. Built for modern house-hunters, our app blends smart search tools, personalized recommendations, and real-time updates to make your property journey seamless. From cozy studios to dream homes, we help you explore options, schedule visits, and take the next step—all in one place.`,
         ],
         tags: [
           { label: "Industry", value: "Real Estate" },
@@ -814,7 +814,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
       },
       execution: {
         image: "/images/portfolioDetails/realEstate/execution.webp",
-        description: `Real Estate App is a modern real estate platform that reimagines how you find a home—combining smart technology, human insight, and seamless experiences. Crafted for those who seek more than just a place to live, Real Estate connects you to homes that match your lifestyle, dreams, and goals. Whether you're buying, renting, or exploring new investments, we make your journey smooth, personal, and rewarding—because finding a home should feel just right.`,
+        description: `Takween App is a modern real estate platform that reimagines how you find a home—combining smart technology, human insight, and seamless experiences. Crafted for those who seek more than just a place to live, Takween connects you to homes that match your lifestyle, dreams, and goals. Whether you're buying, renting, or exploring new investments, we make your journey smooth, personal, and rewarding—because finding a home should feel just right.`,
         descriptionBackground: "#143B5880",
       },
       featuresOverview: {
@@ -841,7 +841,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
           },
         ],
         maxItemWidth: 780,
-        description: `Real Estate App is your personal home-finding companion—designed to make the journey easier, smarter, and more rewarding.Just download the app, sign up, and start exploring curated property listings tailored to your preferences. Easily track your favorite homes, get personalized recommendations, receive exclusive offers, and stay informed on new listings, price changes, and local market trends—all from one convenient app. Just browse, save, and find your perfect space.`,
+        description: `Takween App is your personal home-finding companion—designed to make the journey easier, smarter, and more rewarding.Just download the app, sign up, and start exploring curated property listings tailored to your preferences. Easily track your favorite homes, get personalized recommendations, receive exclusive offers, and stay informed on new listings, price changes, and local market trends—all from one convenient app. Just browse, save, and find your perfect space.`,
       },
       highlightBanner: {
         backgroundColor: "#143B5880",
@@ -915,7 +915,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         titleMaxWidth: 790,
         items: [
           {
-            title: "Trusted Service Now — Just a Tap Away.",
+            title: "Trusted Service Hub — Just a Tap Away.",
             maxTitleWidth: 330,
             images: {
               url: "/images/portfolioDetails/healthCare/feature1.webp",
@@ -948,7 +948,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
     sections: {
       top: {
         background: "linear-gradient(120deg, #FFFFFF, #FF91C5)",
-        title: "Sign",
+        title: "Sign Burger",
         subtitle:
           "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
         image: "/images/portfolioDetails/sign/topBg.webp",
@@ -962,8 +962,8 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         image: "/images/portfolioDetails/sign/aboutUs.webp",
         title: "About Us",
         description: [
-          `Sign is a modern mobile app designed for food lovers who crave speed, flavor, and convenience. Whether you're grabbing a juicy burger on the go or cooling down with your favorite drink, Sign delivers a seamless ordering experience right from your phone.`,
-          `From easy menu browsing and real-time order tracking to secure checkout, Sign is your shortcut to satisfaction — fresh, fast, and made just how you like it.`,
+          `Sign Burger is a modern mobile app designed for food lovers who crave speed, flavor, and convenience. Whether you're grabbing a juicy burger on the go or cooling down with your favorite drink, Sign Burger delivers a seamless ordering experience right from your phone.`,
+          `From easy menu browsing and real-time order tracking to secure checkout, Sign Burger is your shortcut to satisfaction — fresh, fast, and made just how you like it.`,
         ],
         tags: [
           { label: "Industry", value: "F&B" },
@@ -985,7 +985,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
           {
             title: "Scalable Infrastructure for Expansion",
             description:
-              "Built on a flexible backend, Sign is ready to support multiple branches and high-volume demand as the brand scales regionally.",
+              "Built on a flexible backend, Sign Burger is ready to support multiple branches and high-volume demand as the brand scales regionally.",
           },
           {
             title: "Real-Time Order Management",
@@ -1002,7 +1002,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
       execution: {
         image: "/images/portfolioDetails/sign/execution.webp",
         description:
-          "Sign redefines casual dining convenience. It brings together bold flavors, real-time tech, and frictionless ordering in one clean, powerful mobile experience.This isn't just another food app — it's the easiest way to order your favorite burger, chill your thirst, and skip the wait.",
+          "Sign Burger redefines casual dining convenience. It brings together bold flavors, real-time tech, and frictionless ordering in one clean, powerful mobile experience.This isn't just another food app — it's the easiest way to order your favorite burger, chill your thirst, and skip the wait.",
         descriptionBackground: "#FD93C5",
       },
       featuresOverview: {
@@ -1034,7 +1034,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         backgroundColor: "#FD93C5",
         title: "Order Fast. Eat Fresh. Feel Good.",
         description:
-          "Sign is more than mobile food ordering — it's a flavorful experience built for today's pace. Whether it's lunch hour or late-night cravings, the app delivers speed, control, and comfort in every bite.",
+          "Sign Burger is more than mobile food ordering — it's a flavorful experience built for today's pace. Whether it's lunch hour or late-night cravings, the app delivers speed, control, and comfort in every bite.",
         image: "/images/portfolioDetails/sign/highLightBanner.webp",
       },
     },

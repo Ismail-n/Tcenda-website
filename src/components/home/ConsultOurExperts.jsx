@@ -10,8 +10,13 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import Loader from "../common/Loader";
-import { ContactUsValidationSchema, getContactUsValidationSchema, isArabicText } from "../utils/Validations";
+import {
+  ContactUsValidationSchema,
+  getContactUsValidationSchema,
+  isArabicText,
+} from "../utils/Validations";
 import Title from "../common/Title";
+import Swal from "sweetalert2";
 
 const initialValues = {
   name: "",
@@ -43,11 +48,21 @@ const ConsultOurExperts = () => {
         throw new Error(errorData.message || "Something went wrong");
       }
 
-      toast.success(t("Thank You! We'll get back to you soon."));
+      // toast.success(t("Thank You! We'll get back to you soon."));
+      Swal.fire({
+        title: t("Thank You! We'll get back to you soon."),
+        icon: "success",
+        timer: 3000,
+        showConfirmButton: false,
+      });
       resetForm();
     } catch (error) {
-      console.error("SMTP email send failed:", error);
-      toast.error(error.message || "Failed to send message. Please try again.");
+      Swal.fire({
+        title: t("Failed to send message. Please try again."),
+        icon: "error",
+        timer: 3000,
+        showConfirmButton: false,
+      });
     } finally {
       setSubmitting(false);
     }

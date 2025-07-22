@@ -21,7 +21,7 @@ const ContactUsSection = () => {
 
                   <p className="para">
                     {t(
-                      "Have a project in mind or need expert guidance? Our team is here to help you move forward."
+                      "Tell us about your requirements, and our team will get in touch with you within 24 hours."
                     )}
                   </p>
 
@@ -48,7 +48,7 @@ const ContactUsSection = () => {
                 <h5>{t("Location")}</h5>
                 <div className="icon_text">
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=Prince+Mohammed+Ibn+Salman+Ibn+Abdulaziz+Rd,+Ar+Rabi,+Riyadh+13315"
+                    href="https://www.google.com/maps/search/?api=1&query=Prince+Mohammed+Ibn+Salman+Ibn+Abdulaziz+Rd,+Ar+Rabi,+Riyadh"
                     target="_blank"
                     rel="noopener noreferrer"
                     className=""
@@ -61,7 +61,7 @@ const ContactUsSection = () => {
                     />
                     <p>
                       {t("Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,")}
-                      {t("Ar Rabi, Riyadh 13315")}
+                      {t("Ar Rabi, Riyadh")}
                     </p>
                   </a>
                 </div>

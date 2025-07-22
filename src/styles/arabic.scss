@@ -99,10 +99,14 @@ html[dir="rtl"] {
   .about_us .our_vision_mission .committed_row .inner_section p .quotes_start {
     transform: rotate(180deg);
   }
-  .portfolio_inner_section .portfolio_inner .case_study_btn
-  {
+  .portfolio_inner_section .portfolio_inner .case_study_btn {
     width: fit-content;
     padding: 5px 10px;
     margin-top: 10px;
+  }
+  .common_form .form_field input,
+  .common_form .form_field textarea,
+  .common_form .form_field select {
+    direction: rtl;
   }
 }

@@ -7,9 +7,14 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
 import Loader from "../common/Loader";
-import { ContactUsValidationSchema, getContactUsValidationSchema, isArabicText } from "../utils/Validations";
+import {
+  ContactUsValidationSchema,
+  getContactUsValidationSchema,
+  isArabicText,
+} from "../utils/Validations";
 import Title from "../common/Title";
 import { useRouter } from "next/router";
+import Swal from "sweetalert2";
 
 const ContactFormSection = () => {
   const { t } = useTranslation();
@@ -40,7 +45,7 @@ const ContactFormSection = () => {
           "Content-Type": "application/json",
           Authorization: AUTH_TOKEN,
         },
-        body: JSON.stringify(values),
+        body: JSON.stringify(payload),
       });
 
       if (!response.ok) {
@@ -48,10 +53,20 @@ const ContactFormSection = () => {
         throw new Error(errorData.message || "Something went wrong");
       }
 
-      toast.success(t("Thank You! We'll get back to you soon."));
+      Swal.fire({
+        title: t("Thank You! We'll get back to you soon."),
+        icon: "success",
+        timer: 3000,
+        showConfirmButton: false,
+      });
       resetForm();
     } catch (error) {
-      console.error("SMTP email send failed:", error);
+      Swal.fire({
+        title: t("SMTP email send failed:"),
+        icon: "error",
+        timer: 3000,
+        showConfirmButton: false,
+      });
       toast.error(error.message || "Failed to send message. Please try again.");
     } finally {
       setSubmitting(false);
