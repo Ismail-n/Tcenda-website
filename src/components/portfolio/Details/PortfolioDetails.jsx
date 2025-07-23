@@ -8,8 +8,10 @@ import FeaturesOverview from "./FeaturesOverview";
 import HighLightBanner from "./HighLightBanner";
 import ConsultOurExperts from "@/components/home/ConsultOurExperts";
 
+
 const PortfolioDetails = ({ slug }) => {
   const matchedPortfolio = portfolioDetails.find((item) => item.id === slug);
+  
 
   if (!matchedPortfolio) return <div>Portfolio not found</div>;
 

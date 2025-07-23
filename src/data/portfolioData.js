@@ -185,7 +185,7 @@ const portfolios = [
     background: "linear-gradient(to left, #FE6789, #FFA27B)",
   },
   {
-    id: "service-now",
+    id: "service-hub",
     logoDetails: {
       logo: "serviceHubLogo",
       logoWidth: 80,
@@ -197,7 +197,7 @@ const portfolios = [
     appStoreLink:
       "https://apps.apple.com/in/app/service-hub-customer/id6461084774",
     playStoreLink: "",
-    caseStudyLink: "service-now",
+    caseStudyLink: "service-hub",
     imageDetails: {
       image: "serviceNow",
       imageWidth: 289,
@@ -332,7 +332,7 @@ const portfolios = [
       "linear-gradient(to right, rgb(243, 149, 61), rgb(164, 150, 150))",
   },
   {
-    id: "mevron",
+    id: "ultimate-caddy",
     logoDetails: {
       logo: "ultimateCaddyLogo",
       logoWidth: 80,
@@ -343,7 +343,7 @@ const portfolios = [
       "Train Smarter, Swing Better. Ultimate Caddy is a mobile-enabled golf training system using wearable sensors to measure, score, and improve your swing through drills and real-time feedback.",
     appStoreLink: "",
     playStoreLink: "",
-    caseStudyLink: "",
+    caseStudyLink: "ultimate-caddy",
     imageDetails: {
       image: "ultimateCaddy",
       imageWidth: 327,

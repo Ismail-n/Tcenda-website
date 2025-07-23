@@ -397,8 +397,8 @@ const portfolioDetails = [
         subtitle: `EASE is an intuitive digital signage platform crafted to turn ordinary screens into impactful communication tools. Whether it's in cafs, corporate offices, retail chains, or education environments, EASE enables users to remotely manage and deploy content across multiple screens — all from a single dashboard.`,
         image: "/images/portfolioDetails/ease/topBg.webp",
         appStoreLinks: {
-          ios: "#",
-          android: "#",
+          ios: "",
+          android: "",
         },
       },
       aboutUs: {
@@ -493,8 +493,8 @@ const portfolioDetails = [
           "Saving lives through proactive screening and timely intervention. Your health, reimagined through prevention.",
         image: "/images/portfolioDetails/screenMe/topBg.webp",
         appStoreLinks: {
-          ios: "# ",
-          android: "#",
+          ios: "",
+          android: "",
         },
       },
       aboutUs: {
@@ -573,13 +573,13 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
     },
   },
   {
-    id: "service-now",
+    id: "service-hub",
     sections: {
       top: {
         background: "linear-gradient(120deg, #FFFFFF, #1576EC)",
         title: "Service Hub",
         subtitle:
-          "Service Hub connects you with trusted handymen for repairs, maintenance, and more — anytime, anywhere. Quick booking, real results. ",
+          "Service Hub connects you with trusted handymen for repairs, maintenance, and more — anytime, anywhere. Quick booking, real results.",
         image: "/images/portfolioDetails/serviceNow/topBg.webp",
         appStoreLinks: {
           ios: "https://apps.apple.com/in/app/service-hub-customer/id6461084774",
@@ -591,7 +591,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         title: "About Us",
         description: [
           `At Service Hub, we believe dependable home services should be effortless. Whether it's a broken faucet, an AC tune-up, or general maintenance, our network of verified handymen is just a click away.`,
-          ` We're redefining convenience with a seamless platform that connects users to trusted professionals based on location, service need, and availability. The goal? Speed, safety, and satisfaction — delivered to your home.`,
+          `We're redefining convenience with a seamless platform that connects users to trusted professionals based on location, service need, and availability. The goal? Speed, safety, and satisfaction — delivered to your home.`,
         ],
         tags: [
           { label: "Industry", value: "Retail" },
@@ -630,7 +630,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
       execution: {
         image: "/images/portfolioDetails/serviceNow/execution.webp",
         description:
-          "Reliable Repairs. Right When You Need Them.  Service Hub empowers users with real-time service access, flexible booking, and vetted professionals. Whether it's a minor fix or a major repair, your solution is just a few taps away.",
+          "Reliable Repairs. Right When You Need Them.Service Hub empowers users with real-time service access, flexible booking, and vetted professionals. Whether it's a minor fix or a major repair, your solution is just a few taps away.",
         descriptionBackground: "#0F73EE",
       },
       featuresOverview: {
@@ -676,8 +676,8 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         subtitle: "Brewing community, one cup at a time",
         image: "/images/portfolioDetails/cupCrew/topBg.webp",
         appStoreLinks: {
-          ios: "#",
-          android: "#",
+          ios: "",
+          android: "",
         },
       },
       aboutUs: {
@@ -767,8 +767,8 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         subtitle: "Discover homes that match your lifestyle, effortlessly.",
         image: "/images/portfolioDetails/realEstate/topBg.webp",
         appStoreLinks: {
-          ios: "#",
-          android: "#",
+          ios: "",
+          android: "",
         },
       },
       aboutUs: {
@@ -859,8 +859,8 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         subtitle: "Smarter Tools for Smarter Healthcare - Right in Your Pocket",
         image: "/images/portfolioDetails/healthCare/topBg.webp",
         appStoreLinks: {
-          ios: "#",
-          android: "#",
+          ios: "",
+          android: "",
         },
       },
       aboutUs: {
@@ -1047,8 +1047,8 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         subtitle: "Rent anything and everything you want.",
         image: "/images/portfolioDetails/freshCart/topBg.webp",
         appStoreLinks: {
-          ios: "#",
-          android: "#",
+          ios: "",
+          android: "",
         },
       },
       aboutUs: {
@@ -1139,8 +1139,8 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         subtitle: "Rent anything and everything you want.",
         image: "/images/portfolioDetails/ayzRentals/topBg.webp",
         appStoreLinks: {
-          ios: "#",
-          android: "#",
+          ios: "",
+          android: "",
         },
       },
       aboutUs: {
@@ -1223,10 +1223,11 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         background: "linear-gradient(180deg, #FFF291, #33B68F)",
         title: "6-8 Sports",
         subtitle: "Transforming how athletes train, track, and thrive.",
+        textArAlign :'right',
         image: "/images/portfolioDetails/6-8Sports/topBg.webp",
         appStoreLinks: {
-          ios: "#",
-          android: "#",
+          ios: "",
+          android: "",
         },
       },
       aboutUs: {
@@ -1326,8 +1327,8 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         subtitle: "Your City, Your Ride — Reimagined.",
         image: "/images/portfolioDetails/mevron/topBg.webp",
         appStoreLinks: {
-          ios: "#",
-          android: "#",
+          ios: "",
+          android: "",
         },
       },
       aboutUs: {
@@ -1412,6 +1413,99 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         description:
           "Mevron isn't just a ride-hailing app — it's a smarter, safer, and more inclusive mobility platform designed to move people and cities forward. From seamless ride booking to community-first features, Mevron redefines what it means to ride with confidence and care.",
         image: "/images/portfolioDetails/mevron/highLightBanner.webp",
+      },
+    },
+  },
+  {
+    id: "ultimate-caddy",
+    sections: {
+      top: {
+        background:
+          "linear-gradient(to right, rgba(20, 179, 130, 1), rgba(51, 182, 143, 1)",
+        title: "Ultimate Caddy",
+        subtitle: "Master the Wind. Dominate the Game.",
+        image: "/images/portfolioDetails/ultimateCaddy/topBg.webp",
+        appStoreLinks: {
+          ios: "",
+          android: "",
+        },
+      },
+      aboutUs: {
+        image: "/images/portfolioDetails/ultimateCaddy/aboutUs.webp",
+        title: "About Us",
+        description: [
+          "Ultimate Caddy is a comprehensive mobile training suite for Ultimate Golf players. Whether you're fine-tuning your swing, recording drills, or tracking your performance, this app brings together precision tools and rich video analytics to help every golfer improve with confidence.",
+          "From practice sessions to tournament prep, Ultimate Caddy is designed to support every stage of your journey on the virtual green."
+        ],
+        tags: [
+          { label: "Industry", value: "Sports Training" },
+          { label: "Services", value: "Mobile Platform,Analytics Tools"},
+          { label: "Business Type", value: "Data-Driven"},
+        ],
+      },
+      projectGoals: {
+        title: "Project Goals",
+        image: {
+          url: "/images/portfolioDetails/ultimateCaddy/projectGoals.webp",
+        },
+        goals: [
+          {
+            title: "Redefine In-Game Training",
+            description:
+              "Evolve Ultimate Caddy from a utility tool into a complete training environment for Ultimate Golf players — integrating video analysis, drill recording, and stat tracking.",
+          },
+          {
+            title: "Bridge Play and Coaching",
+            description:
+              "Integrate video upload and playback with in-app diagnostics to simulate a coach-led training session from anywhere.",
+          },
+          {
+            title: "Deliver Personalized Golf Programs",
+            description:"Enable players to customize their training sessions with targeted drills, progress dashboards, and actionable insights to improve consistently.",
+          },
+          {
+            title: "Design for Ease, Power, and Scalability",
+            description:"Craft a sleek, intuitive interface that simplifies advanced features like target setting, swing analysis, and drill planning for all user levels.",
+          },
+        ],
+      },
+      execution: {
+        image: "/images/portfolioDetails/ultimateCaddy/execution.webp",
+        description:"Learn. Practice. Master. With a supportive ecosystem including the Ultimate Golf Caddy YouTube channel, users can access tutorials, get the most out of their app features, and receive structured guidance — whether they're looking to climb rankings or just enjoy better rounds. Ultimate Caddy empowers players to take control of their development like never before.",
+        descriptionBackground: "rgba(30, 147, 111, 0.5)",
+      },
+      featuresOverview: {
+        title: "Learn, Improve, Repeat",
+        titleMaxWidth: 500,
+        items: [
+          {
+            title: "Precision Tools for Peak Performance",
+            maxTitleWidth: 516,
+            images: {
+              url: "/images/portfolioDetails/ultimateCaddy/feature1.webp",
+              width: 242,
+              height: 500,
+            },
+          },
+          {
+            title: "Precision Tools for Peak Performance",
+            maxTitleWidth: 516,
+            images: {
+              url: "/images/portfolioDetails/ultimateCaddy/feature1.webp",
+              width: 234,
+              height: 483,
+            },
+          },
+        ],
+          maxItemWidth:780,
+          description:"At its core, Ultimate Caddy is built to turn casual play into intentional improvement. Designed for players of Ultimate Golf, the app bridges the gap between gaming and skill-building with elite-level training tools, real-time feedback, and custom coaching workflows. Whether you're chasing tournament wins or refining your technique, Ultimate Caddy gives you everything you need to analyze, adapt, and advance your game — all in the palm of your hand. From data to drills, every feature is built to elevate your performance. This isn't just about playing better — it's about understanding how to get better.",
+      },
+      highlightBanner: {
+        backgroundColor: "rgba(30, 147, 111, 0.5)",
+        title: "Smarter Tools. Deeper Insights.Better Golf.",
+        description:
+        "Ultimate Caddy helps players take the guesswork out of their game. With personalized guidance, advanced analysis, and structured training workflows, it's the ultimate virtual coach for every Ultimate Golf player.",
+        image: "/images/portfolioDetails/ultimateCaddy/highLightBanner.webp",
       },
     },
   },

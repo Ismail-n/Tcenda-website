@@ -4,9 +4,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const TopSection = ({ data }) => {
-  const { t } = useTranslation();
-
-  const { background, appStoreLinks, title, subtitle, image } = data || {};
+  const { t, i18n: { language } } = useTranslation();
+  const { background, appStoreLinks, title, subtitle, image, textArAlign } = data || {};
 
   return (
     <div className="top_section" style={{ background }}>
@@ -16,10 +15,19 @@ const TopSection = ({ data }) => {
           <Col lg={6}>
             <div className="left_section">
               <div className="top_row">
-                <h1 className="top_section_title mx-auto">{t(title)}</h1>
+                <h1
+                  className="top_section_title mx-auto"
+                  style={{
+                    direction: language === "ar" && title === "6-8 Sports" ? "ltr" : "",
+                    textAlign: language === "ar" && textArAlign ? textArAlign : ""
+                  }}
+                >
+                  {t(title)}
+                </h1>
+
                 <p className="top_section_sub_title">{t(subtitle)}</p>
               </div>
-              
+
               {/* DESKTOP STORE BUTTONS */}
               <div className="store_btns d-none d-md-block">
                 <h2>{t("Available On -")}</h2>
