@@ -41,7 +41,7 @@ const OurVisionMission = () => {
                 className="quotes_end"
               />
             </p>
-            <h3>{t("Abdullah, CEO, Tod")}</h3>
+            <h3>{t("CEO, Tod")}</h3>
           </div>
         </Row>
       </Container>

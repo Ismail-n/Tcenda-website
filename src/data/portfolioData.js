@@ -276,7 +276,7 @@ const portfolios = [
     },
     title: "AYZ Rentals",
     description:
-      "The go-to app for fast, reliable grocery delivery—bringing farm-fresh produce, pantry staples, and daily essentials straight to the doorstep, exactly when needed.",
+      "A modern rental platform offering furniture and home essentials as per your needs—delivered and picked up at your convenience.",
     appStoreLink: "",
     playStoreLink: "",
     caseStudyLink: "ayz-rentals",
