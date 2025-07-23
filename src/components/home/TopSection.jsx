@@ -7,7 +7,9 @@ import { useTranslation } from "react-i18next";
 const TopSection = () => {
   const { t } = useTranslation();
   const router = useRouter();
-
+  useEffect(() => {
+    console.log("top section");
+  }, []);
   const words = [
     "Digital Transformation",
     "Mobile Applications",
@@ -52,14 +54,13 @@ const TopSection = () => {
         <div className="top_row">
           <h1 className="top_section_title d-none d-lg-block">
             {t("Empowering Businesses to Scale with")}
-            {/* <br />   */}
-            {" "}
+            {/* <br />   */}{" "}
             <span className="animated-typing">{displayText}</span>
             <span className="cursor">|</span>
           </h1>
           <h1 className="top_section_title  d-lg-none">
             {t("Empowering Businesses to Scale with")}
-            <br />  
+            <br />
             <span className="animated-typing">{displayText}</span>
             <span className="cursor">|</span>
           </h1>
