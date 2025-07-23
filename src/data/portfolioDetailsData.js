@@ -1135,7 +1135,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
     sections: {
       top: {
         background: "linear-gradient(120deg, #FFFFFF, #FEC31D)",
-        title: "Ayz Rentals",
+        title: "AYZ Rentals",
         subtitle: "Rent anything and everything you want.",
         image: "/images/portfolioDetails/ayzRentals/topBg.webp",
         appStoreLinks: {

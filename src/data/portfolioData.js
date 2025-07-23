@@ -1,5 +1,5 @@
 const portfolios = [
-   {
+  {
     id: "ashjar-friends",
     logoDetails: {
       logo: "ashjarFriendsLogo",
@@ -41,7 +41,7 @@ const portfolios = [
     },
     background: "linear-gradient(to right, #FAFFD9, #C5D271)",
   },
-   {
+  {
     id: "ease",
     logoDetails: {
       logo: "easeLogo",
@@ -68,7 +68,7 @@ const portfolios = [
     },
     title: "Send",
     description:
-      "A Premium Fashion Marketplace That Connects You to Top Retailers in the Kingdom. From Discovery to Delivery, All in One Intuitive App.",
+      "A premium plant gifting platform that makes it effortless to select, personalize, and deliver meaningful green gifts—beautifully packaged and thoughtfully timed.",
     appStoreLink: "https://apps.apple.com/gb/app/ashjar/id6474177129?uo=2",
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.ashjar.sa",
@@ -253,8 +253,9 @@ const portfolios = [
       logoWidth: 80,
       logoHeight: 80,
     },
-    title: "Fresh Cart - Freshness Delivered Fast",
-    description: "Fresh groceries, fast to your door.",
+    title: "Fresh-Cart",
+    description:
+      "The go-to app for fast, reliable grocery delivery—bringing farm-fresh produce, pantry staples, and daily essentials straight to the doorstep, exactly when needed.",
     appStoreLink: "",
     playStoreLink: "",
     caseStudyLink: "fresh-cart",
@@ -273,8 +274,9 @@ const portfolios = [
       logoWidth: 80,
       logoHeight: 80,
     },
-    title: "Ayz Rentals",
-    description: "Fresh groceries, fast to your door.",
+    title: "AYZ Rentals",
+    description:
+      "The go-to app for fast, reliable grocery delivery—bringing farm-fresh produce, pantry staples, and daily essentials straight to the doorstep, exactly when needed.",
     appStoreLink: "",
     playStoreLink: "",
     caseStudyLink: "ayz-rentals",
@@ -294,7 +296,8 @@ const portfolios = [
       logoHeight: 80,
     },
     title: "6-8 Sports",
-    description: "Maximize performance with 6-8 Sports—built by Olympians. Track your stats, train with pros, and level up your game.",
+    description:
+      "Maximize performance with 6-8 Sports—built by Olympians. Track your stats, train with pros, and level up your game.",
     appStoreLink: "",
     playStoreLink: "",
     caseStudyLink: "6-8-sports",
@@ -313,7 +316,8 @@ const portfolios = [
       logoHeight: 80,
     },
     title: "Mevron",
-    description: "Next-gen ridesharing that's fast, safe, and rider-focused. Order rides in minutes, track your driver live, and pay by card or cash. Mevron empowers both riders and drivers for a seamless, community-first journey.",
+    description:
+      "Next-gen ridesharing that's fast, safe, and rider-focused. Order rides in minutes, track your driver live, and pay by card or cash. Mevron empowers both riders and drivers for a seamless, community-first journey.",
     appStoreLink: "",
     playStoreLink: "",
     caseStudyLink: "mevron",
@@ -322,10 +326,11 @@ const portfolios = [
       imageWidth: 327,
       imageHeight: 407,
     },
-    background: "linear-gradient(to right, #F3953D, #161616)",
-    backgroundAr: "linear-gradient(to left, #F3953D, #161616)",
+    background:
+      "linear-gradient(to right, rgb(243, 149, 61), rgb(164, 150, 150))",
+    backgroundAr:
+      "linear-gradient(to right, rgb(243, 149, 61), rgb(164, 150, 150))",
   },
-
 ];
 
 export { portfolios };
