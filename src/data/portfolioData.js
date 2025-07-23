@@ -331,6 +331,29 @@ const portfolios = [
     backgroundAr:
       "linear-gradient(to right, rgb(243, 149, 61), rgb(164, 150, 150))",
   },
+  {
+    id: "mevron",
+    logoDetails: {
+      logo: "ultimateCaddyLogo",
+      logoWidth: 80,
+      logoHeight: 80,
+    },
+    title: "Ultimate Caddy",
+    description:
+      "Train Smarter, Swing Better. Ultimate Caddy is a mobile-enabled golf training system using wearable sensors to measure, score, and improve your swing through drills and real-time feedback.",
+    appStoreLink: "",
+    playStoreLink: "",
+    caseStudyLink: "",
+    imageDetails: {
+      image: "ultimateCaddy",
+      imageWidth: 327,
+      imageHeight: 407,
+    },
+    background:
+      "linear-gradient(to right, rgba(20, 179, 130, 1), rgba(51, 182, 143, 1)",
+    backgroundAr:
+      "linear-gradient(to right, rgba(51, 182, 143, 1), rgba(20, 179, 130, 1)",
+  },
 ];
 
 export { portfolios };
