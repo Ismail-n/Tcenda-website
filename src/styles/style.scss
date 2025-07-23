@@ -716,19 +716,19 @@ footer {
       .explore_services {
         margin-top: 25px;
         border-radius: 20px;
-        background: url("/images/home/exploreServiceBg.webp");
+        background: url("/images/home/exploreServiceNewBg.webp");
         height: calc(100% - 25px);
         padding: 23px 60px 34px 23px;
         position: relative;
         @media (max-width: 991px) {
           height: 290px;
-          background: url("/images/home/tabletExploreServiceBg.webp");
+          background: url("/images/home/tabletExploreServiceNewBg.webp");
           background-repeat: no-repeat;
         }
         @media (max-width: 575px) {
           height: calc(310px - 5px);
           padding: 25px;
-          background: url("/images/home/exploreServiceBg.webp");
+          background: url("/images/home/exploreServiceNewBg.webp");
           background-repeat: no-repeat;
           background-size: cover;
         }
@@ -2914,6 +2914,9 @@ footer {
         height: auto;
       }
     }
+  }
+  .view_all_btn {
+
   }
 }
 

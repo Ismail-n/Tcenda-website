@@ -172,17 +172,17 @@ const Header = () => {
                 {isMobileMenuOpen ? (
                   <Image
                     src={"/images/icons/close.svg"}
-                    width={32}
-                    height={32}
+                    width={25}
+                    height={25}
                     alt="menu"
                   />
                 ) : (
                   <Image
                     src={`/images/icons/${
-                      isPortfolioDetail && !isScrolled ? "menuBlack" : "menu"
+                      isPortfolioDetail && !isScrolled ? "menuBlackNew" : "menuNew"
                     }.svg`}
-                    width={40}
-                    height={37}
+                    width={25}
+                    height={25}
                     alt="menu"
                   />
                 )}
@@ -209,8 +209,8 @@ const Header = () => {
             </Link>
             <Image
               src={"/images/icons/close.svg"}
-              width={32}
-              height={32}
+              width={25}
+              height={25}
               alt="menu"
               className="close_icon"
               onClick={() => setIsMobileMenuOpen(false)}

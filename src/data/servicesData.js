@@ -1,9 +1,9 @@
 const servicesData = [
   {
     id: "mobile-app",
-    mainTitle: "Mobile Solutions Built for Growth",
+    mainTitle: "Enterprise Mobility That Accelerates Digital Transformation",
     mainSubTitle:
-      "Empower your business with expertly crafted mobile applications tailored to the needs, goals, and digital ambitions of Saudi enterprises.",
+      "Empower your enterprise with scalable, secure, and high-performance mobile solutions designed to drive digital transformation across modern businesses.",
     title: "Build Smart. Launch Fast.",
     subtitle:
       "With us, turn your mobile vision into reality — across iOS and Android.",
@@ -349,9 +349,9 @@ const servicesData = [
   },
   {
     id: "ai-ml",
-    mainTitle: "AI & ML Solutions That Drive Innovation in Saudi Arabia",
+    mainTitle: "AI & ML Solutions That Drive Innovation",
     mainSubTitle:
-      "We help Saudi organizations harness Artificial Intelligence and Machine Learning to accelerate transformation, automate workflows, and lead in a data-first economy.",
+      "We help organizations harness Artificial Intelligence and Machine Learning to accelerate digital transformation, automate workflows, and lead in a data-driven economy.",
     title: "Intelligence That Drives Innovation",
     subtitle:
       "With us, harness the power of AI & ML to automate, predict, and grow smarter.",
@@ -598,7 +598,7 @@ const servicesData = [
   },
   {
     id: "odoo",
-    mainTitle: "Flexible Odoo Solutions Tailored for Saudi Business Needs",
+    mainTitle: "Flexible Odoo Solutions Tailored for Business Needs",
     mainSubTitle:
       "Unlock operational efficiency, automate workflows, and stay fully compliant with local regulations all on Odoo.",
     title: "Odoo, Reimagined for Your Business",

@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 const ProjectVideo = () => {
   const { t } = useTranslation();
@@ -37,6 +38,9 @@ const ProjectVideo = () => {
                 className="your-custom-class"
               />
             </div>
+          </Col>
+          <Col lg={12}>
+            <Link href={"/portfolio"} className="view_all_btn text-decoration-underline text-center d-block mx-auto mt-4">{t("View All")}</Link>
           </Col>
         </Row>
       </Container>

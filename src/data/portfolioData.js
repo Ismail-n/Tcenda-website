@@ -62,7 +62,7 @@ const portfolios = [
   {
     id: "send",
     logoDetails: {
-      logo: "sendLogo",
+      logo: "sendLogoNew",
       logoWidth: 80,
       logoHeight: 80,
     },
@@ -187,7 +187,7 @@ const portfolios = [
   {
     id: "service-now",
     logoDetails: {
-      logo: "serviceNowLogo",
+      logo: "serviceHubLogo",
       logoWidth: 80,
       logoHeight: 80,
     },
@@ -249,7 +249,7 @@ const portfolios = [
   {
     id: "fresh-cart",
     logoDetails: {
-      logo: "freshcartLogo",
+      logo: "freshcartNewLogo",
       logoWidth: 80,
       logoHeight: 80,
     },
@@ -269,7 +269,7 @@ const portfolios = [
   {
     id: "ayz-rentals",
     logoDetails: {
-      logo: "ayzRentalsLogo",
+      logo: "ayzRentalsNewLogo",
       logoWidth: 80,
       logoHeight: 80,
     },
@@ -289,7 +289,7 @@ const portfolios = [
   {
     id: "6-8-sports",
     logoDetails: {
-      logo: "6-8SportsLogo",
+      logo: "6-8SportsNewLogo",
       logoWidth: 80,
       logoHeight: 80,
     },
