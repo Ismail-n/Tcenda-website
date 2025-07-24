@@ -736,11 +736,14 @@ footer {
         height: calc(100% - 25px);
         padding: 23px 60px 34px 23px;
         position: relative;
+        background-size: cover;
+        background-position: center;
         @media (max-width: 991px) {
           height: 290px;
-          background: url("/images/home/tabletExploreServiceNewBg.webp");
+          background: url("/images/home/exploreServiceNewBg.webp");
           background-repeat: no-repeat;
-        }
+          background-size: cover;
+                  }
         @media (max-width: 575px) {
           height: calc(310px - 5px);
           padding: 25px;
