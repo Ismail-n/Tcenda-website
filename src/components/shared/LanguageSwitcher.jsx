@@ -2,7 +2,7 @@ import { useState } from "react";
 import i18n from "../../../i18n";
 
 export default function LanguageSwitcher() {
-  const [lang, setLang] = useState(i18n.language || "en");
+  const [lang, setLang] = useState(i18n.language || "ar");
 
   const changeLanguage = (lng) => {
     if (lng === lang) return;
@@ -17,7 +17,7 @@ export default function LanguageSwitcher() {
 
   return (
     <button
-      className={`language_btn ${lang === "en" ? "jf_font":"adam_font"}`}
+      className={`language_btn ${lang === "en" ? "jf_font" : "adam_font"}`}
       onClick={() => changeLanguage(lang === "en" ? "ar" : "en")}
     >
       {lang === "en" ? "العربية" : "English"}

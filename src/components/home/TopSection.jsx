@@ -7,9 +7,7 @@ import { useTranslation } from "react-i18next";
 const TopSection = () => {
   const { t } = useTranslation();
   const router = useRouter();
-  useEffect(() => {
-    console.log("top section");
-  }, []);
+  
   const words = [
     "Digital Transformation",
     "Mobile Applications",

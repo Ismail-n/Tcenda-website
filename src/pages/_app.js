@@ -37,14 +37,33 @@ export default function App({ Component, pageProps }) {
   const [languageReady, setLanguageReady] = useState(false);
 
   useEffect(() => {
-    const storedLang = localStorage.getItem("lang") || "en";
+    const detectRegionAndSetLang = async () => {
+      try {
+        const res = await fetch("https://ipapi.co/json/");
+        const data = await res.json();
+        const countryCode = data.country_code?.toLowerCase();
 
-    i18n.changeLanguage(storedLang).then(() => {
-      // Set <html> lang & dir before first paint
-      document.documentElement.lang = storedLang;
-      document.documentElement.dir = storedLang === "ar" ? "rtl" : "ltr";
-      setLanguageReady(true);
-    });
+        // Arabic-speaking countries
+        const arabicCountries = ["sa", "ae", "qa"]; // Saudi Arabia, UAE, Qatar
+
+        const lang = arabicCountries.includes(countryCode) ? "ar" : "en";
+
+        i18n.changeLanguage(lang).then(() => {
+          document.documentElement.lang = lang;
+          document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+          setLanguageReady(true);
+        });
+      } catch (error) {
+        // Fallback to Arabic if fetch fails
+        i18n.changeLanguage("ar").then(() => {
+          document.documentElement.lang = "ar";
+          document.documentElement.dir = "rtl";
+          setLanguageReady(true);
+        });
+      }
+    };
+
+    detectRegionAndSetLang();
   }, []);
 
   if (!languageReady) return null; // Prevent initial render
