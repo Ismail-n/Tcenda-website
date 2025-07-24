@@ -8,7 +8,7 @@ html[dir="rtl"] {
       line-height: 30px;
     }
 
-    .about_us .our_values .inner_section>h3 {
+    .about_us .our_values .inner_section > h3 {
       line-height: 25px;
     }
 
@@ -25,7 +25,14 @@ html[dir="rtl"] {
       line-height: 26px;
       font-size: 18px;
     }
-
+    footer
+      .new_footer_row
+      .single_item.reach_section
+      .single_add.single_location {
+      max-width: 230px;
+      margin: auto;
+      display: flex;
+    }
   }
 
   .project_slider_controls .slider_btn {
@@ -83,7 +90,7 @@ html[dir="rtl"] {
     line-height: 30px;
   }
 
-  .about_us .rise_section>p {
+  .about_us .rise_section > p {
     line-height: 30px;
   }
 
@@ -168,5 +175,4 @@ html[dir="rtl"] {
     direction: ltr;
     text-align: right;
   }
-
 }
