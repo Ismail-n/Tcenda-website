@@ -1028,6 +1028,37 @@ footer {
     }
   }
 }
+.govermentServices{
+  .marqueeWrapper{
+    .brand{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 40px;
+      @media (min-width: 575px) and (max-width: 1200px) {
+        padding: 0 20px;
+      }
+      @media (max-width: 575px) {
+        padding: 0 10px;
+        img {
+          width: 100px;
+          height: 50px;
+        }
+      }
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+  .goverment_services_logos{
+    margin-top: 31px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+
+  }
+}
 .consult_our_experts {
   .inner_row {
     border: 1px solid var(--common-border-color);
