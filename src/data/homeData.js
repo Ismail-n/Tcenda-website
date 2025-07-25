@@ -190,6 +190,12 @@ const services = [
   },
 ];
 
+const govermentServices = [
+  'gov_service1',
+  'gov_service2',
+  'gov_service3',
+];
+
 export {
   blogPosts,
   clientsLogo,
@@ -197,4 +203,5 @@ export {
   serviceModels,
   industries,
   services,
+  govermentServices,
 };
