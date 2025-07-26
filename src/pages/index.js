@@ -27,7 +27,7 @@ export default function Home() {
         {/* <OurProjects /> */}
         <OurServices />
         <EngagementModels />
-        <GovermentServices />
+        {/* <GovermentServices /> */}
         <Industries />
         <Clients />
         <ConsultOurExperts />
