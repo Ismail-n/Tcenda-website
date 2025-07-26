@@ -193,48 +193,32 @@ const services = [
 const thirdPartyServicesData = [
   {
     title: "Government Services",
-    rootfolder : "govermentServices",
-    logos: [
-      'sadad',
-      'elm',
-      'yaqeen',
-      'nafath',
-      'ejar',
-      'najiz',
-    ]
+    rootfolder: "govermentServices",
+    logos: ["sadad", "elm", "yaqeen", "nafath", "ejar", "najiz"],
   },
   {
     title: "Payment Gateways",
-    rootfolder : "paymentGateways",
-    logos: [
-      'checkout',
-      'edaat',
-      'tap',
-      'tabby',
-      'tamara',
-      'paytabs',
-    ]
+    rootfolder: "paymentGateways",
+    logos: ["checkout", "tap", "tabby", "tamara", "paytabs", "edaat"],
   },
   {
     title: "SMS Gateways",
-    rootfolder : "smsGateways",
+    rootfolder: "smsGateways",
     logos: [
-      'connectsaudi',
-      'msegat',
-      'unifonic',
-    ]
+      "unifonic",
+      "msegat",
+      "connectsaudi",
+      "gallabox",
+      "whatsAppAPI",
+      "smsCountry",
+    ],
   },
   {
     title: "Shipping Companies",
-    rootfolder : "shippingServices",
-    logos: [
-      'torod',
-      'barq',
-      'prolo'
-    ]
+    rootfolder: "shippingServices",
+    logos: ["torod", "barq", "prolo", "deliverect"],
   },
 ];
-
 
 export {
   blogPosts,

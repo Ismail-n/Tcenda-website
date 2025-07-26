@@ -24,9 +24,9 @@ const ThirdPartyServices = () => {
 
         <Row className="thirdPartyServicesCards">
           {thirdPartyServicesData.map((service, index) => (
-            <Col lg={6} xs={12} key={index}>
-              <div className="service-card-wrapper  ">
-                <h5 className="mb-4">{t(service.title)}</h5>
+            <Col md={6} xs={12} key={index}>
+              <div className="service-card-wrapper">
+                <h5>{t(service.title)}</h5>
                 <div className="single_service_logo">
                   {service.logos.map((logo, logoIndex) => (
                     <div key={logoIndex} className="logo-item">
