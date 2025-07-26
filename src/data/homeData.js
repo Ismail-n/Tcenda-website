@@ -190,11 +190,51 @@ const services = [
   },
 ];
 
-const govermentServices = [
-  'gov_service1',
-  'gov_service2',
-  'gov_service3',
+const thirdPartyServicesData = [
+  {
+    title: "Government Services",
+    rootfolder : "govermentServices",
+    logos: [
+      'sadad',
+      'elm',
+      'yaqeen',
+      'nafath',
+      'ejar',
+      'najiz',
+    ]
+  },
+  {
+    title: "Payment Gateways",
+    rootfolder : "paymentGateways",
+    logos: [
+      'checkout',
+      'edaat',
+      'tap',
+      'tabby',
+      'tamara',
+      'paytabs',
+    ]
+  },
+  {
+    title: "SMS Gateways",
+    rootfolder : "smsGateways",
+    logos: [
+      'connectsaudi',
+      'msegat',
+      'unifonic',
+    ]
+  },
+  {
+    title: "Shipping Companies",
+    rootfolder : "shippingServices",
+    logos: [
+      'torod',
+      'barq',
+      'prolo'
+    ]
+  },
 ];
+
 
 export {
   blogPosts,
@@ -203,5 +243,5 @@ export {
   serviceModels,
   industries,
   services,
-  govermentServices,
+  thirdPartyServicesData,
 };
