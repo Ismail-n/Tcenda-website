@@ -364,7 +364,7 @@ const Footer = () => {
           <div className="single_item reach_section">
             <h2>{t("Reach Us")}</h2>
             <div className="address_info">
-              <div className="single_add">
+              <div className="single_add single_location">
                 <Image
                   src={"/images/icons/location.svg"}
                   width={24}
