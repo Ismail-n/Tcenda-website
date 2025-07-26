@@ -207,7 +207,7 @@ const thirdPartyServicesData = [
     logos: [
       "unifonic",
       "msegat",
-      "connectsaudi",
+      "connectSaudi",
       "gallabox",
       "whatsAppAPI",
       "smsCountry",
