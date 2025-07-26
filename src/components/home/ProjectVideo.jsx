@@ -40,7 +40,7 @@ const ProjectVideo = () => {
             </div>
           </Col>
           <Col lg={12}>
-            <Link href={"/portfolio"} className="view_all_btn text-decoration-underline text-center d-block mx-auto mt-4">{t("View All")}</Link>
+            <Link href={"/portfolio"} className="main_btn text-center d-block mx-auto mt-4">{t("View All")}</Link>
           </Col>
         </Row>
       </Container>

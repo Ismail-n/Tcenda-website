@@ -129,7 +129,7 @@ const servicesData = [
         icon: "fullStack/webPortal",
         title: "Web Portal Development",
         titleMaxWidth: 169,
-         titleArMaxWidth: 240,
+        titleArMaxWidth: 240,
         subtitle:
           "From user dashboards to enterprise portals, we create tailored solutions that drive engagement and efficiency.",
       },
@@ -155,10 +155,10 @@ const servicesData = [
     },
     overview: {
       image: "fullStackOverview",
-      heading: "Mobile Solutions that Deliver — With Us",
+      heading: "Smart Web Solutions, That Drive Results",
       maxHeading: 452,
       paragraphs: [
-        "Unlock the power of mobile with expertly crafted, high-performance applications tailored to your business needs. At TOD, we specialize in designing and developing custom mobile apps that are intuitive, scalable, and built to deliver real results.Whether you're launching a new product, streamlining internal operations, or enhancing customer engagement, our mobile solutions are designed to meet your goals. We work across iOS and Android platforms, using the latest technologies and frameworks to ensure speed, stability, and stunning UI/UX. From strategy and prototyping to development and deployment — we guide you at every step. With TOD, your mobile app isn't just a tool, it's a growth engine.",
+        "At TOD, we craft high-performance websites and platforms that do more than look good—they perform, scale, and deliver impact. Whether you're building a marketing site, a complex web application, or a digital product, we align strategy, design, and technology to meet your goals.Our team specializes in creating fast, secure, and responsive web solutions using modern frameworks and best practices. From custom development to CMS integration and performance optimization, we build experiences that engage users and grow your business.Let's build something powerful—designed to perform and built to last.",
       ],
     },
   },
@@ -367,7 +367,7 @@ const servicesData = [
         icon: "aiml/recommendationSystems",
         title: "Recommendation Systems",
         titleMaxWidth: 141,
-         titleArMaxWidth: 190,
+        titleArMaxWidth: 190,
         subtitle:
           "We build intelligent recommendation systems that personalize content, products, and user experiences.",
       },
@@ -471,7 +471,7 @@ const servicesData = [
         subtitle:
           "Track trends, monitor operations, and respond in the moment — powered by real-time analytics.",
         titleMaxWidth: 144,
-         titleArMaxWidth: 180,
+        titleArMaxWidth: 180,
       },
       {
         icon: "dataAnalytics/dataGovernance",
@@ -575,7 +575,7 @@ const servicesData = [
         { icon: "uiux/figma", title: "Figma" },
         { icon: "uiux/adobeXD", title: "Adobe XD" },
         { icon: "uiux/sketch", title: "Sketch" },
-        { icon: "uiux/inVision", title: "InVision" },
+        { icon: "uiux/invision", title: "InVision" },
         { icon: "uiux/miro", title: "Miro" },
         { icon: "uiux/zeplin", title: "Zeplin" },
         { icon: "uiux/framer", title: "Framer" },

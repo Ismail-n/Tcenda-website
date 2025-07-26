@@ -2967,6 +2967,10 @@ footer {
     }
   }
   .view_all_btn {
+    width: fit-content;
+    border-radius: var(--common-border-radius);
+    background: var(--hover-gradient);
+    padding: 10px 40px;
   }
 }
 

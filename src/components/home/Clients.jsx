@@ -9,7 +9,11 @@ import { useKeenSlider } from "keen-slider/react";
 import Marquee from "react-fast-marquee";
 
 const Clients = () => {
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+  const isRTL = language === "ar";
 
   const [sliderRef, instanceRef] = useKeenSlider(
     {
@@ -78,7 +82,7 @@ const Clients = () => {
 
       <div className="marqueeWrapper ltr">
         <div className="marquees">
-          <Marquee gradient={false} speed={50}>
+          <Marquee gradient={false} speed={50} direction={isRTL ? "right" : "left"}>
             {[
               ...clientsLogo,
               ...clientsLogo,
