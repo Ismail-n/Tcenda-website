@@ -57,7 +57,9 @@ const portfolios = [
       imageWidth: 537,
       imageHeight: 362,
     },
-    background: "linear-gradient(to right, #FFFFFF, #ABDBFF)",
+    background: "linear-gradient(100.28deg, #FFFFFF -53.98%, #ABDBFF 133.6%)",
+    backgroundAr: "linear-gradient(100deg, #ABDBFF , FFFFFF)",
+
   },
   {
     id: "send",
@@ -203,8 +205,8 @@ const portfolios = [
       imageWidth: 289,
       imageHeight: 415,
     },
-    background: "linear-gradient(to left, #1576EC, #FFFFFF)",
-    backgroundAr: "linear-gradient(to right, #1576EC, #FFFFFF)",
+    background: "linear-gradient(100deg, rgba(255, 255, 255, 1), rgba(21, 118, 236, 1))",
+    backgroundAr: "linear-gradient(100deg, rgba(21, 118, 236, 1) , rgba(255, 255, 255, 1))",
   },
   {
     id: "health-care",
@@ -224,7 +226,7 @@ const portfolios = [
       imageWidth: 351,
       imageHeight: 431,
     },
-    background: "linear-gradient(to left, #0BA69A, #FFFFFF)",
+    background: "linear-gradient(100.71deg, #FFFFFF -52.95%, #0BA69A 181.08%)",
   },
   {
     id: "sign",
@@ -244,7 +246,7 @@ const portfolios = [
       imageWidth: 465,
       imageHeight: 406,
     },
-    background: "linear-gradient(to left, #FF91C5, #FFFFFF)",
+    background: "linear-gradient(109.91deg, #FFFFFF -22.51%, #FF91C5 98.59%)",
   },
   {
     id: "fresh-cart",
@@ -285,7 +287,7 @@ const portfolios = [
       imageWidth: 518,
       imageHeight: 344,
     },
-    background: "linear-gradient(to left, #FEC31D, #FFFFFF)",
+    background: "linear-gradient(89.05deg, #FFFFFF -20.49%, #FEC31D 98.38%)",
   },
   // 6-8 Sports
   {
