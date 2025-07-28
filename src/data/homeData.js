@@ -205,12 +205,7 @@ const thirdPartyServicesData = [
     title: "SMS Gateways",
     rootfolder: "smsGateways",
     logos: [
-      "unifonic",
-      "msegat",
-      "connectSaudi",
-      "gallabox",
-      "whatsAppAPI",
-      "smsCountry",
+      "unifonic","msegat","connectSaudi","gallabox","whatsAppAPI","smsCountry",
     ],
   },
   {
