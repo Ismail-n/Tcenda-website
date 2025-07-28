@@ -692,7 +692,8 @@ footer {
         margin-top: 35px;
         border-radius: 20px;
         padding: 25px;
-        min-height: 300px;
+        min-height: calc(100% - 35px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
 
         .card-content {
           display: flex;
@@ -713,25 +714,7 @@ footer {
 
         position: relative;
 
-        &::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          z-index: -1;
-          border-radius: inherit;
-          padding: 1px;
-          background: linear-gradient(
-            to bottom,
-            rgba(0, 255, 255, 1),
-            // top: fully visible
-            rgba(0, 255, 255, 0.3),
-            // middle: less visible
-            rgba(0, 174, 239, 0.1) // bottom: slightly visible
-          );
-          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-          mask-composite: exclude;
-          -webkit-mask-composite: destination-out;
-        }
+        
 
         .card-button {
           position: absolute;
@@ -860,10 +843,10 @@ footer {
       }
 
       .explore_services {
-        margin-top: 25px;
+        margin-top: 35px;
         border-radius: 20px;
         background: url("/images/home/exploreServiceNewBg.webp");
-        height: calc(100% - 25px);
+        height: calc(100% - 35px);
         padding: 23px 60px 34px 23px;
         position: relative;
         background-size: cover;
@@ -1161,11 +1144,13 @@ footer {
       max-width: 929px;
     }
     .thirdPartyServicesCards {
-      .service-card-wrapper {
+      .service_card_grid_item{
         margin-top: 45px;
+      .service-card-wrapper {
         padding: 25px;
         border: 1px solid #b3b4bd40;
         border-radius: 16px;
+        min-height: 100%;
         @media (max-width: 575px) {
           margin-top: 20px;
         }
@@ -1198,6 +1183,7 @@ footer {
           }
         }
       }
+    }
     }
   }
 }
