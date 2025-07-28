@@ -701,6 +701,15 @@ footer {
           justify-content: center;
           transition: filter 0.4s ease;
         }
+        .home_service_image_wrapper{
+          height: 78px;
+          width: 78px;
+          background: linear-gradient(316.4deg, #1C95B5 5.14%, #2BB7BA 48.07%, #32E8FF 97.19%);
+          border-radius: 12px;
+          text-align: center;
+          padding: 15px;
+
+        }
 
         position: relative;
 
@@ -1179,8 +1188,11 @@ footer {
             @media (max-width: 575px) {
               max-width: 50%;
             }
+            @media (min-width: 575px) and (max-width:992px) {
+              max-width: 80px;
+            }
             img {
-              width: 80px;
+              width: 144px;
               height: 80px;
             }
           }

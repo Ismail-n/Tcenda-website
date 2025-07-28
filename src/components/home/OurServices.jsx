@@ -148,12 +148,14 @@ const ServiceCard = ({ item }) => {
       <div className="single_service card__article">
         {/* <div className="gradient-border-box"></div> */}
         <div className="card-content">
-          <Image
+          <div className="home_service_image_wrapper">
+            <Image
             src={`/images/icons/services/${icon}.svg`}
             width={48}
             height={48}
             alt={t(title)}
           />
+          </div>
           <h2 style={getTitleStyle()}>{t(item.title)}</h2>
 
           <p>{t(description)}</p>
