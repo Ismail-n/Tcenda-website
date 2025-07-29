@@ -128,6 +128,7 @@ header {
 }
 
 footer {
+
   // padding-top: 80px;
   @media (max-width: 575px) {
     padding-top: 0px;
@@ -153,6 +154,7 @@ footer {
   }
 
   .right_content {
+
     // display: flex;
     // gap: 68px;
     // .service_item {
@@ -222,6 +224,7 @@ footer {
       }
 
       @media (max-width: 575px) {
+
         .company_links,
         .quick_links {
           margin-top: 25px;
@@ -279,8 +282,7 @@ footer {
     }
   }
 
-  .vision_img {
-  }
+  .vision_img {}
 
   .connect_on_div {
     margin-top: 40px;
@@ -301,6 +303,7 @@ footer {
     align-items: center;
 
     .connect_on_inner {
+
       // @media (min-width: 575px) {
       //   display: flex;
       //   gap: 33px;
@@ -574,6 +577,8 @@ footer {
   }
 
   .top_bg {
+    position: relative;
+
     img {
       width: 100%;
       height: auto;
@@ -600,6 +605,7 @@ footer {
   }
 
   .innovation_section {
+    margin: 50px 0px;;
     h2 {
       font-size: 36px;
       line-height: 100%;
@@ -678,8 +684,7 @@ footer {
       }
     }
 
-    .project_slider_controls {
-    }
+    .project_slider_controls {}
   }
 
   .our_services {
@@ -702,7 +707,8 @@ footer {
           justify-content: center;
           transition: filter 0.4s ease;
         }
-        .home_service_image_wrapper{
+
+        .home_service_image_wrapper {
           height: 64px;
           width: 64px;
           background: linear-gradient(316.4deg, #1C95B5 5.14%, #2BB7BA 48.07%, #32E8FF 97.19%);
@@ -714,7 +720,7 @@ footer {
 
         position: relative;
 
-        
+
 
         .card-button {
           position: absolute;
@@ -747,11 +753,9 @@ footer {
 
         // border: 1px solid var(--primary-color);
         .gradient-border-box {
-          background: linear-gradient(
-            180deg,
-            rgb(68, 173, 193),
-            rgb(5, 24, 28)
-          );
+          background: linear-gradient(180deg,
+              rgb(68, 173, 193),
+              rgb(5, 24, 28));
           width: 100.6%;
           height: 100%;
           position: absolute;
@@ -926,11 +930,9 @@ footer {
           position: absolute;
           top: 0;
           left: 0;
-          background: linear-gradient(
-            180deg,
-            rgba(68, 173, 193, 1) 0%,
-            rgba(0, 0, 0, 1) 100%
-          );
+          background: linear-gradient(180deg,
+              rgba(68, 173, 193, 1) 0%,
+              rgba(0, 0, 0, 1) 100%);
           width: 100%;
           height: 80%;
           z-index: -1;
@@ -1000,11 +1002,9 @@ footer {
           position: absolute;
           top: 0;
           left: 0;
-          background: linear-gradient(
-            180deg,
-            rgba(68, 173, 193, 1) 0%,
-            rgba(0, 0, 0, 1) 100%
-          );
+          background: linear-gradient(180deg,
+              rgba(68, 173, 193, 1) 0%,
+              rgba(0, 0, 0, 1) 100%);
           width: 100%;
           height: 100%;
           z-index: -1;
@@ -1143,53 +1143,67 @@ footer {
     .sub_title {
       max-width: 929px;
     }
+
     .thirdPartyServicesCards {
-      .service_card_grid_item{
-        margin-top: 45px;
-      .service-card-wrapper {
-        padding: 25px;
-        border: 1px solid #b3b4bd40;
-        border-radius: 16px;
-        min-height: 100%;
-        @media (max-width: 575px) {
+      .service_card_grid_item {
+        @media (min-width: 320px) and (max-width:575px) {
+
           margin-top: 20px;
         }
-        h5 {
-          font-size: 30px;
-          line-height: 100%;
-          letter-spacing: 0%;
-          margin-bottom: 25px;
+
+        margin-top: 45px;
+
+        .service-card-wrapper {
+          padding: 25px;
+          border: 1px solid #b3b4bd40;
+          border-radius: 16px;
+          min-height: 100%;
+
           @media (max-width: 575px) {
-            font-size: 24px;
+            margin-top: 20px;
           }
-        }
 
-        .single_service_logo {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
+          h5 {
+            font-size: 30px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            margin-bottom: 25px;
 
-          .logo-item {
             @media (max-width: 575px) {
-              max-width: 50%;
+              font-size: 24px;
             }
-            @media (min-width: 320px) and (max-width:992px) {
-              max-width: 80px;
-            }
-            img {
-              width: 140px;
-              height: 60px;
+          }
+
+          .single_service_logo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .logo-item {
+              @media (max-width: 575px) {
+                max-width: 50%;
+              }
+
+              @media (min-width: 320px) and (max-width:992px) {
+                max-width: 80px;
+              }
+
+              img {
+                width: 140px;
+                height: 60px;
+              }
             }
           }
         }
       }
-    }
     }
   }
 }
 
 // COMMON
 .clients {
+  margin: 0;
+
   .clients_logos {
     margin-top: 40px;
 
@@ -1210,7 +1224,13 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    margin-top: 46px;
+    margin-top: 20px;
+    @media screen and (min-width:320px) and (max-width:575px) {
+      margin-top: 0;
+    }
+    @media screen and (min-width:575px) and (max-width:992px) {
+      margin-top: 0px;
+    }
 
     .marquee {
       display: flex;
@@ -1517,6 +1537,7 @@ footer {
   margin-top: 50px;
 
   .top_section {
+
     // min-height: 307px;
     @media (min-width: 575px) {
       min-height: 207px;
@@ -1590,7 +1611,7 @@ footer {
       margin-top: 40px;
     }
 
-    & > p {
+    &>p {
       font-size: 20px;
       line-height: 24px;
       font-weight: 500;
@@ -1671,14 +1692,13 @@ footer {
         z-index: -1;
         border-radius: inherit;
         padding: 1px;
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 255, 255, 1),
-          // top: fully visible
-          rgba(0, 255, 255, 0.3),
-          // middle: less visible
-          rgba(0, 174, 239, 0.1) // bottom: slightly visible
-        );
+        background: linear-gradient(to bottom,
+            rgba(0, 255, 255, 1),
+            // top: fully visible
+            rgba(0, 255, 255, 0.3),
+            // middle: less visible
+            rgba(0, 174, 239, 0.1) // bottom: slightly visible
+          );
         mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         mask-composite: exclude;
         -webkit-mask-composite: destination-out;
@@ -1695,11 +1715,9 @@ footer {
         content: "";
         width: 1px;
         height: 198px;
-        background: linear-gradient(
-          182deg,
-          rgba(68, 173, 193, 1) 0%,
-          rgba(5, 24, 28, 0.5) 100%
-        );
+        background: linear-gradient(182deg,
+            rgba(68, 173, 193, 1) 0%,
+            rgba(5, 24, 28, 0.5) 100%);
         left: 50%;
 
         @media (max-width: 575px) {
@@ -1759,11 +1777,9 @@ footer {
 
       .inner_section {
         padding: 58px 25px 25px 40px;
-        background: linear-gradient(
-          90deg,
-          rgba(43, 183, 186, 1) 100%,
-          rgba(28, 149, 181, 1) 0%
-        );
+        background: linear-gradient(90deg,
+            rgba(43, 183, 186, 1) 100%,
+            rgba(28, 149, 181, 1) 0%);
         border-radius: 20px;
         position: relative;
 
@@ -1831,14 +1847,13 @@ footer {
         z-index: -1;
         border-radius: inherit;
         padding: 1px;
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 255, 255, 1),
-          // top: fully visible
-          rgba(0, 255, 255, 0.3),
-          // middle: less visible
-          rgba(0, 174, 239, 0.1) // bottom: slightly visible
-        );
+        background: linear-gradient(to bottom,
+            rgba(0, 255, 255, 1),
+            // top: fully visible
+            rgba(0, 255, 255, 0.3),
+            // middle: less visible
+            rgba(0, 174, 239, 0.1) // bottom: slightly visible
+          );
         mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         mask-composite: exclude;
         -webkit-mask-composite: destination-out;
@@ -1851,7 +1866,7 @@ footer {
         padding: 25px;
       }
 
-      & > h2 {
+      &>h2 {
         font-size: 36px;
         line-height: 100%;
         font-weight: 700;
@@ -1861,7 +1876,7 @@ footer {
         }
       }
 
-      & > h3 {
+      &>h3 {
         font-size: 20px;
         line-height: 100%;
         margin-top: 14px;
@@ -2467,14 +2482,13 @@ footer {
         z-index: -1;
         border-radius: inherit;
         padding: 1px;
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 255, 255, 1),
-          // top: fully visible
-          rgba(0, 255, 255, 0.3),
-          // middle: less visible
-          rgba(0, 174, 239, 0.1) // bottom: slightly visible
-        );
+        background: linear-gradient(to bottom,
+            rgba(0, 255, 255, 1),
+            // top: fully visible
+            rgba(0, 255, 255, 0.3),
+            // middle: less visible
+            rgba(0, 174, 239, 0.1) // bottom: slightly visible
+          );
         mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         mask-composite: exclude;
         -webkit-mask-composite: destination-out;
@@ -2618,13 +2632,13 @@ footer {
       padding: 0px;
       z-index: +1;
 
-      & > h2 {
+      &>h2 {
         font-size: 36px;
         line-height: 100%;
         font-weight: 700;
       }
 
-      & > h3 {
+      &>h3 {
         font-size: 20px;
         line-height: 100%;
         margin-top: 14px;
@@ -2698,7 +2712,7 @@ footer {
           margin-top: 5px;
         }
 
-        & > p {
+        &>p {
           font-weight: 500;
           margin-bottom: 35px;
         }
@@ -3225,7 +3239,7 @@ footer {
       @media (max-width: 991px) {
         margin-top: 30px;
 
-        & > div {
+        &>div {
           min-width: 100%;
           text-align: left !important;
         }
@@ -3509,14 +3523,13 @@ footer {
     z-index: -1;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 255, 255, 1),
-      // top: fully visible
-      rgba(0, 255, 255, 0.3),
-      // middle: less visible
-      rgba(0, 174, 239, 0.1) // bottom: slightly visible
-    );
+    background: linear-gradient(to bottom,
+        rgba(0, 255, 255, 1),
+        // top: fully visible
+        rgba(0, 255, 255, 0.3),
+        // middle: less visible
+        rgba(0, 174, 239, 0.1) // bottom: slightly visible
+      );
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     -webkit-mask-composite: destination-out;

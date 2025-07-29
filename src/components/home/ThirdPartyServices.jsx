@@ -51,7 +51,7 @@ const ThirdPartyServices = () => {
                           src={imageSrc}
                           alt={`${logo} logo`}
                           width={140}
-                          height={60}
+                          height={40}
                         />
                       </div>
                     );

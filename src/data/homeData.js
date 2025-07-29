@@ -205,7 +205,7 @@ const thirdPartyServicesData = [
     title: "SMS Gateways",
     rootfolder: "smsGateways",
     logos: [
-      "unifonic","msegat","connectSaudi","gallabox","whatsAppAPI","smsCountry",
+      "unifonic","msegat","connectSaudi","smsCountry","whatsAppAPI","gallabox",
     ],
   },
   {
@@ -213,6 +213,11 @@ const thirdPartyServicesData = [
     rootfolder: "shippingServices",
     logos: ["torod", "barq", "prolo", "deliverect"],
   },
+  // {
+  //   title: "POS integrations",
+  //   rootfolder: "posIntegrations",
+  //   logos: ["oodo", "syrve", "oracle", "foodics"],
+  // },
 ];
 
 export {

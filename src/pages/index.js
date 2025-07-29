@@ -22,7 +22,8 @@ export default function Home() {
         description="Welcome to Tod — delivering innovative web solutions, high-performance apps, and exceptional user experiences tailored for your business success."
       />
       <main className="home">
-        <TopSection />
+        <TopSection ClientSection={Clients}/>
+        
         <InnovationSection />
         <ProjectVideo />
         {/* <OurProjects /> */}
@@ -30,7 +31,6 @@ export default function Home() {
         <EngagementModels />
         <ThirdPartyServices/>
         <Industries />
-        <Clients />
         <ConsultOurExperts />
         {/* <Blogs /> */}
         {/* <ClientTestimonials /> */}

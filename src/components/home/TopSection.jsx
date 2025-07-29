@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
-const TopSection = () => {
+const TopSection = ({ClientSection}) => {
   const { t } = useTranslation();
   const router = useRouter();
   
@@ -47,7 +47,7 @@ const TopSection = () => {
   };
 
   return (
-    <section className="top_section">
+    <section className="top_section ">
       <Container>
         <div className="top_row">
           <h1 className="top_section_title d-none d-lg-block">
@@ -106,6 +106,8 @@ const TopSection = () => {
           className="d-lg-none"
           priority
         />
+        <ClientSection/>
+
       </div>
     </section>
   );

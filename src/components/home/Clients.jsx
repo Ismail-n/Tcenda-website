@@ -62,24 +62,6 @@ const Clients = () => {
 
   return (
     <section className="clients common_section">
-      <Container>
-        <Title title={t("Clients")} />
-        <SubTitle subTitle={t("10+ collaborations with top-tier partners")} />
-        {/* DESKTOP */}
-        {/* <div className="clients_logos d-none d-md-flex flex-wrap justify-content-center gap-4"> */}
-        {/* <div className="clients_logos ">
-            {clientsLogo?.map((logo) => (
-              <Image
-                key={logo}
-                src={`/images/icons/clients/${logo}.svg`}
-                width={160}
-                height={80}
-                alt={`${logo} logo`}
-              />
-              ))}
-              </div> */}
-      </Container>
-
       <div className="marqueeWrapper ltr">
         <div className="marquees">
           <Marquee gradient={false} speed={50} direction={isRTL ? "right" : "left"}>
