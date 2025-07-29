@@ -1173,12 +1173,12 @@ footer {
             @media (max-width: 575px) {
               max-width: 50%;
             }
-            @media (min-width: 575px) and (max-width:992px) {
+            @media (min-width: 320px) and (max-width:992px) {
               max-width: 80px;
             }
             img {
-              width: 144px;
-              height: 80px;
+              width: 140px;
+              height: 60px;
             }
           }
         }
