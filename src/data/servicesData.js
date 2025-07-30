@@ -1,6 +1,7 @@
 const servicesData = [
   {
     id: "mobile-app",
+    isIconsChanged : true,
     mainTitle: "Enterprise Mobility That Accelerates Digital Transformation",
     mainSubTitle:
       "Empower your enterprise with scalable, secure, and high-performance mobile solutions designed to drive digital transformation across modern businesses.",

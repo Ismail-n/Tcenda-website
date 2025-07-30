@@ -43,10 +43,11 @@ const ThirdPartyServices = () => {
                     return (
                       <div
                         key={logoIdx}
-                        className="logo-item"
+                        className={`logo-item ${isHovered ? "logo-item-hovered" : ""}`}
                         onMouseEnter={() => setHovered({ serviceIdx, logoIdx })}
                         onMouseLeave={() => setHovered({ serviceIdx: null, logoIdx: null })}
                       >
+
                         <Image
                           src={imageSrc}
                           alt={`${logo} logo`}

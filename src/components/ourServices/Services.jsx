@@ -147,6 +147,7 @@ const ServiceTechCard = ({ item }) => {
     i18n: { language },
   } = useTranslation();
   const router = useRouter();
+  
 
   const getTitleStyle = () => {
     if (language === "ar") {
@@ -163,12 +164,14 @@ const ServiceTechCard = ({ item }) => {
     <Col lg={4} md={6}>
       <div className="single_tech_card">
         <div className="card-content">
-          <Image
+          <div className="our_services_image_wrapper">
+            <Image
             src={`/images/services/${icon}.svg`}
             width={48}
             height={48}
             alt={title}
           />
+          </div>
           <h2 style={getTitleStyle()}>{t(title)}</h2>
           <p>{t(subtitle)}</p>
         </div>
