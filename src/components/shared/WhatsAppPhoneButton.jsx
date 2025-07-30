@@ -1,9 +1,11 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const WhatsAppPhoneButton = () => {
   const phoneNumber = "966554848908";
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="floating_buttons">
       {/* WhatsApp Button */}
@@ -21,9 +23,15 @@ const WhatsAppPhoneButton = () => {
           repeatType: "loop",
           ease: "easeInOut",
         }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         <Image
-          src={"/images/icons/whatsAppIcon.svg"}
+          src={
+            isHovered
+              ? "/images/icons/whatsAppHoverIcon.svg"
+              : "/images/icons/whatsAppIcon.svg"
+          }
           width={60}
           height={60}
           alt="whatsapp"
@@ -40,7 +48,7 @@ const WhatsAppPhoneButton = () => {
           repeat: Infinity,
           repeatType: "loop",
           ease: "easeInOut",
-          delay: 0.5, 
+          delay: 0.5,
         }}
       >
         <Image
