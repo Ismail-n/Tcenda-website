@@ -34,11 +34,11 @@ const ProjectVideo = () => {
       const handleTouchStart = () => {
         tryPlay(desktopVideo);
         tryPlay(mobileVideo);
-        window.removeEventListener("touchstart", handleTouchStart);
+        document.removeEventListener("touchstart", handleTouchStart);
       };
-      window.addEventListener("touchstart", handleTouchStart);
+      document.addEventListener("touchstart", handleTouchStart);
       return () => {
-        window.removeEventListener("touchstart", handleTouchStart);
+        document.removeEventListener("touchstart", handleTouchStart);
       };
     }
   }, []);
@@ -55,7 +55,7 @@ const ProjectVideo = () => {
             <div className="video_section">
               <video
                 ref={desktopVideoRef}
-                src="/video/desktop.webm"
+                src="/video/desktop.mp4"
                 autoPlay
                 muted
                 loop
@@ -71,7 +71,7 @@ const ProjectVideo = () => {
             <div className="video_section">
               <video
                 ref={mobileVideoRef}
-                src="/video/mobile.webm"
+                src="/video/mobile.mp4"
                 autoPlay
                 muted
                 loop

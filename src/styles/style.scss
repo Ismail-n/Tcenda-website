@@ -558,6 +558,12 @@ footer {
 }
 
 .home {
+  .top_section {
+    position: relative;
+    // overflow: hidden;
+
+  }
+
   .top_row {
     margin-top: 106px;
     max-width: 940px;
@@ -581,7 +587,6 @@ footer {
   }
 
   .top_bg {
-    position: relative;
 
     img {
       width: 100%;
@@ -1188,14 +1193,15 @@ footer {
               padding: 5px;
 
             }
-            
+
             @media screen and (min-width:575px) and (max-width:992px) {
               padding: 15px 15px;
             }
-            img{              
+
+            img {
               @media screen and (max-width:575px) {
                 max-width: 70%;
-  
+
               }
             }
           }
