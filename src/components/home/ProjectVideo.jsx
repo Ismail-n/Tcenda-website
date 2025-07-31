@@ -45,11 +45,14 @@ const ProjectVideo = () => {
 
   return (
     <section className="common_section project_video_section">
-      <Container>
+      <Container >
         <Row>
           <Title title={t("Explore Our Projects")} />
           <SubTitle subTitle={t("Where ideas meet execution")} />
-
+        </Row>
+      </Container>
+      <Container fluid>
+        <Row>
           {/* DESKTOP */}
           <Col lg={12} className="d-none d-md-block">
             <div className="video_section">
@@ -90,9 +93,10 @@ const ProjectVideo = () => {
               {t("View All")}
             </Link>
           </Col>
-        </Row>
-      </Container>
-    </section>
+
+        </Row >
+      </Container >
+    </section >
   );
 };
 
