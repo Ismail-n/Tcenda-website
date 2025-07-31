@@ -29,7 +29,7 @@ const WhatsAppPhoneButton = () => {
         <Image
           src={
             isHovered
-              ? "/images/icons/whatsAppHoverIcon.svg"
+              ? "/images/icons/whatsAppHoverIconImage.svg"
               : "/images/icons/whatsAppIcon.svg"
           }
           width={60}
