@@ -57,7 +57,7 @@ const ThirdPartyServices = () => {
                     })
                 ))}
               </div>
-              <a href="#" className="main_btn text-center d-block mx-auto">{t('See More')}</a>
+              {/* <a href="#" className="main_btn text-center d-block mx-auto">{t('See More')}</a> */}
             </div>
           </Col>
           {/* {thirdPartyServicesData.map((service, serviceIdx) => (

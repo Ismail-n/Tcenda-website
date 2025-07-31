@@ -47,11 +47,8 @@ const TopSection = ({ClientSection}) => {
   };
 
   return (
-    <section className="top_section">
+    <section className="top_section ">
       <Container>
-        <div className="video_background">
-
-        </div>
         <div className="top_row">
           <h1 className="top_section_title d-none d-lg-block">
             {t("Empowering Businesses to Scale with")}
