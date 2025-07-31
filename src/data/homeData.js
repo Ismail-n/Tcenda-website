@@ -205,7 +205,7 @@ const thirdPartyServicesData = [
     title: "SMS Gateways",
     rootfolder: "smsGateways",
     logos: [
-      "unifonic","msegat","connectSaudi","smsCountry","whatsAppAPI","gallabox",
+      "unifonic", "msegat", "connectSaudi", "smsCountry", "whatsAppAPI", "gallabox",
     ],
   },
   {
@@ -220,6 +220,27 @@ const thirdPartyServicesData = [
   // },
 ];
 
+const thirdPartIntegrationsLogos = [
+  {
+    rootfolder: "govermentServices",
+    logos: [
+      "nafath",
+      "sadad",
+      "elm",
+      "ejar"
+    ]
+  },
+  {
+    rootfolder: "paymentGateways",
+    logos: ["checkout", "tabby", "tamara","applePay"],
+  },
+  {
+    rootfolder: "posIntegrations",
+    logos: ["oodo","oracle","foodics","syrve"],
+  }
+
+];
+
 export {
   blogPosts,
   clientsLogo,
@@ -228,4 +249,5 @@ export {
   industries,
   services,
   thirdPartyServicesData,
+  thirdPartIntegrationsLogos
 };
