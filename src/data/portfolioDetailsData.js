@@ -952,9 +952,8 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
           "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
         image: "/images/portfolioDetails/sign/topBg.webp",
         appStoreLinks: {
-          ios: "https://apps.apple.com/app/ashjar-friend",
-          android:
-            "https://play.google.com/store/apps/details?id=ashjar.friend",
+          ios: "https://apps.apple.com/in/app/sign-burger-%D8%B3%D8%A7%D9%8A%D9%86-%D8%A8%D8%B1%D8%AC%D8%B1/id6748125819",
+          android:"https://play.google.com/store/apps/details?id=com.wulooj.signburger.sa",
         },
       },
       aboutUs: {
