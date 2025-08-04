@@ -126,18 +126,14 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header ${showHeader ? "visible" : "hidden header_2"} ${
-          isPortfolioDetail ? "portfolio-detail-header" : ""
-        } ${isScrolled ? "scrolled" : ""}`}
+        className={`header ${showHeader ? "visible" : "hidden header_2"} ${isScrolled ? "scrolled" : ""}`}
       >
         <Container>
           <div className="g_between">
             <div className="logo">
               <Link href="/">
                 <Image
-                  src={`/images/icons/${
-                    isPortfolioDetail && !isScrolled ? "logoBlack" : "logoNew"
-                  }.svg`}
+                  src={`/images/icons/logoNew.svg`}
                   width={67}
                   height={65}
                   alt="logo"
@@ -178,11 +174,7 @@ const Header = () => {
                   />
                 ) : (
                   <Image
-                    src={`/images/icons/${
-                      isPortfolioDetail && !isScrolled
-                        ? "menuBlackNew"
-                        : "menuNew"
-                    }.svg`}
+                    src={`/images/icons/menuNew.svg`}
                     width={25}
                     height={25}
                     alt="menu"
