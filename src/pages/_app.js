@@ -14,6 +14,7 @@ import ClientOnly from "@/components/ClientOnly";
 import WhatsAppPhoneButton from "@/components/shared/WhatsAppPhoneButton";
 import { useEffect, useState } from "react";
 import i18n from "../../i18n";
+import Script from "next/script";
 
 const pageVariants = {
   initial: { opacity: 0, y: -100 },
@@ -70,6 +71,18 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-8WK0QKTTG9"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8WK0QKTTG9');
+        `}
+      </Script>
       <Header />
       <AnimatePresence mode="wait" initial={false}>
         <motion.div

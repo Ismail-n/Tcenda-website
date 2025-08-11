@@ -173,9 +173,7 @@ const ServiceCard = ({ item }) => {
         <button
           className="card-button"
           onClick={() =>
-            router.push(
-              `/contact-us?service=${encodeURIComponent(item?.title)}`
-            )
+            router.push(`/contact-us?service=${encodeURIComponent(item?.title)}`)
           }
         >
           {t("Request This Service")}

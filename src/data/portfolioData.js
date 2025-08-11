@@ -355,7 +355,7 @@ const portfolios = [
       "linear-gradient(to right, rgba(20, 179, 130, 1), rgba(51, 182, 143, 1)",
     backgroundAr:
       "linear-gradient(to right, rgba(51, 182, 143, 1), rgba(20, 179, 130, 1)",
-  },
+  }
 ];
 
 export { portfolios };

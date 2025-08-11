@@ -1507,7 +1507,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         image: "/images/portfolioDetails/ultimateCaddy/highLightBanner.webp",
       },
     },
-  },
+  }
 ];
 
 export { portfolioDetails };
