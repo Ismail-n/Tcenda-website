@@ -36,6 +36,7 @@ const portfolios = [
     caseStudyLink: "ashjar-space",
     imageDetails: {
       image: "ashjarSpace",
+      imageAr: "ashjarSpaceAr",
       imageWidth: 548,
       imageHeight: 405,
     },
@@ -58,7 +59,7 @@ const portfolios = [
       imageHeight: 362,
     },
     background: "linear-gradient(100.28deg, #FFFFFF -53.98%, #ABDBFF 133.6%)",
-    backgroundAr: "linear-gradient(100deg, #ABDBFF , FFFFFF)",
+    backgroundAr: "linear-gradient(100deg, #ABDBFF , #FFFFFF)",
 
   },
   {
@@ -77,6 +78,7 @@ const portfolios = [
     caseStudyLink: "send",
     imageDetails: {
       image: "send",
+      imageAr: "sendAr",
       imageWidth: 480,
       imageHeight: 419,
     },
@@ -99,6 +101,7 @@ const portfolios = [
     caseStudyLink: "half-million",
     imageDetails: {
       image: "halfMillion",
+      imageAr: "halfMillionAr",
       imageWidth: 466,
       imageHeight: 431,
     },
@@ -140,6 +143,7 @@ const portfolios = [
     caseStudyLink: "real-estate",
     imageDetails: {
       image: "realEstate",
+      imageAr: "realEstateAr",
       imageWidth: 537,
       imageHeight: 362,
     },

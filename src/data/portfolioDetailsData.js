@@ -104,6 +104,7 @@ const portfolioDetails = [
         title: "Send App - Gifts that Feel Personal",
         subtitle: "Personalized gifts in just a few taps.",
         image: "/images/portfolioDetails/send/topBg.webp",
+        imageAr: "/images/portfolioDetails/send/topBgAr.webp",
         appStoreLinks: {
           ios: "https://apps.apple.com/gb/app/ashjar/id6474177129?uo=2",
           android:
@@ -128,6 +129,7 @@ const portfolioDetails = [
         title: "Project Goals",
         image: {
           url: "/images/portfolioDetails/send/projectGoals.webp",
+          urlAr: "/images/portfolioDetails/send/projectGoalsAr.webp",
         },
         goals: [
           {
@@ -167,6 +169,7 @@ const portfolioDetails = [
             maxTitleWidth: 563,
             images: {
               url: "/images/portfolioDetails/send/feature1.webp",
+              urlAr: "/images/portfolioDetails/send/feature1Ar.webp",
               width: 248,
               height: 507,
             },
@@ -176,6 +179,7 @@ const portfolioDetails = [
             maxTitleWidth: 505,
             images: {
               url: "/images/portfolioDetails/send/feature2.webp",
+              urlAr: "/images/portfolioDetails/send/feature2Ar.webp",
               width: 248,
               height: 507,
             },
@@ -202,6 +206,7 @@ const portfolioDetails = [
         title: "Ashjar Space - Where Calm Lives.",
         subtitle: `Beautiful, functional spaces for modern minds to meet, create, and collaborate.`,
         image: "/images/portfolioDetails/ashjarSpace/topBg.webp",
+        imageAr: "/images/portfolioDetails/ashjarSpace/topBgAr.webp",
         appStoreLinks: {
           ios: "https://apps.apple.com/sa/app/ashjar-space/id6476087387",
           android:
@@ -226,6 +231,7 @@ const portfolioDetails = [
         title: "Project Goals",
         image: {
           url: "/images/portfolioDetails/ashjarSpace/projectGoals.webp",
+          urlAr: "/images/portfolioDetails/ashjarSpace/projectGoalsAr.webp",
         },
         goals: [
           {
@@ -265,6 +271,7 @@ const portfolioDetails = [
             maxTitleWidth: 398,
             images: {
               url: "/images/portfolioDetails/ashjarSpace/feature1.webp",
+              urlAr: "/images/portfolioDetails/ashjarSpace/feature1Ar.webp",
               width: 507,
               height: 496,
             },
@@ -274,6 +281,7 @@ const portfolioDetails = [
             maxTitleWidth: 525,
             images: {
               url: "/images/portfolioDetails/ashjarSpace/feature2.webp",
+              urlAr: "/images/portfolioDetails/ashjarSpace/feature2Ar.webp",
               width: 507,
               height: 496,
             },
@@ -300,6 +308,7 @@ const portfolioDetails = [
         subtitle:
           "Half Million is more than just a coffee chain — it's a local movement brewing community, quality, and innovation across Saudi Arabia. With a passion for delivering handcrafted coffee with speed and precision, Half Million connects coffee lovers to their favorite brews through convenient pickup, curbside service, and reliable delivery. Whether you're on the move or taking a moment to unwind, Half Million makes exceptional coffee effortlessly accessible.",
         image: "/images/portfolioDetails/halfMillion/topBg.webp",
+        imageAr: "/images/portfolioDetails/halfMillion/topBgAr.webp",
         appStoreLinks: {
           ios: "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
           android:
@@ -323,6 +332,7 @@ const portfolioDetails = [
         title: "Project Goals",
         image: {
           url: "/images/portfolioDetails/halfMillion/projectGoals.webp",
+          urlAr: "/images/portfolioDetails/halfMillion/projectGoalsAr.webp",
         },
         goals: [
           {
@@ -350,7 +360,7 @@ const portfolioDetails = [
       execution: {
         image: "/images/portfolioDetails/halfMillion/execution.webp",
         description:
-          "Half Million is a proudly homegrown coffee brand, built for a new generation of Saudi coffee lovers.  With a commitment to flavor, community, and digital-first convenience, we designed their digital ecosystem to empower fast orders, rich loyalty experiences, and a consistently excellent brew—no matter where you order from.",
+          "Half Million is a proudly homegrown coffee brand, built for a new generation of Saudi coffee lovers. With a commitment to flavor, community, and digital-first convenience, we designed their digital ecosystem to empower fast orders, rich loyalty experiences, and a consistently excellent brew—no matter where you order from.",
         descriptionBackground: "#86C5B1",
       },
       featuresOverview: {
@@ -362,6 +372,7 @@ const portfolioDetails = [
             maxTitleWidth: 342,
             images: {
               url: "/images/portfolioDetails/halfMillion/feature1.webp",
+              urlAr: "/images/portfolioDetails/halfMillion/feature1Ar.webp",
               width: 507,
               height: 499,
             },
@@ -371,6 +382,7 @@ const portfolioDetails = [
             maxTitleWidth: 379,
             images: {
               url: "/images/portfolioDetails/halfMillion/feature2.webp",
+              urlAr: "/images/portfolioDetails/halfMillion/feature2Ar.webp",
               width: 507,
               height: 498,
             },
@@ -534,7 +546,7 @@ const portfolioDetails = [
               "We needed a human-first interface that makes people feel safe and supported. Every detail, from visuals to content, had to inspire users to act — and return.",
           },
           {
-            title: " Scalable Infrastructure for High-Impact Screening",
+            title: "Scalable Infrastructure for High-Impact Screening",
             description:
               "ScreenMe is built to support large-scale, real-time screening workflows with maximum efficiency. From automated risk assessments to streamlined appointment scheduling.",
           },
@@ -766,6 +778,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         title: "Takween — Find Your Space, Live Your Dream",
         subtitle: "Discover homes that match your lifestyle, effortlessly.",
         image: "/images/portfolioDetails/realEstate/topBg.webp",
+        imageAr: "/images/portfolioDetails/realEstate/topBgAr.webp",
         appStoreLinks: {
           ios: "",
           android: "",
@@ -787,6 +800,8 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         title: "Project Goals",
         image: {
           url: "/images/portfolioDetails/realEstate/projectGoals.webp",
+          urlAr: "/images/portfolioDetails/realEstate/projectGoalsAr.webp",
+
         },
         goals: [
           {
@@ -825,6 +840,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
             maxTitleWidth: 487,
             images: {
               url: "/images/portfolioDetails/realEstate/feature1.webp",
+              urlAr: "/images/portfolioDetails/realEstate/feature2Ar.webp",
               width: 242,
               height: 500,
             },
@@ -834,6 +850,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
             maxTitleWidth: 399,
             images: {
               url: "/images/portfolioDetails/realEstate/feature2.webp",
+              urlAr: "/images/portfolioDetails/realEstate/feature1Ar.webp",
               width: 234,
               height: 483,
             },

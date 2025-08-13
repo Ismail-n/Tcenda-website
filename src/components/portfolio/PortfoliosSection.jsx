@@ -99,7 +99,7 @@ const PortfoliosSection = () => {
               </div>
               <div className="right">
                 <Image
-                  src={`/images/portfolio/${imageDetails.image}.png`}
+                  src={`/images/portfolio/${language == 'en' ?  imageDetails.image : (imageDetails.imageAr ?? imageDetails.image) }.png`}
                   width={imageDetails.imageWidth}
                   height={imageDetails.imageHeight}
                   alt={`${title} Preview`}

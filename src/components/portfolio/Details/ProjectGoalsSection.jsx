@@ -5,7 +5,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const ProjectGoalsSection = ({ data }) => {
-  const { t } = useTranslation();
+  const { t , i18n: { language } } = useTranslation();
   const { title, image, goals = [] } = data || {};
 
   return (
@@ -19,7 +19,7 @@ const ProjectGoalsSection = ({ data }) => {
           {/* LEFT COLUMN */}
           <div className="img_section d-lg-none">
             <Image
-              src={image.url}
+              src={ language == 'en' ? image.url : (image?.urlAr ?? image?.url)}
               width={image.width || 228}
               height={image.height || 466}
               alt={t("Project Illustration")}
@@ -45,7 +45,7 @@ const ProjectGoalsSection = ({ data }) => {
             <Col style={{ maxWidth: 328 }}>
               <div className="img_section d-none d-lg-block">
                 <Image
-                  src={image.url}
+              src={ language == 'en' ? image.url : (image?.urlAr ?? image?.url)}
                   width={image.width || 228}
                   height={image.height || 466}
                   alt={t("Project Illustration")}

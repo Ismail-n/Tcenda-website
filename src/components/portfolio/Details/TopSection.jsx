@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const TopSection = ({ data }) => {
   const { t, i18n: { language } } = useTranslation();
-  const { background, appStoreLinks, title, subtitle, image, textArAlign } = data || {};
+  const { background, appStoreLinks, title, subtitle, image, textArAlign ,imageAr } = data || {};
 
   return (
     <div className="top_section" style={{ background }}>
@@ -72,7 +72,7 @@ const TopSection = ({ data }) => {
             <div className="right_section">
               {image && (
                 <Image
-                  src={image}
+                  src={language == 'en' ?  image : (imageAr ?? image)}
                   width={550}
                   height={467}
                   alt={t("Ashjar Friend background image")}

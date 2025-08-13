@@ -5,7 +5,7 @@ import { Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const FeaturesOverview = ({ data }) => {
-  const { t } = useTranslation();
+  const { t , i18n: { language } } = useTranslation();
   const {
     title,
     titleMaxWidth,
@@ -33,7 +33,7 @@ const FeaturesOverview = ({ data }) => {
                   <div key={`${title}-${index}`} className="single_feature">
                     {images?.url && (
                       <Image
-                        src={images?.url}
+                        src={language == 'en' ? images?.url : (images.urlAr ?? images.url) }
                         width={images?.width}
                         height={images?.height}
                         alt={t(title)}
