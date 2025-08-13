@@ -968,6 +968,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         subtitle:
           "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
         image: "/images/portfolioDetails/sign/topBg.webp",
+        imageAr: "/images/portfolioDetails/sign/topBgAr.webp",
         appStoreLinks: {
           ios: "https://apps.apple.com/in/app/sign-burger-%D8%B3%D8%A7%D9%8A%D9%86-%D8%A8%D8%B1%D8%AC%D8%B1/id6748125819",
           android:"https://play.google.com/store/apps/details?id=com.wulooj.signburger.sa",
@@ -990,6 +991,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         title: "Project Goals",
         image: {
           url: "/images/portfolioDetails/sign/projectGoals.webp",
+          urlAr: "/images/portfolioDetails/sign/projectGoalsAr.webp",
         },
         goals: [
           {
@@ -1025,10 +1027,11 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
         titleMaxWidth: 470,
         items: [
           {
-            title: "Crave. Tap. Enjoy.With Clear User Interface",
+            title: "Crave. Tap. Enjoy. With Clear User Interface",
             maxTitleWidth: 335,
             images: {
               url: "/images/portfolioDetails/sign/feature1.webp",
+              urlAr: "/images/portfolioDetails/sign/feature1Ar.webp",
               width: 510,
               height: 494,
             },
@@ -1038,6 +1041,7 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
             maxTitleWidth: 395,
             images: {
               url: "/images/portfolioDetails/sign/feature2.webp",
+              urlAr: "/images/portfolioDetails/sign/feature2Ar.webp",
               width: 510,
               height: 495,
             },

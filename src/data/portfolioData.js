@@ -247,6 +247,7 @@ const portfolios = [
     caseStudyLink: "sign",
     imageDetails: {
       image: "sign",
+      imageAr: "signAr",
       imageWidth: 465,
       imageHeight: 406,
     },
