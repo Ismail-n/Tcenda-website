@@ -169,7 +169,7 @@ const portfolioDetails = [
             maxTitleWidth: 563,
             images: {
               url: "/images/portfolioDetails/send/feature1.webp",
-              urlAr: "/images/portfolioDetails/send/feature1Ar.webp",
+              urlAr: "/images/portfolioDetails/send/feature1ArNew.webp",
               width: 248,
               height: 507,
             },
