@@ -169,7 +169,10 @@ const OurProjects = () => {
                       </div>
                     </div>
                     {caseStudyLink && (
-                      <Link href={caseStudyLink} className="case_study_btn">
+                      <Link
+                        href={`/portfolio/${caseStudyLink}`}
+                        className="case_study_btn"
+                      >
                         <span>{t("View Case Study")}</span>
                         <ArrowRight />
                       </Link>
