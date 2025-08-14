@@ -57,7 +57,10 @@ const ourProjectsData = [
 ];
 
 const OurProjects = () => {
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderInstanceRef, slider] = useKeenSlider({
@@ -66,6 +69,7 @@ const OurProjects = () => {
       spacing: 16,
     },
     loop: true,
+    rtl: language === "ar",
     slideChanged: (slider) => {
       setCurrentSlide(slider.track.details.rel);
     },
@@ -173,7 +177,11 @@ const OurProjects = () => {
                   </div>
                   <div className="right">
                     <Image
-                      src={`/images/portfolio/${imageDetails.image}.png`}
+                      src={`/images/portfolio/${
+                        language === "en"
+                          ? imageDetails.image
+                          : imageDetails.imageAr || imageDetails.image
+                      }.png`}
                       width={imageDetails.imageWidth}
                       height={imageDetails.imageHeight}
                       alt={`${title} Preview`}
