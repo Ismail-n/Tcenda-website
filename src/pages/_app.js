@@ -89,7 +89,7 @@ export default function App({ Component, pageProps }) {
               page_path: window.location.pathname,
               });
               } else {
-
+                console.log("IP blocked from India")
               }
             })
             .catch(err => {
