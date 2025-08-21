@@ -71,32 +71,56 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q" strategy="afterInteractive" />
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-8WK0QKTTG9"
+        strategy="afterInteractive"
+      />
+
+      {/* GA config */}
       <Script id="google-analytics" strategy="afterInteractive">
         {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-6X8KTEXW4Q');
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          fetch("https://ipapi.co/json/")
+            .then(res => res.json())
+            .then(data => {
+              if (data.country_code !== "IN") {
+              gtag('config', 'G-8WK0QKTTG9', {
+              page_path: window.location.pathname,
+              });
+              } else {
+                console.log("Analytics blocked for India");
+              }
+            })
+            .catch(err => {
+              console.error("Geo lookup failed, sending analytics by default", err);
+              gtag('config', 'G-8WK0QKTTG9', {
+                page_path: window.location.pathname,
+              });
+            });
+          
         `}
       </Script>
-      <Header />
-      <AnimatePresence mode="wait" initial={false}>
-        <motion.div
-          key={router.asPath}
-          initial="initial"
-          animate="in"
-          exit="out"
-          variants={pageVariants}
-          transition={pageTransition}
-        >
-          <ClientOnly>
+
+      <ClientOnly>
+        <Header />
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={router.asPath}
+            initial="initial"
+            animate="in"
+            exit="out"
+            variants={pageVariants}
+            transition={pageTransition}
+          >
             <Component {...pageProps} />
             <WhatsAppPhoneButton />
-          </ClientOnly>
-        </motion.div>
-      </AnimatePresence>
-      <Footer />
+          </motion.div>
+        </AnimatePresence>
+        <Footer />
+      </ClientOnly>
     </>
   );
 }

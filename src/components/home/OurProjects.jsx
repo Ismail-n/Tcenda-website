@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Title from "../common/Title";
@@ -8,53 +8,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useKeenSlider } from "keen-slider/react";
 import { portfolios } from "@/data/portfolioData";
-
-const ourProjectsData = [
-  {
-    id: "half-million",
-    logoDetails: {
-      logo: "halfMillionLogo",
-      logoWidth: 80,
-      logoHeight: 80,
-    },
-    title: "Half Million",
-    description:
-      "Experience the Richness of Artisan Coffee — Anytime, Anywhere. Your Favorite Brews, Delivered Fresh from the Café to Your Pocket.",
-    appStoreLink:
-      "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
-    playStoreLink:
-      "https://play.google.com/store/apps/details?id=com.halfmillion.android&hl=en_IN",
-    caseStudyLink: "",
-    imageDetails: {
-      image: "halfMillion",
-      imageWidth: 344,
-      imageHeight: 398,
-    },
-    background: "linear-gradient(to left, #87C5B2, #D3B48C)",
-  },
-  {
-    id: "half-million",
-    logoDetails: {
-      logo: "halfMillionLogo",
-      logoWidth: 80,
-      logoHeight: 80,
-    },
-    title: "Half Million",
-    description:
-      "Experience the Richness of Artisan Coffee — Anytime, Anywhere. Your Favorite Brews, Delivered Fresh from the Café to Your Pocket.",
-    appStoreLink:
-      "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
-    playStoreLink:
-      "https://play.google.com/store/apps/details?id=com.halfmillion.android&hl=en_IN",
-    caseStudyLink: "",
-    imageDetails: {
-      image: "halfMillion",
-      imageWidth: 344,
-      imageHeight: 398,
-    },
-    background: "linear-gradient(to left, #87C5B2, #D3B48C)",
-  },
-];
 
 const OurProjects = () => {
   const {
@@ -73,6 +26,11 @@ const OurProjects = () => {
     slideChanged: (slider) => {
       setCurrentSlide(slider.track.details.rel);
     },
+    defaultAnimation: {
+      duration: 1000, // 1 second transition duration
+      easing: (t) => 1 - Math.pow(1 - t, 3), // Smooth easing function
+      // easing: (t) => t, // Smooth easing function
+    },
     breakpoints: {
       "(max-width: 575px)": {
         slides: {
@@ -83,6 +41,47 @@ const OurProjects = () => {
       },
     },
   });
+
+  // Auto-scroll functionality with restart capability
+  const [autoScrollKey, setAutoScrollKey] = useState(0); // Key to restart interval
+  const totalSlides = portfolios?.length || 0;
+
+
+  useEffect(() => {
+    if (!slider.current) return;
+
+    const interval = setInterval(() => {
+      // Check if we're at the last slide
+      if (currentSlide >= totalSlides - 1) {
+        // Go back to first slide
+        slider.current?.moveToIdx(0);
+      } else {
+        // Go to next slide
+        slider.current?.next();
+      }
+    }, 3000); // 3 seconds
+
+    return () => clearInterval(interval);
+  }, [slider, autoScrollKey, currentSlide, totalSlides]);
+
+  // Calculate current group and bullets
+  const bulletsPerGroup = 6;
+  const totalGroups = Math.ceil(totalSlides / bulletsPerGroup);
+  const currentGroup = Math.floor(currentSlide / bulletsPerGroup);
+  
+  // Calculate which bullets to show for current group
+  const startIndex = currentGroup * bulletsPerGroup;
+  const endIndex = Math.min(startIndex + bulletsPerGroup, totalSlides);
+  const currentGroupBullets = Array.from(
+    { length: endIndex - startIndex },
+    (_, i) => startIndex + i
+  );
+
+  const handleBulletClick = (slideIndex) => {
+    slider.current?.moveToIdx(slideIndex);
+    // Reset auto-scroll timer by changing the key
+    setAutoScrollKey(prev => prev + 1);
+  };
 
   return (
     <section className="our_projects common_section">
@@ -231,8 +230,24 @@ const OurProjects = () => {
             )}
           </div>
 
+          {/* Pagination Bullets - Show 5 at a time */}
+          <div className="pagination_bullets">
+            <div className="bullets_container">
+              {currentGroupBullets.map((bulletIndex) => (
+                <button
+                  key={bulletIndex}
+                  className={`bullet ${
+                    currentSlide === bulletIndex ? "active" : ""
+                  }`}
+                  onClick={() => handleBulletClick(bulletIndex)}
+                  aria-label={`Go to slide ${bulletIndex + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+
           {/* Custom Slider Buttons */}
-          <div className="project_slider_controls">
+          {/* <div className="project_slider_controls">
             <Image
               src={"/images/icons/sliderLeft.svg"}
               width={56}
@@ -251,7 +266,7 @@ const OurProjects = () => {
               className="slider_btn"
               onClick={() => slider.current?.next()}
             />
-          </div>
+          </div> */}
         </div>
       </Container>
     </section>

@@ -686,7 +686,7 @@ footer {
           }
 
           &.keen-slider__slide {
-            opacity: 0.3;
+            // opacity: 0.2;
           }
 
           &.keen-slider__slide.active {
@@ -694,8 +694,29 @@ footer {
           }
         }
       }
-    }
+      .pagination_bullets{
+        .bullets_container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+          margin-top: 38px;
+          button{
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, .5);
+            &.active{
+              background-color: rgba(68, 173, 193, 1);
 
+            }
+          }
+        }
+      }
+    }
     .project_slider_controls {}
   }
 
