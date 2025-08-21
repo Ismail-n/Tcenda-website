@@ -71,13 +71,34 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q" strategy="afterInteractive" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q" strategy="afterInteractive"
+      />
+
+      {/* GA config */}
       <Script id="google-analytics" strategy="afterInteractive">
         {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-6X8KTEXW4Q');
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          fetch("https://ipapi.co/json/")
+            .then(res => res.json())
+            .then(data => {
+              if (data.country_code !== "IN") {
+              gtag('config', 'G-6X8KTEXW4Q', {
+              page_path: window.location.pathname,
+              });
+              } else {
+
+              }
+            })
+            .catch(err => {
+              console.error("Geo lookup failed, sending analytics by default", err);
+              gtag('config', 'G-6X8KTEXW4Q', {
+                page_path: window.location.pathname,
+              });
+            });
+          
         `}
       </Script>
       <Header />
