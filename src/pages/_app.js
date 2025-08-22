@@ -13,6 +13,9 @@ import { useRouter } from "next/router";
 import ClientOnly from "@/components/ClientOnly";
 import WhatsAppPhoneButton from "@/components/shared/WhatsAppPhoneButton";
 import { useEffect, useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import i18n from "../../i18n";
 import Script from "next/script";
 
@@ -101,23 +104,23 @@ export default function App({ Component, pageProps }) {
           
         `}
       </Script>
-      <Header />
-      <AnimatePresence mode="wait" initial={false}>
-        <motion.div
-          key={router.asPath}
-          initial="initial"
-          animate="in"
-          exit="out"
-          variants={pageVariants}
-          transition={pageTransition}
-        >
-          <ClientOnly>
+      <ClientOnly>
+        <Header />
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={router.asPath}
+            initial="initial"
+            animate="in"
+            exit="out"
+            variants={pageVariants}
+            transition={pageTransition}
+          >
             <Component {...pageProps} />
             <WhatsAppPhoneButton />
-          </ClientOnly>
-        </motion.div>
-      </AnimatePresence>
-      <Footer />
+          </motion.div>
+        </AnimatePresence>
+        <Footer />
+      </ClientOnly>
     </>
   );
 }
