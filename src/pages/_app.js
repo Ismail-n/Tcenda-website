@@ -80,7 +80,7 @@ export default function App({ Component, pageProps }) {
       />
 
       {/* GA config */}
-      <Script id="google-analytics" strategy="afterInteractive">
+      {/* <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -105,7 +105,7 @@ export default function App({ Component, pageProps }) {
             });
           
         `}
-      </Script>
+      </Script> */}
 
       <ClientOnly>
         <Header />

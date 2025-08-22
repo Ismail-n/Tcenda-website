@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
@@ -18,27 +18,74 @@ const OurProjects = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
 
+  const projectsToSHow = [
+    "ashjar-space",
+    "send",
+    "half-million",
+    "sign",
+    "real-estate",
+  ];
+
+  const testingDivSetting = {
+    arrows: false,
+    infinite: true,
+    dots: true,
+    centerMode: false,
+  };
+
+  // Filter and sort portfolios in the specified order
+  const filteredPortfolios = projectsToSHow.map(projectId =>
+    portfolios.find(portfolio => portfolio.id === projectId)
+  ).filter(Boolean); // Remove any undefined items
+
   const settings = {
-    // slidesToShow: 3,
-    // autoplay: true,
-    // slidesToShow: 1,
-    // slidesToScroll: 1,
-    // infinite: true,
-    // autoplaySpeed: 3000,
-    // speed: 1000,
+    arrows: false,
+    infinite: true,
+    dots: true,
+    centerMode: window.innerWidth <= 991 ? false : true,
+    centerPadding: '15%', // Show partial slides on sides
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    rtl: language === "ar", // ✅ RTL support for Arabic
+    autoplaySpeed: 3000,
+    rtl: language === "ar",
+    focusOnSelect: true,
+    speed: 500,
+    initialSlide: 0, // Start from the first slide
     beforeChange: (_, next) => setCurrentSlide(next),
+    customPaging: () => <button />,
     responsive: [
       {
-        breakpoint: 575,
+        breakpoint: 1200, // Large screens
         settings: {
-          slidesToShow: 1.2,
-          centerMode: true,
-          centerPadding: "20px",
+          centerPadding: '20%',
+        },
+      },
+      {
+        breakpoint: 992, // Large tablets and small desktops
+        settings: {
+          centerPadding: '0%',
+          slidesToShow: 1,
+          centerMode: false,
+
+
+        },
+      },
+      {
+        breakpoint: 768, // Tablets
+        settings: {
+          centerPadding: '0%',
+          slidesToShow: 1,
+          centerMode: false,
+
+
+        },
+      },
+      {
+        breakpoint: 576, // Mobile devices
+        settings: {
+          centerMode: false,
+          centerPadding: '0px',
         },
       },
     ],
@@ -47,18 +94,29 @@ const OurProjects = () => {
   return (
     <section className="our_projects common_section">
       <Container>
-        <Title title={t("Explore Our Projects")} />
-        <SubTitle subTitle={t("What Do We Offer?")} />
+        <Row>
+          <Col lg={6}>
+            <Title title={t("Explore Our Projects")} />
+            <SubTitle subTitle={t("What Do We Offer?")} />
+          </Col>
+          <Col lg={6}>
+            <Link
+              href={"/portfolio"}
+              className="main_btn text-center d-block mt-4"
+            >
+              {t("View More")}
+            </Link>
+          </Col>
+        </Row>
       </Container>
-      <Container fluid="sm">
+      <Container fluid>
         <div className="position-relative wrapper_section">
-          {/* ✅ Replace keen-slider with Slick */}
           <Slider
             {...settings}
             ref={sliderRef}
-            className="keen-slider portfolio_inner_section"
+            className="keen-slider portfolio_inner_section portfolio_slider"
           >
-            {portfolios?.map(
+            {filteredPortfolios.map(
               (
                 {
                   id,
@@ -73,16 +131,15 @@ const OurProjects = () => {
                 },
                 index
               ) => (
-                <div key={id}>
+                <div key={id} className="slide-wrapper">
+                  {console.log(id)}
                   <div
                     className={`portfolio_inner keen-slider__slide ${currentSlide === index ? "active" : ""
                       }`}
 
                     id={id}
                     style={{
-                      // background: `${background} !important` 
                       background
-
                     }}
                   >
 
@@ -198,28 +255,6 @@ const OurProjects = () => {
               )
             )}
           </Slider>
-
-          {/* ✅ Custom Navigation Buttons with Slick */}
-          {/* <div className="project_slider_controls">
-            <Image
-              src={"/images/icons/sliderLeft.svg"}
-              width={56}
-              height={56}
-              alt="Previous"
-              className="slider_btn"
-              id="left-btn"
-              onClick={() => sliderRef.current?.slickPrev()}
-            />
-            <Image
-              src={"/images/icons/sliderRight.svg"}
-              width={56}
-              height={56}
-              alt="Next"
-              id="right-btn"
-              className="slider_btn"
-              onClick={() => sliderRef.current?.slickNext()}
-            />
-          </div> */}
         </div>
       </Container>
     </section>
