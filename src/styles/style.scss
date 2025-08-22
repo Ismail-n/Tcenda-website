@@ -125,9 +125,11 @@ header {
   @media (max-width: 991px) {
     margin-top: 350px;
   }
+
   @media (max-width: 767px) {
     margin-top: 350px;
   }
+
   @media (max-width: 575px) {
     margin-top: 140px;
   }
@@ -662,6 +664,13 @@ footer {
   }
 
   .our_projects {
+    .main_btn {
+      margin-left: auto;
+      background: var(--black-color);
+      color: var(--primary-color);
+      border: 1px solid rgba(68, 173, 193, 1);
+    }
+
     .wrapper_section {
       margin-top: 50px;
 
@@ -674,11 +683,22 @@ footer {
         margin-right: 10px;
       }
 
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+
+
       .portfolio_inner_section {
         margin-top: 0px;
         border-radius: 25px;
+        flex-direction: column;
 
         .portfolio_inner {
+          &.keen-slider__slide {
+            min-height: 530px;
+          }
+
           margin-top: 0;
 
           @media (min-width: 767px) and (max-width: 1024px) {
@@ -686,11 +706,36 @@ footer {
           }
 
           &.keen-slider__slide {
-            opacity: 0.3;
+            // opacity: 0.2;
           }
 
           &.keen-slider__slide.active {
             opacity: 1;
+          }
+        }
+      }
+
+      .pagination_bullets {
+        .bullets_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+          margin-top: 38px;
+
+          button {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, .5);
+
+            &.active {
+              background-color: rgba(68, 173, 193, 1);
+
+            }
           }
         }
       }
@@ -2091,11 +2136,85 @@ footer {
     margin-top: 50px;
   }
 
+  .slick-track {
+    display: flex;
+    gap: 63px;
+    align-items: center;
+
+    @media (max-width: 575px) {
+      gap: 20px;
+    }
+
+    @media (min-width: 575px) {
+      .slick-active.slick-center.slick-current {
+        // max-width: 636px;
+
+        &+div {
+          // min-width: 1043px;
+
+          &+div {
+            // min-width: 636px;
+
+          }
+        }
+      }
+    }
+
+  }
+
+  .slick-dots {
+    height: 40px;
+    position: relative;
+    bottom: -20px;
+    display: flex !important;
+    justify-content: center;
+    gap: 8px;
+    z-index: 5;
+    margin-top: 35px;
+    /* Make sure they appear above backgrounds */
+  }
+
+  .slick-dots li {
+    margin: 0;
+    width: 35px;
+  }
+
+  .slick-dots li button {
+    width: 35px;
+    height: 10px;
+    border-radius: 100px;
+    background: #ccc;
+    border: none;
+    padding: 0;
+  }
+
+  .slick-dots li.slick-active button::before {
+    border-radius: 100px;
+    background: #44ADC1;
+  }
+
+  .slick-dots li button:before {
+    content: "";
+    width: 35px;
+    height: 10px;
+    display: block;
+    // border-radius: 50%;
+    // background: #ccc;
+  }
+
+
+  .slick-slide {
+    // min-width: 1043px;
+    max-width: 1043px;
+    // margin: 0 auto;
+  }
+
   .portfolio_inner {
     min-height: 530px;
     padding: 62px 62px 30px 70px;
     border-radius: 25px;
     display: flex;
+
 
     @media (min-width: 575px) {
       gap: 56px;
@@ -2160,12 +2279,15 @@ footer {
           margin-top: 30px;
           display: flex;
           gap: 15px;
+          min-height: 36px;
 
           @media (max-width: 575px) {
             margin-top: 15px;
 
             .inner_btn_div {
               gap: 10px;
+              min-height: 75px;
+              background-color: red;
             }
           }
 
@@ -2186,13 +2308,16 @@ footer {
         margin: auto;
       }
 
-      @media (max-width: 575px) {
+      @media (max-width: 991px) {
         margin-top: 0;
 
         .store_btns {
-          @media (max-width: 575px) {
+          @media (max-width: 991px) {
             .inner_btn_div {
               gap: 10px;
+              @media (max-width: 991px) {
+                gap: 10px;
+              }
             }
           }
         }
@@ -2204,6 +2329,7 @@ footer {
         @media (max-width: 575px) {
           max-height: 313px;
           height: 200px;
+          margin-top: 10px;
         }
       }
     }
