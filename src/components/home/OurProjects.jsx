@@ -46,11 +46,11 @@ const OurProjects = () => {
     centerPadding: '15%', // Show partial slides on sides
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     rtl: language === "ar",
     focusOnSelect: true,
-    speed: 500,
+    speed: 1000,
     initialSlide: 0, // Start from the first slide
     beforeChange: (_, next) => setCurrentSlide(next),
     customPaging: () => <button />,
