@@ -133,7 +133,6 @@ const OurProjects = () => {
                 index
               ) => (
                 <div key={id} className="slide-wrapper">
-                  {console.log(id)}
                   <div
                     className={`portfolio_inner keen-slider__slide ${currentSlide === index ? "active" : ""
                       }`}
