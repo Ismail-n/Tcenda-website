@@ -71,7 +71,7 @@ const RiseCard = ({ item }) => {
   } = useTranslation();
   const { letter, letterAr, title, description } = item || {};
   return (
-    <Col lg={3} md={6}>
+    <Col lg={3} md={3} sm={6}>
       <article className="single_rise">
         <Image
           src={`/images/aboutUs/${letter}.svg`}

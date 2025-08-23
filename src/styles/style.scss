@@ -123,7 +123,7 @@ header {
   margin-top: 170px;
 
   @media (max-width: 991px) {
-    margin-top: 350px;
+    margin-top: 200px;
   }
 
   @media (max-width: 767px) {
@@ -1854,7 +1854,7 @@ footer {
         -webkit-mask-composite: destination-out;
       }
 
-      @media (max-width: 575px) {
+      @media (max-width: 768px) {
         min-height: 423px;
         height: fit-content;
         padding: 25px 20px;
@@ -1870,7 +1870,7 @@ footer {
             rgba(5, 24, 28, 0.5) 100%);
         left: 50%;
 
-        @media (max-width: 575px) {
+        @media (max-width: 768px) {
           width: 80%;
           height: 1px;
           position: absolute;
@@ -1900,7 +1900,7 @@ footer {
           font-weight: 500;
         }
 
-        @media (min-width: 575px) {
+        @media (min-width: 768px) {
           &.left {
             margin-inline-end: 40px;
           }
@@ -2235,7 +2235,7 @@ footer {
 
     margin-top: 60px;
 
-    @media (max-width: 575px) {
+    @media (max-width: 767px) {
       padding: 25px;
       margin-top: 30px;
       flex-direction: column;
@@ -2256,6 +2256,11 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      
+      @media (min-width: 768px) and (max-width: 991px) {
+        max-width: 300px;
+
+      }
 
       .content {
         @media (min-width: 575px) {
