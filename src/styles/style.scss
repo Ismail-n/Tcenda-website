@@ -127,7 +127,7 @@ header {
   }
 
   @media (max-width: 767px) {
-    margin-top: 350px;
+    margin-top: 200px;
   }
 
   @media (max-width: 575px) {
@@ -405,7 +405,7 @@ footer {
   .new_footer_row {
     padding-bottom: 50px;
 
-    @media (min-width: 575px) {
+    @media (min-width: 767px) {
       display: flex;
       gap: 90px;
 
@@ -422,7 +422,7 @@ footer {
       gap: 10px;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: 767px) {
       &.desktop {
         display: none;
       }
@@ -484,6 +484,10 @@ footer {
         text-transform: capitalize;
         margin-bottom: 20px;
 
+        @media (min-width: 576px) and (max-width: 767px) {
+          line-height: 30px;
+        }
+
         @media (min-width: 767px) and (max-width: 991) {
           font-size: 22px;
         }
@@ -540,9 +544,18 @@ footer {
           display: flex;
           flex-wrap: wrap;
 
+          @media (min-width: 576px) and (max-width: 767px) {
+            flex-direction: column;
+          }
+
           li {
             margin-bottom: 20px;
             width: 50%;
+
+            @media (min-width: 576px) and (max-width: 767px) {
+              margin-bottom: 10px;
+              width: 100%;
+            }
 
             a {
               font-weight: 500;
@@ -2315,6 +2328,7 @@ footer {
           @media (max-width: 991px) {
             .inner_btn_div {
               gap: 10px;
+
               @media (max-width: 991px) {
                 gap: 10px;
               }
