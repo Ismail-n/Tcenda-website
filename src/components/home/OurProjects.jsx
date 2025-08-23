@@ -58,7 +58,8 @@ const OurProjects = () => {
       {
         breakpoint: 1200, // Large screens
         settings: {
-          centerPadding: '20%',
+          centerPadding: '100%',
+          centerMode: true,
         },
       },
       {
