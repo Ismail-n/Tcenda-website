@@ -197,7 +197,12 @@ const OurProjects = () => {
                           className="case_study_btn"
                         >
                           <span>{t("View Case Study")}</span>
-                          <ArrowRight />
+                          <Image
+                            src={"/images/icons/arrowRight.svg"}
+                            width={14}
+                            height={13}
+                            alt="View case study"
+                          />
                         </Link>
                       )}
                     </div>
@@ -248,6 +253,22 @@ const OurProjects = () => {
                             </a>
                           )}
                         </div>
+                        {caseStudyLink && (
+                          <Link
+                            href={`/portfolio/${caseStudyLink}`}
+                            className="case_study_btn_sm"
+                          >
+                            <span>{t("View Case Study")}</span>
+
+                            <Image
+                              src={"/images/icons/arrowRight.svg"}
+                              width={14}
+                              height={13}
+                              alt="View case study"
+                            />
+                          </Link>
+                        )}
+
                       </div>
                     </div>
                   </div>
