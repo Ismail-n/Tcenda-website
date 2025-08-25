@@ -6,7 +6,7 @@ import SubTitle from "../common/SubTitle";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import Slider from "react-slick"; // ✅ slick slider import
+// import Slider from "react-slick"; // ✅ slick slider import
 import { portfolios } from "@/data/portfolioData";
 
 const OurProjects = () => {

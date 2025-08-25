@@ -25,8 +25,8 @@ export default function Home() {
         <TopSection ClientSection={Clients}/>
         
         <InnovationSection />
-        {/* <ProjectVideo /> */}
-        <OurProjects />
+        <ProjectVideo />
+        {/* <OurProjects /> */}
         <OurServices />
         <EngagementModels />
         <ThirdPartyServices/>
