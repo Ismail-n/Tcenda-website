@@ -143,7 +143,7 @@ const PortfoliosSection = () => {
                   {caseStudyLink && (
                     <Link
                       href={`/portfolio/${caseStudyLink}`}
-                      className="case_study_btn"
+                      className="case_study_btn_sm"
                     >
                       <span>{t("View Case Study")}</span>
                       <ArrowRight />

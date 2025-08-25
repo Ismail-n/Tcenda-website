@@ -42,6 +42,8 @@ const OurProjects = () => {
     arrows: false,
     infinite: true,
     dots: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     centerMode: window.innerWidth <= 991 ? false : true,
     centerPadding: '15%', // Show partial slides on sides
     slidesToShow: 1,
@@ -49,7 +51,7 @@ const OurProjects = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     rtl: language === "ar",
-    focusOnSelect: true,
+    focusOnSelect: false,
     speed: 300,
     initialSlide: 0, // Start from the first slide
     beforeChange: (_, next) => setCurrentSlide(next),
@@ -103,7 +105,7 @@ const OurProjects = () => {
           <Col lg={6}>
             <Link
               href={"/portfolio"}
-              className="main_btn text-center d-block mt-4"
+              className="main_btn text-center d-block mt-4 view_more_btn"
             >
               {t("View More")}
             </Link>
@@ -248,6 +250,21 @@ const OurProjects = () => {
                             </a>
                           )}
                         </div>
+                        {caseStudyLink && (
+                          <Link
+                            href={`/portfolio/${caseStudyLink}`}
+                            className="case_study_btn_sm"
+                          >
+                            <span>{t("View Case Study")}</span>
+
+                            <Image
+                              src={"/images/icons/arrowRight.svg"}
+                              width={14}
+                              height={13}
+                              alt="Get it on Google Play"
+                            />
+                          </Link>
+                        )}
                       </div>
                     </div>
                   </div>

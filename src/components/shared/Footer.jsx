@@ -253,11 +253,12 @@ const Footer = () => {
                   href="https://www.google.com/maps/search/?api=1&query=Prince+Mohammed+Ibn+Salman+Ibn+Abdulaziz+Rd,+Ar+Rabi,+Riyadh"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=""
                 >
-                  {t("Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,")} {" "}
+                  {t("Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,")}
+                  <span className="desktop-space"> </span>
                   {t("Ar Rabi, Riyadh")}
                 </a>
+
               </div>
               <div className="single_add">
                 <Image
