@@ -48,7 +48,7 @@ const OurProjects = () => {
     centerPadding: '15%', // Show partial slides on sides
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000,
     rtl: language === "ar",
     focusOnSelect: false,
@@ -136,8 +136,7 @@ const OurProjects = () => {
               ) => (
                 <div key={id} className="slide-wrapper">
                   <div
-                    className={`portfolio_inner keen-slider__slide ${currentSlide === index ? "active" : ""
-                      }`}
+                    className={`portfolio_inner ${language === 'ar' ? 'rtl' : ""} keen-slider__slide ${currentSlide === index ? "active" : ""}`}
 
                     id={id}
                     style={{
@@ -196,10 +195,16 @@ const OurProjects = () => {
                       {caseStudyLink && (
                         <Link
                           href={`/portfolio/${caseStudyLink}`}
-                          className="case_study_btn"
+                          // className="case_study_btn"
+                          className={`case_study_btn ${language === 'ar' ? 'rotate_image' : ""}`}
                         >
                           <span>{t("View Case Study")}</span>
-                          <ArrowRight />
+                          <Image
+                            src={"/images/icons/arrowRight.svg"}
+                            width={14}
+                            height={13}
+                            alt="Get it on Google Play"
+                          />
                         </Link>
                       )}
                     </div>
@@ -253,7 +258,8 @@ const OurProjects = () => {
                         {caseStudyLink && (
                           <Link
                             href={`/portfolio/${caseStudyLink}`}
-                            className="case_study_btn_sm"
+                            className={`case_study_btn_sm ${language === 'ar' ? 'rotate_image' : ""}`}
+
                           >
                             <span>{t("View Case Study")}</span>
 

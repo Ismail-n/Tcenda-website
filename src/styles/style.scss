@@ -429,7 +429,7 @@ footer {
 
       .single_item {
         max-width: 100% !important;
-        margin-top: 60px;
+        margin-top: 40px;
 
         h2 {
           text-align: center;
@@ -438,14 +438,15 @@ footer {
 
       .logo_section {
         display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
+        justify-content: start;
+        margin-bottom: 40px;
       }
 
       .quick_links {
         max-width: 198px !important;
         display: block;
-        margin: auto;
+        // margin: auto;
+        margin-inline-end: auto;
 
         .inner_col:nth-child(1) {
           a {
@@ -455,27 +456,30 @@ footer {
         }
 
         a {
-          text-align: center;
+          text-align: start;
           width: 100%;
           display: inline-block;
         }
       }
 
       .reach_section {
-        h2{
-          margin-left: 37px;
+        h2 {
+          // margin-left: 37px;
           text-align: start;
         }
+
         .single_add {
-          justify-content: center;
+          justify-content: start;
           // text-align: justify;
         }
       }
+
       .follow_us {
-        h2{
-          margin-left: 37px;
+        h2 {
+          // margin-left: 37px;
           text-align: start;
         }
+
         .icons {
           justify-content: start;
           // text-align: justify;
@@ -484,7 +488,7 @@ footer {
 
       .follow_us {
         .icons {
-          margin-left: 37px;
+          // margin-left: 37px;
           justify-content: start;
         }
       }
@@ -519,16 +523,17 @@ footer {
       }
 
       &.reach_section {
-        max-width: 277px;
+        max-width: 285px;
 
         .single_add {
           display: flex;
+          align-items: center;
 
           gap: 15px;
-          margin-top: 15px;
+          margin-top: 18px;
 
           @media (max-width: 567px) {
-            margin-left: 38px;
+            // margin-left: 38px;
             justify-content: start;
             align-items: center;
 
@@ -702,7 +707,7 @@ footer {
 
   .our_projects {
     .main_btn {
-      margin-left: auto;
+      margin-inline-start: auto;
       background: var(--black-color);
       color: var(--primary-color);
       border: 1px solid rgba(68, 173, 193, 1);
@@ -1422,7 +1427,7 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
 
     @media screen and (min-width: 320px) and (max-width: 575px) {
       margin-top: 0;
@@ -2258,7 +2263,7 @@ footer {
   .slick-dots li button {
     width: 48px;
     height: 8px;
-    // border-radius: 100px;
+    border-radius: 100px;
     background: #ccc;
     border: none;
     padding: 0;
@@ -2284,14 +2289,12 @@ footer {
     @media (max-width: 575px) {
       height: 4px;
     }
-
-
   }
 
 
   .slick-slide {
     // min-width: 1043px;
-    max-width: 1043px;
+    max-width: 1100px;
     // margin: 0 auto;
   }
 
@@ -2300,6 +2303,10 @@ footer {
     padding: 62px 62px 30px 70px;
     border-radius: 20px;
     display: flex;
+
+    &.portfolio_rtl {
+      flex-direction: row-reverse;
+    }
 
 
     @media (min-width: 575px) {
@@ -2483,6 +2490,12 @@ footer {
         display: none;
       }
 
+      &.rotate_image {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+
     }
 
     .case_study_btn_sm {
@@ -2498,6 +2511,12 @@ footer {
       font-size: 18px;
       line-height: 20px;
       gap: 9px;
+
+      &.rotate_image {
+        img {
+          transform: rotate(180deg);
+        }
+      }
 
       span {
         font-weight: 700;

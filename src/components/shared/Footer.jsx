@@ -378,7 +378,9 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className=""
                 >
-                  {t("Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,")} {" "} {t(" Ar Rabi, Riyadh")}
+                  {t("Prince Mohammed Ibn Salman Ibn Abdulaziz Rd,")}
+                  <span className="desktop-space"> </span>
+                  {t("Ar Rabi, Riyadh")}
                 </a>
               </div>
               <div className="single_add">
