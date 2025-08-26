@@ -163,7 +163,7 @@ const Header = () => {
             </div>
             {/* Mobile Menu Icon */}
             <div className="d-flex align-items-center gap-2 d-md-none ">
-              {!isMobileMenuOpen && <LanguageSwitcher />}
+              {/* {!isMobileMenuOpen && <LanguageSwitcher />} */}
               <div className="mobile_menu_icon " onClick={handleMenuClick}>
                 {isMobileMenuOpen ? (
                   <Image
@@ -260,7 +260,7 @@ const Header = () => {
                   )}
                 </li>
               ))}
-              {/* <LanguageSwitcher /> */}
+              <LanguageSwitcher />
             </ul>
           </nav>
         </Modal>
