@@ -203,6 +203,8 @@ const OurProjects = () => {
                             src={"/images/icons/arrowRight.svg"}
                             width={14}
                             height={13}
+                        className="arrow_icon"
+
                             alt="Get it on Google Play"
                           />
                         </Link>
@@ -259,7 +261,6 @@ const OurProjects = () => {
                           <Link
                             href={`/portfolio/${caseStudyLink}`}
                             className={`case_study_btn_sm ${language === 'ar' ? 'rotate_image' : ""}`}
-
                           >
                             <span>{t("View Case Study")}</span>
 
@@ -267,6 +268,8 @@ const OurProjects = () => {
                               src={"/images/icons/arrowRight.svg"}
                               width={14}
                               height={13}
+                        className="arrow_icon"
+
                               alt="Get it on Google Play"
                             />
                           </Link>

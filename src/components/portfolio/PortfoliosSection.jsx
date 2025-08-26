@@ -98,6 +98,7 @@ const PortfoliosSection = () => {
                       src={"/images/icons/arrowRight.svg"}
                       width={14}
                       height={13}
+                        className="arrow_icon"
                       alt="Get it on Google Play"
                     />
                   </Link>
@@ -155,26 +156,13 @@ const PortfoliosSection = () => {
                       <Image
                         src={"/images/icons/arrowRight.svg"}
                         width={14}
+                        className="arrow_icon"
                         height={13}
                         alt="Get it on Google Play"
                       />
                     </Link>
                   )}
-                  {caseStudyLink && (
-                    <Link
-                      href={`/portfolio/${caseStudyLink}`}
-                      className={`case_study_btn_sm ${language === "ar" ? "text_ar" : ""}`}
-                    >
-                      <span>{t("View Case Study")}</span>
-
-                      <Image
-                        src="/images/icons/arrowRight.svg"
-                        width={14}
-                        height={13}
-                        alt="View case study"
-                      />
-                    </Link>
-                  )}
+                  
                   </div>
 
                 </div>
