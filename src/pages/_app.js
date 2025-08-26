@@ -21,11 +21,7 @@ import Script from "next/script";
 
 const pageVariants = {
   initial: { opacity: 0, y: -100 },
-  in: {
-    opacity: 1,
-    y: 0,
-    transition: { type: "spring", bounce: 0.4 },
-  },
+  in: { opacity: 1, y: 0, transition: { type: "spring", bounce: 0.4 } },
   out: { opacity: 0, y: 100 },
 };
 
@@ -37,75 +33,81 @@ const pageTransition = {
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-
   const [languageReady, setLanguageReady] = useState(false);
 
   useEffect(() => {
     const detectRegionAndSetLang = async () => {
       try {
-        const res = await fetch("https://ipapi.co/json/");
+        // 1️⃣ Check if user already has a saved language
+        const savedLang = localStorage.getItem("user_lang");
+        if (savedLang) {
+          await i18n.changeLanguage(savedLang);
+          document.documentElement.lang = savedLang;
+          document.documentElement.dir = savedLang === "ar" ? "rtl" : "ltr";
+          setLanguageReady(true);
+          return;
+        }
+
+        // 2️⃣ Detect from IP
+        const res = await fetch("https://ipwhois.app/json/"); // CORS-friendly API
+        if (!res.ok) throw new Error(`Geo API failed with status ${res.status}`);
         const data = await res.json();
+
         const countryCode = data.country_code?.toLowerCase();
-
-        // Arabic-speaking countries
-        const arabicCountries = ["sa", "ae", "qa"]; // Saudi Arabia, UAE, Qatar
-
+        const arabicCountries = ["sa", "ae", "qa"];
         const lang = arabicCountries.includes(countryCode) ? "ar" : "en";
 
-        i18n.changeLanguage(lang).then(() => {
-          document.documentElement.lang = lang;
-          document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-          setLanguageReady(true);
-        });
+        await i18n.changeLanguage(lang);
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        localStorage.setItem("user_lang", lang); // Save for future visits
+        setLanguageReady(true);
       } catch (error) {
-        // Fallback to Arabic if fetch fails
-        i18n.changeLanguage("ar").then(() => {
-          document.documentElement.lang = "ar";
-          document.documentElement.dir = "rtl";
-          setLanguageReady(true);
-        });
+        // Fallback to Arabic
+        await i18n.changeLanguage("ar");
+        document.documentElement.lang = "ar";
+        document.documentElement.dir = "rtl";
+        localStorage.setItem("user_lang", "ar");
+        setLanguageReady(true);
       }
     };
 
     detectRegionAndSetLang();
   }, []);
 
-  if (!languageReady) return null; // Prevent initial render
+  if (!languageReady) return null;
 
   return (
     <>
+      {/* GA Script */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q"
         strategy="afterInteractive"
       />
 
-      {/* GA config */}
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          fetch("https://ipapi.co/json/")
+          fetch("https://ipwhois.app/json/")
             .then(res => res.json())
             .then(data => {
               if (data.country_code !== "IN") {
-              gtag('config', 'G-6X8KTEXW4Q', {
-              page_path: window.location.pathname,
-              });
+                gtag('config', 'G-6X8KTEXW4Q', {
+                  page_path: window.location.pathname,
+                });
               } else {
-                console.log("IP blocked from India")
+                console.log("IP blocked from India");
               }
             })
             .catch(err => {
               console.error("Geo lookup failed, sending analytics by default", err);
-              // gtag('config', 'G-6X8KTEXW4Q', {
-              //   page_path: window.location.pathname,
-              // });
             });
-          
         `}
       </Script>
+
       <ClientOnly>
         <Header />
         <AnimatePresence mode="wait" initial={false}>
