@@ -39,16 +39,16 @@ const OurProjects = () => {
   ).filter(Boolean); // Remove any undefined items
 
   const settings = {
+        autoplay: window.innerWidth < 575 ? false : true,
     arrows: false,
     infinite: true,
     dots: true,
-    pauseOnHover: false,
-    pauseOnFocus: false,
+    pauseOnHover: true,
+    pauseOnFocus: true,
     centerMode: window.innerWidth <= 991 ? false : true,
     centerPadding: '15%', // Show partial slides on sides
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
     autoplaySpeed: 3000,
     rtl: language === "ar",
     focusOnSelect: false,
