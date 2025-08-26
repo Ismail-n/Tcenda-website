@@ -60,7 +60,7 @@ const OurProjects = () => {
       {
         breakpoint: 1200, // Large screens
         settings: {
-          centerPadding: '100%',
+          centerPadding: '0%',
           centerMode: true,
         },
       },
