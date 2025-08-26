@@ -88,6 +88,7 @@ const ContactFormSection = () => {
       >
         {({ isSubmitting, isValid, dirty, values }) => (
           <Form className="common_form">
+
             <div className="form_field">
               <Field
                 name="name"

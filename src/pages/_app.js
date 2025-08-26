@@ -74,7 +74,9 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q" strategy="afterInteractive"
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q"
+        strategy="afterInteractive"
       />
 
       {/* GA config */}
@@ -97,9 +99,9 @@ export default function App({ Component, pageProps }) {
             })
             .catch(err => {
               console.error("Geo lookup failed, sending analytics by default", err);
-              gtag('config', 'G-6X8KTEXW4Q', {
-                page_path: window.location.pathname,
-              });
+              // gtag('config', 'G-6X8KTEXW4Q', {
+              //   page_path: window.location.pathname,
+              // });
             });
           
         `}

@@ -42,6 +42,8 @@ const OurProjects = () => {
     arrows: false,
     infinite: true,
     dots: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     centerMode: window.innerWidth <= 991 ? false : true,
     centerPadding: '15%', // Show partial slides on sides
     slidesToShow: 1,
@@ -49,8 +51,8 @@ const OurProjects = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     rtl: language === "ar",
-    focusOnSelect: true,
-    speed: 500,
+    focusOnSelect: false,
+    speed: 300,
     initialSlide: 0, // Start from the first slide
     beforeChange: (_, next) => setCurrentSlide(next),
     customPaging: () => <button />,
@@ -58,7 +60,8 @@ const OurProjects = () => {
       {
         breakpoint: 1200, // Large screens
         settings: {
-          centerPadding: '20%',
+          centerPadding: '100%',
+          centerMode: true,
         },
       },
       {
@@ -102,7 +105,7 @@ const OurProjects = () => {
           <Col lg={6}>
             <Link
               href={"/portfolio"}
-              className="main_btn text-center d-block mt-4"
+              className="main_btn text-center d-block mt-4 view_more_btn"
             >
               {t("View More")}
             </Link>
@@ -132,10 +135,8 @@ const OurProjects = () => {
                 index
               ) => (
                 <div key={id} className="slide-wrapper">
-                  {console.log(id)}
                   <div
-                    className={`portfolio_inner keen-slider__slide ${currentSlide === index ? "active" : ""
-                      }`}
+                    className={`portfolio_inner ${language === 'ar' ? 'rtl' : ""} keen-slider__slide ${currentSlide === index ? "active" : ""}`}
 
                     id={id}
                     style={{
@@ -194,10 +195,18 @@ const OurProjects = () => {
                       {caseStudyLink && (
                         <Link
                           href={`/portfolio/${caseStudyLink}`}
-                          className="case_study_btn"
+                          // className="case_study_btn"
+                          className={`case_study_btn ${language === 'ar' ? 'rotate_image' : ""}`}
                         >
                           <span>{t("View Case Study")}</span>
-                          <ArrowRight />
+                          <Image
+                            src={"/images/icons/arrowRight.svg"}
+                            width={14}
+                            height={13}
+                        className="arrow_icon"
+
+                            alt="Get it on Google Play"
+                          />
                         </Link>
                       )}
                     </div>
@@ -248,6 +257,23 @@ const OurProjects = () => {
                             </a>
                           )}
                         </div>
+                        {caseStudyLink && (
+                          <Link
+                            href={`/portfolio/${caseStudyLink}`}
+                            className={`case_study_btn_sm ${language === 'ar' ? 'rotate_image' : ""}`}
+                          >
+                            <span>{t("View Case Study")}</span>
+
+                            <Image
+                              src={"/images/icons/arrowRight.svg"}
+                              width={14}
+                              height={13}
+                        className="arrow_icon"
+
+                              alt="Get it on Google Play"
+                            />
+                          </Link>
+                        )}
                       </div>
                     </div>
                   </div>

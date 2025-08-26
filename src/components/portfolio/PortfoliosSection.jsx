@@ -90,16 +90,23 @@ const PortfoliosSection = () => {
                 {caseStudyLink && (
                   <Link
                     href={`/portfolio/${caseStudyLink}`}
-                    className="case_study_btn d-none d-md-flex"
+                    className={`case_study_btn ${language === 'ar' ? 'rotate_image' : ""}`}
+
                   >
                     <span>{t("View Case Study")}</span>
-                    <ArrowRight />
+                    <Image
+                      src={"/images/icons/arrowRight.svg"}
+                      width={14}
+                      height={13}
+                        className="arrow_icon"
+                      alt="Get it on Google Play"
+                    />
                   </Link>
                 )}
               </div>
               <div className="right">
                 <Image
-                  src={`/images/portfolio/${language == 'en' ?  imageDetails.image : (imageDetails.imageAr ?? imageDetails.image) }.png`}
+                  src={`/images/portfolio/${language == 'en' ? imageDetails.image : (imageDetails.imageAr ?? imageDetails.image)}.png`}
                   width={imageDetails.imageWidth}
                   height={imageDetails.imageHeight}
                   alt={`${title} Preview`}
@@ -139,16 +146,25 @@ const PortfoliosSection = () => {
                         />
                       </a>
                     )}
-                  </div>
                   {caseStudyLink && (
                     <Link
                       href={`/portfolio/${caseStudyLink}`}
-                      className="case_study_btn"
+                      className={`case_study_btn_sm ${language === 'ar' ? 'rotate_image' : ""}`}
+
                     >
                       <span>{t("View Case Study")}</span>
-                      <ArrowRight />
+                      <Image
+                        src={"/images/icons/arrowRight.svg"}
+                        width={14}
+                        className="arrow_icon"
+                        height={13}
+                        alt="Get it on Google Play"
+                      />
                     </Link>
                   )}
+                  
+                  </div>
+
                 </div>
               </div>
             </div>
