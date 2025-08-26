@@ -34,6 +34,11 @@ html[dir="rtl"] {
       margin-left: unset;
       display: flex;
     }
+
+    .home .our_projects .view_more_btn {
+      margin-right: 0 !important;
+      margin-left: unset;
+    }
   }
 
   .project_slider_controls .slider_btn {
