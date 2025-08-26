@@ -13,8 +13,8 @@ import { useRouter } from "next/router";
 import ClientOnly from "@/components/ClientOnly";
 import WhatsAppPhoneButton from "@/components/shared/WhatsAppPhoneButton";
 import { useEffect, useState } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 import i18n from "../../i18n";
 import Script from "next/script";
