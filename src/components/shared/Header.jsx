@@ -126,7 +126,9 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header ${showHeader ? "visible" : "hidden header_2"} ${isScrolled ? "scrolled" : ""}`}
+        className={`header ${showHeader ? "visible" : "hidden header_2"} ${
+          isScrolled ? "scrolled" : ""
+        }`}
       >
         <Container>
           <div className="g_between">
@@ -163,7 +165,7 @@ const Header = () => {
             </div>
             {/* Mobile Menu Icon */}
             <div className="d-flex align-items-center gap-2 d-md-none ">
-              {/* {!isMobileMenuOpen && <LanguageSwitcher />} */}
+              {!isMobileMenuOpen && <LanguageSwitcher />}
               <div className="mobile_menu_icon " onClick={handleMenuClick}>
                 {isMobileMenuOpen ? (
                   <Image
@@ -210,6 +212,7 @@ const Header = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             />
           </div>
+
           <nav aria-label="Main navigation" className="mobile_menu_links">
             <ul>
               {homeLinks?.map(({ href, name, isSubLinks, subLinks }, index) => (
@@ -260,7 +263,7 @@ const Header = () => {
                   )}
                 </li>
               ))}
-              <LanguageSwitcher />
+              {/* <LanguageSwitcher /> */}
             </ul>
           </nav>
         </Modal>
