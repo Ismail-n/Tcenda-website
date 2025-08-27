@@ -7,6 +7,7 @@ import EngagementModels from "@/components/home/EngagementModels";
 import Industries from "@/components/home/Industries";
 import InnovationSection from "@/components/home/InnovationSection";
 import OurProjects from "@/components/home/OurProjects";
+import OurProjectsNew from "@/components/home/OurProjectsNew";
 import OurServices from "@/components/home/OurServices";
 import ProjectVideo from "@/components/home/ProjectVideo";
 import ThirdPartyServices from "@/components/home/ThirdPartyServices";
@@ -26,7 +27,8 @@ export default function Home() {
         
         <InnovationSection />
         {/* <ProjectVideo /> */}
-        <OurProjects />
+        <OurProjectsNew />
+        {/* <OurProjects /> */}
         <OurServices />
         <EngagementModels />
         <ThirdPartyServices/>

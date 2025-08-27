@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@splidejs/react-splide": "^0.7.12",
     "bootstrap": "^5.3.7",
     "formik": "^2.4.6",
     "framer-motion": "^12.23.3",
@@ -28,6 +29,7 @@
     "sass": "^1.89.2",
     "slick-carousel": "^1.8.1",
     "sweetalert2": "^11.22.2",
+    "swiper": "^11.2.10",
     "yup": "^1.6.1"
   }
 }

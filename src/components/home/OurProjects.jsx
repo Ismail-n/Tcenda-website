@@ -22,20 +22,43 @@ const OurProjects = () => {
   // Autoplay plugin to avoid stacking timeouts
   function Autoplay(slider) {
     let timeout;
+    let mouseOver = false;
+
     function clearNextTimeout() {
       clearTimeout(timeout);
     }
+
     function nextTimeout() {
       clearTimeout(timeout);
+      if (mouseOver) return; // stop if user is interacting
       timeout = setTimeout(() => {
         slider.next();
       }, delay);
     }
+
     slider.on("created", () => {
       setLoaded(true);
       nextTimeout();
+
+      // (optional) Pause on hover
+      slider.container.addEventListener("mouseover", () => {
+        mouseOver = true;
+        clearNextTimeout();
+      });
+      slider.container.addEventListener("mouseout", () => {
+        mouseOver = false;
+        nextTimeout();
+      });
     });
-    slider.on("dragStarted", clearNextTimeout);
+
+    slider.on("dragStarted", () => {
+      clearNextTimeout(); // stop autoplay when drag starts
+    });
+
+    slider.on("dragEnded", () => {
+      nextTimeout(); // restart autoplay only when drag ends
+    });
+
     slider.on("animationEnded", nextTimeout);
     slider.on("updated", nextTimeout);
   }
@@ -48,14 +71,22 @@ const OurProjects = () => {
       slides: {
         origin: "center",
         perView: 1.5,
-        spacing: 15,
+        spacing: 64,
       },
       slideChanged(slider) {
-        setCurrentSlide(slider.track.details.rel);
+        // Use the absolute index for proper dot synchronization
+        const slideIndex = slider.track.details.abs;
+        const totalSlides = filteredPortfolios.length;
+        // Calculate the actual slide index (accounting for loop)
+        const actualIndex = slideIndex % totalSlides;
+        setCurrentSlide(actualIndex);
       },
       breakpoints: {
-        "(max-width: 400px)": {
-          slides: { perView: 1, spacing: 5 },
+        "(max-width: 1400px)": {
+          slides: { spacing: 40, perView: 1.5, origin: "center" },
+        },
+        "(max-width: 575px)": {
+          slides: { spacing: 20, perView: 1.2, origin: "center" },
         },
       },
     },
@@ -113,10 +144,16 @@ const OurProjects = () => {
                 },
                 index
               ) => (
-                <div key={id} className="slide-wrapper keen-slider__slide">
+                <div
+                  key={id}
+                  className={`keen-slider__slide slide-wrapper ${
+                    currentSlide === index ? "active" : ""
+                  }`}
+                >
                   <div
-                    className={`portfolio_inner ${language === "ar" ? "rtl" : ""
-                      } ${currentSlide === index ? "active" : ""}`}
+                    className={`portfolio_inner ${
+                      language === "ar" ? "rtl" : ""
+                    }`}
                     style={{ background }}
                   >
                     {/* Left Section */}
@@ -136,7 +173,11 @@ const OurProjects = () => {
                         <p>{t(description)}</p>
                         <div className="store_btns d-none d-md-flex">
                           {appStoreLink && (
-                            <a href={appStoreLink} target="_blank" rel="noreferrer">
+                            <a
+                              href={appStoreLink}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <Image
                                 src={"/images/icons/appStore.svg"}
                                 width={140}
@@ -146,7 +187,11 @@ const OurProjects = () => {
                             </a>
                           )}
                           {playStoreLink && (
-                            <a href={playStoreLink} target="_blank" rel="noreferrer">
+                            <a
+                              href={playStoreLink}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <Image
                                 src={"/images/icons/playStore.svg"}
                                 width={140}
@@ -160,8 +205,9 @@ const OurProjects = () => {
                       {caseStudyLink && (
                         <Link
                           href={`/portfolio/${caseStudyLink}`}
-                          className={`case_study_btn ${language === "ar" ? "rotate_image" : ""
-                            }`}
+                          className={`case_study_btn ${
+                            language === "ar" ? "rotate_image" : ""
+                          }`}
                         >
                           <span>{t("View Case Study")}</span>
                           <Image
@@ -178,10 +224,11 @@ const OurProjects = () => {
                     {/* Right Section */}
                     <div className="right">
                       <Image
-                        src={`/images/portfolio/${language === "en"
+                        src={`/images/portfolio/${
+                          language === "en"
                             ? imageDetails.image
                             : imageDetails.imageAr || imageDetails.image
-                          }.png`}
+                        }.png`}
                         width={imageDetails.imageWidth}
                         height={imageDetails.imageHeight}
                         alt={`${title} Preview`}
@@ -223,16 +270,16 @@ const OurProjects = () => {
                         {caseStudyLink && (
                           <Link
                             href={`/portfolio/${caseStudyLink}`}
-                            className={`case_study_btn_sm ${language === 'ar' ? 'rotate_image' : ""}`}
+                            className={`case_study_btn_sm ${
+                              language === "ar" ? "rotate_image" : ""
+                            }`}
                           >
                             <span>{t("View Case Study")}</span>
-
                             <Image
                               src={"/images/icons/arrowRight.svg"}
                               width={14}
                               height={13}
                               className="arrow_icon"
-
                               alt="Get it on Google Play"
                             />
                           </Link>
@@ -248,13 +295,15 @@ const OurProjects = () => {
           {/* Dots */}
           {loaded && instanceRef.current && (
             <div className="dots">
-              {[
-                ...Array(instanceRef.current.track.details.slides.length).keys(),
-              ].map((idx) => (
+              {filteredPortfolios.map((_, idx) => (
                 <button
                   key={idx}
-                  onClick={() => instanceRef.current.moveToIdx(idx)}
+                  onClick={() => {
+                    // Move to the specific slide index
+                    instanceRef.current.moveToIdx(idx);
+                  }}
                   className={currentSlide === idx ? "active" : ""}
+                  aria-label={`Go to slide ${idx + 1}`}
                 ></button>
               ))}
             </div>

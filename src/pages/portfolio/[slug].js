@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 export async function getStaticPaths() {
-  const paths = portfolioDetails.map(item => ({
+  const paths = portfolioDetails.map((item) => ({
     params: { slug: item.id },
   }));
 
@@ -17,21 +17,20 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const item = portfolioDetails.find(d => d.id === params.slug);
+  const item = portfolioDetails.find((d) => d.id === params.slug);
 
   return {
     props: { item },
   };
 }
 
-
 const ProjectDetail = () => {
   const router = useRouter();
   const { slug } = router.query;
 
-  useEffect(() => {
-    console.log("slug:", slug);
-  }, [slug]);
+  // useEffect(() => {
+  //   console.log("slug:", slug);
+  // }, [slug]);
 
   if (!slug) return <div>Loading...</div>;
 

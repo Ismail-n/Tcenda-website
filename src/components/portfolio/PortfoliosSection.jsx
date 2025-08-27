@@ -54,7 +54,7 @@ const PortfoliosSection = () => {
                   <h3>{t(title)}</h3>
                   <p>{t(description)}</p>
                   {/* DESKTOP BUTTON & LINKS */}
-                  <div className="store_btns d-none d-md-flex">
+                  <div className="store_btns d-none d-lg-flex">
                     {appStoreLink && (
                       <a
                         href={appStoreLink}
@@ -90,15 +90,16 @@ const PortfoliosSection = () => {
                 {caseStudyLink && (
                   <Link
                     href={`/portfolio/${caseStudyLink}`}
-                    className={`case_study_btn ${language === 'ar' ? 'rotate_image' : ""}`}
-
+                    className={`case_study_btn d-none d-lg-flex ${
+                      language === "ar" ? "rotate_image" : ""
+                    }`}
                   >
                     <span>{t("View Case Study")}</span>
                     <Image
                       src={"/images/icons/arrowRight.svg"}
                       width={14}
                       height={13}
-                        className="arrow_icon"
+                      className="arrow_icon"
                       alt="Get it on Google Play"
                     />
                   </Link>
@@ -106,7 +107,11 @@ const PortfoliosSection = () => {
               </div>
               <div className="right">
                 <Image
-                  src={`/images/portfolio/${language == 'en' ? imageDetails.image : (imageDetails.imageAr ?? imageDetails.image)}.png`}
+                  src={`/images/portfolio/${
+                    language == "en"
+                      ? imageDetails.image
+                      : imageDetails.imageAr ?? imageDetails.image
+                  }.png`}
                   width={imageDetails.imageWidth}
                   height={imageDetails.imageHeight}
                   alt={`${title} Preview`}
@@ -114,7 +119,7 @@ const PortfoliosSection = () => {
                 />
 
                 {/* MOBILE LINKS & BUTTONS */}
-                <div className="store_btns d-md-none ">
+                <div className="store_btns d-lg-none ">
                   <div className="d-flex mt-4 inner_btn_div flex-wrap">
                     {appStoreLink && (
                       <a
@@ -146,25 +151,24 @@ const PortfoliosSection = () => {
                         />
                       </a>
                     )}
-                  {caseStudyLink && (
-                    <Link
-                      href={`/portfolio/${caseStudyLink}`}
-                      className={`case_study_btn_sm ${language === 'ar' ? 'rotate_image' : ""}`}
-
-                    >
-                      <span>{t("View Case Study")}</span>
-                      <Image
-                        src={"/images/icons/arrowRight.svg"}
-                        width={14}
-                        className="arrow_icon"
-                        height={13}
-                        alt="Get it on Google Play"
-                      />
-                    </Link>
-                  )}
-                  
                   </div>
-
+                    {caseStudyLink && (
+                      <Link
+                        href={`/portfolio/${caseStudyLink}`}
+                        className={`case_study_btn_sm  ${
+                          language === "ar" ? "rotate_image" : ""
+                        }`}
+                      >
+                        <span>{t("View Case Study")}</span>
+                        <Image
+                          src={"/images/icons/arrowRight.svg"}
+                          width={14}
+                          className="arrow_icon"
+                          height={13}
+                          alt="Get it on Google Play"
+                        />
+                      </Link>
+                    )}
                 </div>
               </div>
             </div>

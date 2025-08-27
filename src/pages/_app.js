@@ -8,7 +8,6 @@ import "@/styles/fonts.scss";
 import "@/styles/responsive.scss";
 import "@/styles/animation.scss";
 import "@/styles/arabic.scss";
-import "keen-slider/keen-slider.min.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import ClientOnly from "@/components/ClientOnly";
@@ -51,7 +50,8 @@ export default function App({ Component, pageProps }) {
 
         // 2️⃣ Detect from IP
         const res = await fetch("https://ipwhois.app/json/"); // CORS-friendly API
-        if (!res.ok) throw new Error(`Geo API failed with status ${res.status}`);
+        if (!res.ok)
+          throw new Error(`Geo API failed with status ${res.status}`);
         const data = await res.json();
 
         const countryCode = data.country_code?.toLowerCase();
@@ -82,7 +82,7 @@ export default function App({ Component, pageProps }) {
     <>
       {/* GA Script */}
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-8WK0QKTTG9"
+        src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q"
         strategy="afterInteractive"
       />
 
@@ -96,7 +96,7 @@ export default function App({ Component, pageProps }) {
             .then(res => res.json())
             .then(data => {
               if (data.country_code !== "IN") {
-                gtag('config', 'G-8WK0QKTTG9', {
+                gtag('config', 'G-6X8KTEXW4Q', {
                   page_path: window.location.pathname,
                 });
               } else {
