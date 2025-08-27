@@ -55,6 +55,8 @@ export default function OurProjectsNew() {
         <div className="position-relative wrapper_section">
           <div className="portfolio_inner_section">
             <Swiper
+              key={language}
+              dir={language === "ar" ? "rtl" : "ltr"}
               slidesPerView={1.5}
               spaceBetween={30}
               centeredSlides={true}
