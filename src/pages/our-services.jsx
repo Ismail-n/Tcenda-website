@@ -11,10 +11,6 @@ const OurServices = () => {
 
   return (
     <>
-      <SEO
-        title="Our Services"
-        description="Explore the full range of services offered by TOD — from mobile app and full-stack development to AI/ML, cloud solutions, UI/UX design, and Odoo customisation tailored to your business needs."
-      />
       <main className="our_services">
         <TopSection selectedService={selectedService} />
         <Services

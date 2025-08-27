@@ -10,10 +10,6 @@ import React from "react";
 const AboutUs = () => {
   return (
     <>
-      <SEO
-        title="About Us"
-        description="Learn more about TOD — our vision, mission, and the passionate team behind our innovative digital experiences. We're committed to excellence and forward-thinking solutions."
-      />
       <main className="about_us">
         <TopSection />
         <AboutUsSection />

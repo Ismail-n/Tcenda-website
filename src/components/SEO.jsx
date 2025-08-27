@@ -6,7 +6,7 @@ const SEO = ({ title = "", description = "", keywords = "" }) => {
   const { t } = useTranslation();
   return (
     <Head>
-      <title>{t(title)} | TOD</title>
+      <title>{t(title)}</title>
       <meta name="description" content={t(description) || ""} />
       <meta name="keywords" content={t(keywords) || ""} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />

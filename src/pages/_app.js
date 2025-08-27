@@ -15,9 +15,11 @@ import WhatsAppPhoneButton from "@/components/shared/WhatsAppPhoneButton";
 import { useEffect, useState } from "react";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-
 import i18n from "../../i18n";
 import Script from "next/script";
+import SEO from "@/components/SEO";
+import { metaData } from "@/data/metaInformationData";
+import { useTranslation } from "react-i18next";
 
 const pageVariants = {
   initial: { opacity: 0, y: -100 },
@@ -34,7 +36,11 @@ const pageTransition = {
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   const [languageReady, setLanguageReady] = useState(false);
+  const [currentLang, setCurrentLang] = useState("en");
+  const { t } = useTranslation("meta"); // load meta namespace
 
+  // Meta information
+  const { asPath } = router;
   useEffect(() => {
     const detectRegionAndSetLang = async () => {
       try {
@@ -75,13 +81,18 @@ export default function App({ Component, pageProps }) {
     detectRegionAndSetLang();
   }, []);
 
+  const meta = metaData.find(m => m.path === router.asPath)?.details || {};
+  console.log("router.asPath is ",router.asPath);
+
+
+
   if (!languageReady) return null;
 
   return (
     <>
       {/* GA Script */}
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q"
+        src="https://www.googletagmanager.com/gtag/js?id=G-8WK0QKTTG9"
         strategy="afterInteractive"
       />
 
@@ -95,7 +106,7 @@ export default function App({ Component, pageProps }) {
             .then(res => res.json())
             .then(data => {
               if (data.country_code !== "IN") {
-                gtag('config', 'G-6X8KTEXW4Q', {
+                gtag('config', 'G-8WK0QKTTG9', {
                   page_path: window.location.pathname,
                 });
               } else {
@@ -119,6 +130,11 @@ export default function App({ Component, pageProps }) {
             variants={pageVariants}
             transition={pageTransition}
           >
+            <SEO
+              title={meta.title || "Tod"}
+              keywords={meta.keywords || ""}
+              description={meta.description || ""}
+            />
             <Component {...pageProps} />
             <WhatsAppPhoneButton />
           </motion.div>

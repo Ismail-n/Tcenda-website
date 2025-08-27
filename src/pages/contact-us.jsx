@@ -7,10 +7,6 @@ import { ToastContainer } from "react-toastify";
 const ContactUs = () => {
   return (
     <>
-      <SEO
-        title="Contact Us"
-        description="Learn more about TOD — our vision, mission, and the passionate team behind our innovative digital experiences. We're committed to excellence and forward-thinking solutions."
-      />
       <ToastContainer position="top-right" autoClose={3000} />
       <main className="contact_us">
         <TopSection />
