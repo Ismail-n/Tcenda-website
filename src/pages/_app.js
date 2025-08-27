@@ -126,7 +126,7 @@ export default function App({ Component, pageProps }) {
         <Footer />
 
         {/* Google Analytics Component - Only for non-India */}
-        {!isIndia && <GoogleAnalytics gaId="G-8WK0QKTTG9" />}
+        {!isIndia && <GoogleAnalytics gaId="G-6X8KTEXW4Q" />}
       </ClientOnly>
     </>
   );
