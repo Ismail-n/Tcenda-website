@@ -96,7 +96,7 @@ export default function App({ Component, pageProps }) {
       {isIndia && (
         <>
           <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-8WK0QKTTG9"
+            src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q"
             strategy="afterInteractive"
           />
 
@@ -105,7 +105,7 @@ export default function App({ Component, pageProps }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-8WK0QKTTG9', {
+              gtag('config', 'G-6X8KTEXW4Q', {
                 page_path: window.location.pathname,
               });
             `}
@@ -132,7 +132,7 @@ export default function App({ Component, pageProps }) {
         <Footer />
         
         {/* Google Analytics Component - Only for India */}
-        {isIndia && <GoogleAnalytics gaId="G-8WK0QKTTG9"/>}
+        {isIndia && <GoogleAnalytics gaId="G-6X8KTEXW4Q"/>}
       </ClientOnly>
     </>
   );
