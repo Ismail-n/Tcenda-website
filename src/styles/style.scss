@@ -739,8 +739,8 @@ footer {
 
       .portfolio_inner_section {
         margin-top: 0px;
-        border-radius: 20px;
-        flex-direction: column;
+        // border-radius: 20px;
+        // flex-direction: column;
 
         .portfolio_inner {
           &.keen-slider__slide {
@@ -2326,6 +2326,7 @@ footer {
     @media (min-width: 1440px) {
       gap: 56px;
     }
+
     @media (min-width: 1200px) and (max-width: 1440px) {
       gap: 25px;
     }
@@ -2357,6 +2358,7 @@ footer {
       @media (min-width: 768px) and (max-width: 991px) {
         max-width: 300px;
       }
+
       @media (min-width: 1200px) and (max-width: 1440px) {
         max-width: 285px;
       }
@@ -2398,10 +2400,12 @@ footer {
 
         .store_btns {
           margin-top: 30px;
-          @media (min-width: 1200px)  and (max-width: 1440px){
+
+          @media (min-width: 1200px) and (max-width: 1440px) {
             margin-top: 15px;
-            
+
           }
+
           display: flex;
           gap: 15px;
           min-height: 36px;
@@ -4018,4 +4022,26 @@ footer {
       }
     }
   }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+  height: 50px;
+}
+
+.dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dots button.active {
+  background: #ffffff;
 }

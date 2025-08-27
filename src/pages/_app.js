@@ -8,6 +8,7 @@ import "@/styles/fonts.scss";
 import "@/styles/responsive.scss";
 import "@/styles/animation.scss";
 import "@/styles/arabic.scss";
+import "keen-slider/keen-slider.min.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import ClientOnly from "@/components/ClientOnly";
@@ -81,7 +82,7 @@ export default function App({ Component, pageProps }) {
     <>
       {/* GA Script */}
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q"
+        src="https://www.googletagmanager.com/gtag/js?id=G-8WK0QKTTG9"
         strategy="afterInteractive"
       />
 
@@ -95,7 +96,7 @@ export default function App({ Component, pageProps }) {
             .then(res => res.json())
             .then(data => {
               if (data.country_code !== "IN") {
-                gtag('config', 'G-6X8KTEXW4Q', {
+                gtag('config', 'G-8WK0QKTTG9', {
                   page_path: window.location.pathname,
                 });
               } else {

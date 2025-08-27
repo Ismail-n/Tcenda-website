@@ -1,13 +1,12 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-import Slider from "react-slick"; // ✅ slick slider import
 import { portfolios } from "@/data/portfolioData";
+import { useKeenSlider } from "keen-slider/react";
 
 const OurProjects = () => {
   const {
@@ -16,7 +15,52 @@ const OurProjects = () => {
   } = useTranslation();
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const sliderRef = useRef(null);
+  const [loaded, setLoaded] = useState(false);
+  const delay = 3000;
+  const animation = { duration: 1000, easing: (t) => t };
+
+  // Autoplay plugin to avoid stacking timeouts
+  function Autoplay(slider) {
+    let timeout;
+    function clearNextTimeout() {
+      clearTimeout(timeout);
+    }
+    function nextTimeout() {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        slider.next();
+      }, delay);
+    }
+    slider.on("created", () => {
+      setLoaded(true);
+      nextTimeout();
+    });
+    slider.on("dragStarted", clearNextTimeout);
+    slider.on("animationEnded", nextTimeout);
+    slider.on("updated", nextTimeout);
+  }
+
+  const [sliderRef, instanceRef] = useKeenSlider(
+    {
+      loop: true,
+      rubberband: false,
+      renderMode: "performance",
+      slides: {
+        origin: "center",
+        perView: 1.5,
+        spacing: 15,
+      },
+      slideChanged(slider) {
+        setCurrentSlide(slider.track.details.rel);
+      },
+      breakpoints: {
+        "(max-width: 400px)": {
+          slides: { perView: 1, spacing: 5 },
+        },
+      },
+    },
+    [Autoplay]
+  );
 
   const projectsToSHow = [
     "ashjar-space",
@@ -26,73 +70,9 @@ const OurProjects = () => {
     "real-estate",
   ];
 
-  const testingDivSetting = {
-    arrows: false,
-    infinite: true,
-    dots: true,
-    centerMode: false,
-  };
-
-  // Filter and sort portfolios in the specified order
-  const filteredPortfolios = projectsToSHow.map(projectId =>
-    portfolios.find(portfolio => portfolio.id === projectId)
-  ).filter(Boolean); // Remove any undefined items
-
-  const settings = {
-        autoplay: window.innerWidth < 575 ? false : true,
-    arrows: false,
-    infinite: true,
-    dots: true,
-    pauseOnHover: true,
-    pauseOnFocus: true,
-    centerMode: window.innerWidth <= 991 ? false : true,
-    centerPadding: '15%', // Show partial slides on sides
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplaySpeed: 3000,
-    rtl: language === "ar",
-    focusOnSelect: false,
-    speed: 300,
-    initialSlide: 0, // Start from the first slide
-    beforeChange: (_, next) => setCurrentSlide(next),
-    customPaging: () => <button />,
-    responsive: [
-      {
-        breakpoint: 1200, // Large screens
-        settings: {
-          centerPadding: '0%',
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 992, // Large tablets and small desktops
-        settings: {
-          centerPadding: '0%',
-          slidesToShow: 1,
-          centerMode: false,
-
-
-        },
-      },
-      {
-        breakpoint: 768, // Tablets
-        settings: {
-          centerPadding: '0%',
-          slidesToShow: 1,
-          centerMode: false,
-
-
-        },
-      },
-      {
-        breakpoint: 576, // Mobile devices
-        settings: {
-          centerMode: false,
-          centerPadding: '0px',
-        },
-      },
-    ],
-  };
+  const filteredPortfolios = projectsToSHow
+    .map((projectId) => portfolios.find((p) => p.id === projectId))
+    .filter(Boolean);
 
   return (
     <section className="our_projects common_section">
@@ -114,8 +94,7 @@ const OurProjects = () => {
       </Container>
       <Container fluid>
         <div className="position-relative wrapper_section">
-          <Slider
-            {...settings}
+          <div
             ref={sliderRef}
             className="keen-slider portfolio_inner_section portfolio_slider"
           >
@@ -134,16 +113,12 @@ const OurProjects = () => {
                 },
                 index
               ) => (
-                <div key={id} className="slide-wrapper">
+                <div key={id} className="slide-wrapper keen-slider__slide">
                   <div
-                    className={`portfolio_inner ${language === 'ar' ? 'rtl' : ""} keen-slider__slide ${currentSlide === index ? "active" : ""}`}
-
-                    id={id}
-                    style={{
-                      background
-                    }}
+                    className={`portfolio_inner ${language === "ar" ? "rtl" : ""
+                      } ${currentSlide === index ? "active" : ""}`}
+                    style={{ background }}
                   >
-
                     {/* Left Section */}
                     <div className="left">
                       <div className="content">
@@ -151,7 +126,7 @@ const OurProjects = () => {
                           <Image
                             src={`/images/portfolio/${logoDetails.logo}.svg`}
                             alt={`${title} Logo`}
-                            className={`logo_img`}
+                            className="logo_img"
                             width={logoDetails.logoWidth}
                             height={logoDetails.logoHeight}
                             priority={index === 0}
@@ -161,32 +136,22 @@ const OurProjects = () => {
                         <p>{t(description)}</p>
                         <div className="store_btns d-none d-md-flex">
                           {appStoreLink && (
-                            <a
-                              href={appStoreLink}
-                              aria-label={`Download ${title} on the App Store`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
+                            <a href={appStoreLink} target="_blank" rel="noreferrer">
                               <Image
                                 src={"/images/icons/appStore.svg"}
                                 width={140}
                                 height={44}
-                                alt="Download on the App Store"
+                                alt="App Store"
                               />
                             </a>
                           )}
                           {playStoreLink && (
-                            <a
-                              href={playStoreLink}
-                              aria-label={`Download ${title} on the Play Store`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
+                            <a href={playStoreLink} target="_blank" rel="noreferrer">
                               <Image
                                 src={"/images/icons/playStore.svg"}
                                 width={140}
                                 height={44}
-                                alt="Get it on Google Play"
+                                alt="Google Play"
                               />
                             </a>
                           )}
@@ -195,17 +160,16 @@ const OurProjects = () => {
                       {caseStudyLink && (
                         <Link
                           href={`/portfolio/${caseStudyLink}`}
-                          // className="case_study_btn"
-                          className={`case_study_btn ${language === 'ar' ? 'rotate_image' : ""}`}
+                          className={`case_study_btn ${language === "ar" ? "rotate_image" : ""
+                            }`}
                         >
                           <span>{t("View Case Study")}</span>
                           <Image
                             src={"/images/icons/arrowRight.svg"}
                             width={14}
                             height={13}
-                        className="arrow_icon"
-
-                            alt="Get it on Google Play"
+                            className="arrow_icon"
+                            alt="Arrow"
                           />
                         </Link>
                       )}
@@ -215,15 +179,14 @@ const OurProjects = () => {
                     <div className="right">
                       <Image
                         src={`/images/portfolio/${language === "en"
-                          ? imageDetails.image
-                          : imageDetails.imageAr || imageDetails.image
+                            ? imageDetails.image
+                            : imageDetails.imageAr || imageDetails.image
                           }.png`}
                         width={imageDetails.imageWidth}
                         height={imageDetails.imageHeight}
                         alt={`${title} Preview`}
                         className="preview_img"
                       />
-
                       <div className="store_btns d-md-none ">
                         <div className="d-flex mt-4 inner_btn_div flex-wrap">
                           {appStoreLink && (
@@ -268,7 +231,7 @@ const OurProjects = () => {
                               src={"/images/icons/arrowRight.svg"}
                               width={14}
                               height={13}
-                        className="arrow_icon"
+                              className="arrow_icon"
 
                               alt="Get it on Google Play"
                             />
@@ -280,7 +243,22 @@ const OurProjects = () => {
                 </div>
               )
             )}
-          </Slider>
+          </div>
+
+          {/* Dots */}
+          {loaded && instanceRef.current && (
+            <div className="dots">
+              {[
+                ...Array(instanceRef.current.track.details.slides.length).keys(),
+              ].map((idx) => (
+                <button
+                  key={idx}
+                  onClick={() => instanceRef.current.moveToIdx(idx)}
+                  className={currentSlide === idx ? "active" : ""}
+                ></button>
+              ))}
+            </div>
+          )}
         </div>
       </Container>
     </section>
