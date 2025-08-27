@@ -13,10 +13,7 @@ import { useRouter } from "next/router";
 import ClientOnly from "@/components/ClientOnly";
 import WhatsAppPhoneButton from "@/components/shared/WhatsAppPhoneButton";
 import { useEffect, useState } from "react";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-import {GoogleAnalytics} from '@next/third-parties/google'
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 import i18n from "../../i18n";
 import Script from "next/script";
 
@@ -40,10 +37,10 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     const detectRegionAndSetLang = async () => {
       try {
-        // 1️⃣ Check if user already has a saved language
+        // Check saved language/country
         const savedLang = localStorage.getItem("user_lang");
         const savedCountry = localStorage.getItem("user_country");
-        
+
         if (savedLang && savedCountry) {
           await i18n.changeLanguage(savedLang);
           document.documentElement.lang = savedLang;
@@ -53,10 +50,9 @@ export default function App({ Component, pageProps }) {
           return;
         }
 
-        // 2️⃣ Detect from IP
-        const res = await fetch("https://ipwhois.app/json/"); // CORS-friendly API
-        if (!res.ok)
-          throw new Error(`Geo API failed with status ${res.status}`);
+        // Detect from IP
+        const res = await fetch("https://ipwhois.app/json/");
+        if (!res.ok) throw new Error(`Geo API failed with status ${res.status}`);
         const data = await res.json();
 
         const countryCode = data.country_code?.toUpperCase();
@@ -66,11 +62,11 @@ export default function App({ Component, pageProps }) {
         await i18n.changeLanguage(lang);
         document.documentElement.lang = lang;
         document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-        
-        // Save country and language for future visits
+
+        // Save for next time
         localStorage.setItem("user_lang", lang);
         localStorage.setItem("user_country", countryCode);
-        
+
         setIsIndia(countryCode === "IN");
         setLanguageReady(true);
       } catch (error) {
@@ -92,14 +88,13 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      {/* GA Script - Only for India */}
-      {isIndia && (
+      {/* GA Script - Only for non-India users */}
+      {!isIndia && (
         <>
           <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q"
             strategy="afterInteractive"
           />
-
           <Script id="google-analytics" strategy="afterInteractive">
             {`
               window.dataLayer = window.dataLayer || [];
@@ -125,14 +120,13 @@ export default function App({ Component, pageProps }) {
             transition={pageTransition}
           >
             <Component {...pageProps} />
-
             <WhatsAppPhoneButton />
           </motion.div>
         </AnimatePresence>
         <Footer />
-        
-        {/* Google Analytics Component - Only for India */}
-        {isIndia && <GoogleAnalytics gaId="G-6X8KTEXW4Q"/>}
+
+        {/* Google Analytics Component - Only for non-India */}
+        {!isIndia && <GoogleAnalytics gaId="G-8WK0QKTTG9" />}
       </ClientOnly>
     </>
   );
