@@ -130,11 +130,11 @@ export default function App({ Component, pageProps }) {
             variants={pageVariants}
             transition={pageTransition}
           >
-            <SEO
+            {/* <SEO
               title={meta.title || "Tod"}
               keywords={meta.keywords || ""}
               description={meta.description || ""}
-            />
+            /> */}
             <Component {...pageProps} />
             <WhatsAppPhoneButton />
           </motion.div>
