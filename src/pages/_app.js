@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
   const [languageReady, setLanguageReady] = useState(false);
   const [currentLang, setCurrentLang] = useState("en");
-  const { t } = useTranslation("meta"); // load meta namespace
+  const { t } = useTranslation(); // load meta namespace
 
   // Meta information
   const { asPath } = router;
@@ -82,7 +82,7 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   const meta = metaData.find(m => m.path === router.asPath)?.details || {};
-  console.log("router.asPath is ",router.asPath);
+  console.log(meta);
 
 
 
@@ -130,11 +130,11 @@ export default function App({ Component, pageProps }) {
             variants={pageVariants}
             transition={pageTransition}
           >
-            {/* <SEO
-              title={meta.title || "Tod"}
+            <SEO
+              title={t(meta.title) || "Tod"}
               keywords={meta.keywords || ""}
               description={meta.description || ""}
-            /> */}
+            />
             <Component {...pageProps} />
             <WhatsAppPhoneButton />
           </motion.div>
