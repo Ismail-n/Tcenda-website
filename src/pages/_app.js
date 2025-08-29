@@ -16,6 +16,8 @@ import { useEffect, useState } from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import i18n from "../../i18n";
 import Script from "next/script";
+import SEO from "@/components/SEO";
+import { useTranslation } from "react-i18next";
 
 const pageVariants = {
   initial: { opacity: 0, y: -100 },
@@ -33,11 +35,11 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
   const [languageReady, setLanguageReady] = useState(false);
   const [isIndia, setIsIndia] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const detectRegionAndSetLang = async () => {
       try {
-        // Check saved language/country
         const savedLang = localStorage.getItem("user_lang");
         const savedCountry = localStorage.getItem("user_country");
 
@@ -50,7 +52,6 @@ export default function App({ Component, pageProps }) {
           return;
         }
 
-        // Detect from IP
         const res = await fetch("https://ipwhois.app/json/");
         if (!res.ok) throw new Error(`Geo API failed with status ${res.status}`);
         const data = await res.json();
@@ -63,14 +64,12 @@ export default function App({ Component, pageProps }) {
         document.documentElement.lang = lang;
         document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
 
-        // Save for next time
         localStorage.setItem("user_lang", lang);
         localStorage.setItem("user_country", countryCode);
 
         setIsIndia(countryCode === "IN");
         setLanguageReady(true);
       } catch (error) {
-        // Fallback to Arabic
         await i18n.changeLanguage("ar");
         document.documentElement.lang = "ar";
         document.documentElement.dir = "rtl";
@@ -84,15 +83,14 @@ export default function App({ Component, pageProps }) {
     detectRegionAndSetLang();
   }, []);
 
-  if (!languageReady) return null;
-
   return (
     <>
-      {/* GA Script - Only for non-India users */}
+      {pageProps.meta && <SEO {...pageProps.meta} />}
+
       {!isIndia && (
         <>
           <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q"
+            src="https://www.googletagmanager.com/gtag/js?id=G-8WK0QKTTG9"
             strategy="afterInteractive"
           />
           <Script id="google-analytics" strategy="afterInteractive">
@@ -100,9 +98,7 @@ export default function App({ Component, pageProps }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-6X8KTEXW4Q', {
-                page_path: window.location.pathname,
-              });
+              gtag('config', 'G-8WK0QKTTG9', { page_path: window.location.pathname });
             `}
           </Script>
         </>
@@ -124,9 +120,7 @@ export default function App({ Component, pageProps }) {
           </motion.div>
         </AnimatePresence>
         <Footer />
-
-        {/* Google Analytics Component - Only for non-India */}
-        {!isIndia && <GoogleAnalytics gaId="G-6X8KTEXW4Q" />}
+        {!isIndia && <GoogleAnalytics gaId="G-8WK0QKTTG9" />}
       </ClientOnly>
     </>
   );

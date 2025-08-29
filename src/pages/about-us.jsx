@@ -4,16 +4,20 @@ import OurVisionMission from "@/components/aboutUs/OurVisionMission";
 import TopSection from "@/components/aboutUs/TopSection";
 import Clients from "@/components/home/Clients";
 import ConsultOurExperts from "@/components/home/ConsultOurExperts";
-import SEO from "@/components/SEO";
+import { metaData } from "@/data/metaInformationData";
 import React from "react";
+export async function getStaticProps() {
+  const path = "/about-us/";
+  const meta = metaData.find(m => m.path === path)?.details || {};
+
+  return {
+    props: { meta },
+  };
+}
 
 const AboutUs = () => {
   return (
     <>
-      <SEO
-        title="About Us"
-        description="Learn more about TOD — our vision, mission, and the passionate team behind our innovative digital experiences. We're committed to excellence and forward-thinking solutions."
-      />
       <main className="about_us">
         <TopSection />
         <AboutUsSection />
