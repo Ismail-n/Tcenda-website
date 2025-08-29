@@ -13,8 +13,17 @@ import TopSection from "@/components/home/TopSection";
 import { metaData } from "@/data/metaInformationData";
 import Head from "next/head";
 
+export async function getStaticProps() {
+  const path = "/";
+  const meta = metaData.find(m => m.path === path)?.details || {};
 
-export default function Home() {
+  return {
+    props: { meta },
+  };
+}
+
+
+export default function Home({ meta }) {
   return (
     <>
       <main className="home">

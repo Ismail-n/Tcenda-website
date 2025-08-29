@@ -81,15 +81,13 @@ export default function App({ Component, pageProps }) {
     detectRegionAndSetLang();
   }, []);
 
-  const meta = metaData.find(m => m.path === router.asPath)?.details || {};
-  console.log(meta);
 
 
-
-  if (!languageReady) return null;
+  // if (!languageReady) return null;
 
   return (
     <>
+      {pageProps.meta && <SEO {...pageProps.meta} />}
       {/* GA Script */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-8WK0QKTTG9"
@@ -130,11 +128,6 @@ export default function App({ Component, pageProps }) {
             variants={pageVariants}
             transition={pageTransition}
           >
-            <SEO
-              title={t(meta.title) || "Tod"}
-              keywords={meta.keywords || ""}
-              description={meta.description || ""}
-            />
             <Component {...pageProps} />
             <WhatsAppPhoneButton />
           </motion.div>
