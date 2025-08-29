@@ -2,12 +2,15 @@ import Head from "next/head";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
+
 const SEO = ({
   title = "",
   description = "",
   keywords = "",
-  url = "https://smxccmj1-3000.inc1.devtunnels.ms/",
-  image = "",
+  url = baseUrl,
+  image = `${baseUrl}/images/icons/logoNew.svg`,
 }) => {
   const { t } = useTranslation();
 
