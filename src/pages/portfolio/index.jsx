@@ -8,6 +8,7 @@ import { metaData } from "@/data/metaInformationData";
 
 export async function getStaticProps() {
   const path = "/portfolio/";
+  
   const meta = metaData.find(m => m.path === path)?.details || {};
 
   return {
