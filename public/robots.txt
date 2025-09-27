@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tod.com.sa
+
+# Sitemaps
+Sitemap: https://tod.com.sa/sitemap.xml
