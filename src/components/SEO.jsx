@@ -10,6 +10,7 @@ const SEO = ({
   description = "",
   keywords = "",
   url = baseUrl,
+  canonicalUrl = "",
   image = `${baseUrl}/images/icons/logoNew.svg`,
 }) => {
   const { t } = useTranslation();
@@ -26,6 +27,7 @@ const SEO = ({
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
+      <link rel="canonical" href={`${baseUrl}${canonicalUrl}`} />
       {image && <meta property="og:image" content={image} />}
 
       {/* Twitter Card */}
