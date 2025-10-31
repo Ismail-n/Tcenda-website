@@ -21,7 +21,7 @@ const portfolios = [
     },
     background: "linear-gradient(to right, #FAFFD9, #C5D271)",
   },
-   {
+  {
     id: "send",
     logoDetails: {
       logo: "sendLogoNew",
@@ -130,7 +130,7 @@ const portfolios = [
     },
     background: "linear-gradient(to left, #BD7F4E, #FFCDA5)",
   },
-  
+
   {
     id: "ease",
     logoDetails: {
@@ -141,6 +141,9 @@ const portfolios = [
     title: "Ease",
     description:
       "Manage Operations, Sales, and Finance — All from One Central Dashboard. Intelligent Business Management, Right at Your Fingertips.",
+    appStoreLink: "https://apps.apple.com/in/app/ease-menu/id6751831172",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=ease.sa&hl=en",
     caseStudyLink: "ease",
     imageDetails: {
       image: "ease",
@@ -149,9 +152,8 @@ const portfolios = [
     },
     background: "linear-gradient(100.28deg, #FFFFFF -53.98%, #ABDBFF 133.6%)",
     backgroundAr: "linear-gradient(100deg, #ABDBFF , #FFFFFF)",
-
   },
- 
+
   {
     id: "cup-crew",
     logoDetails: {
@@ -173,7 +175,7 @@ const portfolios = [
     background: "linear-gradient(to left, #14463A, #D4B38B)",
     backgroundAr: "linear-gradient(to right, #14463A, #D4B38B)",
   },
-  
+
   // {
   //   id: "burger-buzz",
   //   logoDetails: {
@@ -233,8 +235,10 @@ const portfolios = [
       imageWidth: 289,
       imageHeight: 415,
     },
-    background: "linear-gradient(100deg, rgba(255, 255, 255, 1), rgba(21, 118, 236, 1))",
-    backgroundAr: "linear-gradient(100deg, rgba(21, 118, 236, 1) , rgba(255, 255, 255, 1))",
+    background:
+      "linear-gradient(100deg, rgba(255, 255, 255, 1), rgba(21, 118, 236, 1))",
+    backgroundAr:
+      "linear-gradient(100deg, rgba(21, 118, 236, 1) , rgba(255, 255, 255, 1))",
   },
   {
     id: "health-care",
@@ -256,7 +260,7 @@ const portfolios = [
     },
     background: "linear-gradient(100.71deg, #FFFFFF -52.95%, #0BA69A 181.08%)",
   },
-  
+
   {
     id: "fresh-cart",
     logoDetails: {
@@ -364,7 +368,7 @@ const portfolios = [
       "linear-gradient(to right, rgba(20, 179, 130, 1), rgba(51, 182, 143, 1)",
     backgroundAr:
       "linear-gradient(to right, rgba(51, 182, 143, 1), rgba(20, 179, 130, 1)",
-  }
+  },
 ];
 
 export { portfolios };
