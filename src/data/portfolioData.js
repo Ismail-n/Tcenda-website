@@ -43,72 +43,72 @@ const portfolios = [
     },
     background: "linear-gradient(to right, #FFEBC2, #FBB21C)",
   },
-  {
-    id: "half-million",
-    logoDetails: {
-      logo: "halfMillionLogo",
-      logoWidth: 80,
-      logoHeight: 80,
-    },
-    title: "Half Million",
-    description:
-      "Experience the Richness of Artisan Coffee — Anytime, Anywhere. Your Favorite Brews, Delivered Fresh from the Café to Your Pocket.",
-    appStoreLink:
-      "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
-    playStoreLink:
-      "https://play.google.com/store/apps/details?id=com.halfmillion.android&hl=en_IN",
-    caseStudyLink: "half-million",
-    imageDetails: {
-      image: "halfMillion",
-      imageAr: "halfMillionAr",
-      imageWidth: 466,
-      imageHeight: 431,
-    },
-    background: "linear-gradient(to left, #87C5B2, #D3B48C)",
-  },
-  {
-    id: "sign",
-    logoDetails: {
-      logo: "signLogo",
-      logoWidth: 80,
-      logoHeight: 80,
-    },
-    title: "Sign Burger",
-    description:
-      "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
-    appStoreLink: "https://apps.apple.com/in/app/sign-burger-%D8%B3%D8%A7%D9%8A%D9%86-%D8%A8%D8%B1%D8%AC%D8%B1/id6748125819",
-    playStoreLink: "https://play.google.com/store/apps/details?id=com.wulooj.signburger.sa",
-    caseStudyLink: "sign",
-    imageDetails: {
-      image: "sign",
-      imageAr: "signAr",
-      imageWidth: 465,
-      imageHeight: 406,
-    },
-    background: "linear-gradient(109.91deg, #FFFFFF -22.51%, #FF91C5 98.59%)",
-  },
-  {
-    id: "real-estate",
-    logoDetails: {
-      logo: "realEstateLogo",
-      logoWidth: 80,
-      logoHeight: 80,
-    },
-    title: "Takween",
-    description:
-      "Tailored Search, Virtual Tours, and Agent Support for Buyers and Renters. Built to Serve Saudi's Growing Real Estate Market.",
-    appStoreLink: "",
-    playStoreLink: "",
-    caseStudyLink: "real-estate",
-    imageDetails: {
-      image: "realEstate",
-      imageAr: "realEstateAr",
-      imageWidth: 537,
-      imageHeight: 362,
-    },
-    background: "linear-gradient(to left, #0C3553, #A2D8FF)",
-    backgroundAr: "linear-gradient(to right, #0C3553, #A2D8FF)",
-  },
+  // {
+  //   id: "half-million",
+  //   logoDetails: {
+  //     logo: "halfMillionLogo",
+  //     logoWidth: 80,
+  //     logoHeight: 80,
+  //   },
+  //   title: "Half Million",
+  //   description:
+  //     "Experience the Richness of Artisan Coffee — Anytime, Anywhere. Your Favorite Brews, Delivered Fresh from the Café to Your Pocket.",
+  //   appStoreLink:
+  //     "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
+  //   playStoreLink:
+  //     "https://play.google.com/store/apps/details?id=com.halfmillion.android&hl=en_IN",
+  //   caseStudyLink: "half-million",
+  //   imageDetails: {
+  //     image: "halfMillion",
+  //     imageAr: "halfMillionAr",
+  //     imageWidth: 466,
+  //     imageHeight: 431,
+  //   },
+  //   background: "linear-gradient(to left, #87C5B2, #D3B48C)",
+  // },
+  // {
+  //   id: "sign",
+  //   logoDetails: {
+  //     logo: "signLogo",
+  //     logoWidth: 80,
+  //     logoHeight: 80,
+  //   },
+  //   title: "Sign Burger",
+  //   description:
+  //     "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
+  //   appStoreLink: "https://apps.apple.com/in/app/sign-burger-%D8%B3%D8%A7%D9%8A%D9%86-%D8%A8%D8%B1%D8%AC%D8%B1/id6748125819",
+  //   playStoreLink: "https://play.google.com/store/apps/details?id=com.wulooj.signburger.sa",
+  //   caseStudyLink: "sign",
+  //   imageDetails: {
+  //     image: "sign",
+  //     imageAr: "signAr",
+  //     imageWidth: 465,
+  //     imageHeight: 406,
+  //   },
+  //   background: "linear-gradient(109.91deg, #FFFFFF -22.51%, #FF91C5 98.59%)",
+  // },
+  // {
+  //   id: "real-estate",
+  //   logoDetails: {
+  //     logo: "realEstateLogo",
+  //     logoWidth: 80,
+  //     logoHeight: 80,
+  //   },
+  //   title: "Takween",
+  //   description:
+  //     "Tailored Search, Virtual Tours, and Agent Support for Buyers and Renters. Built to Serve Saudi's Growing Real Estate Market.",
+  //   appStoreLink: "",
+  //   playStoreLink: "",
+  //   caseStudyLink: "real-estate",
+  //   imageDetails: {
+  //     image: "realEstate",
+  //     imageAr: "realEstateAr",
+  //     imageWidth: 537,
+  //     imageHeight: 362,
+  //   },
+  //   background: "linear-gradient(to left, #0C3553, #A2D8FF)",
+  //   backgroundAr: "linear-gradient(to right, #0C3553, #A2D8FF)",
+  // },
   {
     id: "ashjar-friends",
     logoDetails: {

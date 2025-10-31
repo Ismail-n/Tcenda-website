@@ -90,7 +90,7 @@ export default function App({ Component, pageProps }) {
       {!isIndia && (
         <>
           <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q"
+            src="https://www.googletagmanager.com/gtag/js?id=G-8WK0QKTTG9"
             strategy="afterInteractive"
           />
           <Script id="google-analytics" strategy="afterInteractive">
@@ -98,7 +98,7 @@ export default function App({ Component, pageProps }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-6X8KTEXW4Q', { page_path: window.location.pathname });
+              gtag('config', 'G-8WK0QKTTG9', { page_path: window.location.pathname });
             `}
           </Script>
         </>
@@ -120,7 +120,7 @@ export default function App({ Component, pageProps }) {
           </motion.div>
         </AnimatePresence>
         <Footer />
-        {!isIndia && <GoogleAnalytics gaId="G-6X8KTEXW4Q" />}
+        {!isIndia && <GoogleAnalytics gaId="G-8WK0QKTTG9" />}
       </ClientOnly>
     </>
   );

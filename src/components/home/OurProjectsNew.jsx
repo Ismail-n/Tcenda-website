@@ -24,9 +24,6 @@ export default function OurProjectsNew() {
   const projectsToSHow = [
     "ashjar-space",
     "send",
-    "half-million",
-    "sign",
-    "real-estate",
   ];
 
   const filteredPortfolios = projectsToSHow
