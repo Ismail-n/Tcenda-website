@@ -751,6 +751,11 @@ footer {
         }
 
         .portfolio_inner {
+          .left {
+            @media (min-width: 1200px) and (max-width: 1440px) {
+              max-width: 315px;
+            }
+          }
           &.keen-slider__slide {
             min-height: 530px;
           }
