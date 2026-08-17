@@ -73,7 +73,7 @@ const TopSection = ({ClientSection}) => {
             aria-label="Start a conversation"
             onClick={scrollToContact}
           >
-            {t("Let's Talk")}
+            {t("Free Consultation")}
           </button>
         </div>
       </Container>

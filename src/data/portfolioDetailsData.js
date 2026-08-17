@@ -299,107 +299,107 @@ const portfolioDetails = [
       },
     },
   },
-  {
-    id: "half-million",
-    sections: {
-      top: {
-        background: "linear-gradient(120deg, #87C5B2, #D6FFF2)",
-        title: "Half Million",
-        subtitle:
-          "Half Million is more than just a coffee chain — it's a local movement brewing community, quality, and innovation across Saudi Arabia. With a passion for delivering handcrafted coffee with speed and precision, Half Million connects coffee lovers to their favorite brews through convenient pickup, curbside service, and reliable delivery. Whether you're on the move or taking a moment to unwind, Half Million makes exceptional coffee effortlessly accessible.",
-        image: "/images/portfolioDetails/halfMillion/topBg.webp",
-        imageAr: "/images/portfolioDetails/halfMillion/topBgAr.webp",
-        appStoreLinks: {
-          ios: "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
-          android:
-            "https://play.google.com/store/apps/details?id=com.halfmillion.android&hl=en_IN",
-        },
-      },
-      aboutUs: {
-        image: "/images/portfolioDetails/halfMillion/aboutUs.webp",
-        title: "About Us",
-        description: [
-          "With a growing presence across Saudi Arabia, Half Million isn't just serving coffee — it's crafting everyday rituals rooted in convenience, taste, and community. From streamlined curbside pickups to fast, reliable deliveries, the brand blends quality with accessibility. ",
-          "Whether you're grabbing your morning cup or fueling a late-night study session, Half Million is always within reach — delivering not just coffee, but a consistently great experience.",
-        ],
-        tags: [
-          { label: "Industry", value: "F&B" },
-          { label: "Services", value: "Pickup, Curbside, Delivery" },
-          { label: "Business Type", value: "Retail" },
-        ],
-      },
-      projectGoals: {
-        title: "Project Goals",
-        image: {
-          url: "/images/portfolioDetails/halfMillion/projectGoals.webp",
-          urlAr: "/images/portfolioDetails/halfMillion/projectGoalsAr.webp",
-        },
-        goals: [
-          {
-            title: "Streamline Coffee Access Across Channels",
-            description:
-              "Enable fast, seamless ordering across in-store pickup, curbside, and delivery with consistent service and experience.",
-          },
-          {
-            title: "Personalized Experiences",
-            description:
-              "Leverage order history and preferences to suggest personalized drinks and exclusive seasonal items.",
-          },
-          {
-            title: "Enhance Digital Engagement",
-            description:
-              "Design an intuitive app that makes browsing, customizing, and ordering drinks quick, clear, and convenient.",
-          },
-          {
-            title: "Support Operational Efficiency",
-            description:
-              "Integrate backend tools for inventory, location management, and real-time order tracking to ensure consistent quality at scale.",
-          },
-        ],
-      },
-      execution: {
-        image: "/images/portfolioDetails/halfMillion/execution.webp",
-        description:
-          "Half Million is a proudly homegrown coffee brand, built for a new generation of Saudi coffee lovers. With a commitment to flavor, community, and digital-first convenience, we designed their digital ecosystem to empower fast orders, rich loyalty experiences, and a consistently excellent brew—no matter where you order from.",
-        descriptionBackground: "#86C5B1",
-      },
-      featuresOverview: {
-        title: "Brewing Convenience, Every Time You Order",
-        titleMaxWidth: 486,
-        items: [
-          {
-            title: "Real-Time Order Tracking",
-            maxTitleWidth: 342,
-            images: {
-              url: "/images/portfolioDetails/halfMillion/feature1.webp",
-              urlAr: "/images/portfolioDetails/halfMillion/feature1Ar.webp",
-              width: 507,
-              height: 499,
-            },
-          },
-          {
-            title: "Customizable Drink Selection",
-            maxTitleWidth: 379,
-            images: {
-              url: "/images/portfolioDetails/halfMillion/feature2.webp",
-              urlAr: "/images/portfolioDetails/halfMillion/feature2Ar.webp",
-              width: 507,
-              height: 498,
-            },
-          },
-        ],
-        description:
-          "Coffee, Fast. Rewards, Faster. The Half Million app lets you order your go-to coffee in seconds. Earn rewards, get exclusive deals, and skip the line with curated features designed around your lifestyle. Browse. Tap. Brew.",
-      },
-      highlightBanner: {
-        backgroundColor: "#86C5B1",
-        title: "Onboarding Made Simple, Rewards Made Sweet",
-        description:
-          "Join the Half Million experience in just a few taps. Create your account, place your first order, and start earning points with every sip. Enjoy personalized offers, early access to new brews, and exclusive rewards crafted for true coffee lovers — all inside one smooth, easy-to-use app.",
-        image: "/images/portfolioDetails/halfMillion/highLightBanner.webp",
-      },
-    },
-  },
+  // {
+  //   id: "half-million",
+  //   sections: {
+  //     top: {
+  //       background: "linear-gradient(120deg, #87C5B2, #D6FFF2)",
+  //       title: "Half Million",
+  //       subtitle:
+  //         "Half Million is more than just a coffee chain — it's a local movement brewing community, quality, and innovation across Saudi Arabia. With a passion for delivering handcrafted coffee with speed and precision, Half Million connects coffee lovers to their favorite brews through convenient pickup, curbside service, and reliable delivery. Whether you're on the move or taking a moment to unwind, Half Million makes exceptional coffee effortlessly accessible.",
+  //       image: "/images/portfolioDetails/halfMillion/topBg.webp",
+  //       imageAr: "/images/portfolioDetails/halfMillion/topBgAr.webp",
+  //       appStoreLinks: {
+  //         ios: "https://apps.apple.com/in/app/half-million-%D9%87%D8%A7%D9%81-%D9%85%D9%84%D9%8A%D9%88%D9%86/id1559864940",
+  //         android:
+  //           "https://play.google.com/store/apps/details?id=com.halfmillion.android&hl=en_IN",
+  //       },
+  //     },
+  //     aboutUs: {
+  //       image: "/images/portfolioDetails/halfMillion/aboutUs.webp",
+  //       title: "About Us",
+  //       description: [
+  //         "With a growing presence across Saudi Arabia, Half Million isn't just serving coffee — it's crafting everyday rituals rooted in convenience, taste, and community. From streamlined curbside pickups to fast, reliable deliveries, the brand blends quality with accessibility. ",
+  //         "Whether you're grabbing your morning cup or fueling a late-night study session, Half Million is always within reach — delivering not just coffee, but a consistently great experience.",
+  //       ],
+  //       tags: [
+  //         { label: "Industry", value: "F&B" },
+  //         { label: "Services", value: "Pickup, Curbside, Delivery" },
+  //         { label: "Business Type", value: "Retail" },
+  //       ],
+  //     },
+  //     projectGoals: {
+  //       title: "Project Goals",
+  //       image: {
+  //         url: "/images/portfolioDetails/halfMillion/projectGoals.webp",
+  //         urlAr: "/images/portfolioDetails/halfMillion/projectGoalsAr.webp",
+  //       },
+  //       goals: [
+  //         {
+  //           title: "Streamline Coffee Access Across Channels",
+  //           description:
+  //             "Enable fast, seamless ordering across in-store pickup, curbside, and delivery with consistent service and experience.",
+  //         },
+  //         {
+  //           title: "Personalized Experiences",
+  //           description:
+  //             "Leverage order history and preferences to suggest personalized drinks and exclusive seasonal items.",
+  //         },
+  //         {
+  //           title: "Enhance Digital Engagement",
+  //           description:
+  //             "Design an intuitive app that makes browsing, customizing, and ordering drinks quick, clear, and convenient.",
+  //         },
+  //         {
+  //           title: "Support Operational Efficiency",
+  //           description:
+  //             "Integrate backend tools for inventory, location management, and real-time order tracking to ensure consistent quality at scale.",
+  //         },
+  //       ],
+  //     },
+  //     execution: {
+  //       image: "/images/portfolioDetails/halfMillion/execution.webp",
+  //       description:
+  //         "Half Million is a proudly homegrown coffee brand, built for a new generation of Saudi coffee lovers. With a commitment to flavor, community, and digital-first convenience, we designed their digital ecosystem to empower fast orders, rich loyalty experiences, and a consistently excellent brew—no matter where you order from.",
+  //       descriptionBackground: "#86C5B1",
+  //     },
+  //     featuresOverview: {
+  //       title: "Brewing Convenience, Every Time You Order",
+  //       titleMaxWidth: 486,
+  //       items: [
+  //         {
+  //           title: "Real-Time Order Tracking",
+  //           maxTitleWidth: 342,
+  //           images: {
+  //             url: "/images/portfolioDetails/halfMillion/feature1.webp",
+  //             urlAr: "/images/portfolioDetails/halfMillion/feature1Ar.webp",
+  //             width: 507,
+  //             height: 499,
+  //           },
+  //         },
+  //         {
+  //           title: "Customizable Drink Selection",
+  //           maxTitleWidth: 379,
+  //           images: {
+  //             url: "/images/portfolioDetails/halfMillion/feature2.webp",
+  //             urlAr: "/images/portfolioDetails/halfMillion/feature2Ar.webp",
+  //             width: 507,
+  //             height: 498,
+  //           },
+  //         },
+  //       ],
+  //       description:
+  //         "Coffee, Fast. Rewards, Faster. The Half Million app lets you order your go-to coffee in seconds. Earn rewards, get exclusive deals, and skip the line with curated features designed around your lifestyle. Browse. Tap. Brew.",
+  //     },
+  //     highlightBanner: {
+  //       backgroundColor: "#86C5B1",
+  //       title: "Onboarding Made Simple, Rewards Made Sweet",
+  //       description:
+  //         "Join the Half Million experience in just a few taps. Create your account, place your first order, and start earning points with every sip. Enjoy personalized offers, early access to new brews, and exclusive rewards crafted for true coffee lovers — all inside one smooth, easy-to-use app.",
+  //       image: "/images/portfolioDetails/halfMillion/highLightBanner.webp",
+  //     },
+  //   },
+  // },
   {
     id: "ease",
     sections: {
@@ -770,103 +770,103 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
       },
     },
   },
-  {
-    id: "real-estate",
-    sections: {
-      top: {
-        background: "linear-gradient(120deg, #A2D8FF, #0C3553)",
-        title: "Takween — Find Your Space, Live Your Dream",
-        subtitle: "Discover homes that match your lifestyle, effortlessly.",
-        image: "/images/portfolioDetails/realEstate/topBg.webp",
-        imageAr: "/images/portfolioDetails/realEstate/topBgAr.webp",
-        appStoreLinks: {
-          ios: "",
-          android: "",
-        },
-      },
-      aboutUs: {
-        image: "/images/portfolioDetails/realEstate/aboutUs.webp",
-        title: "About Us",
-        description: [
-          `At Takween, we're redefining how people find their perfect home.Whether you're buying, renting, or investing, our all-in-one platform connects you with the right listings—quickly, smartly, and with confidence. Built for modern house-hunters, our app blends smart search tools, personalized recommendations, and real-time updates to make your property journey seamless. From cozy studios to dream homes, we help you explore options, schedule visits, and take the next step—all in one place.`,
-        ],
-        tags: [
-          { label: "Industry", value: "Real Estate" },
-          { label: "Services", value: "Product Development" },
-          { label: "Business Type", value: "Retail" },
-        ],
-      },
-      projectGoals: {
-        title: "Project Goals",
-        image: {
-          url: "/images/portfolioDetails/realEstate/projectGoals.webp",
-          urlAr: "/images/portfolioDetails/realEstate/projectGoalsAr.webp",
+  // {
+  //   id: "real-estate",
+  //   sections: {
+  //     top: {
+  //       background: "linear-gradient(120deg, #A2D8FF, #0C3553)",
+  //       title: "Takween — Find Your Space, Live Your Dream",
+  //       subtitle: "Discover homes that match your lifestyle, effortlessly.",
+  //       image: "/images/portfolioDetails/realEstate/topBg.webp",
+  //       imageAr: "/images/portfolioDetails/realEstate/topBgAr.webp",
+  //       appStoreLinks: {
+  //         ios: "",
+  //         android: "",
+  //       },
+  //     },
+  //     aboutUs: {
+  //       image: "/images/portfolioDetails/realEstate/aboutUs.webp",
+  //       title: "About Us",
+  //       description: [
+  //         `At Takween, we're redefining how people find their perfect home.Whether you're buying, renting, or investing, our all-in-one platform connects you with the right listings—quickly, smartly, and with confidence. Built for modern house-hunters, our app blends smart search tools, personalized recommendations, and real-time updates to make your property journey seamless. From cozy studios to dream homes, we help you explore options, schedule visits, and take the next step—all in one place.`,
+  //       ],
+  //       tags: [
+  //         { label: "Industry", value: "Real Estate" },
+  //         { label: "Services", value: "Product Development" },
+  //         { label: "Business Type", value: "Retail" },
+  //       ],
+  //     },
+  //     projectGoals: {
+  //       title: "Project Goals",
+  //       image: {
+  //         url: "/images/portfolioDetails/realEstate/projectGoals.webp",
+  //         urlAr: "/images/portfolioDetails/realEstate/projectGoalsAr.webp",
 
-        },
-        goals: [
-          {
-            title: "Simplify the Property Search Experience",
-            description:
-              "Create an intuitive platform where users can easily browse, filter, and discover properties based on location, budget, lifestyle, and preferences.",
-          },
-          {
-            title: "Enhance Transparency and Trust",
-            description:
-              "Provide verified listings, real-time updates, and complete property details so users can make informed and confident decisions.",
-          },
-          {
-            title: "Enable Smart, Personalised Recommendations",
-            description:
-              "Create an intuitive platform where users can easily browse, filter, and discover properties based on location, budget, lifestyle, and preferences.",
-          },
-          {
-            title: "Streamline the End-to-End Journey",
-            description:
-              "Integrate scheduling, communication, and virtual tour features to make the entire home discovery and buying/renting process smooth and convenient.",
-          },
-        ],
-      },
-      execution: {
-        image: "/images/portfolioDetails/realEstate/execution.webp",
-        description: `Takween App is a modern real estate platform that reimagines how you find a home—combining smart technology, human insight, and seamless experiences. Crafted for those who seek more than just a place to live, Takween connects you to homes that match your lifestyle, dreams, and goals. Whether you're buying, renting, or exploring new investments, we make your journey smooth, personal, and rewarding—because finding a home should feel just right.`,
-        descriptionBackground: "#143B5880",
-      },
-      featuresOverview: {
-        title: "Smart Choices, Growing Dreams",
-        titleMaxWidth: 691,
-        items: [
-          {
-            title: "Building Trust Through Every Home and Highlight",
-            maxTitleWidth: 487,
-            images: {
-              url: "/images/portfolioDetails/realEstate/feature1.webp",
-              urlAr: "/images/portfolioDetails/realEstate/feature2Ar.webp",
-              width: 242,
-              height: 500,
-            },
-          },
-          {
-            title: "Real-Time Insights, Updates, and Confidence in Every Step",
-            maxTitleWidth: 399,
-            images: {
-              url: "/images/portfolioDetails/realEstate/feature2.webp",
-              urlAr: "/images/portfolioDetails/realEstate/feature1Ar.webp",
-              width: 234,
-              height: 483,
-            },
-          },
-        ],
-        maxItemWidth: 780,
-        description: `Takween App is your personal home-finding companion—designed to make the journey easier, smarter, and more rewarding.Just download the app, sign up, and start exploring curated property listings tailored to your preferences. Easily track your favorite homes, get personalized recommendations, receive exclusive offers, and stay informed on new listings, price changes, and local market trends—all from one convenient app. Just browse, save, and find your perfect space.`,
-      },
-      highlightBanner: {
-        backgroundColor: "#143B5880",
-        title: "Finding Made Easy, Rewards Made Valuable",
-        description: `Our app simplifies your journey to the perfect home with intuitive tools and personalized insights. Earn valuable rewards and unlock exclusive offers that make every step toward your dream home feel more rewarding. Smart search. Trusted results. Your dream home—closer than ever.`,
-        image: "/images/portfolioDetails/realEstate/highLightBanner.webp",
-      },
-    },
-  },
+  //       },
+  //       goals: [
+  //         {
+  //           title: "Simplify the Property Search Experience",
+  //           description:
+  //             "Create an intuitive platform where users can easily browse, filter, and discover properties based on location, budget, lifestyle, and preferences.",
+  //         },
+  //         {
+  //           title: "Enhance Transparency and Trust",
+  //           description:
+  //             "Provide verified listings, real-time updates, and complete property details so users can make informed and confident decisions.",
+  //         },
+  //         {
+  //           title: "Enable Smart, Personalised Recommendations",
+  //           description:
+  //             "Create an intuitive platform where users can easily browse, filter, and discover properties based on location, budget, lifestyle, and preferences.",
+  //         },
+  //         {
+  //           title: "Streamline the End-to-End Journey",
+  //           description:
+  //             "Integrate scheduling, communication, and virtual tour features to make the entire home discovery and buying/renting process smooth and convenient.",
+  //         },
+  //       ],
+  //     },
+  //     execution: {
+  //       image: "/images/portfolioDetails/realEstate/execution.webp",
+  //       description: `Takween App is a modern real estate platform that reimagines how you find a home—combining smart technology, human insight, and seamless experiences. Crafted for those who seek more than just a place to live, Takween connects you to homes that match your lifestyle, dreams, and goals. Whether you're buying, renting, or exploring new investments, we make your journey smooth, personal, and rewarding—because finding a home should feel just right.`,
+  //       descriptionBackground: "#143B5880",
+  //     },
+  //     featuresOverview: {
+  //       title: "Smart Choices, Growing Dreams",
+  //       titleMaxWidth: 691,
+  //       items: [
+  //         {
+  //           title: "Building Trust Through Every Home and Highlight",
+  //           maxTitleWidth: 487,
+  //           images: {
+  //             url: "/images/portfolioDetails/realEstate/feature1.webp",
+  //             urlAr: "/images/portfolioDetails/realEstate/feature2Ar.webp",
+  //             width: 242,
+  //             height: 500,
+  //           },
+  //         },
+  //         {
+  //           title: "Real-Time Insights, Updates, and Confidence in Every Step",
+  //           maxTitleWidth: 399,
+  //           images: {
+  //             url: "/images/portfolioDetails/realEstate/feature2.webp",
+  //             urlAr: "/images/portfolioDetails/realEstate/feature1Ar.webp",
+  //             width: 234,
+  //             height: 483,
+  //           },
+  //         },
+  //       ],
+  //       maxItemWidth: 780,
+  //       description: `Takween App is your personal home-finding companion—designed to make the journey easier, smarter, and more rewarding.Just download the app, sign up, and start exploring curated property listings tailored to your preferences. Easily track your favorite homes, get personalized recommendations, receive exclusive offers, and stay informed on new listings, price changes, and local market trends—all from one convenient app. Just browse, save, and find your perfect space.`,
+  //     },
+  //     highlightBanner: {
+  //       backgroundColor: "#143B5880",
+  //       title: "Finding Made Easy, Rewards Made Valuable",
+  //       description: `Our app simplifies your journey to the perfect home with intuitive tools and personalized insights. Earn valuable rewards and unlock exclusive offers that make every step toward your dream home feel more rewarding. Smart search. Trusted results. Your dream home—closer than ever.`,
+  //       image: "/images/portfolioDetails/realEstate/highLightBanner.webp",
+  //     },
+  //   },
+  // },
   {
     id: "health-care",
     sections: {
@@ -959,105 +959,105 @@ Get started with ScreenMe in just a few taps.  Create your profile, schedule y
       },
     },
   },
-  {
-    id: "sign",
-    sections: {
-      top: {
-        background: "linear-gradient(120deg, #FFFFFF, #FF91C5)",
-        title: "Sign Burger",
-        subtitle:
-          "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
-        image: "/images/portfolioDetails/sign/topBg.webp",
-        imageAr: "/images/portfolioDetails/sign/topBgAr.webp",
-        appStoreLinks: {
-          ios: "https://apps.apple.com/in/app/sign-burger-%D8%B3%D8%A7%D9%8A%D9%86-%D8%A8%D8%B1%D8%AC%D8%B1/id6748125819",
-          android:"https://play.google.com/store/apps/details?id=com.wulooj.signburger.sa",
-        },
-      },
-      aboutUs: {
-        image: "/images/portfolioDetails/sign/aboutUs.webp",
-        title: "About Us",
-        description: [
-          `Sign Burger is a modern mobile app designed for food lovers who crave speed, flavor, and convenience. Whether you're grabbing a juicy burger on the go or cooling down with your favorite drink, Sign Burger delivers a seamless ordering experience right from your phone.`,
-          `From easy menu browsing and real-time order tracking to secure checkout, Sign Burger is your shortcut to satisfaction — fresh, fast, and made just how you like it.`,
-        ],
-        tags: [
-          { label: "Industry", value: "F&B" },
-          { label: "Services", value: "B2C | Quick Service" },
-          { label: "Business Type", value: "Retail" },
-        ],
-      },
-      projectGoals: {
-        title: "Project Goals",
-        image: {
-          url: "/images/portfolioDetails/sign/projectGoals.webp",
-          urlAr: "/images/portfolioDetails/sign/projectGoalsAr.webp",
-        },
-        goals: [
-          {
-            title: "Elevate the Quick Bite Experience",
-            description:
-              "Our mission was to craft a mobile-first platform that matches the speed of fast food with the precision of modern tech — helping users order what they want, when they want it, in just a few taps.",
-          },
-          {
-            title: "Scalable Infrastructure for Expansion",
-            description:
-              "Built on a flexible backend, Sign Burger is ready to support multiple branches and high-volume demand as the brand scales regionally.",
-          },
-          {
-            title: "Real-Time Order Management",
-            description:
-              "From cart to kitchen, the app provides live order updates, estimated wait times, and pickup tracking — putting customers in full control of their meal.",
-          },
-          {
-            title: "Personalization That Builds Loyalty",
-            description:
-              "We aimed to go beyond basic ordering by offering personalized experiences — from suggested combos based on past orders to location-based promotions. This helps drive repeat usage and strengthens customer-brand connection in a competitive QSR market.",
-          },
-        ],
-      },
-      execution: {
-        image: "/images/portfolioDetails/sign/execution.webp",
-        description:
-          "Sign Burger redefines casual dining convenience. It brings together bold flavors, real-time tech, and frictionless ordering in one clean, powerful mobile experience.This isn't just another food app — it's the easiest way to order your favorite burger, chill your thirst, and skip the wait.",
-        descriptionBackground: "#FD93C5",
-      },
-      featuresOverview: {
-        title: "What's Inside the App",
-        titleMaxWidth: 470,
-        items: [
-          {
-            title: "Crave. Tap. Enjoy. With Clear User Interface",
-            maxTitleWidth: 335,
-            images: {
-              url: "/images/portfolioDetails/sign/feature1.webp",
-              urlAr: "/images/portfolioDetails/sign/feature1Ar.webp",
-              width: 510,
-              height: 494,
-            },
-          },
-          {
-            title: "Real-Time Access to Products, Offers, and Perks",
-            maxTitleWidth: 395,
-            images: {
-              url: "/images/portfolioDetails/sign/feature2.webp",
-              urlAr: "/images/portfolioDetails/sign/feature2Ar.webp",
-              width: 510,
-              height: 495,
-            },
-          },
-        ],
-        description: "",
-      },
-      highlightBanner: {
-        backgroundColor: "#FD93C5",
-        title: "Order Fast. Eat Fresh. Feel Good.",
-        description:
-          "Sign Burger is more than mobile food ordering — it's a flavorful experience built for today's pace. Whether it's lunch hour or late-night cravings, the app delivers speed, control, and comfort in every bite.",
-        image: "/images/portfolioDetails/sign/highLightBanner.webp",
-      },
-    },
-  },
+  // {
+  //   id: "sign",
+  //   sections: {
+  //     top: {
+  //       background: "linear-gradient(120deg, #FFFFFF, #FF91C5)",
+  //       title: "Sign Burger",
+  //       subtitle:
+  //         "A seamless mobile experience for ordering fresh, juicy burgers and cold drinks — fast, simple, and satisfying.",
+  //       image: "/images/portfolioDetails/sign/topBg.webp",
+  //       imageAr: "/images/portfolioDetails/sign/topBgAr.webp",
+  //       appStoreLinks: {
+  //         ios: "https://apps.apple.com/in/app/sign-burger-%D8%B3%D8%A7%D9%8A%D9%86-%D8%A8%D8%B1%D8%AC%D8%B1/id6748125819",
+  //         android:"https://play.google.com/store/apps/details?id=com.wulooj.signburger.sa",
+  //       },
+  //     },
+  //     aboutUs: {
+  //       image: "/images/portfolioDetails/sign/aboutUs.webp",
+  //       title: "About Us",
+  //       description: [
+  //         `Sign Burger is a modern mobile app designed for food lovers who crave speed, flavor, and convenience. Whether you're grabbing a juicy burger on the go or cooling down with your favorite drink, Sign Burger delivers a seamless ordering experience right from your phone.`,
+  //         `From easy menu browsing and real-time order tracking to secure checkout, Sign Burger is your shortcut to satisfaction — fresh, fast, and made just how you like it.`,
+  //       ],
+  //       tags: [
+  //         { label: "Industry", value: "F&B" },
+  //         { label: "Services", value: "B2C | Quick Service" },
+  //         { label: "Business Type", value: "Retail" },
+  //       ],
+  //     },
+  //     projectGoals: {
+  //       title: "Project Goals",
+  //       image: {
+  //         url: "/images/portfolioDetails/sign/projectGoals.webp",
+  //         urlAr: "/images/portfolioDetails/sign/projectGoalsAr.webp",
+  //       },
+  //       goals: [
+  //         {
+  //           title: "Elevate the Quick Bite Experience",
+  //           description:
+  //             "Our mission was to craft a mobile-first platform that matches the speed of fast food with the precision of modern tech — helping users order what they want, when they want it, in just a few taps.",
+  //         },
+  //         {
+  //           title: "Scalable Infrastructure for Expansion",
+  //           description:
+  //             "Built on a flexible backend, Sign Burger is ready to support multiple branches and high-volume demand as the brand scales regionally.",
+  //         },
+  //         {
+  //           title: "Real-Time Order Management",
+  //           description:
+  //             "From cart to kitchen, the app provides live order updates, estimated wait times, and pickup tracking — putting customers in full control of their meal.",
+  //         },
+  //         {
+  //           title: "Personalization That Builds Loyalty",
+  //           description:
+  //             "We aimed to go beyond basic ordering by offering personalized experiences — from suggested combos based on past orders to location-based promotions. This helps drive repeat usage and strengthens customer-brand connection in a competitive QSR market.",
+  //         },
+  //       ],
+  //     },
+  //     execution: {
+  //       image: "/images/portfolioDetails/sign/execution.webp",
+  //       description:
+  //         "Sign Burger redefines casual dining convenience. It brings together bold flavors, real-time tech, and frictionless ordering in one clean, powerful mobile experience.This isn't just another food app — it's the easiest way to order your favorite burger, chill your thirst, and skip the wait.",
+  //       descriptionBackground: "#FD93C5",
+  //     },
+  //     featuresOverview: {
+  //       title: "What's Inside the App",
+  //       titleMaxWidth: 470,
+  //       items: [
+  //         {
+  //           title: "Crave. Tap. Enjoy. With Clear User Interface",
+  //           maxTitleWidth: 335,
+  //           images: {
+  //             url: "/images/portfolioDetails/sign/feature1.webp",
+  //             urlAr: "/images/portfolioDetails/sign/feature1Ar.webp",
+  //             width: 510,
+  //             height: 494,
+  //           },
+  //         },
+  //         {
+  //           title: "Real-Time Access to Products, Offers, and Perks",
+  //           maxTitleWidth: 395,
+  //           images: {
+  //             url: "/images/portfolioDetails/sign/feature2.webp",
+  //             urlAr: "/images/portfolioDetails/sign/feature2Ar.webp",
+  //             width: 510,
+  //             height: 495,
+  //           },
+  //         },
+  //       ],
+  //       description: "",
+  //     },
+  //     highlightBanner: {
+  //       backgroundColor: "#FD93C5",
+  //       title: "Order Fast. Eat Fresh. Feel Good.",
+  //       description:
+  //         "Sign Burger is more than mobile food ordering — it's a flavorful experience built for today's pace. Whether it's lunch hour or late-night cravings, the app delivers speed, control, and comfort in every bite.",
+  //       image: "/images/portfolioDetails/sign/highLightBanner.webp",
+  //     },
+  //   },
+  // },
   {
     id: "fresh-cart",
     sections: {

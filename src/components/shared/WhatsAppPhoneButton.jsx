@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { sendGAEvent } from "@next/third-parties/google";
+
 
 const WhatsAppPhoneButton = () => {
   const phoneNumber = "966554848908";
@@ -12,6 +14,7 @@ const WhatsAppPhoneButton = () => {
       <motion.a
         href={`https://wa.me/${phoneNumber}`}
         target="_blank"
+        onClick={() => sendGAEvent('event', 'whatsapp_button_clicked')}
         rel="noopener noreferrer"
         className="whatsapp_float"
         animate={{
@@ -41,6 +44,7 @@ const WhatsAppPhoneButton = () => {
       {/* Call Button */}
       <motion.a
         href={`tel:+${phoneNumber}`}
+        onClick={() => sendGAEvent('event', 'call_button_clicked')}
         className="call_float"
         animate={{ y: [0, -5, 0] }}
         transition={{

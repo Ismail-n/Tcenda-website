@@ -13,19 +13,15 @@ import { useRouter } from "next/router";
 import ClientOnly from "@/components/ClientOnly";
 import WhatsAppPhoneButton from "@/components/shared/WhatsAppPhoneButton";
 import { useEffect, useState } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 import i18n from "../../i18n";
 import Script from "next/script";
+import SEO from "@/components/SEO";
+import { useTranslation } from "react-i18next";
 
 const pageVariants = {
   initial: { opacity: 0, y: -100 },
-  in: {
-    opacity: 1,
-    y: 0,
-    transition: { type: "spring", bounce: 0.4 },
-  },
+  in: { opacity: 1, y: 0, transition: { type: "spring", bounce: 0.4 } },
   out: { opacity: 0, y: 100 },
 };
 
@@ -37,73 +33,77 @@ const pageTransition = {
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-
   const [languageReady, setLanguageReady] = useState(false);
+  const [isIndia, setIsIndia] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const detectRegionAndSetLang = async () => {
       try {
-        const res = await fetch("https://ipapi.co/json/");
+        const savedLang = localStorage.getItem("user_lang");
+        const savedCountry = localStorage.getItem("user_country");
+
+        if (savedLang && savedCountry) {
+          await i18n.changeLanguage(savedLang);
+          document.documentElement.lang = savedLang;
+          document.documentElement.dir = savedLang === "ar" ? "rtl" : "ltr";
+          setIsIndia(savedCountry === "IN");
+          setLanguageReady(true);
+          return;
+        }
+
+        const res = await fetch("https://ipwhois.app/json/");
+        if (!res.ok) throw new Error(`Geo API failed with status ${res.status}`);
         const data = await res.json();
-        const countryCode = data.country_code?.toLowerCase();
 
-        // Arabic-speaking countries
-        const arabicCountries = ["sa", "ae", "qa"]; // Saudi Arabia, UAE, Qatar
-
+        const countryCode = data.country_code?.toUpperCase();
+        const arabicCountries = ["SA", "AE", "QA"];
         const lang = arabicCountries.includes(countryCode) ? "ar" : "en";
 
-        i18n.changeLanguage(lang).then(() => {
-          document.documentElement.lang = lang;
-          document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-          setLanguageReady(true);
-        });
+        await i18n.changeLanguage(lang);
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+        localStorage.setItem("user_lang", lang);
+        localStorage.setItem("user_country", countryCode);
+
+        setIsIndia(countryCode === "IN");
+        setLanguageReady(true);
       } catch (error) {
-        // Fallback to Arabic if fetch fails
-        i18n.changeLanguage("ar").then(() => {
-          document.documentElement.lang = "ar";
-          document.documentElement.dir = "rtl";
-          setLanguageReady(true);
-        });
+        await i18n.changeLanguage("ar");
+        document.documentElement.lang = "ar";
+        document.documentElement.dir = "rtl";
+        localStorage.setItem("user_lang", "ar");
+        localStorage.setItem("user_country", "UNKNOWN");
+        setIsIndia(false);
+        setLanguageReady(true);
       }
     };
 
     detectRegionAndSetLang();
   }, []);
 
-  if (!languageReady) return null; // Prevent initial render
-
   return (
     <>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q" strategy="afterInteractive"
-      />
+      {pageProps.meta && <SEO {...pageProps.meta} />}
 
-      {/* GA config */}
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      {!isIndia && (
+        <>
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-6X8KTEXW4Q"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-6X8KTEXW4Q', { page_path: window.location.pathname });
+            `}
+          </Script>
+        </>
+      )}
 
-          fetch("https://ipapi.co/json/")
-            .then(res => res.json())
-            .then(data => {
-              if (data.country_code !== "IN") {
-              gtag('config', 'G-6X8KTEXW4Q', {
-              page_path: window.location.pathname,
-              });
-              } else {
-                console.log("IP blocked from India")
-              }
-            })
-            .catch(err => {
-              console.error("Geo lookup failed, sending analytics by default", err);
-              gtag('config', 'G-6X8KTEXW4Q', {
-                page_path: window.location.pathname,
-              });
-            });
-          
-        `}
-      </Script>
       <ClientOnly>
         <Header />
         <AnimatePresence mode="wait" initial={false}>
@@ -120,6 +120,7 @@ export default function App({ Component, pageProps }) {
           </motion.div>
         </AnimatePresence>
         <Footer />
+        {!isIndia && <GoogleAnalytics gaId="G-6X8KTEXW4Q" />}
       </ClientOnly>
     </>
   );

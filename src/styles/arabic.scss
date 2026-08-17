@@ -29,9 +29,15 @@ html[dir="rtl"] {
       .new_footer_row
       .single_item.reach_section
       .single_add.single_location {
-      max-width: 230px;
-      margin: auto;
+      max-width: 245px;
+      margin-inline-end: auto;
+      margin-left: unset;
       display: flex;
+    }
+
+    .home .our_projects .view_more_btn {
+      margin-right: 0 !important;
+      margin-left: unset;
     }
   }
 

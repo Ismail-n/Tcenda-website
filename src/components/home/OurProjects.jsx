@@ -1,13 +1,12 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Title from "../common/Title";
 import SubTitle from "../common/SubTitle";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-import Slider from "react-slick"; // ✅ slick slider import
 import { portfolios } from "@/data/portfolioData";
+import { useKeenSlider } from "keen-slider/react";
 
 const OurProjects = () => {
   const {
@@ -16,7 +15,83 @@ const OurProjects = () => {
   } = useTranslation();
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const sliderRef = useRef(null);
+  const [loaded, setLoaded] = useState(false);
+  const delay = 3000;
+  const animation = { duration: 1000, easing: (t) => t };
+
+  // Autoplay plugin to avoid stacking timeouts
+  function Autoplay(slider) {
+    let timeout;
+    let mouseOver = false;
+
+    function clearNextTimeout() {
+      clearTimeout(timeout);
+    }
+
+    function nextTimeout() {
+      clearTimeout(timeout);
+      if (mouseOver) return; // stop if user is interacting
+      timeout = setTimeout(() => {
+        slider.next();
+      }, delay);
+    }
+
+    slider.on("created", () => {
+      setLoaded(true);
+      nextTimeout();
+
+      // (optional) Pause on hover
+      slider.container.addEventListener("mouseover", () => {
+        mouseOver = true;
+        clearNextTimeout();
+      });
+      slider.container.addEventListener("mouseout", () => {
+        mouseOver = false;
+        nextTimeout();
+      });
+    });
+
+    slider.on("dragStarted", () => {
+      clearNextTimeout(); // stop autoplay when drag starts
+    });
+
+    slider.on("dragEnded", () => {
+      nextTimeout(); // restart autoplay only when drag ends
+    });
+
+    slider.on("animationEnded", nextTimeout);
+    slider.on("updated", nextTimeout);
+  }
+
+  const [sliderRef, instanceRef] = useKeenSlider(
+    {
+      loop: true,
+      rubberband: false,
+      renderMode: "performance",
+      slides: {
+        origin: "center",
+        perView: 1.5,
+        spacing: 64,
+      },
+      slideChanged(slider) {
+        // Use the absolute index for proper dot synchronization
+        const slideIndex = slider.track.details.abs;
+        const totalSlides = filteredPortfolios.length;
+        // Calculate the actual slide index (accounting for loop)
+        const actualIndex = slideIndex % totalSlides;
+        setCurrentSlide(actualIndex);
+      },
+      breakpoints: {
+        "(max-width: 1400px)": {
+          slides: { spacing: 40, perView: 1.5, origin: "center" },
+        },
+        "(max-width: 575px)": {
+          slides: { spacing: 20, perView: 1.2, origin: "center" },
+        },
+      },
+    },
+    [Autoplay]
+  );
 
   const projectsToSHow = [
     "ashjar-space",
@@ -26,70 +101,9 @@ const OurProjects = () => {
     "real-estate",
   ];
 
-  const testingDivSetting = {
-    arrows: false,
-    infinite: true,
-    dots: true,
-    centerMode: false,
-  };
-
-  // Filter and sort portfolios in the specified order
-  const filteredPortfolios = projectsToSHow.map(projectId =>
-    portfolios.find(portfolio => portfolio.id === projectId)
-  ).filter(Boolean); // Remove any undefined items
-
-  const settings = {
-    arrows: false,
-    infinite: true,
-    dots: true,
-    centerMode: window.innerWidth <= 991 ? false : true,
-    centerPadding: '15%', // Show partial slides on sides
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    rtl: language === "ar",
-    focusOnSelect: true,
-    speed: 500,
-    initialSlide: 0, // Start from the first slide
-    beforeChange: (_, next) => setCurrentSlide(next),
-    customPaging: () => <button />,
-    responsive: [
-      {
-        breakpoint: 1200, // Large screens
-        settings: {
-          centerPadding: '20%',
-        },
-      },
-      {
-        breakpoint: 992, // Large tablets and small desktops
-        settings: {
-          centerPadding: '0%',
-          slidesToShow: 1,
-          centerMode: false,
-
-
-        },
-      },
-      {
-        breakpoint: 768, // Tablets
-        settings: {
-          centerPadding: '0%',
-          slidesToShow: 1,
-          centerMode: false,
-
-
-        },
-      },
-      {
-        breakpoint: 576, // Mobile devices
-        settings: {
-          centerMode: false,
-          centerPadding: '0px',
-        },
-      },
-    ],
-  };
+  const filteredPortfolios = projectsToSHow
+    .map((projectId) => portfolios.find((p) => p.id === projectId))
+    .filter(Boolean);
 
   return (
     <section className="our_projects common_section">
@@ -102,7 +116,7 @@ const OurProjects = () => {
           <Col lg={6}>
             <Link
               href={"/portfolio"}
-              className="main_btn text-center d-block mt-4"
+              className="main_btn text-center d-block mt-4 view_more_btn"
             >
               {t("View More")}
             </Link>
@@ -111,8 +125,7 @@ const OurProjects = () => {
       </Container>
       <Container fluid>
         <div className="position-relative wrapper_section">
-          <Slider
-            {...settings}
+          <div
             ref={sliderRef}
             className="keen-slider portfolio_inner_section portfolio_slider"
           >
@@ -131,18 +144,18 @@ const OurProjects = () => {
                 },
                 index
               ) => (
-                <div key={id} className="slide-wrapper">
-                  {console.log(id)}
+                <div
+                  key={id}
+                  className={`keen-slider__slide slide-wrapper ${
+                    currentSlide === index ? "active" : ""
+                  }`}
+                >
                   <div
-                    className={`portfolio_inner keen-slider__slide ${currentSlide === index ? "active" : ""
-                      }`}
-
-                    id={id}
-                    style={{
-                      background
-                    }}
+                    className={`portfolio_inner ${
+                      language === "ar" ? "rtl" : ""
+                    }`}
+                    style={{ background }}
                   >
-
                     {/* Left Section */}
                     <div className="left">
                       <div className="content">
@@ -150,7 +163,7 @@ const OurProjects = () => {
                           <Image
                             src={`/images/portfolio/${logoDetails.logo}.svg`}
                             alt={`${title} Logo`}
-                            className={`logo_img`}
+                            className="logo_img"
                             width={logoDetails.logoWidth}
                             height={logoDetails.logoHeight}
                             priority={index === 0}
@@ -162,30 +175,28 @@ const OurProjects = () => {
                           {appStoreLink && (
                             <a
                               href={appStoreLink}
-                              aria-label={`Download ${title} on the App Store`}
                               target="_blank"
-                              rel="noopener noreferrer"
+                              rel="noreferrer"
                             >
                               <Image
                                 src={"/images/icons/appStore.svg"}
                                 width={140}
                                 height={44}
-                                alt="Download on the App Store"
+                                alt="App Store"
                               />
                             </a>
                           )}
                           {playStoreLink && (
                             <a
                               href={playStoreLink}
-                              aria-label={`Download ${title} on the Play Store`}
                               target="_blank"
-                              rel="noopener noreferrer"
+                              rel="noreferrer"
                             >
                               <Image
                                 src={"/images/icons/playStore.svg"}
                                 width={140}
                                 height={44}
-                                alt="Get it on Google Play"
+                                alt="Google Play"
                               />
                             </a>
                           )}
@@ -194,10 +205,18 @@ const OurProjects = () => {
                       {caseStudyLink && (
                         <Link
                           href={`/portfolio/${caseStudyLink}`}
-                          className="case_study_btn"
+                          className={`case_study_btn ${
+                            language === "ar" ? "rotate_image" : ""
+                          }`}
                         >
                           <span>{t("View Case Study")}</span>
-                          <ArrowRight />
+                          <Image
+                            src={"/images/icons/arrowRight.svg"}
+                            width={14}
+                            height={13}
+                            className="arrow_icon"
+                            alt="Arrow"
+                          />
                         </Link>
                       )}
                     </div>
@@ -205,16 +224,16 @@ const OurProjects = () => {
                     {/* Right Section */}
                     <div className="right">
                       <Image
-                        src={`/images/portfolio/${language === "en"
-                          ? imageDetails.image
-                          : imageDetails.imageAr || imageDetails.image
-                          }.png`}
+                        src={`/images/portfolio/${
+                          language === "en"
+                            ? imageDetails.image
+                            : imageDetails.imageAr || imageDetails.image
+                        }.png`}
                         width={imageDetails.imageWidth}
                         height={imageDetails.imageHeight}
                         alt={`${title} Preview`}
                         className="preview_img"
                       />
-
                       <div className="store_btns d-md-none ">
                         <div className="d-flex mt-4 inner_btn_div flex-wrap">
                           {appStoreLink && (
@@ -248,13 +267,47 @@ const OurProjects = () => {
                             </a>
                           )}
                         </div>
+                        {caseStudyLink && (
+                          <Link
+                            href={`/portfolio/${caseStudyLink}`}
+                            className={`case_study_btn_sm ${
+                              language === "ar" ? "rotate_image" : ""
+                            }`}
+                          >
+                            <span>{t("View Case Study")}</span>
+                            <Image
+                              src={"/images/icons/arrowRight.svg"}
+                              width={14}
+                              height={13}
+                              className="arrow_icon"
+                              alt="Get it on Google Play"
+                            />
+                          </Link>
+                        )}
                       </div>
                     </div>
                   </div>
                 </div>
               )
             )}
-          </Slider>
+          </div>
+
+          {/* Dots */}
+          {loaded && instanceRef.current && (
+            <div className="dots">
+              {filteredPortfolios.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    // Move to the specific slide index
+                    instanceRef.current.moveToIdx(idx);
+                  }}
+                  className={currentSlide === idx ? "active" : ""}
+                  aria-label={`Go to slide ${idx + 1}`}
+                ></button>
+              ))}
+            </div>
+          )}
         </div>
       </Container>
     </section>
