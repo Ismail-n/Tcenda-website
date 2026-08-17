@@ -53,7 +53,8 @@ export default function App({ Component, pageProps }) {
         }
 
         const res = await fetch("https://ipwhois.app/json/");
-        if (!res.ok) throw new Error(`Geo API failed with status ${res.status}`);
+        if (!res.ok)
+          throw new Error(`Geo API failed with status ${res.status}`);
         const data = await res.json();
 
         const countryCode = data.country_code?.toUpperCase();
@@ -99,6 +100,20 @@ export default function App({ Component, pageProps }) {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-6X8KTEXW4Q', { page_path: window.location.pathname });
+            `}
+          </Script>
+
+          {/* Google Ads */}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=AW-18370550689"
+            strategy="afterInteractive"
+          />
+          <Script id="google-tag" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-18370550689');
             `}
           </Script>
         </>
