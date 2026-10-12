@@ -43,7 +43,10 @@ const IdeasSection = () => {
               <h3 className="new_about_idea_title">{idea.title}</h3>
               <p className="new_about_idea_text">{idea.text}</p>
               <span className="new_about_idea_arrow">
-                <ArrowUpRight size={16} />
+                <img
+                  src="/images/newAboutUs/arrow_right.png"
+                  alt="Tacenda New Idea"
+                />
               </span>
             </div>
           ))}
