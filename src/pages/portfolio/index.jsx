@@ -1,32 +1,23 @@
-import ConsultOurExperts from "@/components/home/ConsultOurExperts";
-import Industries from "@/components/home/Industries";
-import PortfoliosSection from "@/components/portfolio/PortfoliosSection";
-import TopSection from "@/components/portfolio/TopSection";
-import SEO from "@/components/SEO";
-import React from "react";
-import { metaData } from "@/data/metaInformationData";
+import Head from "next/head";
+import NewHeader from "@/components/newHome/NewHeader";
+import NewFooter from "@/components/newHome/NewFooter";
+import PortfolioHero from "@/components/newPortfolio/PortfolioHero";
+import ProjectsGrid from "@/components/newPortfolio/ProjectsGrid";
+import PortfolioCta from "@/components/newPortfolio/PortfolioCta";
 
-export async function getStaticProps() {
-  const path = "/portfolio/";
-  
-  const meta = metaData.find(m => m.path === path)?.details || {};
-
-  return {
-    props: { meta },
-  };
-}
-
-const Portfolio = () => {
+export default function NewPortfolio() {
   return (
     <>
-      <main className="portfolio">
-        <TopSection />
-        <PortfoliosSection />
-        <Industries />
-        <ConsultOurExperts />
-      </main>
+      <Head>
+        <title>Portfolio - Tacenda</title>
+      </Head>
+      <div className="new_page">
+        <NewHeader />
+        <PortfolioHero />
+        <ProjectsGrid />
+        <PortfolioCta />
+        <NewFooter />
+      </div>
     </>
   );
-};
-
-export default Portfolio;
+}

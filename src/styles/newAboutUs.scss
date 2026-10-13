@@ -4,10 +4,15 @@
   min-height: 650px;
   display: flex;
   align-items: flex-end;
-  padding: 60px;
+  padding: 0 0 60px;
   color: #fff;
   background-size: cover;
   background-position: center;
+}
+
+.new_about_hero_content.container {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .new_about_hero_overlay {
@@ -45,8 +50,12 @@
 .new_about_ideas {
   background: #111118;
   color: #fff;
-  padding: 72px 60px;
+  padding: 72px 0;
+}
+
+.new_about_ideas .container {
   padding-left: 100px;
+  padding-right: 60px;
 }
 
 .new_about_ideas_header {
@@ -54,18 +63,26 @@
 }
 
 .new_about_ideas_title {
-  font-size: 40px;
-  font-weight: 600;
   margin: 0 0 16px;
-  max-width: 600px;
+  max-width: 922px;
+  font-family: var(--font-syne);
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 120%;
+  letter-spacing: -2%;
 }
 
 .new_about_ideas_text {
-  color: #b7b7c6;
+  color: #C8C8C8;
   font-size: 15px;
   line-height: 1.6;
-  max-width: 560px;
+  max-width: 922px;
   margin: 0;
+  font-family: var(--font-syne);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 132%;
+  letter-spacing: -2%;
 }
 
 .new_about_ideas_row {
@@ -113,7 +130,7 @@
   width: 56px;
   height: 56px;
   border-radius: 8px;
-  background: #E8E8E8;
+  background: #e8e8e8;
   color: #fff;
   display: flex;
   align-items: center;
@@ -298,8 +315,8 @@
 }
 
 @media (max-width: 768px) {
-  .new_about_hero,
-  .new_about_ideas,
+  .new_about_hero_content.container,
+  .new_about_ideas .container,
   .new_about_team,
   .new_about_locations {
     padding-left: 24px;

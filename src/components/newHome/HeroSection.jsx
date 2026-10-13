@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Container } from "react-bootstrap";
 import { ArrowUpRight } from "lucide-react";
 
 const HeroSection = () => {
@@ -13,7 +14,7 @@ const HeroSection = () => {
         playsInline
       />
 
-      <div className="new_hero_content">
+      <Container className="new_hero_content">
         <button className="new_eyebrow_badge">
           Technology & Digital Solutions
         </button>
@@ -29,14 +30,14 @@ const HeroSection = () => {
         </p>
 
         <div className="new_hero_actions">
-          <Link href="/new-contact-us" className="new_get_started_btn">
+          <Link href="/contact-us" className="new_get_started_btn">
             Let&apos;s Get Started <ArrowUpRight size={16} />
           </Link>
-          <Link href="/new-about-us" className="new_secondary_btn learn_more_btn">
+          <Link href="/about-us" className="new_secondary_btn learn_more_btn">
             Learn More
           </Link>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

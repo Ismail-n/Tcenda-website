@@ -10,7 +10,7 @@ const PortfolioHero = () => {
       <div className="new_portfolio_hero_content">
         <h1 className="new_portfolio_hero_title">Portfolio</h1>
         <p className="new_portfolio_breadcrumb">
-          <Link href="/new-home">Home</Link> &nbsp;&gt;&nbsp; Portfolio
+          <Link href="/">Home</Link> &nbsp;&gt;&nbsp; Portfolio
         </p>
       </div>
     </section>

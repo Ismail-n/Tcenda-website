@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
             <div className="new_team_image">
               <img src="/images/newHome/meet_our_team.png" alt="Team member" />
             </div>
-            <Link href="/new-about-us" className="new_meet_team">
+            <Link href="/about-us" className="new_meet_team">
               Meet Our Team <ArrowRight size={16} />
             </Link>
           </div>

@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -9,42 +10,22 @@ const cards = [
   {
     title: "AI & Automation",
     text: "Minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-    image: "/images/newHome/ai-automation.jpg",
+    image: "/images/newHome/whatTacendaDoSlider/wtd_1.png",
   },
   {
     title: "Custom Software",
     text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-    image: "/images/newHome/custom-software.jpg",
+    image: "/images/newHome/whatTacendaDoSlider/wtd_2.png",
   },
   {
     title: "Web & Digital Platforms",
     text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-    image: "/images/newHome/web-digital.jpg",
+    image: "/images/newHome/whatTacendaDoSlider/wtd_3.png",
   },
   {
     title: "Data & Analytics",
     text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-    image: "/images/newHome/data-analytics.jpg",
-  },
-  {
-    title: "Data & Analytics",
-    text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-    image: "/images/newHome/data-analytics.jpg",
-  },
-  {
-    title: "Data & Analytics",
-    text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-    image: "/images/newHome/data-analytics.jpg",
-  },
-  {
-    title: "Data & Analytics",
-    text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-    image: "/images/newHome/data-analytics.jpg",
-  },
-  {
-    title: "Data & Analytics",
-    text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-    image: "/images/newHome/data-analytics.jpg",
+    image: "/images/newHome/whatTacendaDoSlider/wtd_4.png",
   },
 ];
 
@@ -54,7 +35,7 @@ const LifecycleSection = () => {
 
   return (
     <section className="new_lifecycle">
-      <div className="new_lifecycle_header">
+      <Container className="new_lifecycle_header">
         <div className="new_section_eyebrow">
           <img
             src="/images/newHome/whatTacendaDoBeforeIcon.svg"
@@ -67,7 +48,7 @@ const LifecycleSection = () => {
         <h2 className="new_section_title">
           One partner across your technology lifecycle
         </h2>
-      </div>
+      </Container>
 
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}

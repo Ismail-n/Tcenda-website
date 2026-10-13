@@ -1,6 +1,4 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from "@/components/shared/Footer";
-import Header from "@/components/shared/Header";
 import "@/styles/globals.scss";
 import "@/styles/style.scss";
 import "@/styles/titles.scss";
@@ -16,11 +14,8 @@ import "@/styles/newShared.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import ClientOnly from "@/components/ClientOnly";
-import WhatsAppPhoneButton from "@/components/shared/WhatsAppPhoneButton";
-import { useEffect, useState } from "react";
-import i18n from "../../i18n";
+import "../../i18n";
 import SEO from "@/components/SEO";
-import { useTranslation } from "react-i18next";
 
 const pageVariants = {
   initial: { opacity: 0, y: -100 },
@@ -34,27 +29,14 @@ const pageTransition = {
   duration: 0.4,
 };
 
-const NEW_SITE_ROUTES = [
-  "/new-home",
-  "/new-about-us",
-  "/new-portfolio",
-  "/new-contact-us",
-  "/new-our-services",
-];
-
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const [languageReady, setLanguageReady] = useState(false);
-  const [isIndia, setIsIndia] = useState(false);
-  const { t } = useTranslation();
-  const isNewSiteRoute = NEW_SITE_ROUTES.includes(router.pathname);
 
   return (
     <>
       {pageProps.meta && <SEO {...pageProps.meta} />}
 
       <ClientOnly>
-        {!isNewSiteRoute && <Header />}
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={router.asPath}
@@ -65,10 +47,8 @@ export default function App({ Component, pageProps }) {
             transition={pageTransition}
           >
             <Component {...pageProps} />
-            {!isNewSiteRoute && <WhatsAppPhoneButton />}
           </motion.div>
         </AnimatePresence>
-        {!isNewSiteRoute && <Footer />}
       </ClientOnly>
     </>
   );
