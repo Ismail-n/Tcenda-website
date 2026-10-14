@@ -68,6 +68,32 @@
   color: #fff;
 }
 
+.new_menu_toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.new_header_muted .new_menu_toggle {
+  color: #868686;
+}
+
+.new_mobile_menu {
+  display: none;
+}
+
+.new_header_muted .new_logo,
+.new_header_muted .new_nav a {
+  color: #868686;
+}
+
+.new_header_muted .new_nav a:hover {
+  color: #868686;
+}
+
 .new_talk_btn {
   display: inline-flex;
   align-items: center;
@@ -81,6 +107,11 @@
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
+}
+
+.new_talk_btn_active {
+  background: #232323;
+  color: #fff;
 }
 
 /* ---------- Hero ---------- */
@@ -759,16 +790,79 @@
   .new_stats,
   .new_why_us_right,
   .new_footer .container {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 10px;
+    padding-right: 10pxs;
   }
   .new_nav {
     display: none;
+  }
+  .new_header .container .header_right {
+    min-width: 0;
+    gap: 16px;
+  }
+  .header_right > .new_talk_btn {
+    display: none;
+  }
+  .new_menu_toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .new_mobile_menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: #0b0b14;
+    padding: 24px;
+  }
+  .new_mobile_menu_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+  .new_mobile_menu_links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .new_mobile_menu_links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-syne);
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .new_mobile_menu_talk_btn {
+    margin-top: auto;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 20px;
   }
   .new_hero_title {
     font-size: 36px;
   }
   .new_footer_top {
     grid-template-columns: 1fr;
+  }
+  .new_consult_row {
+    align-items: stretch;
+  }
+  .new_footer_form {
+    width: 100%;
+  }
+  .new_footer_input {
+    width: 100%;
+    flex: 1;
+    min-width: 0;
+  }
+  .new_footer_submit {
+    padding: 14px 20px;
+    white-space: nowrap;
   }
 }

@@ -61,6 +61,10 @@
   line-height: 105%;
   letter-spacing: 0px;
   text-align: center;
+
+  @media (max-width: 575px) {
+    font-size: 20px;
+  }
 }
 
 .new_services_cta_highlight {
@@ -80,6 +84,9 @@
   line-height: 135%;
   letter-spacing: 0px;
   text-align: center;
+  @media (max-width: 575px) {
+    font-size: 14px;
+  }
 }
 
 .new_services_cta_form {
@@ -87,6 +94,9 @@
   justify-content: center;
   flex-wrap: wrap;
   min-height: 60px;
+  @media (max-width: 575px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .new_services_cta_input {
@@ -94,14 +104,16 @@
   max-width: 80vw;
   padding: 14px 18px;
   border: 1px solid #d5d5e0;
-
   font-family: var(--font-inter);
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
-  leading-trim: NONE;
   line-height: 135%;
   letter-spacing: 0px;
+  outline: none;
+  @media (max-width: 575px) {
+    max-width: unset;
+    width: 70%;
+  }
 }
 .new_services_cta_input::placeholder {
   color: #8c8c8c;
@@ -115,6 +127,9 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+  @media (max-width: 575px) {
+    white-space: nowrap;
+  }
 }
 
 /* ---------- Service solutions ---------- */

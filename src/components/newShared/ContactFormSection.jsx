@@ -1,28 +1,30 @@
 import { useState } from "react";
-import { ArrowDown, ArrowUpRight, ChevronDown, Mail } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 const MAX_DESCRIPTION_LENGTH = 100;
 
-const ContactFormSection = () => {
+const ContactFormSection = ({ isFromLetsTalkPage = false }) => {
   const [description, setDescription] = useState("");
 
   return (
-    <section className="new_shared_form_section" id="contact-form">
+    <section className={`new_shared_form_section ${isFromLetsTalkPage ? "lets_talk_form" :""}`} id="contact-form">
       <h2 className="new_shared_form_heading">
         Drop us <span className="new_shared_form_highlight">Your Message</span>
       </h2>
       <p className="new_shared_form_subtext">
-        Tell us about your requirements, and our team will get in touch with
-        you within 24 hours.
+        Tell us about your requirements, and our team will get in touch with you
+        within 24 hours.
       </p>
       <div className="new_shared_scroll_cue">
-        <ArrowDown size={16} /> Let&apos;s Talk
+        <img
+          src="/images/letsTalk/arrow_down.svg"
+          alt=""
+          className="new_shared_scroll_cue_icon"
+        />{" "}
+        Let&apos;s Talk
       </div>
 
-      <form
-        className="new_shared_form"
-        onSubmit={(e) => e.preventDefault()}
-      >
+      <form className="new_shared_form" onSubmit={(e) => e.preventDefault()}>
         <div className="new_shared_form_row">
           <div className="new_shared_field">
             <div className="new_shared_field_input_wrap">
@@ -42,7 +44,11 @@ const ContactFormSection = () => {
                 className="new_shared_field_input"
                 required
               />
-              <Mail size={16} className="new_shared_field_icon" />
+              <img
+                src="/images/letsTalk/message_icon.svg"
+                alt=""
+                className="new_shared_field_icon"
+              />
             </div>
           </div>
         </div>
@@ -113,7 +119,7 @@ const ContactFormSection = () => {
 
         <button type="submit" className="new_shared_submit_btn">
           <span className="new_shared_submit_icon">
-            <ArrowUpRight size={16} />
+            <img src="/images/letsTalk/arrow_right.svg" alt="" />
           </span>
           Send
         </button>

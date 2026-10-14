@@ -20,7 +20,7 @@ const FaqSection = ({ heading, items }) => {
               >
                 {item.question}
                 <span className="new_shared_faq_toggle">
-                  {isOpen ? <Minus size={18} /> : <Plus size={18} />}
+                  {isOpen ? <Minus size={24} /> : <Plus size={24} />}
                 </span>
               </button>
               {isOpen && item.answer && (
@@ -34,7 +34,7 @@ const FaqSection = ({ heading, items }) => {
       <p className="new_shared_faq_footer_note">
         For other questions visit our{" "}
         <a href="#">
-          help center <ExternalLink size={14} />
+          help center <ExternalLink size={24} />
         </a>
       </p>
     </section>
