@@ -46,6 +46,12 @@ const IdeasSection = () => {
                 <p className="new_about_idea_text">{idea.text}</p>
                 <span className="new_about_idea_arrow">
                   <img
+                    className="new_about_idea_arrow_default"
+                    src="/images/newAboutUs/arrow_right_white.svg"
+                    alt="Tacenda New Idea"
+                  />
+                  <img
+                    className="new_about_idea_arrow_hover"
                     src="/images/newAboutUs/arrow_right.png"
                     alt="Tacenda New Idea"
                   />

@@ -9,6 +9,7 @@ import "@/styles/arabic.scss";
 import "@/styles/newHome.scss";
 import "@/styles/newAboutUs.scss";
 import "@/styles/newPortfolio.scss";
+import "@/styles/newServices.scss";
 import "@/styles/newContactUs.scss";
 import "@/styles/newShared.scss";
 import { AnimatePresence, motion } from "framer-motion";

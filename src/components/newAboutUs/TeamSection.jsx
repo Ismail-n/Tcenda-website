@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 const allMembers = [
-  { name: "Albert Flores", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member1.jpg" },
-  { name: "Zarror Nibros", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member2.jpg" },
-  { name: "Robert Fox", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member3.jpg" },
-  { name: "Ronald Richards", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member4.jpg" },
-  { name: "Jenny Wilson", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member5.jpg" },
-  { name: "Jane Cooper", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member6.jpg" },
+  { name: "Albert Flores", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member_1.png" },
+  { name: "Zarror Nibros", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member_2.png" },
+  { name: "Robert Fox", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member_3.png" },
+  { name: "Ronald Richards", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member_4.png" },
+  { name: "Jenny Wilson", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member_5.png" },
+  { name: "Jane Cooper", role: "as CTO & Co-Founder", image: "/images/newAboutUs/member_6.png" },
 ];
 
 const PAGE_SIZE = 6;
