@@ -1,37 +1,25 @@
-import ConsultOurExperts from "@/components/home/ConsultOurExperts";
-import Industries from "@/components/home/Industries";
-import Services from "@/components/ourServices/Services";
-import TopSection from "@/components/ourServices/TopSection";
-import SEO from "@/components/SEO";
-import { metaData } from "@/data/metaInformationData";
-import { servicesData } from "@/data/servicesData";
-import React, { useState } from "react";
-export async function getStaticProps() {
-  const path = "/our-services/";
-  const meta = metaData.find(m => m.path === path)?.details || {};
+import Head from "next/head";
+import NewHeader from "@/components/newHome/NewHeader";
+import NewFooter from "@/components/newHome/NewFooter";
+import ServicesHero from "@/components/newServices/ServicesHero";
+import IdeasSection from "@/components/newAboutUs/IdeasSection";
+import ServiceSolutions from "@/components/newServices/ServiceSolutions";
+import ServicesCta from "@/components/newServices/ServicesCta";
 
-  return {
-    props: { meta },
-  };
-}
-
-const OurServices = () => {
-  const [selectedService, setSelectedService] = useState(servicesData[0] || {});
-
+export default function NewOurServices() {
   return (
     <>
-      <main className="our_services">
-        <TopSection selectedService={selectedService} />
-        <Services
-          servicesData={servicesData}
-          setSelectedService={setSelectedService}
-          selectedService={selectedService}
-        />
-        <Industries />
-        <ConsultOurExperts />
-      </main>
+      <Head>
+        <title>Services - Tacenda</title>
+      </Head>
+      <div className="new_page">
+        <NewHeader />
+        <ServicesHero />
+        <IdeasSection />
+        <ServiceSolutions />
+        <ServicesCta />
+        <NewFooter />
+      </div>
     </>
   );
-};
-
-export default OurServices;
+}

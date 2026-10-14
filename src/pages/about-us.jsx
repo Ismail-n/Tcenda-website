@@ -1,33 +1,25 @@
-import AboutUsSection from "@/components/aboutUs/AboutUsSection";
-import OurValues from "@/components/aboutUs/OurValues";
-import OurVisionMission from "@/components/aboutUs/OurVisionMission";
-import TopSection from "@/components/aboutUs/TopSection";
-import Clients from "@/components/home/Clients";
-import ConsultOurExperts from "@/components/home/ConsultOurExperts";
-import { metaData } from "@/data/metaInformationData";
-import React from "react";
-export async function getStaticProps() {
-  const path = "/about-us/";
-  const meta = metaData.find(m => m.path === path)?.details || {};
+import Head from "next/head";
+import NewHeader from "@/components/newHome/NewHeader";
+import NewFooter from "@/components/newHome/NewFooter";
+import AboutHero from "@/components/newAboutUs/AboutHero";
+import IdeasSection from "@/components/newAboutUs/IdeasSection";
+import TeamSection from "@/components/newAboutUs/TeamSection";
+import LocationsSection from "@/components/newAboutUs/LocationsSection";
 
-  return {
-    props: { meta },
-  };
-}
-
-const AboutUs = () => {
+export default function NewAboutUs() {
   return (
     <>
-      <main className="about_us">
-        <TopSection />
-        <AboutUsSection />
-        <OurVisionMission />
-        <OurValues />
-        <Clients />
-        <ConsultOurExperts />
-      </main>
+      <Head>
+        <title>About Us - Tacenda</title>
+      </Head>
+      <div className="new_page">
+        <NewHeader />
+        <AboutHero />
+        <IdeasSection />
+        <TeamSection />
+        <LocationsSection />
+        <NewFooter />
+      </div>
     </>
   );
-};
-
-export default AboutUs;
+}

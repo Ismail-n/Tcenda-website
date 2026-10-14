@@ -1,0 +1,34 @@
+.new_contact_hero {
+  position: relative;
+  background: #fff;
+  padding: 48px 24px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.new_contact_hero_title {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 72px auto 0;
+  max-width: 760px;
+  color: #111;
+}
+
+.new_contact_wave_wrap {
+  margin-top: 56px;
+  line-height: 0;
+}
+
+.new_contact_wave_wrap svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .new_contact_hero_title {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+}
